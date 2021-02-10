@@ -1,10 +1,19 @@
 # main links
 main:
-  - title: "About"
+  # - title: "About"
+  #   url: /about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+main:
+  - title: "About Me"
     url: /about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  # - title: "Posts"
+  #   url: /posts/
