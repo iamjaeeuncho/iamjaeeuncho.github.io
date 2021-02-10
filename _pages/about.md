@@ -3,6 +3,9 @@ title: "About Me"
 layout: about
 permalink: /about/
 author_profile: true
+toc: true
+toc_sticky: false
+toc_label: “On this page” # 기본값
 ---
 
 ### Data Analyst specialized in E-commerce
