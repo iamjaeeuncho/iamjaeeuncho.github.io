@@ -1,7 +1,5 @@
 ---
-layout: list
-title: Inspiration
-slug: inspiration
-menu: true
-order: 1
+title: "Inspiration"
+layout: inspiration
+permalink: /inspiration/
 ---

@@ -1,7 +1,5 @@
 ---
-layout: list
-title: Essay
-slug: essay
-menu: true
-order: 1
+title: "Essay"
+layout: essay
+permalink: /essay/
 ---

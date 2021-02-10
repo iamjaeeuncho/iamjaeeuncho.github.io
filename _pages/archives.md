@@ -1,7 +1,5 @@
 ---
-layout: list
-title: Archives
-slug: archives
-menu: true
-order: 1
+title: "Archives"
+layout: archives
+permalink: /archives/
 ---
