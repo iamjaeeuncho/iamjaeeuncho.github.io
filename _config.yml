@@ -250,8 +250,8 @@ about_archive:
   type: liquid
   path: /about/
 essay_archive:
-type: liquid
-path: /essay/
+  type: liquid
+  path: /essay/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -283,6 +283,18 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: falseㄴ
