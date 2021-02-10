@@ -25,7 +25,7 @@ url                      : # the base hostname & protocol for your site e.g. "ht
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/favicon.ico" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/green-tea (2).png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -64,7 +64,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : google-site-verification=FkGYTEUy9qXP4kt765SVeYNlCg7wltwPinW2ocLaI6U
+google_site_verification : 
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -86,9 +86,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-155019020-1"
     anonymize_ip         : # true, false (default)
 
 
@@ -249,6 +249,9 @@ tag_archive:
 about_archive:
   type: liquid
   path: /about/
+essay_archive:
+type: liquid
+path: /essay/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
