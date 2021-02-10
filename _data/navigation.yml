@@ -2,12 +2,21 @@
 main:
   - title: "About Me"
     url: /about/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Essay"
+    url: /essay/
+  # - title: "Categories"
+  #   url: /categories/
+  # - title: "Tags"
+  #   url: /tags/
   # - title: "Posts"
   #   url: /posts/
 
-  - title: "Posts"
-    url: /posts/
+#   menu:
+# - title: ·　About Me   　 　　　　　　　
+#   url:               /about/
+# - title: ·　Essay   　 　　　　　　　　 
+#   url:               /essay/
+# - title: ·　Archives   　 　　　　　　　　 
+#   url:               /archives/
+# - title: ·　Inspiration   　 　　　　　
+#   url:               /inspiration/
