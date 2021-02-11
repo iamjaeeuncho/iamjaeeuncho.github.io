@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Marketing］데이터 기반 AARRR 분석 기법 (Growth hacking)
-slug:         AARRRMetrics
-categories:   [study]
-tags:         [business, marketing]
-noindex: true
+title: "［Marketing］데이터 기반 AARRR 분석 기법 (Growth hacking)"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - marketing
 ---
-<font color="white">［Marketing］데이터 기반 AARRR 분석 기법 (Growth hacking)</font>
 
 ## 1. Growth hacking이란?
 - 성장(Growth)과 해킹(Hacking)의 합성어로, 고객의 행동을 해킹해 성장을 꽤하는 것을 의미
