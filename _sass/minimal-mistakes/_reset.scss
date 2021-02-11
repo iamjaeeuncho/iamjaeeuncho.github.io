@@ -15,10 +15,12 @@ html {
   }
 
   @include breakpoint($large) {
-    font-size: 20px;
+    // 사이즈 조정   font-size: 20px;
+    font-size: 18px;
   }
 
   @include breakpoint($x-large) {
+    // 사이즈 조정   font-size: 20px;
     font-size: 22px;
   }
 
