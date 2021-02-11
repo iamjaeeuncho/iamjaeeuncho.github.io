@@ -8,10 +8,7 @@ tags:
 ---
 
 
-![x9791196376406](https://user-images.githubusercontent.com/46369038/107639179-e1e8ac80-6cb3-11eb-9cbd-c5c963b7d07a.jpg){: width="300px" .aligncenter}
-
-이 콘텐츠를 블로그나 웹사이트 또는 인쇄물의 콘텐츠로 사용하면 저작권 문제로 처벌 받을 수 있습니다.
-원본: https://blog.kalkin7.com/2014/03/04/how-to-align-images-on-writing-with-markdown/ Copyright © 칼킨}
+![x9791196376406](https://user-images.githubusercontent.com/46369038/107639179-e1e8ac80-6cb3-11eb-9cbd-c5c963b7d07a.jpg){: width="300px", align-center}
 
 
 
