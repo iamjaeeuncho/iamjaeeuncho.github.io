@@ -4,6 +4,11 @@ main:
     url: /about/
   - title: "Categories"
     url: /categories/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
 # - title: "Tags"
 #   url: /tags/
 # - title: "Posts"
@@ -18,3 +23,31 @@ main:
 #   url:               /archives/
 # - title: ·　Inspiration   　 　　　　　
 #   url:               /inspiration/
+
+
+# main links
+# main:
+#   - title: "Quick-Start Guide"
+#     url: /docs/quick-start-guide/
+#   - title: "About"
+#     url: /about/
+#   - title: "Sample Posts"
+#     url: /year-archive/
+#   - title: "Sample Collections"
+#     url: /collection-archive/
+#   - title: "Terms &amp; Privacy Policy"
+#     url: /terms/
+
+
+# documentation links
+# docs:
+#   - title: Getting Started
+#     children:
+#       - title: "Quick-Start Guide"
+#         url: /docs/quick-start-guide/
+#       - title: "Structure"
+#         url: /docs/structure/
+#       - title: "Installation"
+#         url: /docs/installation/
+#       - title: "Upgrading"
+#         url: /docs/upgrading/
