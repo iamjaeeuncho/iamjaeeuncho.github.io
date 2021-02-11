@@ -6,13 +6,12 @@ author_profile: true
 toc: true
 toc_sticky: false
 ---
-# About Me
-### Data Analyst specialized in E-commerce
+## Data Analyst specialized in E-commerce
 I am a junior-level data analyst based in Seoul, Korea. I worked as a E-commerce marketer for about 2 years before data analyst. For the 2 years, I had experienced vast amount of data and started to be into the power of data analysis. After the employment, I started to take courses about programming so that I can overcome my limitation of technical skills. I usually handle data with Python, SQL and Excel.
 
 I recently joined in a marketing agency as a data analyst. My main focus is E-commerce field, but I'd love to explore other parts of data world - It's always wonderful to feel that my perspective is extending with new inspiration. I am a bit calm person but always up for teamworking as I think many are better than one and also it teaches me a lot of lessons. Main interest is seeking problems from data and make the findings into a practical strategy to improve services better.
 
----
+
 ## Work Experience
 *Jan. 2020 - Current*
 **Data Analyst at [Lab543](http://lab543.com) (Seoul, Korea)**
@@ -51,7 +50,7 @@ Dorco is one of the leading razor manufacturers in the world with 60 years of he
   * New Business Feasibility Survey: Analyze feasibility of new business proposal.
   * Coordinate between Myanmar government and Korean private side, NGOs.
 
----
+
 ## Education
 *2009 Mar – 2015 Feb*
 **Bachelor of Economics at [Kookmin University](https://english.kookmin.ac.kr) (Seoul, Korea)**
@@ -67,7 +66,7 @@ Dorco is one of the leading razor manufacturers in the world with 60 years of he
      -	[Auction website on MVC model, benchmarking E-bay.](https://github.com/iamjaeeuncho/2018_Auction_Website_on_MVC_model)
      -	[Statistic website with R on Spring framework - data collection, visualization.](https://github.com/iamjaeeuncho/2019_Statistic_website_with_R_on_Spring_Framework)
 
----
+
 ## Volunteer Activities
 *2013 Feb – 2014 Nov*
 **Mentor at [Seoul Jongno Welfare Center](http://jpurme.org/main) (Seoul, Korea)<br>**
@@ -79,12 +78,12 @@ Dorco is one of the leading razor manufacturers in the world with 60 years of he
   * Construction and education volunteering, which is fully sponsored by Hyundai Motors.
   * On-site field trip to the Hyundai smart factory in Chennai, India.
 
----
+
 ## Languages
  - Native in Korean
  - Professional working possible in English
 
----
+
 ## Technical Skills
  - Advanced: MS Office(Word, Excel, PPT), Google Analytics/Optimize/Data Studio, Html
  - Moderate: Python, R, SQL, Google Tag Manager/Firebase
