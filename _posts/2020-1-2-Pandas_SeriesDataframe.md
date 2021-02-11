@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 Pandas의 자료구조 - Series, Dataframe
-slug:         Pandas_SeriesDataframe
-categories:   [study]
-tags:         [programming, python, pandas]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 Pandas 자료구조 - Series, Dataframe"
+date: 2020-1-2
 categories:
   - study
 tags:
   - python
 ---
+
 ## Pandas란?
 * 데이터 분석, 처리를 위해 만들어진 파이썬 패키지로, 보다 안정적으로 대용량 데이터들을 쉽게 처리할 수 있다고 한다
 

@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 제어문 - for 반복문, continue, range
-slug:         PythonVariable_ForContinueRange
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 제어문 - for 반복문, continue, range"
+date: 2019-12-23
 categories:
   - study
 tags:
   - python
 ---
+
 ## for문은?
 * while문과 같이 반복문이다.
 * 둘다 반복한다는 점에서 같으나, for문은 주어진 데이터(리스트나 튜플, 문자열)에서 변수를 뽑아내 반복한다는 것이 특징.

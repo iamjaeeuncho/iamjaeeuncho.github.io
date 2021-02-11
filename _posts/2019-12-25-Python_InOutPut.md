@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 입출력 - 사용자 입력과 출력
-slug:         Python_InOutPut
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 입출력 - 사용자 입력과 출력"
+date: 2019-12-25
 categories:
   - study
 tags:
   - python
 ---
+
 ## 파이썬 입출력
 * 사용자 입력 → 처리(프로그램, 함수 등) → 출력
 

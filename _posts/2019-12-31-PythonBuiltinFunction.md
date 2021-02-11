@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 자주 쓰는 내장함수들
-slug:         PythonBuiltinFunction
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 자주 쓰는 내장함수들"
+date: 2019-12-31
 categories:
   - study
 tags:
   - python
 ---
+
 ## 내장 함수란?
 * 파이썬 배포본에 함께 들어 있는 파이썬 라이브러리들을 내장 함수라 한다
 * Don’t Reinvent The Wheel, 이미 있는 것을 다시 만드느라 쓸데없이 시간을 낭비하지 말라

@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 모듈 - 생성 및 불러오기
-slug:         Python_Module
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 모듈 - 생성 및 불러오기"
+date: 2019-12-28
 categories:
   - study
 tags:
   - python
 ---
+
 ## 모듈(Module)이란?
 * 함수나 변수 또는 클래스 들을 모아 놓은 파일이다.
 * 다른 사람들이 이미 만들어 놓은 모듈을 사용할 수도 있고 우리가 직접 만들어서 사용할 수도 있다.

@@ -1,14 +1,6 @@
 ---
-layout: post
-title:  ［Python］파이썬 집합 자료형 - 교집합, 합집합, 차집합, 함수들
-slug:         PythonVariable_Set
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 집합 자료형 - 교집합, 합집합, 차집합, 함수들"
+date: 2019-12-19
 categories:
   - study
 tags:

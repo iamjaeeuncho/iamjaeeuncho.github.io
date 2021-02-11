@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 불 자료형 - 참과 거짓, 예시, 함수
-slug:         PythonVariable_Bool
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 불 자료형 - 참과 거짓, 예시, 함수"
+date: 2019-12-20
 categories:
   - study
 tags:
   - python
 ---
+
 ## 불(bool) 자료형이란?
 * 참(True)과 거짓(False)을 나타내는 자료형이다.
 * 불 자료형은 다음의 2가지 값만을 가질 수 있다. - True (참) or False (거짓)

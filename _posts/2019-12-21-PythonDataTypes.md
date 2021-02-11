@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 데이터 타입 - 자료형 구분, 데이터 형식 변환
-slug:         PythonDataTypes
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 데이터 타입 - 자료형 구분, 데이터 형식 변환"
+date: 2019-12-21
 categories:
   - study
 tags:
   - python
 ---
+
 ## 자료형 (Data Types)이란,
 * 데이터를 저장하는 방법으로, 프로그램의 기본이자 핵심 단위.
 * 프로그래밍을 할 때 쓰이는 숫자, 문자열 등 자료 형태로 사용하는 모든 것. 

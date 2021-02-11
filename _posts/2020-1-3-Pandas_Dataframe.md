@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 Pandas의 자료구조 - Dataframe
-slug:         Pandas_Dataframe
-categories:   [study]
-tags:         [programming, python, pandas]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 Pandas 자료구조 - Dataframe"
+date: 2020-1-3
 categories:
   - study
 tags:
   - python
 ---
+
 ## 1. 데이터 프레임 인덱싱, 셀렉션
 
 <center>

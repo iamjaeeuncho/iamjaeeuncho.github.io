@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 자주 쓰는 외장함수들
-slug:         PythonExteriorFunction
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 자주 쓰는 외장함수들"
+date: 2020-1-1
 categories:
   - study
 tags:
   - python
 ---
+
 * 전 세계의 파이썬 사용자들이 만든 유용한 프로그램들을 모아 놓은 것이 바로 파이썬 라이브러리이다. 
 * "라이브러리"는 "도서관"이라는 뜻 그대로 원하는 정보를 찾아보는 곳이다.
 * 파이썬 라이브러리는 파이썬 설치 시 자동으로 컴퓨터에 설치가 된다. 

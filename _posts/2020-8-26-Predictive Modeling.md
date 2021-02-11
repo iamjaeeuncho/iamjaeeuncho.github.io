@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［BA］예측 모델링 - 개요, 종류, 적용 예시
-slug:         OverviewOfModeling
-categories:   [study]
-tags:         [Business, DataAnalytics, Modeling]
-noindex: true
----
----
-title: "［Marketing］데이터 기반 AARRR 분석 기법 (Growth hacking)"
-date: 2018-11-4
+title: "［BA］예측 모델링 - 개요, 종류, 적용 예시"
+date: 2020-8-26
 categories:
   - study
 tags:
-  - marketing
+  - Modeling
 ---
+
 ## 예측 모델링 개요
 - 일체의 질문에 대한 정확한 통찰력을 제공하고 사용자가 예측을 할 수 있도록 하기 때문에 유용
 - 경쟁 우위를 유지하기 위해서는 핵심 가정들에 도적하는미래의 사건과 결과에 대한 통찰력을 갖는 것이 매우 중요

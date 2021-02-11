@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 입출력 - 파일을 통한 입출력, 읽고 쓰기
-slug:         Python_InOutput_Read&Write
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 입출력 - 파일을 통한 입출력, 읽고 쓰기"
+date: 2019-12-26
 categories:
   - study
 tags:
   - python
 ---
+
 ## 1. 파일 생성하기
 * open 함수를 이용한, 프로그램을 실행한 디렉터리에 새로운 파일이 하나 생성
 * 파일 열기 모드

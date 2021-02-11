@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［Python］파이썬 클래스 - 메서드, 생성자, 상속, 오버라이딩, 변수
-slug:         PythonClass
-categories:   [study]
-tags:         [programming, python]
-noindex: true
----
----
-title: "［Python］파이썬 기본 구문"
-date: 2018-11-4
+title: "［Python］파이썬 클래스 - 메서드, 생성자, 상속, 오버라이딩, 변수"
+date: 2019-12-27
 categories:
   - study
 tags:
   - python
 ---
+
 ## 클래스(Class)란?
 * 클래스(class)란 똑같은 무엇인가를 계속해서 만들어낼 수 있는 설계 도면 같은 것
 * 프로그램 작성을 위해 꼭 필요한 요소는 아니지만, 코딩을 짧고 효율적으로 작성할 수 있게 한다.

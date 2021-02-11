@@ -1,19 +1,12 @@
 ---
-layout: post
-title:  ［SQL］주요 문법
-slug:         BasicMySQL
-categories:   [study]
-tags:         [programming, sql]
-noindex: true
----
----
-title: "［Marketing］데이터 기반 AARRR 분석 기법 (Growth hacking)"
-date: 2018-11-4
+title: "［SQL］주요 문법"
+date: 2020-9-20
 categories:
   - study
 tags:
-  - marketing
+  - SQL
 ---
+
 # SELECT
 
 - SELECT * FROM 테이블명;
