@@ -2,50 +2,7 @@
 main:
   - title: "About Me"
     url: /about/
-  - title: "Categories"
+  - title: "Archive"
     url: /categories/
-  - title: "Essay"
-    url: /categories/#essay
-
-# - title: "Tags"
-#   url: /tags/
-# - title: "Posts"
-#   url: /posts/
-
-#   menu:
-# - title: ·　About Me   　 　　　　　　　
-#   url:               /about/
-# - title: ·　Essay   　 　　　　　　　　 
-#   url:               /essay/
-# - title: ·　Archives   　 　　　　　　　　 
-#   url:               /archives/
-# - title: ·　Inspiration   　 　　　　　
-#   url:               /inspiration/
-
-
-# main links
-# main:
-#   - title: "Quick-Start Guide"
-#     url: /docs/quick-start-guide/
-#   - title: "About"
-#     url: /about/
-#   - title: "Sample Posts"
-#     url: /year-archive/
-#   - title: "Sample Collections"
-#     url: /collection-archive/
-#   - title: "Terms &amp; Privacy Policy"
-#     url: /terms/
-
-
-# documentation links
-# docs:
-#   - title: Getting Started
-#     children:
-#       - title: "Quick-Start Guide"
-#         url: /docs/quick-start-guide/
-#       - title: "Structure"
-#         url: /docs/structure/
-#       - title: "Installation"
-#         url: /docs/installation/
-#       - title: "Upgrading"
-#         url: /docs/upgrading/
+  - title: "Tags"
+    url: /tags/
