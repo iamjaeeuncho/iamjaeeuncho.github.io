@@ -4,12 +4,12 @@ main:
     url: /about/
   - title: "Essay"
     url: /essay/
-  # - title: "Categories"
-  #   url: /categories/
-  # - title: "Tags"
-  #   url: /tags/
-  # - title: "Posts"
-  #   url: /posts/
+# - title: "Categories"
+#   url: /categories/
+# - title: "Tags"
+#   url: /tags/
+# - title: "Posts"
+#   url: /posts/
 
 #   menu:
 # - title: ·　About Me   　 　　　　　　　

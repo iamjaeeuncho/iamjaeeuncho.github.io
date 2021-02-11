@@ -249,9 +249,6 @@ tag_archive:
 about_archive:
   type: liquid
   path: /about/
-essay_archive:
-  type: liquid
-  path: /essay/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
