@@ -4,6 +4,7 @@ layout: single
 permalink: /about/
 author_profile: true
 toc: true
+toc_sticky: true
 ---
 ## Data Analyst specialized in E-commerce
 I am a junior-level data analyst based in Seoul, Korea. I worked as a E-commerce marketer for about 2 years before data analyst. For the 2 years, I had experienced vast amount of data and started to be into the power of data analysis. After the employment, I started to take courses about programming so that I can overcome my limitation of technical skills. I usually handle data with Python, SQL and Excel.
