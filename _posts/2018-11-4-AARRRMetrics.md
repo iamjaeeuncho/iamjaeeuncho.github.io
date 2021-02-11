@@ -16,14 +16,14 @@ toc_sticky: true
 - 기존의 마케팅은 광고 수치로만 성과를 파악해, 매출 하락, 정체, 상승의 구체적인 원인 파악이 불가능 했음. 하지만 그로스 해킹은 고객의 행동패턴을 분석하면서 원인을 찾아내 개선하기가 손쉬워짐.
 
 
+
 ## 2. AARRR Metrics
 - 그로스해킹은 고객의 유입단계부터 활동, 재방문, 매출, 추천의 일련의 행위들을 세세하게 분석하고 가설 설정 및 실험을 통해 지속적인 개선을 해나가는 것을 의미. 그 기준이 되는 것이 AARRR 지표(해적지표)로 아래와 같음.
 - AARRR 모델은 아래 5개의 로직으로, 고객의 모든 행동을 세분화해 정의하는게 키포인트로, 각 단계별 문제점 파악이 용이해서 문제점을 수정하기 좋은 것이 장점.
 
-<center>
-<img src="https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/study/_posts/images/2020-11-4 (1).png">
+<center><img src="https://user-images.githubusercontent.com/46369038/107658911-f9329480-6cc9-11eb-9c31-37d76545d953.png" width="500"></center>
 credit: http://startitup.co/guides/374/aarrr-startup-metrics
-</center>
+
 
 > * Acquisition(유입): 고객 확보 - 다양한 채널(SEO, SEM, PR, Afiliate, SNS)을 통한 서비스내 고객 유입. => 어떤 채널이 가장 저렴하고, 볼륨이 크며, 고객 컨버젼이 잘 이뤄지는지 체크할 것.
 > * Activation(활동): 고객 활성화 - 첫번째 방문시 만족한 고객 중 활동 비율 => 좋은 UX 여부가 키포인트, A/B 테스트를 통한 랜딩 페이지 실험이 좋음. 
@@ -31,10 +31,10 @@ credit: http://startitup.co/guides/374/aarrr-startup-metrics
 > * Referral(추천): 확산 - 지인에게 추천 => 입소문(Viral) 마케팅. 절대 제품이 미완성 단계에서는 입소문 마케팅에 돈쓰지 말 것. 보통 테스트를 통해, 10명 중 8명이 만족했을때, 입소문 마케팅을 시작하는게 적당.
 > * Revenue(매출): 최종적으로 발생한 매출
 
-<center>
-<img src="https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/study/_posts/images/2020-11-4 (2).png"><br>
-credit: http://startitup.co/guides/374/aarrr-startup-metrics
-</center>
+
+<center><img src="https://user-images.githubusercontent.com/46369038/107658938-ff287580-6cc9-11eb-8cf3-136ab3fe3015.jpg width="500"></center>
+
+
 
 - AARRR을 실제로 적용한 모델의 예시. 처음 유입된 Acquistion Conversion 100% 기준에서 점점 단계별로 내려오는데, 결국 최종 수익률이 1~2%로 나오는 것을 볼 수 있다.
 
@@ -57,8 +57,7 @@ credit: http://startitup.co/guides/374/aarrr-startup-metrics
 
 
 ## 4. AARRR Metrics Explanation by Dave McClure
-<center>
-![Mac_youtube](https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/study/_posts/images/2020-11-4 (3).png)](https://youtu.be/irjgfW0BIrw)<br>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/irjgfW0BIrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 credit : https://youtu.be/irjgfW0BIrw
 </center>
 
