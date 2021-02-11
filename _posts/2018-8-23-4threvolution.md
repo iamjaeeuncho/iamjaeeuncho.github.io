@@ -5,10 +5,12 @@ categories:
   - inspiration
 tags:
   - book
-toc: true
 ---
 
+<center>
 ![x9791196376406](https://user-images.githubusercontent.com/46369038/107639179-e1e8ac80-6cb3-11eb-9cbd-c5c963b7d07a.jpg){: width="300px"}
+</center>
+
 
 P.30<br>
 헤겔이 언급하고 마르크스가 완성한 변증법으로 경제 혁명을 해석한면 이렇게 말할 수 있습니다. "양적 변화가 축적되면 질적인 변화가 일어난다." 따라서 모든 혁명은 질적 변화가 이뤄져야 합니다. 물은 1도에서 99도까지 아무리 데워도 여전히 액체 상태에 불과하죠. 그런데 99도에서 100도가 딱 되는 순간 기체로 변합니다. 이것이 질적 전환입니다. 
