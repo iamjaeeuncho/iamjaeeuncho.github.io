@@ -315,8 +315,7 @@
     text-decoration: none;
 
     &:hover {
-    // 변경 text-decoration: underline
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 }

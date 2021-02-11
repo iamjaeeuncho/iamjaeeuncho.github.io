@@ -122,8 +122,7 @@
 .archive__item-title .ais-Highlight {
   color: $primary-color;
   font-style: normal;
-  // 변경 text-decoration: underline;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .archive__item-excerpt .ais-Highlight {
