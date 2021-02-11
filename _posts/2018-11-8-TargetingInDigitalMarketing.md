@@ -5,6 +5,7 @@ categories:
   - study
 tags:
   - marketing
+toc: true
 ---
 
 ## 광고 타케팅 종류
