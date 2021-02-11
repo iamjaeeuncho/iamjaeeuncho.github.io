@@ -246,9 +246,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-about_archive:
-  type: liquid
-  path: /about/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -268,7 +265,7 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
+    
 
 # Defaults
 defaults:
@@ -284,7 +281,7 @@ defaults:
       share: true
       related: true
 
-  # _pages
+    # _pages
   - scope:
       path: ""
       type: pages
@@ -293,5 +290,5 @@ defaults:
       author_profile: true
       read_time: false
       comments: false
-      share: true
+      share: false
       related: false
