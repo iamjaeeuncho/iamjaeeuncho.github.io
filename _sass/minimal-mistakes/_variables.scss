@@ -6,7 +6,8 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16 !default;
+// 사이즈 변경 $doc-font-size: 16 !default;
+$doc-font-size: 14 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -150,10 +151,14 @@ $max-width: $x-large !default;
 /*
    Grid
    ========================================================================== */
+// 사이즈 변경
+// $right-sidebar-width-narrow: 200px !default;
+// $right-sidebar-width: 300px !default;
+// $right-sidebar-width-wide: 400px !default;
 
-$right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width-narrow: 150px !default;
+$right-sidebar-width: 250px !default;
+$right-sidebar-width-wide: 300px !default;
 
 /*
    Other
