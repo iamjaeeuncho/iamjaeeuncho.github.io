@@ -8,8 +8,7 @@ tags:
 ---
 
 
-![x9791196376406](https://user-images.githubusercontent.com/46369038/107639179-e1e8ac80-6cb3-11eb-9cbd-c5c963b7d07a.jpg){: width="300"}{: .center}
-
+<center><img src="https://user-images.githubusercontent.com/46369038/107639179-e1e8ac80-6cb3-11eb-9cbd-c5c963b7d07a.jpg" width="300"></center>
 
 
 P.30<br>
@@ -64,5 +63,9 @@ P.346<br>
 
 
 <blockquote>
-4차 산업시대에 승리할 국가. 1. 탄탄한 제조업 기반 2. 높은 정보화 수준 3. 스마트 시티화에 유리한 메트로 폴리스 보유 여부 4. 강력한 리더십으로 민주적 절차에 따라 사회통합을 할 수 있는 정보
+4차 산업시대에 승리할 국가.
+1. 탄탄한 제조업 기반
+2. 높은 정보화 수준
+3. 스마트 시티화에 유리한 메트로 폴리스 보유 여부
+4. 강력한 리더십으로 민주적 절차에 따라 사회통합을 할 수 있는 정보
 </blockquote>
