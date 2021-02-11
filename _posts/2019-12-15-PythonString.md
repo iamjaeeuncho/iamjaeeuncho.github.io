@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］파이썬 문자열 자료형 - 인덱싱, 슬라이싱, 내장함수들
-slug:         PythonVariable_String
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 문자열 자료형 - 인덱싱, 슬라이싱, 내장함수들"
+date: 2019-12-15
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">［Python］파이썬 문자열 자료형 - 인덱싱, 슬라이싱, 내장함수들</font>
 
 ## 문자열(String)이란?
 * 문자, 단어 등으로 구성된 문자들의 집합

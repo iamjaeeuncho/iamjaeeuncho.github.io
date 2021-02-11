@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］파이썬 기본 구문
-slug:         PythonBasicSyntax
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 기본 구문"
+date: 2019-12-10
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">［Python］파이썬 기본 구문</font>
 
 ## 1. 파이썬 식별자 규칙
   - 식별자(Identifiers)란, 변수에 부여된 이름. (ex. int A에서 A가 식별자)

@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Marketing］디지털 마케팅 종류 및 관련 용어 - DA, SA, SEO, SMO, RTB
-slug:         OverviewOfDigitalMarketing
-categories:   [study]
-tags:         [business, marketing]
-noindex: true
+title: "［Marketing］디지털 마케팅 종류 및 관련 용어 - DA, SA, SEO, SMO, RTB"
+date: 2018-11-6
+categories:
+  - study
+tags:
+  - marketing
 ---
-<font color="white">［Marketing］디지털 마케팅 종류 및 관련 용어 - DA, SA, SEO, SMO, RTB</font>
 
 ## 디지털 마케팅 종류
 - **DA (Display Advertising, 디스플레이 광고)**

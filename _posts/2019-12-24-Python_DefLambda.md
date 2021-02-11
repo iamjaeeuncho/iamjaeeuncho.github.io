@@ -6,8 +6,14 @@ categories:   [study]
 tags:         [programming, python]
 noindex: true
 ---
-<font color="white">［Python］파이썬 함수 - def, lambda</font>
-
+---
+title: "［Python］파이썬 기본 구문"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - python
+---
 ## 프로그램의 입출력?
 * 프로그래머는 프로그램을 만들기 전에 어떤 식으로 동작하게 할 것인지 설계부터 하는데 그때 가장 중요한 부분이 바로 입출력의 설계다. 특정 프로그램만이 사용하는 함수를 만들 것인지, 모든 프로그램이 공통으로 사용하는 함수를 만들 것인지, 더 나아가 오픈 API로 공개하여 외부 프로그램들도 사용할 수 있게 만들 것인지 그 모든 것이 입출력과 관련이 있다.
 

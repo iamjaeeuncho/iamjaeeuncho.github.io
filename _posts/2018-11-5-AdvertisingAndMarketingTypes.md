@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Marketing］광고 및 마케팅 종류 - ATL/BTL, PPL, CRM
-slug:         MarketingTypes
-categories:   [study]
-tags:         [business, marketing]
-noindex: true
+title: "［Marketing］광고 및 마케팅 종류 - ATL/BTL, PPL, CRM"
+date: 2018-11-5
+categories:
+  - study
+tags:
+  - marketing
 ---
-<font color="white">［Marketing］광고 및 마케팅 종류 - ATL/BTL, PPL, CRM</font>
 
 ## 광고 종류
 - **ATL (Above The Line)**: 전통적 광고 매체인 TV, 신문, 잡지, 라디오 등에 노출되는 광고 마케팅. 광범위한 영역에 광고를 내보내나 타깃팅에서 부족한 면이 있다. 직접적이고 한 방향으로 나가는 성격을 가진다.

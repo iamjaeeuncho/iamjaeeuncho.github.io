@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］파이썬 변수 정의, 할당 및 데이터 형식 변환
-slug:         PythonVariable
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 변수 정의, 할당 및 데이터 형식 변환"
+date: 2019-12-13
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">［Python］파이썬 변수 정의, 할당 및 데이터 형식 변환</font>
 
 ## 파이썬(Python) 변수타입
 - **변수(Variable)** 는 문자나 숫자 같은 객체를 담는 컨테이너로 값을 저장할 필요가 있을 때 사용한다.

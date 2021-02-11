@@ -6,7 +6,14 @@ categories:   [study]
 tags:         [programming, python]
 noindex: true
 ---
-<font color="white">［Python］파이썬 집합 자료형 - 교집합, 합집합, 차집합, 함수들</font>
+---
+title: "［Python］파이썬 기본 구문"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - python
+---
 
 ## 집합(Set) 자료형이란?
 * 집합에 관련된 것들을 쉽게 처리하기 위해 만들어진 자료형

@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］파이썬 숫자형 자료형 - 정의, 연산, 숫자 개념
-slug:         PythonVariable_Numbers
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 숫자형 자료형 - 정의, 연산, 숫자 개념"
+date: 2019-12-14
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">［Python］파이썬 숫자형 자료형 - 정의, 연산, 숫자 개념</font>
 
 ## 1. 숫자형 타입들
 * int/long 타입 (정수, Integer/long): 양의 정수, 0, 음의 정수 (ex. 123, 0, -345)

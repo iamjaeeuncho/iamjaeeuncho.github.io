@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］ 파이썬 개요 - 기원, 특징, 에디터
-slug:         OverviewOfPython
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 개요 - 기원, 특징, 에디터"
+date: 2019-12-9
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">[Python] 파이썬 개요 - 기원, 특징, 에디터</font>
 
 ## 파이썬(Python)의 기원
 1990년 암스테르담의 귀도 반 로섬(Guido Van Rossum)이 개발한 인터프리터 언어이다. 파이썬의 사전적인 의미는 고대 신화에 나오는 파르나소스 산의 동굴에 살던 큰 뱀을 뜻하며, 아폴로 신이 델파이에서 파이썬을 퇴치했다는 이야기가 전해지고 있다.

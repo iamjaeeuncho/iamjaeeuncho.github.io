@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］파이썬 튜플 자료형 - 인덱싱, 슬라이싱
-slug:         PythonVariable_Tuple
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 튜플 자료형 - 인덱싱, 슬라이싱"
+date: 2019-12-17
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">［Python］파이썬 튜플 자료형 - 인덱싱, 슬라이싱</font>
 
 ## 튜플(tuple)이란?
 * 리스트와 동일한 복합 데이터의 집합이지만 아래의 다른 점을 가지고 있다.

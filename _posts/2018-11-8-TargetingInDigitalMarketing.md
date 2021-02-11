@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Marketing］디지털 마케팅 타게팅 종류 및 예시
-slug:         TargetingInDigitalMarketing
-categories:   [study]
-tags:         [business, marketing]
-noindex: true
+title: "［Marketing］디지털 마케팅 타게팅 종류 및 예시"
+date: 2018-11-8
+categories:
+  - study
+tags:
+  - marketing
 ---
-<font color="white">［Marketing］디지털 마케팅 타게팅 종류 및 예시</font>
 
 ## 광고 타케팅 종류
 - **타겟팅 광고 (Targeting Advertising)** : 일반적인 배너 광고들이 불특정 다수를 대상으로 노출되는 것과 다르게 특정 지역, 성별, 연령, 관심사 등 광고주가 원하는 특정 계층만을 상대로 노출하여 효율을 높이는 광고. 타겟 설정을 위한 정보가 필요하기 때문에 기본적으로 로그인 기반의 매체에서 실행.

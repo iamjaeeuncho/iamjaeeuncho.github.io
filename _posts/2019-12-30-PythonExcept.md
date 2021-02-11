@@ -6,8 +6,14 @@ categories:   [study]
 tags:         [programming, python]
 noindex: true
 ---
-<font color="white">［Python］파이썬 오류 예외 처리 - try, except, finally</font>
-
+---
+title: "［Python］파이썬 기본 구문"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - python
+---
 ## 파이썬 오류 예외 처리
 * 파이썬은 try, except를 이용해서, 오류를 무시하거나 별도 처리할 수 있게 해준다.
 

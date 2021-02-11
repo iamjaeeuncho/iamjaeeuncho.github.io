@@ -6,8 +6,14 @@ categories:   [study]
 tags:         [programming, python]
 noindex: true
 ---
-<font color="white">［Python］파이썬 기본 구문</font>
-
+---
+title: "［Python］파이썬 기본 구문"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - python
+---
 ## 패키지(Packages)란?
 - 패키지는 도트(.)를 이용하여 파이썬 모듈을 계층적(디렉터리 구조)으로 관리할 수 있게 해준다.
 - 예를 들어 모듈명이 A.B인 경우, A는 패키지명이 되고 B는 A 패키지의 모듈이 된다.

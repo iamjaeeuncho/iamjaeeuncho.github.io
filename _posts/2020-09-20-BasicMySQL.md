@@ -6,8 +6,14 @@ categories:   [study]
 tags:         [programming, sql]
 noindex: true
 ---
-<font color="white">［SQL］주요 문법</font>
-
+---
+title: "［Marketing］데이터 기반 AARRR 분석 기법 (Growth hacking)"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - marketing
+---
 # SELECT
 
 - SELECT * FROM 테이블명;

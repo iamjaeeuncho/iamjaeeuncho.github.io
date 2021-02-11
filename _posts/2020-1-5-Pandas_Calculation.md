@@ -6,8 +6,14 @@ categories:   [study]
 tags:         [programming, python, pandas]
 noindex: true
 ---
-<font color="white">［Python］파이썬 Pandas의 연산 - 피봇테이블, 통계값, 함수들</font>
-
+---
+title: "［Python］파이썬 기본 구문"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - python
+---
 ## 통계(Stats)
 * 보통 누락된 값을 제외하고 연산
 ```python

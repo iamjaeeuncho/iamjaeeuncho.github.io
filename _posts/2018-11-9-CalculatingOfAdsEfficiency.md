@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Marketing］광고 효율 및 광고비 정산 기준들 - PPC, CPC, CPA 등
-slug:         CalculatingOfAdsEfficiency
-categories:   [study]
-tags:         [business, marketing]
-noindex: true
+title: "［Marketing］광고 효율 및 광고비 정산 기준들 - PPC, CPC, CPA 등"
+date: 2018-11-9
+categories:
+  - study
+tags:
+  - marketing
 ---
-<font color="white">［Marketing］광고 효율 및 광고비 정산 기준들 - PPC, CPC, CPA 등</font>
 
 ## 광고비 정산 방법
 - **PPC (Pay Per Click, 클릭당 지불)**: 클릭 1회당 광고주가 지불하는 비용.

@@ -6,8 +6,14 @@ categories:   [study]
 tags:         [programming, python]
 noindex: true
 ---
-<font color="white">［Python］파이썬 제어문 - while 반복문, break, continue</font>
-
+---
+title: "［Python］파이썬 기본 구문"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - python
+---
 ## While문은?
 * 반복해서 문장을 수행해야 할 경우 사용해서, 반복문이라고도 한다.
 * While문은 조건문이 참인 동안에 while문 아래에 속하는 문장들이 반복해서 수행된다.

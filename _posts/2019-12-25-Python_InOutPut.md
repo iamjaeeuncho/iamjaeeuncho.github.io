@@ -6,8 +6,14 @@ categories:   [study]
 tags:         [programming, python]
 noindex: true
 ---
-<font color="white">［Python］파이썬 입출력 - 사용자 입력과 출력</font>
-
+---
+title: "［Python］파이썬 기본 구문"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - python
+---
 ## 파이썬 입출력
 * 사용자 입력 → 처리(프로그램, 함수 등) → 출력
 

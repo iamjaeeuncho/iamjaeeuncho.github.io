@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］파이썬 리스트 자료형 - 연산, 인덱싱, 슬라이싱, 함수들
-slug:         PythonVariable_List
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 리스트 자료형 - 연산, 인덱싱, 슬라이싱, 함수들"
+date: 2019-12-16
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">［Python］파이썬 리스트 자료형 - 연산, 인덱싱, 슬라이싱, 함수들</font>
 
 ## 리스트(List)란?
 * 복합 데이터의 집합

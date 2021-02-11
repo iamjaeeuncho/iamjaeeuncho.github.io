@@ -6,7 +6,14 @@ categories:   [inspiration]
 tags:         [book]
 noindex: true
 ---
-
+---
+title: "［Python］파이썬 기본 구문"
+date: 2018-11-4
+categories:
+  - study
+tags:
+  - python
+---
 
 P.29
 마케터 - 각종 요소를 이용해 어떤 상품을, 어떤 대상에게, 어디에서 진행할 것인이 확인해 마케팅 효율 극대화

@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］파이썬 기본 연산자(산술,비교,할당,논리) 및 우선순위
-slug:         PythonOperators
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 기본 연산자(산술,비교,할당,논리) 및 우선순위"
+date: 2019-12-12
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">［Python］파이썬 기본 연산자(산술,비교,할당,논리) 및 우선순위</font>
 
 ## 산술 연산자 (Arithmetic Operators)
 ```python

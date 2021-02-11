@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  ［Python］파이썬 딕셔너리 자료형 - 추가, 삭제, Value 값 찾기, 함수들
-slug:         PythonVariable_Dictionary
-categories:   [study]
-tags:         [programming, python]
-noindex: true
+title: "［Python］파이썬 딕셔너리 자료형 - 추가, 삭제, Value 값 찾기, 함수들"
+date: 2019-12-18
+categories:
+  - study
+tags:
+  - python
 ---
-<font color="white">［Python］파이썬 딕셔너리 자료형 - 추가, 삭제, Value 값 찾기, 함수들</font>
 
 ## 딕셔너리(Dictionary)란?
 * Key와 Value라는 대응 관계를 한 쌍으로 갖는 자료형태로, 이를 연관 배열(Associative array) 또는 해시(Hash)라고 한다.

@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  ［Book］한 권으로 정리하는 4차 산업혁명 (최진기, 2018)
-slug:         4threvolution
-categories:   [inspiration]
-tags:         [book]
-noindex: true
+title: "［Book］한 권으로 정리하는 4차 산업혁명 (최진기, 2018)"
+date: 2018-8-23
+categories:
+  - inspiration
+tags:
+  - book
 ---
 
 
