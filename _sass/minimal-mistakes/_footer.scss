@@ -24,7 +24,8 @@
     // 사이즈 조정 margin-top: 2em;
     margin-top: 1em;
     max-width: 100%;
-    padding: 0 1em 2em;
+    // 사이즈 조정 padding: 0 1em 2em;
+    padding: 0 1em 1.5em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;

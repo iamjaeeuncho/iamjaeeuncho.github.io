@@ -18,7 +18,8 @@
 
   @include breakpoint($large) {
     float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
+    //     width: calc(#{$right-sidebar-width-narrow} - 1em);
+    width: calc(#{$right-sidebar-width-narrow} - 0.5em);
     // 강도 변경 opacity: 0.75;
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
@@ -142,10 +143,8 @@
 .author__content {
   display: table-cell;
   vertical-align: top;
-  // 사이즈 변경   padding-left: 15px;
-  // 사이즈 변경   padding-right: 25px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 15px;
+  padding-right: 25px;
   line-height: 1;
 
   @include breakpoint($large) {
