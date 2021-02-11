@@ -1,10 +1,12 @@
 ---
-title: "［BA］예측 모델링 - 개요, 종류, 적용 예시"
+title: "[BA] 예측 모델링 - 개요, 종류, 적용 예시"
 date: 2020-8-26
 categories:
   - study
 tags:
   - Modeling
+toc: true
+toc_sticky: true
 ---
 
 ## 예측 모델링 개요

@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 제어문 - for 반복문, continue, range"
+title: "[Python],파이썬 제어문 - for 반복문, continue, range"
 date: 2019-12-23
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## for문은?

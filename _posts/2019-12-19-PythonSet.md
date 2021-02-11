@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 집합 자료형 - 교집합, 합집합, 차집합, 함수들"
+title: "[Python] 파이썬 집합 자료형 - 교집합, 합집합, 차집합, 함수들"
 date: 2019-12-19
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 집합(Set) 자료형이란?

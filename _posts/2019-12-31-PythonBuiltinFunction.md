@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 자주 쓰는 내장함수들"
+title: "[Python] 파이썬 자주 쓰는 내장함수들"
 date: 2019-12-31
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 내장 함수란?

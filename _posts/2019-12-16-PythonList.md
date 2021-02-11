@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 리스트 자료형 - 연산, 인덱싱, 슬라이싱, 함수들"
+title: "[Python] 파이썬 리스트 자료형 - 연산, 인덱싱, 슬라이싱, 함수들"
 date: 2019-12-16
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 리스트(List)란?

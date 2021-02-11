@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 입출력 - 파일을 통한 입출력, 읽고 쓰기"
+title: "[Python] 파이썬 입출력 - 파일을 통한 입출력, 읽고 쓰기"
 date: 2019-12-26
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 1. 파일 생성하기

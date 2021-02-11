@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 자주 쓰는 외장함수들"
+title: "[Python] 파이썬 자주 쓰는 외장함수들"
 date: 2020-1-1
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 * 전 세계의 파이썬 사용자들이 만든 유용한 프로그램들을 모아 놓은 것이 바로 파이썬 라이브러리이다. 

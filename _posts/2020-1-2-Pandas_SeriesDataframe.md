@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 Pandas 자료구조 - Series, Dataframe"
+title: "[Python] 파이썬 Pandas 자료구조 - Series, Dataframe"
 date: 2020-1-2
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## Pandas란?

@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 Pandas 자료구조 - Dataframe"
+title: "[Python] 파이썬 Pandas 자료구조 - Dataframe"
 date: 2020-1-3
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 1. 데이터 프레임 인덱싱, 셀렉션

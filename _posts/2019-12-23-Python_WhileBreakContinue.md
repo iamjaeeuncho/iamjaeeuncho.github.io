@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 제어문 - while 반복문, break, continue"
+title: "[Python] 파이썬 제어문 - while 반복문, break, continue"
 date: 2019-12-23
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## While문은?

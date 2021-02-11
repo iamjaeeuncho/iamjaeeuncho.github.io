@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 함수 - def, lambda"
+title: "[Python] 파이썬 함수 - def, lambda"
 date: 2019-12-24
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 프로그램의 입출력?

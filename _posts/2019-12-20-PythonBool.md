@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 불 자료형 - 참과 거짓, 예시, 함수"
+title: "[Python] 파이썬 불 자료형 - 참과 거짓, 예시, 함수"
 date: 2019-12-20
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 불(bool) 자료형이란?

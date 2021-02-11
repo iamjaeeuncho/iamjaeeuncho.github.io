@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 딕셔너리 자료형 - 추가, 삭제, Value 값 찾기, 함수들"
+title: "[Python] 파이썬 딕셔너리 자료형 - 추가, 삭제, Value 값 찾기, 함수들"
 date: 2019-12-18
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 딕셔너리(Dictionary)란?

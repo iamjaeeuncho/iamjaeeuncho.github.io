@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 튜플 자료형 - 인덱싱, 슬라이싱"
+title: "[Python] 파이썬 튜플 자료형 - 인덱싱, 슬라이싱"
 date: 2019-12-17
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 튜플(tuple)이란?

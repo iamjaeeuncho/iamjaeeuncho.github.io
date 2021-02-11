@@ -1,10 +1,12 @@
 ---
-title: "［Book］고객이 보이는 구글 애널리틱스 1판 (문준영, 2018)"
+title: "[Book] 고객이 보이는 구글 애널리틱스 1판 (문준영, 2018)"
 date: 2020-2-23
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 P.29

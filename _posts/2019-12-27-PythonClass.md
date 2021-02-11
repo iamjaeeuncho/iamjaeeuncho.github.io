@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 클래스 - 메서드, 생성자, 상속, 오버라이딩, 변수"
+title: "[Python] 파이썬 클래스 - 메서드, 생성자, 상속, 오버라이딩, 변수"
 date: 2019-12-27
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 클래스(Class)란?

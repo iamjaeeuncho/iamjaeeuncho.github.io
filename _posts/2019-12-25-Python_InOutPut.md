@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 입출력 - 사용자 입력과 출력"
+title: "[Python] 파이썬 입출력 - 사용자 입력과 출력"
 date: 2019-12-25
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 파이썬 입출력

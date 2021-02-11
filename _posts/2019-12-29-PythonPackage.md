@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 패키지 - import/__init__.py/relative"
+title: "[Python] 파이썬 패키지 - import/__init__.py/relative"
 date: 2019-12-29
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 패키지(Packages)란?

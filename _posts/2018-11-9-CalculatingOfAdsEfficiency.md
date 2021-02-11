@@ -1,11 +1,12 @@
 ---
-title: "［Marketing］광고 효율 및 광고비 정산 기준들 - PPC, CPC, CPA 등"
+title: "[Marketing] 광고 효율 및 광고비 정산 기준들 - PPC, CPC, CPA 등"
 date: 2018-11-9
 categories:
   - study
 tags:
   - marketing
 toc: true
+toc_sticky: true
 ---
 
 ## 광고비 정산 방법

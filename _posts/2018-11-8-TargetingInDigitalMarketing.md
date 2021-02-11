@@ -1,11 +1,12 @@
 ---
-title: "［Marketing］디지털 마케팅 타게팅 종류 및 예시"
+title: "[Marketing] 디지털 마케팅 타게팅 종류 및 예시"
 date: 2018-11-8
 categories:
   - study
 tags:
   - marketing
 toc: true
+toc_sticky: true
 ---
 
 ## 광고 타케팅 종류

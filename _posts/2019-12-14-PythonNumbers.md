@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 숫자형 자료형 - 정의, 연산, 숫자 개념"
+title: "[Python] 파이썬 숫자형 자료형 - 정의, 연산, 숫자 개념"
 date: 2019-12-14
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 1. 숫자형 타입들

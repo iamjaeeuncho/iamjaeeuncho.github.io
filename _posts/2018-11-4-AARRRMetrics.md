@@ -1,11 +1,12 @@
 ---
-title: "［Marketing］데이터 기반 AARRR 분석 기법 (Growth hacking)"
+title: "[Marketing] 데이터 기반 AARRR 분석 기법 (Growth hacking)"
 date: 2018-11-4
 categories:
   - study
 tags:
   - marketing
 toc: true
+toc_sticky: true
 ---
 
 ## 1. Growth hacking이란?

@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 오류 예외 처리 - try, except, finally"
+title: "[Python] 파이썬 오류 예외 처리 - try, except, finally"
 date: 2019-12-30
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 파이썬 오류 예외 처리

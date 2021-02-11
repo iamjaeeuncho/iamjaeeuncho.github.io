@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 모듈 - 생성 및 불러오기"
+title: "[Python] 파이썬 모듈 - 생성 및 불러오기"
 date: 2019-12-28
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 모듈(Module)이란?

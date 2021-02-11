@@ -1,11 +1,12 @@
 ---
-title: "［Marketing］웹브라우징 내 고객 행동 관련 용어 - 노출, 리드, 전환 등"
+title: "[Marketing] 웹브라우징 내 고객 행동 관련 용어 - 노출, 리드, 전환 등"
 date: 2018-11-7
 categories:
   - study
 tags:
   - marketing
 toc: true
+toc_sticky: true
 ---
 
 ## 웹 브라우징 기반 디지털 마케팅 용어

@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 Pandas의 사용법 - 보기, 선택, 설정, 누락된 데이터"
+title: "[Python] 파이썬 Pandas의 사용법 - 보기, 선택, 설정, 누락된 데이터"
 date: 2020-1-4
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## Pandas란?

@@ -1,11 +1,12 @@
 ---
-title: "［Marketing］디지털 마케팅 종류 및 관련 용어 - DA, SA, SEO, SMO, RTB"
+title: "[Marketing] 디지털 마케팅 종류 및 관련 용어 - DA, SA, SEO, SMO, RTB"
 date: 2018-11-6
 categories:
   - study
 tags:
   - marketing
 toc: true
+toc_sticky: true
 ---
 
 ## 디지털 마케팅 종류

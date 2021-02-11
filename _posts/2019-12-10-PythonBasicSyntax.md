@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 기본 구문"
+title: "[Python] 파이썬 기본 구문"
 date: 2019-12-10
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 1. 파이썬 식별자 규칙

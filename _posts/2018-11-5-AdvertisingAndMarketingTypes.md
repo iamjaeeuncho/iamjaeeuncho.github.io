@@ -1,11 +1,12 @@
 ---
-title: "［Marketing］광고 및 마케팅 종류 - ATL/BTL, PPL, CRM"
+title: "[Marketing] 광고 및 마케팅 종류 - ATL/BTL, PPL, CRM"
 date: 2018-11-5
 categories:
   - study
 tags:
   - marketing
 toc: true
+toc_sticky: true
 ---
 
 ## 광고 종류

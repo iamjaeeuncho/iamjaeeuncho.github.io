@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 변수 정의, 할당 및 데이터 형식 변환"
+title: "[Python] 파이썬 변수 정의, 할당 및 데이터 형식 변환"
 date: 2019-12-13
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 파이썬(Python) 변수타입

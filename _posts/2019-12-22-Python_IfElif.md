@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 제어문_If, elif, 조건부 표현식"
+title: "[Python] 파이썬 제어문_If, elif, 조건부 표현식"
 date: 2019-12-22
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## if 문이란?

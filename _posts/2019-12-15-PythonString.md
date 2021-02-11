@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 문자열 자료형 - 인덱싱, 슬라이싱, 내장함수들"
+title: "[Python] 파이썬 문자열 자료형 - 인덱싱, 슬라이싱, 내장함수들"
 date: 2019-12-15
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 문자열(String)이란?

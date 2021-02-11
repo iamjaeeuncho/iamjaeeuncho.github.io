@@ -1,10 +1,12 @@
 ---
-title: "［SQL］주요 문법"
+title: "[SQL] 주요 문법"
 date: 2020-9-20
 categories:
   - study
 tags:
   - SQL
+toc: true
+toc_sticky: true
 ---
 
 # SELECT

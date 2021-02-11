@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 Pandas의 연산 - 피봇테이블, 통계값, 함수들"
+title: "[Python] 파이썬 Pandas의 연산 - 피봇테이블, 통계값, 함수들"
 date: 2020-1-5
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 통계(Stats)

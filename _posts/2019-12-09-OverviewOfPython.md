@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 개요 - 기원, 특징, 에디터"
+title: "[Python] 파이썬 개요 - 기원, 특징, 에디터"
 date: 2019-12-9
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 파이썬(Python)의 기원

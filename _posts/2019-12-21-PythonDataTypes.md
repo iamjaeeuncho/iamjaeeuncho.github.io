@@ -1,10 +1,12 @@
 ---
-title: "［Python］파이썬 데이터 타입 - 자료형 구분, 데이터 형식 변환"
+title: "[Python] 파이썬 데이터 타입 - 자료형 구분, 데이터 형식 변환"
 date: 2019-12-21
 categories:
   - study
 tags:
   - python
+toc: true
+toc_sticky: true
 ---
 
 ## 자료형 (Data Types)이란,
