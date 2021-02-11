@@ -8,7 +8,7 @@ tags:
 ---
 
 
-![x9791196376406](https://user-images.githubusercontent.com/46369038/107639179-e1e8ac80-6cb3-11eb-9cbd-c5c963b7d07a.jpg){: width="300px", align-center}
+![x9791196376406](https://user-images.githubusercontent.com/46369038/107639179-e1e8ac80-6cb3-11eb-9cbd-c5c963b7d07a.jpg){: width="300"}{: .center}
 
 
 
