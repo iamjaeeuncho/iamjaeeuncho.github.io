@@ -536,7 +536,8 @@ a.reversefootnote {
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    // 변경 text-decoration: underline
+    text-decoration: none;
   }
 }
 

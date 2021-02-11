@@ -251,8 +251,7 @@
 .feature__item {
   position: relative;
   margin-bottom: 2em;
-  // 사이즈 변경     font-size: 1.125em;
-  font-size: 1em;
+  font-size: 1.125em;
 
   @include breakpoint($small) {
     float: left;
