@@ -431,7 +431,8 @@
       }
 
       &:hover {
-        text-decoration: underline;
+    // 변경 text-decoration: underline
+        text-decoration: none;
       }
     }
   }
