@@ -103,9 +103,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:redjoun@gmail.com"
-    - label: "Linkedein"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.linkedin.com/in/jaeeuncho/"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   # url: "https://twitter.com/"
@@ -118,6 +115,9 @@ author:
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
+    - label: "Linkedein"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.linkedin.com/in/jaeeuncho/"
 
 # Site Footer
 footer:

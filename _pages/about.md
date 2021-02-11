@@ -53,11 +53,11 @@ KOICA(Korea International Cooperation Agency) is a government organization provi
 
 ## Education
 *2009 Mar – 2015 Feb*<br>
-> **Bachelor of Economics at [Kookmin University](https://english.kookmin.ac.kr) (Seoul, Korea)**<br>
-> * Double majored in 'Commerce & Finance' and ‘Economics’. 
-> *	Activities
->     -	Student President of the major 'Commerce & Finance' (2011)
->     -	Junior Editor at Student Economic newspaper club (2009 ~ 2010)
+**Bachelor of Economics at [Kookmin University](https://english.kookmin.ac.kr) (Seoul, Korea)**<br>
+* Double majored in 'Commerce & Finance' and ‘Economics’. 
+*	Activities
+    -	Student President of the major 'Commerce & Finance' (2011)
+    -	Junior Editor at Student Economic newspaper club (2009 ~ 2010)
 
 *2018 Aug – 2019 Feb (960 hours)*<br>
 **DBMS-based Software Developer Course at [Choong-Ang Institute](http://www.choongang.co.kr) (Seoul, Korea)**<br>
