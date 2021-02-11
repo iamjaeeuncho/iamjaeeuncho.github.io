@@ -13,22 +13,22 @@ I recently joined in a marketing agency as a data analyst. My main focus is E-co
 
 
 ## Work Experience
-*Jan. 2020 - Current*
-**Data Analyst at [Lab543](http://lab543.com) (Seoul, Korea)**
+*Jan. 2020 - Current*<br>
+**Data Analyst at [Lab543](http://lab543.com) (Seoul, Korea)**<br>
   * Provide marketing solutions based on usability analysis of website and application.
   * Discover growth points for service improvement and performance increase.
   * Plan and implement A/B testing and optimize services based on data insights.
   * Build BI dashboard through Google Data Studio.
   * Collecting, cleaning and visualizing raw data using Python libraries.
 
-*May. 2018 – Oct. 2019*
-**E-commerce Entrepreneur (Seoul, Korea)**
+*May. 2018 – Oct. 2019*<br>
+**E-commerce Entrepreneur (Seoul, Korea)**<br>
 Cross-border seller on online open markets, Ebay, Amazon and Naver.
   * Business Set-up: Branding, Product selection based on trend analysis on search engine data – Google, Amazon and Naver.
   * Channel Management: Marketing (Digital Ads, SEO Optimization, Promotions), Fulfillment, CS and so on.
 
-*May. 2016 – Jan. 2018*
-**E-commerce Marketing Assistant at [DORCO Europe LTD.](http://www.razorsbydorco.co.uk) (London, UK)**
+*May. 2016 – Jan. 2018*<br>
+**E-commerce Marketing Assistant at [DORCO Europe LTD.](http://www.razorsbydorco.co.uk) (London, UK)**<br>
 Dorco is one of the leading razor manufacturers in the world with 60 years of heritage exporting more than 100 countries.
   * E-commerce Channel Management for the UK market.
      - Subscription-based online business on Own website, Amazon and E-bay.
@@ -42,8 +42,8 @@ Dorco is one of the leading razor manufacturers in the world with 60 years of he
      -	Outsourcing Management: Supplier, Sample, Contract, Logistic Control.
      -	Monitor KPI and P&L data and assist to improve practical plan to drive performance.
 
-*May. 2015 – Nov. 2015*
-**Young Professional Intern at [KOICA](http://www.koica.go.kr/sites/koica_en/index.do)	(Yangon, Myanmar)**
+*May. 2015 – Nov. 2015*<br>
+**Young Professional Intern at [KOICA](http://www.koica.go.kr/sites/koica_en/index.do)	(Yangon, Myanmar)**<br>
  KOICA(Korea International Cooperation Agency) is a government organization providing governmental aid services to developing countries.
   * In charge of PPP(Public Private Partnership) projects, mainly human resource parts such as preventive education programs for tuberculosis/AIDS and loan programs for low-income locals.
   * Onsite Monitoring: Evaluate results based on KPIs and develop improvements.
@@ -52,15 +52,15 @@ Dorco is one of the leading razor manufacturers in the world with 60 years of he
 
 
 ## Education
-*2009 Mar – 2015 Feb*
-**Bachelor of Economics at [Kookmin University](https://english.kookmin.ac.kr) (Seoul, Korea)**
+*2009 Mar – 2015 Feb*<br>
+**Bachelor of Economics at [Kookmin University](https://english.kookmin.ac.kr) (Seoul, Korea)**<br>
   * Double majored in 'Commerce & Finance' and ‘Economics’. 
   *	Activities
      -	Student President of the major 'Commerce & Finance' (2011)
      -	Junior Editor at Student Economic newspaper club (2009 ~ 2010)
 
-*2018 Aug – 2019 Feb (960 hours)*
-**DBMS-based Software Developer Course at [Choong-Ang Institute](http://www.choongang.co.kr) (Seoul, Korea)**
+*2018 Aug – 2019 Feb (960 hours)*<br>
+**DBMS-based Software Developer Course at [Choong-Ang Institute](http://www.choongang.co.kr) (Seoul, Korea)**<br>
   * Full-time Professional SW Engineer Training Course (Java, JSP, JavaScript, Python, R, MySQL, etc.)
   * DB Modeling, Full-stack Programming, Frameworks and 2 team projects.
      -	[Auction website on MVC model, benchmarking E-bay.](https://github.com/iamjaeeuncho/2018_Auction_Website_on_MVC_model)
@@ -68,13 +68,13 @@ Dorco is one of the leading razor manufacturers in the world with 60 years of he
 
 
 ## Volunteer Activities
-*2013 Feb – 2014 Nov*
-**Mentor at [Seoul Jongno Welfare Center](http://jpurme.org/main) (Seoul, Korea)<br>**
+*2013 Feb – 2014 Nov*<br>
+**Mentor at [Seoul Jongno Welfare Center](http://jpurme.org/main) (Seoul, Korea)<br>**<br>
   * Participate in mentoring program for hearing-impaired students for 2 years.
   * Teach students English, Math for schools and help them socialize.
 
-*2014 Aug*
-**International Volunteer at [Hyundai Motor Group’s outreach program](https://happymove.hyundaimotorgroup.com/real_index.do) (Chennai, India)**
+*2014 Aug*<br>
+**International Volunteer at [Hyundai Motor Group’s outreach program](https://happymove.hyundaimotorgroup.com/real_index.do) (Chennai, India)**<br>
   * Construction and education volunteering, which is fully sponsored by Hyundai Motors.
   * On-site field trip to the Hyundai smart factory in Chennai, India.
 
