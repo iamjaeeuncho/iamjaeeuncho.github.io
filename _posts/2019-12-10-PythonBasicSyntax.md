@@ -21,7 +21,8 @@ toc_sticky: true
     ※ 변수 생성시 참고 사항: 파이썬은 변수 생성시 타입(type)을 적지 않는다.
       - ex. 자바의 경우, int a = 1이라면, 파이썬의 경우 a = 1.
       - 파이썬의 경우 변수에 값이 할당될 때 변수 타입이 자동으로 정해짐.
-
+<br>
+<br>
 
 ## 2. 파이썬 예약어
   - 예약어(Reserved Words)란, 컴퓨터 프로그래밍 언어에서 이미 문법적인 용도로 사용되고 있는 언어들을 말한다.
@@ -32,7 +33,8 @@ toc_sticky: true
   import keyword               # import 사용해 keyword 모듈 불러오기
   keyword.kwlist               # keyword 모듈에서 지원하는 키워드 리스트 출력
   ```
-
+<br>
+<br>
 
 ## 3. 줄 들여쓰기 (Lines and Indentation)
   - 중괄호 {} 대신 줄 들여쓰기로 코드 흐름을 제어 한다. 
@@ -52,7 +54,8 @@ toc_sticky: true
         print("Answer")
         print("False")
   ```
-
+<br>
+<br>
 
 ## 4. 멀티 라인문 (Multi-Line Statements)
   파이썬은 일반적으로 새로운 줄이 되면 끝난다. 그러나 줄 연속 문자(\)의 사용으로 줄을 계속 사용할 수 있다.<br>
@@ -65,7 +68,8 @@ toc_sticky: true
   total = ['Monday', 'Tuesday', 'Wednesday', 
             'Thursday', 'Friday']
   ```
-
+<br>
+<br>
 
 ## 5. 인용 (Quotation)
   - single('), double("), triple(''' or """) 를 사용하여 문자열을 감싸서 사용한다.
@@ -76,7 +80,8 @@ toc_sticky: true
   paragraph = """This is a paragraph. It is
                     made up of multiple lines and sentences."""
   ```
-
+<br>
+<br>
 
 ## 6. 주석 (Comments) 
   - 기호(#)를 사용해 주석을 시작한다. 기호 (#) 후 물리적 라인 끝까지 모든 문자를 주석으로 간주한다.
@@ -84,4 +89,3 @@ toc_sticky: true
   # First comment   ----- 주석 부분
   >>> print("Hello, Python!")
   ```
-  
