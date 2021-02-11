@@ -21,9 +21,9 @@ toc_sticky: true
 - 그로스해킹은 고객의 유입단계부터 활동, 재방문, 매출, 추천의 일련의 행위들을 세세하게 분석하고 가설 설정 및 실험을 통해 지속적인 개선을 해나가는 것을 의미. 그 기준이 되는 것이 AARRR 지표(해적지표)로 아래와 같음.
 - AARRR 모델은 아래 5개의 로직으로, 고객의 모든 행동을 세분화해 정의하는게 키포인트로, 각 단계별 문제점 파악이 용이해서 문제점을 수정하기 좋은 것이 장점.
 
-<center><img src="https://user-images.githubusercontent.com/46369038/107658911-f9329480-6cc9-11eb-9c31-37d76545d953.png" width="500"></center>
-credit: http://startitup.co/guides/374/aarrr-startup-metrics
 
+<center><img src="https://user-images.githubusercontent.com/46369038/107658911-f9329480-6cc9-11eb-9c31-37d76545d953.png" width="500"><br>
+<i>credit: http://startitup.co/guides/374/aarrr-startup-metrics</i></center>
 
 > * Acquisition(유입): 고객 확보 - 다양한 채널(SEO, SEM, PR, Afiliate, SNS)을 통한 서비스내 고객 유입. => 어떤 채널이 가장 저렴하고, 볼륨이 크며, 고객 컨버젼이 잘 이뤄지는지 체크할 것.
 > * Activation(활동): 고객 활성화 - 첫번째 방문시 만족한 고객 중 활동 비율 => 좋은 UX 여부가 키포인트, A/B 테스트를 통한 랜딩 페이지 실험이 좋음. 
@@ -32,9 +32,7 @@ credit: http://startitup.co/guides/374/aarrr-startup-metrics
 > * Revenue(매출): 최종적으로 발생한 매출
 
 
-<center><img src="https://user-images.githubusercontent.com/46369038/107658938-ff287580-6cc9-11eb-8cf3-136ab3fe3015.jpg width="500"></center>
-
-
+<center><img src="https://user-images.githubusercontent.com/46369038/107658938-ff287580-6cc9-11eb-8cf3-136ab3fe3015.jpg" width="500"></center>
 
 - AARRR을 실제로 적용한 모델의 예시. 처음 유입된 Acquistion Conversion 100% 기준에서 점점 단계별로 내려오는데, 결국 최종 수익률이 1~2%로 나오는 것을 볼 수 있다.
 
@@ -47,6 +45,7 @@ credit: http://startitup.co/guides/374/aarrr-startup-metrics
 > 6. 마지막은 매출입니다. 두가지를 측정해야 하구요. 하나는 최소 매출액이고 나머지는 손익분기 매출액입니다. 이 모든 것들이 대쉬보드에 포함될수 있는 샘플 구성 요소들입니다."
 
 
+
 ## 3. 디지털 마케팅 핵심은?
 - '적은 비용으로 큰 볼륨과 높은 컨버젼 성과를 낼 수 있는 복수의 마케팅 채널 구축'
 * 디지털 마케팅 지표 구성:
@@ -56,12 +55,15 @@ credit: http://startitup.co/guides/374/aarrr-startup-metrics
    - 랜딩 페이지, 카피 문구, 그래픽
 
 
+
 ## 4. AARRR Metrics Explanation by Dave McClure
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/irjgfW0BIrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-credit : https://youtu.be/irjgfW0BIrw
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/irjgfW0BIrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+<i>credit : https://youtu.be/irjgfW0BIrw</i>
 </center>
 
 위 영상은 AARRR 로직을 만든 데이브 맥클러의 강연 내용으로, 본 포스팅의 기본 내용이 되었습니다.
 > "당신이 CEO혹은 창업자라면 너무 많은 측정 지표들을 보려고 하지 말고 5개의 가장 중요한 것만 보세요. 절대로 10개를 넘기지 마시구, 컨버젼 개선에 신경을 쓰세요. 그리고 고객의 라이프 사이클이 무엇인지에 대한 가설을 고민하세요. 유저들이 어떻게 행동할지에 대해서 생각하고 그것을 검증하기 위해 측정을 하세요. 측정 지표들과 컨버젼을 보면서 어디에서 성공하고 있는지에 대한 가설을 검증하세요. 80%의 시간을 기존 기능의 수정 및 최적화에 쓰고 나머지 20%만 새로운 기능 개발에 신경써야 합니다. 엄청 많은 A/B 테스트를 해야 하구요. 그를 통해 컨버젼 개선이 어떻게 되었는지를 측정하세요."
+
 > "측정 지표들에는 정량적인것, 정성적인것, 비교할 수 있는것, 그리고 경쟁 관계에 있는 것이 있습니다. 만약 당신이 이러한 카테고리에 속한 각각의 정보들을 볼 수 있는 틀이 있다면 매우 큰 도움이 될 것입니다."
+
 
