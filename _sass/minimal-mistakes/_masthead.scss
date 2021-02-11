@@ -15,8 +15,7 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    // 사이즈 조정   padding: 1em;
-    padding: 0.8em;
+    padding: 1em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -41,8 +40,7 @@
 }
 
 .site-logo img {
-  // 사이즈 조정   max-height: 2rem;
-  max-height: 1.5rem;
+  max-height: 2rem;
 }
 
 .site-title {
