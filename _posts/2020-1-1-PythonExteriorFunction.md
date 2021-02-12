@@ -272,7 +272,8 @@ time.strftime('출력할 형식 포맷 코드', time.localtime(time.time()))
 
 ⑥ time.sleep
 * time.sleep 함수는 주로 루프 안에서 많이 사용된다. 
-* 이 함수를 사용하면 일정한 시간 간격을 두고 루프를 실행할 수 있다. 
+* 이 함수를 사용하면 일정한 시간 간격을 두고 루프를 실행할 수 있다.
+
 ```python
 #  time.sleep 함수의 인수는 실수 형태 사용 가능 ex. 0.5초
 import time 
