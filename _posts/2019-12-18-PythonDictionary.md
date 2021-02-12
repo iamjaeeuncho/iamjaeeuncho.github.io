@@ -14,11 +14,13 @@ toc_sticky: true
 * 예를 들어, Key가 "baseball"이라면 Value는 "야구"다. 
 * 특징: 딕셔너리는 리스트나 튜플처럼 순차적으로(sequential) 해당 요소값을 구하지 않고 Key를 통해 Value를 얻는다. baseball이라는 단어의 뜻을 찾기 위해 사전의 내용을 순차적으로 모두 검색하는 것이 아니라 baseball이라는 단어가 있는 곳만 펼쳐 보는 것.
 * 빈 리스트를 [ ], 빈 튜플을 (), 빈 딕셔너리 {}
-
+<br>
+<br>
 
 ## 1. 딕셔너리(Dictionary) 만드는 법
 * 각각의 요소는 Key : Value 형태로 이루어져 있고 쉼표(,) 로 구분되어 있다.
 * Key에는 변하지 않는 값을 사용하고, Value에는 변하는 값과 변하지 않는 값 모두 사용할 수 있다.
+
 ```python
 >>> dic = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
 # 위에서 Key는 각각 'name', 'phone', 'birth'이고, 
@@ -30,9 +32,11 @@ toc_sticky: true
 >>> a = { 'a': [1,2,3]}
 # Value에 리스트도 넣을 수 있음
 ```
-
+<br>
+<br>
 
 ## 2. 딕셔너리(Dictionary) 추가, 삭제
+
 ```python
 # 딕셔너리 쌍 추가하기
 >>> a = {1: 'a'}
@@ -45,7 +49,8 @@ toc_sticky: true
 >>> a                        # 지정한 key에 해당하는 {key : value} 쌍이 삭제
 {2: 'b', 'name': 'pey', 3: [1, 2, 3]}
 ```
-
+<br>
+<br>
 
 ## 3. 딕셔너리(Dictionary)에서 Key 사용해 Value 얻기
 * 리스트나 튜플, 문자열은 요소값을 얻어내고자 할 때 인덱싱이나 슬라이싱 기법 중 하나를 이용했다. 
@@ -53,6 +58,7 @@ toc_sticky: true
 * 유일한 값인 Key값 설정시 주의점
   * 딕셔너리 Key는 고유값이므로 중복되면 하나를 제외한 나머지 것들이 모두 무시된다.
   * 튜플의 값은 변하지 않으므로 딕셔너리 Key로 쓸 수 있지만, 값이 변하는 리스트는 딕셔너리 Key로 쓸 수 없다
+
 ```python
 # Key 사용해 Value 얻기
 >>> a = {1:'a', 2:'b'}
@@ -66,9 +72,11 @@ toc_sticky: true
 >>> a
 {1: 'b'}
 ```
-
+<br>
+<br>
 
 ### 4. 딕셔너리(Dictionary) 관련 함수들
+
 ```python
 >>> a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
 

@@ -12,8 +12,8 @@ toc_sticky: true
 ## 1. 데이터 프레임 인덱싱, 셀렉션
 
 <center>
-<img src="https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/programming/_posts/images/pandas_dataframe1.png" width="550px"><br>
-credit: https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#series-is-dict-like
+<img src="https://user-images.githubusercontent.com/46369038/107740943-91269180-6d4f-11eb-9a8b-4103d53289a6.png" width="550px"><br>
+<i>credit: https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#series-is-dict-like</i>
 </center>
 
 ```python
@@ -95,10 +95,12 @@ foo           bar
 one_trunc     NaN
 Name: c, dtype: object
 ```
-
+<br>
+<br>
 
 ## 2. 데이터 프레임 정렬 및 연산
 * 데이터프레임 객체간 정렬은 둘의 컬럼과 인덱스에 의해서 자동으로 정렬된다.
+
 ```python
 >>> df = pd.DataFrame(np.random.randn(10, 4), columns=['A', 'B', 'C', 'D'])
 >>> df2 = pd.DataFrame(np.random.randn(7, 3), columns=['A', 'B', 'C'])
@@ -115,8 +117,10 @@ Name: c, dtype: object
 8       NaN       NaN       NaN NaN
 9       NaN       NaN       NaN NaN
 ```
+<br>
 
 * 데이터 프레임 콘솔 보여주기
+
 ```python
 # 1. 보여주기 - print 
 >>> baseball = pd.read_csv('data/baseball.csv')
@@ -166,9 +170,11 @@ memory usage: 18.0+ KB
 0  filename_01  media/user_name/storage/fo...
 1  filename_02  media/user_name/storage/fo...
 ```
-
+<br>
+<br>
 
 ## 3. 데이터프레임 관련 함수들
+
 ```python
 # 데이터프레임 관련 함수들
 >>> frame.dtypes                            # 데이터프레임변수명.dtypes는 데이터형 확인
@@ -222,7 +228,8 @@ C
 b'Hello'  1  2.0
 b'World'  2  3.0
 ```
-
+<br>
+<br>
 
 * 참고자료
   * 10 minutes to pandas https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html

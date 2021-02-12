@@ -80,10 +80,8 @@ complex_var2 = 4.53e1-7j
 <br>
 
 ## 보완. 숫자 개념 정리
-<center>
-<img src="https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/programming/_posts/images/img.png" width="550px"><br>
-credit: https://staidbunny.tistory.com/9
-</center>
+<center><img src="https://user-images.githubusercontent.com/46369038/107739248-cf21b680-6d4b-11eb-9c0b-bb2f5c6deac0.png" width="550px"><br>
+<i>credit: https://staidbunny.tistory.com/9</i></center>
 
 * 양수(Positive Number)/자연수(Natural Number): +
 * 음수(Negative Number): -

@@ -13,9 +13,11 @@ toc_sticky: true
 * 참(True)과 거짓(False)을 나타내는 자료형이다.
 * 불 자료형은 다음의 2가지 값만을 가질 수 있다. - True (참) or False (거짓)
 ※ True나 False는 파이썬의 예약어로 true, false와 같이 사용하지 말고 첫 문자를 항상 대문자로 사용한다.
-
+<br>
+<br>
 
 ## 1. 불(bool) 자료형 예시
+
 ```python
 # 변수에 불 자료형 대입
 >>> a = True
@@ -25,12 +27,14 @@ toc_sticky: true
 >>> 1 == 1              # "1과 1이 같은가?"를 묻는 조건문의 결과로 True 리턴
 True
 ```
-
+<br>
+<br>
 
 ## 2. 자료형의 참과 거짓
 <center>
-  <img src="https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/programming/_posts/images/bool.png" width="550px"><br>
+  <img src="https://user-images.githubusercontent.com/46369038/107739684-c978a080-6d4c-11eb-86f5-7344f9ae2a6d.png" width="550px"><br>
 </center>
+
 ```python
 # 참과 거짓이 프로그램에서 어떻게 쓰이는지 예시 1
 >>> a = [1, 2, 3, 4]
@@ -55,10 +59,12 @@ True
 ... 
 참
 ```
-
+<br>
+<br>
 
 ## 3. 불(bool)이라는 내장 함수를 이용한 자료형의 참과 거짓 식졀
-```
+
+```python
 >>> bool('python')          #'python'이라는 문자열은 빈 문자열이 아니므로 
 True                        # bool연산의 결과로 불 자료형인 True를 리턴
 

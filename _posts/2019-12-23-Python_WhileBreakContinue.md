@@ -23,6 +23,7 @@ while <조건문>:
     <수행할 문장3>
     ...
 ```
+
 ```python
 # While문 예시
 >>> treeHit = 0
@@ -44,9 +45,11 @@ while <조건문>:
 나무를 10번 찍었습니다.
 나무 넘어갑니다.
 ```
-
+<br>
+<br>
 
 ## 1. While문 만들기
+
 ```python
 # while문 예시
 >>> prompt = """
@@ -71,11 +74,13 @@ while <조건문>:
 
 Enter number:                             # 4를 입력하면, 조건문이 거짓이 되어 while문 빠져나감
 ```
-
+<br>
+<br>
 
 ## 2. while문 강제로 빠져나가기: break문
 * while문은 조건문이 참인 동안 계속해서 while문 안의 내용을 반복적으로 수행한다.
 * 하지만 강제로 while문을 빠져나가고 싶을 때, 사용하는 것이 바로 break문
+
 ```python
 # while/break문 예시
 coffee = 10
@@ -94,11 +99,13 @@ while True:
         print("커피가 다 떨어졌습니다. 판매를 중지 합니다.")
         break                                          # break 호출되어 while문 빠져나감
 ```
-
+<br>
+<br>
 
 ## 3. while문의 맨 처음으로 돌아가기: continue 문
 * break문: while문 수행시, 입력된 조건을 검사해서 조건에 맞지 않으면 while문을 빠져나감.
 * continue문: while문을 빠져나가지 않고 while문의 맨 처음(조건문)으로 다시 돌아가게 만들고 싶은 경우
+
 ```python
 # 1부터 10 숫자 중에서 홀수만 출력
 >>> a = 0
@@ -113,9 +120,12 @@ while True:
 7
 9
 ```
+<br>
+<br>
 
 ## 4. 무한 루프(Loop)
 무한 루프란 무한히 반복한다는 의미다. 무한 루프의 개념을 사용하지 않는 프로그램은 거의 없을 만큼 자주 사용된다.
+
 ```python
 # while문으로 구현한 무한 루프의 기본 형태
 while True:                    # while문의 조건문이 True이므로 항상 참이므로, 
@@ -132,9 +142,11 @@ Ctrl+C를 눌러야 while문을 빠져나갈 수 있습니다.
 Ctrl+C를 눌러야 while문을 빠져나갈 수 있습니다.
 ....
 ```
-
+<br>
+<br>
 
 ## 5. While문 예제
+
 ```python
 # 3의 배수의 합 구하기
 >>> sum = 0                         # 변수 선언

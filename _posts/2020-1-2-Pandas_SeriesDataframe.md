@@ -11,17 +11,23 @@ toc_sticky: true
 
 ## Pandas란?
 * 데이터 분석, 처리를 위해 만들어진 파이썬 패키지로, 보다 안정적으로 대용량 데이터들을 쉽게 처리할 수 있다고 한다
+<br>
+<br>
 
 ## 0. 패키지 불러오기
+
 ```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 ```
+<br>
+<br>
 
 ## 1. 자료구조
 ① 시리즈(Series)
 * value와 index의 형태를 지니는 Pandas의 자료 구조. 값이 있는 리스트를 통해 Series를 만들고, 정수로 만들어진 인덱스를 기본값으로 불러옴.
+
 ```python
 # 시리즈 생성 방법
 변수명 = pd.Series(data, index=['',''])      # 인덱스 지정 생략가능, 생략시 0부터 자동 지정
@@ -115,15 +121,16 @@ RangeIndex(start=0, stop=5, step=1)
 >>> s.values                            # .values는 값(values)만 따로 확인
 array([1, 3, 5, 6, 8], dtype=int64)
 ```
-
+<br>
+<br>
 
 ② DataFrame
 * DataFrame은 여러 개의 Dictionary를 처리하는데 있어 Series보다 보기 편한 형태로 제공해 줄 수 있는 자료 구조로, 엑셀 표, SQL 테이블, 시리즈의 딕셔너리 모양을 생각하면 쉽다. 
 * 먼저 딕셔너리 형태 {"키값" : 밸류값}로 data를 정의해 준 뒤, 이를 DataFrame으로 정의한다. 키값은 컬럼명이 되고, 밸류값은 해당 컬럼의 값이 된다.
 * DataFrame 함수 자동완성 기능: 데이터프레임변수.[Tab 키보드]
 <center>
-<img src="https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/programming/_posts/images/pandas_dataframe.png" width="550px"><br>
-credit: https://nittaku.tistory.com/110?category=725162
+<img src="https://user-images.githubusercontent.com/46369038/107740926-823fdf00-6d4f-11eb-9a5a-aa9760391f82.png" width="550px"><br>
+<i>credit: https://nittaku.tistory.com/110?category=725162</i>
 </center>
 
 ```python
@@ -167,10 +174,12 @@ second  5  10  20.0
 0  1   2
 1  5  10
 ```
+<br>
+<br>
 
 # 2. 시리즈와 데이터 프레임의 재색인(reindex)
 
-```
+```python
 # 시리즈의 재색인(reindex)
 >>> obj = Series([1,3,5,7], index=['a', 'b', 'c', 'd'])
 >>> obj

@@ -11,6 +11,7 @@ toc_sticky: true
 
 ## 통계(Stats)
 * 보통 누락된 값을 제외하고 연산
+
 ```python
 # 중앙값
 >>> df.mean()
@@ -51,11 +52,13 @@ Freq: D, dtype: float64
 2013-01-05 -5.424972 -4.432980 -4.723768  0.0 -1.0
 2013-01-06       NaN       NaN       NaN  NaN  NaN
 ```
-
+<br>
+<br>
 
 ## Apply
 * 행이나 열 단위로 더 복잡한 처리를 하고 싶을 때는 apply 메서드를 사용.
 * 인수로 행 또는 열을 받는 함수를 apply 메서드의 인수로 넣으면 각 열(또는 행)을 반복하여 그 함수에 적용시킨다.
+
 ```python
 >>> df3 = pd.DataFrame({
 >>>     'A': [1, 3, 4, 3, 4],
@@ -83,7 +86,8 @@ dtype: int64
 4    1
 dtype: int64
 ```
-
+<br>
+<br>
 
 ## String Methods
 ```python
@@ -100,10 +104,12 @@ dtype: int64
 8     cat
 dtype: object
 ```
-
+<br>
+<br>
 
 ## Merge
 ① Concat(concatenate, 연결)
+
 ```python
 # 객체들 연결 - concat():
 >>> df = pd.DataFrame(np.random.randn(10, 4))
@@ -135,7 +141,7 @@ dtype: object
 8 -0.575247  0.254161 -1.143704  0.215897
 9  1.193555 -0.077118 -0.408530 -0.862495
 ```
-
+<br>
 
 ② Join: SQL 스타일 합병
 ```python
@@ -154,7 +160,7 @@ dtype: object
 0  foo     1     4
 1  bar     2     5
 ```
-
+<br>
 
 ③ Append(첨부하다)
 ```python
@@ -183,7 +189,8 @@ dtype: object
 7 -0.096701  0.803351  1.715071 -0.708758
 8  1.453749  1.208843 -0.080952 -0.264610
 ```
-
+<br>
+<br>
 
 ## Grouping
 ```python
@@ -220,7 +227,8 @@ foo one   -1.195665 -0.616981
     three  1.928123 -1.623033
     two    2.414034  1.600434
 ```
-
+<br>
+<br>
 
 ## Reshaping
 ① Stack
@@ -277,7 +285,8 @@ one    A  0.029399 -1.575170
 two    A  0.282696  0.816482
        B -0.087302  1.100230
 ```
-
+<br>
+<br>
 
 ## Pivot Tables
 * 피벗테이블이란 방대한 데이터가 있을 때, 요약할 수 있는 테이블
@@ -317,7 +326,8 @@ two   A       NaN  0.100900
       B -1.170653       NaN
       C       NaN  0.536826
 ```
-
+<br>
+<br>
 
 ## Time Series(시계열)
 ```python
@@ -398,7 +408,8 @@ Freq: MS, dtype: float64
 1991-03-01 09:00   -1.144073
 Freq: H, dtype: float64
 ```
-
+<br>
+<br>
 
 ## Categoricals
 * 판다스는 Categorical data를 데이터 프래임에 포함함
@@ -454,6 +465,8 @@ good         2
 very good    3
 dtype: int64
 ```
+<br>
+<br>
 
 ## Plotting
 * 등고선이나 평면도 등을 그리는 조작
@@ -466,7 +479,7 @@ dtype: int64
 ```
 
 <center>
-  <img src="https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/programming/_posts/images/pandas.png" width="550px"><br>
+  <img src="https://user-images.githubusercontent.com/46369038/107741165-f7abaf80-6d4f-11eb-9c76-fb9d63d4f70d.png" width="550px"><br>
 </center>
 
 ```python
@@ -483,9 +496,10 @@ dtype: int64
 ```
 
 <center>
-  <img src="https://github.com/iamjaeeuncho/iamjaeeuncho.github.io/blob/master/programming/_posts/images/pandas1.png" width="550px"><br>
+  <img src="https://user-images.githubusercontent.com/46369038/107741193-06926200-6d50-11eb-91ec-9287a225cf59.png" width="550px">
 </center>
-
+<br>
+<br>
 
 ## Getting Data In/Out
 ① CSV
@@ -545,6 +559,7 @@ dtype: int64
 2002-09-26 -11.856774 -10.671012 -3.216025  29.369368
 [1000 rows x 4 columns]
 ```
-
+<br>
+<br>
 
 출처: https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html﻿

@@ -12,9 +12,11 @@ toc_sticky: true
 ## 모듈(Module)이란?
 * 함수나 변수 또는 클래스 들을 모아 놓은 파일이다.
 * 다른 사람들이 이미 만들어 놓은 모듈을 사용할 수도 있고 우리가 직접 만들어서 사용할 수도 있다.
-
+<br>
+<br>
 
 ## 1. 모듈 만들기: add와 sub함수를 가진 mod1.py 파일이 바로 모듈이다
+
 ```python
 # mod1.py
 def add(a, b):
@@ -23,9 +25,11 @@ def add(a, b):
 def sub(a, b): 
     return a-b
 ```
-
+<br>
+<br>
 
 ## 2. 모듈 불러오기: from 모듈이름 import 모듈함수
+
 ```python
 # 1. 명령 프롬프트 창을 열고 mod1.py를 저장한 디렉터리로 이동해, 대화형 인터프리터 실행
 C:\Users\pahkey>cd C:\doit
@@ -50,7 +54,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> add(3, 4)                       # 모듈명 없이 바로 함수명 입력
 7
 ```
-
+<br>
+<br>
 
 ## 3. if __name__ == "__main__": 의 의미
 * 만약 위의 문구를 넣지 않으면, 'import 모듈이름' 문구를 수행하는 순간 모듈이 실행되어 결과값을 출력한다.
@@ -60,6 +65,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 * 파이썬의 __name__ 변수는 파이썬이 내부적으로 사용하는 특별한 변수명이다. 
   * 만약 C:\doit>python mod1.py처럼 직접 모듈 파일을 실행시킬 경우 모듈 파일의 __name__ 변수에는 __main__ 이라는 값이 저장된다.
   * 하지만 다른 파이썬 모듈에서 모듈 파일을 import 할 경우에는 __name__ 변수에는 모듈 파일의 모듈이름 값(mod1)이 저장된다.
+
 ```python
 # mod1.py 
 def add(a, b): 
@@ -73,9 +79,11 @@ if __name__ == "__main__":        # 직접 이 파일을 실행시켰을 때는
     print(sub(4, 2))              # 반대로 다른 파일에서 모듈 사용시, 
                                   # __name__ == "__main__" 거짓, if문 문장 수행되지 않음
 ```
-
+<br>
+<br>
 
 ## 4. 클래스나 변수 등을 포함한 모듈
+
 ```python
 # 클래스와 변수를 포함한 모듈 mod2.py 
 >>> PI = 3.141592                         # 변수
@@ -98,9 +106,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> print(a.solv(2))                     # 클래스를 이용하려면, 모듈이름.클래스이름
 12.566368
 ```
-
+<br>
+<br>
 
 ## 5. 다른 파일에서 모듈 불러오기
+
 ```python
 # modtest.py
 >>> import mod2              # mod2모듈을 불러와서 사용

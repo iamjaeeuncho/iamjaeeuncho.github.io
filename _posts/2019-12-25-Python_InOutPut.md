@@ -11,12 +11,14 @@ toc_sticky: true
 
 ## 파이썬 입출력
 * 사용자 입력 → 처리(프로그램, 함수 등) → 출력
-
+<br>
+<br>
 
 ## 1. 사용자 입력
 사용자가 입력한 값을 어떤 변수에 대입하고 싶을 때,
 * input의 사용: input은 입력되는 모든 것을 문자열로 취급
 * 프롬프트를 띄워서 사용자 입력 받기: input()의 괄호 안에 질문을 입력하여 프롬프트를 띄워줌
+
 ```python
 # 1. input의 사용
 >>> a = input()
@@ -32,13 +34,15 @@ Life is too short, you need python
 >>> print(number)
 3
 ```
-
+<br>
+<br>
 
 ## 2. print 역할 및 특징
 * 입력한 자료형 출력
 * 큰따옴표(")로 둘러싸인 문자열은 '+' 연산과 동일
 * 콤마(,)를 이용하면 문자열 간 띄어쓰기
 * 한 줄에 결과값을 계속 이어서 출력하려면, 입력 인수 end를 이용해 끝 문자를 지정해야 한다.
+
 ```python
 # 1. 입력한 자료형 출력
 >>> a = "Python"
@@ -70,9 +74,11 @@ you need python
 >>> print("".join(["you", "need", "python"]))
 youneedpython
 ```
-
+<br>
+<br>
 
 ## 3. 예시
+
 ```python
 # 두 수의 합? - 문자열
 >>> input1 = input("첫번째 숫자를 입력하세요:")

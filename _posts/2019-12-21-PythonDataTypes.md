@@ -12,7 +12,8 @@ toc_sticky: true
 ## 자료형 (Data Types)이란,
 * 데이터를 저장하는 방법으로, 프로그램의 기본이자 핵심 단위.
 * 프로그래밍을 할 때 쓰이는 숫자, 문자열 등 자료 형태로 사용하는 모든 것. 
-
+<br>
+<br>
 
 ## 1. 자료형 구분
 * 파이썬의 다섯가지 표준 데이터 유형
@@ -32,7 +33,8 @@ toc_sticky: true
 * 데이터 저장 개수에 따른 분류
   * 하나의 객체만 저장: str, bytes, bytearraym int, float, complex
   * 여러 개의 객체를 저장: list, tuple, dict, set, frozenset
-
+<br>
+<br>
 
 ## 2. 데이터 형식 변환
 * int(x [,base]) Converts x to an integer. base specifies the base if x is a string.
