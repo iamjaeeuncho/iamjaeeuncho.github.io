@@ -13,7 +13,8 @@ I am a junior-level data analyst based in Seoul, Korea. I worked as a E-commerce
 
 I recently joined in a marketing agency as a data analyst. My main focus is E-commerce field, but I'd love to explore other parts of data world - It's always wonderful to feel that my perspective is extending with new inspiration. I am a bit calm person but always up for teamworking as I think many are better than one and also it teaches me a lot of lessons. Main interest is seeking problems from data and make the findings into a practical strategy to improve services better.
 <br>
-
+<br>
+<br>
 
 ## Work Experience
 *Jan. 2020 - Current*  
@@ -26,7 +27,6 @@ I recently joined in a marketing agency as a data analyst. My main focus is E-co
 <br>
 <br>
 
-
 *May. 2018 – Oct. 2019*   
 **E-commerce Entrepreneur (Seoul, Korea)**  
 Cross-border seller on online open markets, Ebay, Amazon and Naver.
@@ -34,7 +34,6 @@ Cross-border seller on online open markets, Ebay, Amazon and Naver.
 * Channel Management: Marketing (Digital Ads, SEO Optimization, Promotions), Fulfillment, CS and so on.
 <br>
 <br>
-
 
 *May. 2016 – Jan. 2018*  
 **E-commerce Marketing Assistant at [DORCO Europe LTD.](http://www.razorsbydorco.co.uk) (London, UK)**  
@@ -53,7 +52,6 @@ Dorco is one of the leading razor manufacturers in the world with 60 years of he
 <br>
 <br>
 
-
 *May. 2015 – Nov. 2015*  
 **Young Professional Intern at [KOICA](http://www.koica.go.kr/sites/koica_en/index.do) (Yangon, Myanmar)**  
 KOICA(Korea International Cooperation Agency) is a government organization providing governmental aid services to developing countries.
@@ -63,7 +61,7 @@ KOICA(Korea International Cooperation Agency) is a government organization provi
 * Coordinate between Myanmar government and Korean private side, NGOs.
 <br>
 <br>
-
+<br>
 
 ## Education
 *2009 Mar – 2015 Feb*  
@@ -75,7 +73,6 @@ KOICA(Korea International Cooperation Agency) is a government organization provi
 <br>
 <br>
 
-
 *2018 Aug – 2019 Feb (960 hours)*<br>
 **DBMS-based Software Developer Course at [Choong-Ang Institute](http://www.choongang.co.kr) (Seoul, Korea)**
 * Full-time Professional SW Engineer Training Course (Java, JSP, JavaScript, Python, R, MySQL, etc.)
@@ -84,7 +81,7 @@ KOICA(Korea International Cooperation Agency) is a government organization provi
     -	[Statistic website with R on Spring framework - data collection, visualization.](https://github.com/iamjaeeuncho/2019_Statistic_website_with_R_on_Spring_Framework)
 <br>
 <br>
-
+<br>
 
 ## Volunteer Activities
 *2013 Feb – 2014 Nov*<br>
@@ -94,21 +91,20 @@ KOICA(Korea International Cooperation Agency) is a government organization provi
 <br>
 <br>
 
-
 *2014 Aug*<br>
 **International Volunteer at [Hyundai Motor Group’s outreach program](https://happymove.hyundaimotorgroup.com/real_index.do) (Chennai, India)**
 * Construction and education volunteering, which is fully sponsored by Hyundai Motors.
 * On-site field trip to the Hyundai smart factory in Chennai, India.
 <br>
 <br>
-
+<br>
 
 ## Languages
 - Native in Korean
 - Professional working possible in English
 <br>
 <br>
-
+<br>
 
 ## Technical Skills
 - Advanced: MS Office(Word, Excel, PPT), Google Analytics/Optimize/Data Studio, Html
@@ -117,6 +113,6 @@ KOICA(Korea International Cooperation Agency) is a government organization provi
 <br>
 <br>
 <br>
+<br>
 
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fiamjaeeuncho.github.io%2Fabout%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+<p align="right"><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fiamjaeeuncho&count_bg=%235B8FD7&title_bg=%23727171&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a></p>
