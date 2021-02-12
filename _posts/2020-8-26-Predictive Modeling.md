@@ -4,7 +4,7 @@ date: 2020-8-26
 categories:
   - study
 tags:
-  - Modeling
+  - modeling
 toc: true
 toc_sticky: true
 ---
