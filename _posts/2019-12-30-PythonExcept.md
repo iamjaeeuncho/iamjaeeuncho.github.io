@@ -65,7 +65,6 @@ except 발생 오류 as 오류 메시지 변수:
 결과값: division by zero
 ```
 <br>
-<br>
 
 ② try .. finally
 * finally절은 try문 수행 도중 예외 발생 여부에 상관없이 항상 수행된다. 
