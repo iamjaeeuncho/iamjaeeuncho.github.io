@@ -15,6 +15,7 @@ toc_sticky: true
 - **IMC (Integrated Marketing Communication)**: 통합 마케팅 커뮤니케이션 기법의 광고 업무로, ATL과 BTL를 모두 다루며 마케팅 커뮤니케이션 전체 계획을 수립하고 집행하는 것을 의미한다.
 <br>
 <br>
+<br>
 
 ## 유명한 마케팅 종류
 - **PPL(Product Placement Advertisement)**: 영화나 드라마에서 등장하는 기법으로 영상내에 자연스럽게 특정상황이나 배우들을 통해 노출시키는 방법으로 시청자들로 하여금 갖고 싶다는 욕망을 불러일으키도록 하는 광고기법.
@@ -40,3 +41,4 @@ toc_sticky: true
 - **CRM 마케팅(Customer Relationship Management Marketing)**: 기업이 고객과 관련된 내외부 자료를 분석·통합해 고객 중심 자원을 극대화하고 이를 토대로 고객특성에 맞게 마케팅 활동을 계획·지원·평가하는 과정. 개개인의 데이터 기반의 마케팅 구축 가능
 - **STP마케팅(Segmentation, Targeting, Positioning)**: 마케팅 전략과 계획수립시 소비자행동에 대한 이해에 근거하여 시장을 세분화(Segmentation)하고, 이에 따른 표적시장의 선정(Targeting), 그리고 표적시장에 적절하게 제품을 포지셔닝(Positioning)하는 일련의 활동을 말하는 것.
 - 이 이외에도 체험, 스타, 기상, 텔레 마케팅 등 다양한 마케팅 기법등이 존재한다.
+

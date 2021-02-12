@@ -32,9 +32,11 @@ True
 
 ## 2. 자료형의 참과 거짓
 <center>
-  <img src="https://user-images.githubusercontent.com/46369038/107739684-c978a080-6d4c-11eb-86f5-7344f9ae2a6d.png" width="550px"><br>
+<br>
+<img src="https://user-images.githubusercontent.com/46369038/107739684-c978a080-6d4c-11eb-86f5-7344f9ae2a6d.png" width="600px">
+<br>
 </center>
-
+<br>
 ```python
 # 참과 거짓이 프로그램에서 어떻게 쓰이는지 예시 1
 >>> a = [1, 2, 3, 4]

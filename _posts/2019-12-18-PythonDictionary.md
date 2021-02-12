@@ -75,7 +75,7 @@ toc_sticky: true
 <br>
 <br>
 
-### 4. 딕셔너리(Dictionary) 관련 함수들
+## 4. 딕셔너리(Dictionary) 관련 함수들
 
 ```python
 >>> a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
