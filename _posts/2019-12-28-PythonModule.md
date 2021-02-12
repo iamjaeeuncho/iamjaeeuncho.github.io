@@ -119,7 +119,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 ① 모듈을 저장한 디렉터리로 이동하지 않고, 모듈을 불러와서 사용하는 법
-```
+
+```python
 # 1. mod2.py 파일을 C:\doit\mymod 로 이동
 C:\Users\pahkey>cd C:\doit
 C:\doit>mkdir mymod
@@ -140,7 +141,8 @@ C:\doit>python
 ```
 
 ② PYTHONPATH 환경 변수 사용하기
-```
+
+```python
 C:\doit>set PYTHONPATH=C:\doit\mymod     # set 명령어 사용, PYTHONPATH 환경 변수에
 C:\doit>python                           # mod2.py 파일이 있는 C:\doit\mymod 디렉터리를 설정
 >>> import mod2                          # 디렉터리 이동이나 별도의 모듈 추가 작업 없이 

@@ -36,6 +36,7 @@ play/
 <br>
 
 ## 1. 패키지 만들기 - 패키지 기본 구성 요소 준비하기
+
 ```python
 # 1. C:/doit이라는 디렉터리 밑에 game 및 기타 서브 디렉터리들과 .py 파일들을 생성
 C:/doit/game/__init__.py
@@ -66,6 +67,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 - 모듈을 import하여 실행
 - 모듈이 있는 디렉터리까지를 from ... import하여 실행하는 방법
 - 모듈의 함수를 직접 import하여 실행하는 방법
+
 ```python
 # 1. echo 모듈을 import하여 실행
 >>> import game.sound.echo
@@ -84,6 +86,7 @@ echo"
 ```
 
 - 불가능한 케이스
+
 ```python
 # 불가능 케이스 1
 >>> import game                         # import game을 수행하면 
