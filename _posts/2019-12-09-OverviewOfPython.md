@@ -35,19 +35,19 @@ toc_sticky: true
   - 하나의 줄에 2개 이상의 명령어를 사용할 때, 명령어 구분 용도로 ; 사용
   - 코드의 구조를 정의하기 위해 기호 대신에 들여쓰기 사용
     * Java 에서는
-  ```java
-  int x = 100;
-  if(x > 0){
-  System.out.println("x가 0보다 큽니다.");
-  } else {
-  System.out.println("x가 0보다 작습니다.");
-  }
-  ```
+```java
+int x = 100;
+if(x > 0){
+System.out.println("x가 0보다 큽니다.");
+} else {
+System.out.println("x가 0보다 작습니다.");
+}
+```
     * Python 에서는
-  ```python
-  x = 100
-  if x > 0:
-  print('x가 0보다 큽니다.')
-  else:
-  print('x가 0보다 크지 않습니다.')
-  ```
+```python
+x = 100
+if x > 0:
+print('x가 0보다 큽니다.')
+else:
+print('x가 0보다 크지 않습니다.')
+```
