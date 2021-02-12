@@ -329,7 +329,7 @@ two   A       NaN  0.100900
 <br>
 <br>
 
-## Time Series(시계열)
+## Time Series
 
 ```python
 >>> rng = pd.date_range('1/1/2012', periods=100, freq='S')
