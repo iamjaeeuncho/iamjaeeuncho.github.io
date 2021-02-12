@@ -6,6 +6,10 @@ author_profile: true
 toc: true
 toc_sticky: true
 ---
+
+
+[한국어 버전 보러가기](https://www.notion.so/redjoun/Jaeeun-Cho-Data-Analyst-250154aefec34d0cb8adefd734a696df)
+
 ## Data Analyst specialized in E-commerce
 I am a junior-level data analyst based in Seoul, Korea. I worked as a E-commerce marketer for about 2 years before data analyst. For the 2 years, I had experienced vast amount of data and started to be into the power of data analysis. After the employment, I started to take courses about programming so that I can overcome my limitation of technical skills. I can handle data with Python, SQL and Excel.
 
