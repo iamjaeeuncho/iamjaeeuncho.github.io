@@ -1,5 +1,7 @@
 ---
 title: "Post: Link"
+last_modified_at: 2016-03-09
+excerpt_separator: "<!--more-->"
 categories:
   - Blog
 tags:
