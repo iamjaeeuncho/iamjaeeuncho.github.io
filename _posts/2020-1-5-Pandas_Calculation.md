@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 ---
 
-## 통계(Stats)
+## 기초 통계 연산
 * 보통 누락된 값을 제외하고 연산
 
 ```python
@@ -89,7 +89,7 @@ dtype: int64
 <br>
 <br>
 
-## String Methods
+## String
 ```python
 >>> s = pd.Series(['A', 'B', 'C', 'Aaba', 'Baca', np.nan, 'CABA', 'dog', 'cat'])
 >>> s.str.lower()
@@ -330,6 +330,7 @@ two   A       NaN  0.100900
 <br>
 
 ## Time Series(시계열)
+
 ```python
 >>> rng = pd.date_range('1/1/2012', periods=100, freq='S')
 >>> ts = pd.Series(np.random.randint(0, 500, len(rng)), index=rng)
@@ -413,6 +414,7 @@ Freq: H, dtype: float64
 
 ## Categoricals
 * 판다스는 Categorical data를 데이터 프래임에 포함함
+
 ```python
 # raw grades를 categorical data type으로 전환
 >>> df = pd.DataFrame({"id": [1, 2, 3, 4, 5, 6],
@@ -470,6 +472,7 @@ dtype: int64
 
 ## Plotting
 * 등고선이나 평면도 등을 그리는 조작
+
 ```python
 >>> ts = pd.Series(np.random.randn(1000),
 >>>                index=pd.date_range('1/1/2000', periods=1000))
@@ -477,10 +480,11 @@ dtype: int64
 >>> ts.plot()
 <matplotlib.axes._subplots.AxesSubplot at 0x7f2b5771ac88>
 ```
-
+<br>
 <center>
-  <img src="https://user-images.githubusercontent.com/46369038/107741165-f7abaf80-6d4f-11eb-9c76-fb9d63d4f70d.png" width="550px"><br>
+  <img src="https://user-images.githubusercontent.com/46369038/107741165-f7abaf80-6d4f-11eb-9c76-fb9d63d4f70d.png" width="550px">
 </center>
+<br>
 
 ```python
 # 데이터 프레임에서 plot() 메소드는 모든 라벨을 가진 컬럼들의 도표를 그려줌
@@ -495,6 +499,7 @@ dtype: int64
 <matplotlib.legend.Legend at 0x7f2b539728d0>
 ```
 
+<br>
 <center>
   <img src="https://user-images.githubusercontent.com/46369038/107741193-06926200-6d50-11eb-91ec-9287a225cf59.png" width="550px">
 </center>
@@ -503,6 +508,7 @@ dtype: int64
 
 ## Getting Data In/Out
 ① CSV
+
 ```python
 # Writing to a csv file.
 >>> df.to_csv('foo.csv')
@@ -521,8 +527,10 @@ dtype: int64
 999  2002-09-26 -11.856774 -10.671012 -3.216025  29.369368
 [1000 rows x 5 columns]
 ```
+<br>
 
 ② Excel
+
 ```python
 # Writing to an excel file.
 >>> df.to_excel('foo.xlsx', sheet_name='Sheet1')
@@ -541,8 +549,10 @@ dtype: int64
 999 2002-09-26 -11.856774 -10.671012 -3.216025  29.369368
 [1000 rows x 5 columns]
 ```
+<br>
 
 ③ HDF5
+
 ```python
 # Writing to a HDF5 Store.
 >>> df.to_hdf('foo.h5', 'df')

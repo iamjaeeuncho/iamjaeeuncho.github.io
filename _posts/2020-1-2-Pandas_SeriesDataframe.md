@@ -129,8 +129,8 @@ array([1, 3, 5, 6, 8], dtype=int64)
 * DataFrame 함수 자동완성 기능: 데이터프레임변수.[Tab 키보드]
 <br>
 <center>
-<img src="https://user-images.githubusercontent.com/46369038/107740926-823fdf00-6d4f-11eb-9a5a-aa9760391f82.png" width="550px"><br>
-<i>credit: https://nittaku.tistory.com/110?category=725162</i>
+<img src="https://user-images.githubusercontent.com/46369038/107740926-823fdf00-6d4f-11eb-9a5a-aa9760391f82.png" width="250px"><br>
+<i>credit: https://nittaku.tistory.com/110?category=725162</i><br>
 </center>
 <br>
 

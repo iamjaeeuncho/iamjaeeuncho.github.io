@@ -13,7 +13,7 @@ toc_sticky: true
 
 <center>
 <img src="https://user-images.githubusercontent.com/46369038/107740943-91269180-6d4f-11eb-9a8b-4103d53289a6.png" width="550px"><br>
-<i>credit: https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#series-is-dict-like</i>
+<i>credit: https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#series-is-dict-like</i><br>
 </center>
 
 ```python
