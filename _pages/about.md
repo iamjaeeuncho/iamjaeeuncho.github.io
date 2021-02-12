@@ -115,4 +115,4 @@ KOICA(Korea International Cooperation Agency) is a government organization provi
 <br>
 <br>
 
-<p align="right"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fiamjaeeuncho.github.io&count_bg=%2397E75A&title_bg=%23747373&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></p>
+<p align="right"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fiamjaeeuncho.github.io&count_bg=%2397E75A&title_bg=%23747373&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" width="70"/></p>
