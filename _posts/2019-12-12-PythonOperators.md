@@ -22,7 +22,8 @@ toc_sticky: true
 >>> a ** c = 1000     # ** 제곱 
 >>> a // c = 3        # // 몫
 ```
-
+<br>
+<br>
 
 ## 비교 연산자 (Comparison Operators)
 ```python
@@ -41,7 +42,8 @@ false
 >>> a <= b           # <= 왼쪽 값이 오른쪽 값보다 작거나 동일하다
 true
 ```
-
+<br>
+<br>
 
 ## 할당 연산자 (Assignment Operators)
 ```python
@@ -64,7 +66,8 @@ true
 >>> c //= a            # //= 왼쪽 변수에서 오른쪽 값을 나눈 몫의 결과를 왼쪽변수에 할당
 0.0                    # c //= a → c = c // a
 ```
-
+<br>
+<br>
 
 ## 비트 연산자(Bitwise Operators)
 ```python
@@ -83,7 +86,8 @@ true
 >>> a >> 2                   # >> 오른쪽 시프트 연산자.
 15                           # 변수의 값을 오른쪽으로 지정된 비트 수 만큼 이동
 ```
-
+<br>
+<br>
 
 ## 논리 연산자(Logical Operators)
 ```python
@@ -96,7 +100,8 @@ True
 >>> not(a and b)              # not 논리 NOT 연산. 논리 상태를 반전
 True
 ```
-
+<br>
+<br>
 
 ## 맴버 연산자(Membership Operators)
 ```python
@@ -108,7 +113,8 @@ False
 >>> b not in list                 # not in list 내에 포함되어 있지 않으면 참
 True
 ```
-
+<br>
+<br>
 
 ## 식별 연산자(Identity Operators): 두 개체의 메모리 위치를 비교
 ```python
@@ -119,7 +125,8 @@ True
 >>> a is not b                    # is not 개체메모리 위치나 값이 같지 않다면 참
 False
 ```
-
+<br>
+<br>
 
 ## 연산자 우선순위(Operators Precedence)
 - 가장 높은 우선 순위에서 가장 낮은 모든 연산자를 보여 준다.
