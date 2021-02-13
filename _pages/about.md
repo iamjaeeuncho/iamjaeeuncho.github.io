@@ -17,7 +17,7 @@ I recently joined in a marketing agency as a data analyst. My main focus is E-co
 <br>
 
 ## Work Experience
-*Jan. 2020 - Current*  
+*Jan. 2020 - Nov. 2020*  
 **Data Analyst at [Lab543](http://lab543.com) (Seoul, Korea)**  
 * Provide marketing solutions based on usability analysis of website and application.
 * Discover growth points for service improvement and performance increase.
