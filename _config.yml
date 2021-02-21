@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Devlog"
+title                    : "어느 분석가의 수첩"
 title_separator          : 
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jaeeun Cho"
