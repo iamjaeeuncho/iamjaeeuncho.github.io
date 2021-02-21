@@ -96,10 +96,10 @@ analytics:
 author:
   name             : "Jaeeun Cho"
   avatar           : "/assets/images/biophoto.png"
-  bio              : "<b><i>Data analyst</i></b><br><br>
+  bio              : "<b>Data analyst</b><br><br>
                       다차원적으로 접근하고<br>
                       더 깊게 이해하고<br>
-                      새롭게 생각하기위해 기록합니다<br>
+                      새롭게 생각하기 위해 기록합니다<br>
                       다양한 분야에 관심이 많습니다<br>"
   location         : "South Korea"
   email            :
@@ -250,9 +250,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-essay_archive:
-  type: liquid
-  path: /essay/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
