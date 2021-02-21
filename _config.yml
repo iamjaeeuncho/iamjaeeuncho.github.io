@@ -96,10 +96,11 @@ analytics:
 author:
   name             : "Jaeeun Cho"
   avatar           : "/assets/images/biophoto.png"
-  bio              : "Data analyst<br>다차원적으로 접근하고<br>
+  bio              : "<b>Data analyst</b><br><br>
+                      다차원적으로 접근하고<br>
                       더 깊게 이해하고<br>
-                      새로운 아이디어를 발굴하기위해 공부합니다<br>
-                      이것저것 다양한 분야에 관심이 많습니다<br>"
+                      새롭게 생각하기위해 기록합니다<br>
+                      다양한 분야에 관심이 많습니다<br>"
   location         : "South Korea"
   email            :
   links:
