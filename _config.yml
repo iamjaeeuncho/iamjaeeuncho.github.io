@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "어느 분석가의 기록"
+title                    : "어느 흔한 분석가의 기록"
 title_separator          : 
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jaeeun Cho"
@@ -100,7 +100,7 @@ author:
                       다차원적으로 접근하고<br>
                       더 깊게 이해하고<br>
                       새롭게 생각하기 위해 기록합니다<br>
-                      다양한 분야에 관심이 많습니다<br>"
+                      다양한 분야에 관심이 많아요<br>"
   location         : "South Korea"
   email            :
   links:
