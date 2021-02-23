@@ -1,6 +1,6 @@
 ---
 title: "[Book] 구글애널리틱스 실전활용법(김동우, 2018)"
-date: 2020-4-5
+date: 2020-2-25
 categories:
   - inspiration
 tags:
