@@ -82,13 +82,8 @@ SELECT
 ## Distinct: 중복제거
 
 ```sql
----------- # 테이블 생성
-
-DROP TABLE T1; 
+---------- # 테이블 생성하자마자 바로 적용되므로 CREAT는 커밋할 필요 없음
 CREATE TABLE T1 ( ID SERIAL NOT NULL PRIMARY KEY, BCOLOR VARCHAR, FCOLOR VARCHAR );
-
-COMMIT; -- CREAT는 커밋할 필요 없음
-        -- 테이블 생성하자마자 -> DDL --> 치는 순간에 바로 적용 
 
 INSERT
   INTO T1 (BCOLOR, FCOLOR)
@@ -112,41 +107,39 @@ COMMIT;
 SELECT
              *
  FROM
-             T1;
-
+             T1
+;
 ---------- # select + distinct + 컬럼 한 개
 SELECT
-    DISTINCT BCOLOR      -- BCOLOR 값 출력시 중복행 제거
+    DISTINCT BCOLOR                -- BCOLOR 값 출력시 중복행 제거
 FROM
     T1
-ORDER BY
-    BCOLOR               -- BCOLOR로 정렬
+ORDER BY BCOLOR                    -- BCOLOR로 정렬
 ;
 ---------- # select + distinct + 컬럼 두 개
 SELECT
-    DISTINCT BCOLOR, FCOLOR  -- BCOLOR, FCOLOR 값 출력시 중복행 제거
+    DISTINCT BCOLOR, FCOLOR
 FROM
     T1
-ORDER BY
-    BCOLOR, FCOLOR           -- BCOLOR로 먼저 정렬하고 FCOLOR로 정렬
- ;
+ORDER BY BCOLOR, FCOLOR            -- BCOLOR 먼저 정렬, FCOLOR 나중 정렬
+;
 ---------- # select + distinct + 컬럼 두 개 + on
 SELECT
       DISTINCT ON (BCOLOR) BCOLOR  -- BCOLOR 컬럼 값 기준 중복 제거함
    ,  FCOLOR                       -- FCOLOR 컬럼 값은 단 한 개 값 만을 보여줌
 FROM
     T1
-ORDER BY
-    BCOLOR, FCOLOR;                -- 대신 FCOLOR 첫번째값만
+ORDER BY BCOLOR, FCOLOR
+;
 ---------- # select + distinct + 컬럼 두 개 + on + DESC 정렬
----------- # Null값이 가장 큰 값
 SELECT
       DISTINCT ON (BCOLOR) BCOLOR
    ,  FCOLOR
 FROM
     T1
 ORDER BY
-    BCOLOR, FCOLOR DESC;
+    BCOLOR, FCOLOR DESC             -- Null값이 가장 큰 값
+;
 ```
 <br>
 <br>
