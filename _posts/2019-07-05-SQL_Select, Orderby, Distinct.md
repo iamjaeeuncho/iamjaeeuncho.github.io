@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 데이터 조회 및 정렬- Select, Orderby, Distinct"
+title: "[SQL] 데이터 선택 및 정렬- Select, Orderby, Distinct"
 date: 2019-7-5
 categories:
   - study
@@ -141,7 +141,6 @@ ORDER BY
     BCOLOR, FCOLOR DESC             -- Null값이 가장 큰 값
 ;
 ```
-<br>
 <br>
 
 ※ Credit: Fast Campus, 모두를 위한 SQL/DB 올인원 패키지

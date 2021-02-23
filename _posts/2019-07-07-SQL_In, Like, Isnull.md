@@ -182,6 +182,5 @@ SELECT
 WHERE PHONE IS NOT NULL;
 ```
 <br>
-<br>
 
 ※ Credit: Fast Campus, 모두를 위한 SQL/DB 올인원 패키지
