@@ -99,17 +99,17 @@ KOICA(Korea International Cooperation Agency) is a government organization provi
 <br>
 <br>
 
-## Languages
-- Native in Korean
-- Professional working possible in English
-<br>
-<br>
-<br>
-
 ## Technical Skills
 - Advanced: MS Office(Word, Excel, PPT), Google Analytics/Optimize/Data Studio, Html
 - Moderate: Python, R, SQL, Google Tag Manager/Firebase
 - Novice: Tableau, Java
+<br>
+<br>
+<br>
+
+## Languages
+- Native in Korean
+- Professional working possible in English
 <br>
 <br>
 <br>
