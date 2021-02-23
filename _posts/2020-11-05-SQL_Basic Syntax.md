@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 ---
 
-## Select : 선택
+## Select: 선택
 
 ```sql
 # 전체 선택 '*'
@@ -18,17 +18,7 @@ SELECT
   FROM 
        CUSTOMER
 ;
-------------------------------------------
-# 특정 칼럼만 선택
-SELECT 
-       FIRST_NAME 
-     , LAST_NAME
-     , EMAIL
-  FROM 
-       CUSTOMER 
-;
-------------------------------------------
-# ALIAS는 어떤 그룹인지 알려줌. 코드의 가독성 및 찾는 속도 증가
+---------- # 특정 칼럼만 선택 +  Alias(가명)
 SELECT 
        A.FIRST_NAME 
      , A.LAST_NAME
@@ -40,7 +30,7 @@ SELECT
 <br>
 <br>
 
-## Select
+## Orderby: 정렬
 
 ```sql
 # ASC 오름차순
@@ -51,7 +41,7 @@ SELECT
        CUSTOMER
  ORDER BY FIRST_NAME ASC
  ;
---------------------------------------------
+------------------------------------------
 # DESC 내림차순
 SELECT 
        FIRST_NAME
@@ -60,31 +50,24 @@ SELECT
        CUSTOMER
  ORDER BY FIRST_NAME DESC
  ;
---------------------------------------------
+------------------------------------------
 # ASC + DESC 같이 쓰기
 SELECT 
-       FIRST_NAME --asc --오름차순 --순차적
-     , LAST_NAME --desc --내림차순 --역순
+       FIRST_NAME        --asc: 오름차순 (순차)
+     , LAST_NAME         --desc: 내림차순 (역순)
   FROM 
        CUSTOMER
- ORDER BY FIRST_NAME ASC --가독성
+ ORDER BY FIRST_NAME ASC
        ,  LAST_NAME DESC
  ;
---------------------------------------------
-# 1,2로 대체 가능 BUT 가독성 안 좋으므로 비추
-SELECT 
-       FIRST_NAME --asc --오름차순 --순차적
-     , LAST_NAME --desc --내림차순 --역순
-  FROM 
-       CUSTOMER
- ORDER BY 1 ASC
-       ,  2 DESC
- ;
 ```
+<br>
+<br>
+
+## Distinct: 중복 제거
 
 ```sql
--- 테이블 생성
-
+# 테이블 생성
 DROP TABLE T1; 
 CREATE TABLE T1 ( ID SERIAL NOT NULL PRIMARY KEY, BCOLOR VARCHAR, FCOLOR VARCHAR );
 
@@ -115,9 +98,8 @@ SELECT
  FROM
              T1;
 
---------------------------------------------------------------------
--- select + distinct + 컬럼 한 개
-
+------------------------------------------
+# select + distinct + 컬럼 한 개
 SELECT
     DISTINCT BCOLOR      -- BCOLOR 값 출력시 중복행 제거
 FROM
@@ -125,9 +107,8 @@ FROM
 ORDER BY
     BCOLOR               -- BCOLOR로 정렬
 ;
-----------------------------------------------------------------------
--- select + distinct + 컬럼 두 개
-
+------------------------------------------
+# select + distinct + 컬럼 두 개
 SELECT
     DISTINCT BCOLOR, FCOLOR  -- BCOLOR, FCOLOR 값 출력시 중복행 제거
 FROM
@@ -135,9 +116,8 @@ FROM
 ORDER BY
     BCOLOR, FCOLOR           -- BCOLOR로 먼저 정렬하고 FCOLOR로 정렬
  ;
------------------------------------------------------------------------
--- select + distinct + 컬럼 두 개 + on
-
+------------------------------------------
+# select + distinct + 컬럼 두 개 + on
 SELECT
       DISTINCT ON (BCOLOR) BCOLOR  -- BCOLOR 컬럼 값 기준 중복 제거함
    ,  FCOLOR                       -- FCOLOR 컬럼 값은 단 한 개 값 만을 보여줌
@@ -146,9 +126,9 @@ FROM
 ORDER BY
     BCOLOR, FCOLOR;                -- 대신 FCOLOR 첫번째값만
 
---------------------------------------------------------------------------
--- select + distinct + 컬럼 두 개 + on + DESC 정렬
--- Null값이 가장 큰 값
+------------------------------------------
+# select + distinct + 컬럼 두 개 + on + DESC 정렬
+# Null값이 가장 큰 값
 
 SELECT
       DISTINCT ON (BCOLOR) BCOLOR
@@ -172,7 +152,7 @@ SELECT
  WHERE
        FIRST_NAME = 'Jamie'; --2
        
------------------------------------------------
+------------------------------------------
 -- where 조건이 두 개일 때, 'AND'
 
 SELECT
@@ -184,7 +164,7 @@ WHERE
   	  FIRST_NAME = 'Jamie'
 AND   LAST_NAME = 'Rice';
 
---------------------------------------------------
+------------------------------------------
 -- 조건 2개
 
 SELECT
@@ -195,8 +175,6 @@ SELECT
 	   PAYMENT
  WHERE AMOUNT <= 1     -- 1 이하
 	OR AMOUNT >= 8;    -- 8 이상
-
------------------------------------------------------
 ```
 
 
@@ -214,7 +192,7 @@ SELECT
 ORDER BY FILM_ID --ORDER BY를 한 결과중에서 
    LIMIT 5 ; --5건만 
  
---------------------------------------
+------------------------------------------
 -- OFFSET
 
 SELECT
@@ -228,7 +206,7 @@ ORDER BY FILM_ID
   OFFSET 3  -- 시작 위치는 3이므로 1,2,3 이후 4부터 시작
 ;
 
------------------------------------------
+------------------------------------------
 -- 내림차순 DESC 기준 (설정 안하면 오름차순 ASC가 기본)
 
 SELECT
@@ -257,7 +235,7 @@ ORDER BY TITLE
 FETCH FIRST ROW ONLY   -- first 숫자 미지정시 최초 한 건만
 ;
 
---------------------------------------------------
+------------------------------------------
 -- first 숫자
 
 SELECT
@@ -269,7 +247,7 @@ ORDER BY TITLE
 FETCH FIRST 3 ROW ONLY
 ;
 
-----------------------------------------------------
+------------------------------------------
 SELECT
               FILM_ID
             , TITLE
@@ -298,7 +276,7 @@ SELECT
        CUSTOMER_ID IN (1, 2)           -- customerid가 1 또는 2 (or 조건)
 ORDER BY RETURN_DATE DESC;
 
---------------------------------------
+------------------------------------------
 -- in + or
 
 SELECT
@@ -311,7 +289,7 @@ SELECT
        OR CUSTOMER_ID = 2
 ORDER BY RETURN_DATE DESC;
 
----------------------------------------
+------------------------------------------
 -- not in
 
 SELECT
@@ -323,7 +301,7 @@ SELECT
        CUSTOMER_ID NOT IN (1, 2)        -- 1 또는 2가 아닌 것
 ORDER BY RETURN_DATE DESC;
 
----------------------------------------
+------------------------------------------
 -- not in은 'AND', '<>'과 같음
 
 SELECT
@@ -336,7 +314,7 @@ SELECT
    AND CUSTOMER_ID <> 2
 ORDER BY RETURN_DATE DESC;
 
-----------------------------------------------------
+------------------------------------------
 -- 서브쿼리
 -- cast 데이터 형식 변환: cast (변환하고자 하는 데이터 AS 데이터 형식)
 
@@ -348,7 +326,7 @@ WHERE
     CAST (RETURN_DATE AS DATE) = '2005-05-27'; 
 -- returndate를 date 타입으로 변환시킨 다음에 '2005-05-27'의 커스터머 아이디 불러오기
 
--------------------------------------------------------
+------------------------------------------
 SELECT
       FIRST_NAME
     , LAST_NAME
@@ -376,7 +354,7 @@ SELECT
         PAYMENT
   WHERE AMOUNT BETWEEN 8 AND 9;
  
------------------------------------------------
+------------------------------------------
 -- 위의 BETWEEN이랑 동일
 
   SELECT
@@ -389,7 +367,7 @@ WHERE amount >= 8
 AND amount <= 9
 ;
 
--------------------------------------------------------
+------------------------------------------
 SELECT
         CUSTOMER_ID
       , PAYMENT_ID
@@ -398,7 +376,7 @@ SELECT
         PAYMENT
   WHERE AMOUNT NOT BETWEEN 8 AND 9;
  
----------------------------------------------------------- 
+------------------------------------------
 -- 위의 BETWEEN이랑 동일
 
  SELECT
@@ -409,7 +387,7 @@ SELECT
         PAYMENT
   WHERE AMOUNT < 8 OR amount > 9;
  
--------------------------------------------------
+------------------------------------------
 -- cast 데이터형 변환
 -- date형으로 바꾸면 시분초는 없어짐
 
@@ -419,7 +397,7 @@ SELECT
   FROM PAYMENT
  WHERE CAST(PAYMENT_DATE AS DATE) BETWEEN '2007-02-07' AND '2007-02-15';
 
----------------------------------------------------
+------------------------------------------
 -- to_char(변환시킬값, '이런 형식으로')
 
 SELECT
@@ -445,7 +423,7 @@ WHERE
     FIRST_NAME LIKE 'Jen%'     -- firstname이 jen으로 시작하는
 ;
    
-   ------------------------------------------------
+------------------------------------------
 SELECT
 	    'FOO' LIKE 'FOO'       -- true
 	  , 'FOO' LIKE 'F%'        -- true
@@ -453,7 +431,7 @@ SELECT
 	  , 'BAR' LIKE 'B_'        -- false
 ;
 
------------------------------------------------
+------------------------------------------
 SELECT
       FIRST_NAME
     , LAST_NAME
@@ -463,7 +441,7 @@ WHERE
     FIRST_NAME LIKE '%er%'      -- 어떤 문자든지 중간에 er 들어감
 ;
 
-----------------------------------------------
+------------------------------------------
 SELECT
       FIRST_NAME
     , LAST_NAME
@@ -473,7 +451,7 @@ WHERE
     FIRST_NAME LIKE '_her%'      -- 첫 임의의 글자로 시작, 중간에 er 들어감
 ;
 
-   ----------------------------------------------
+------------------------------------------
 SELECT
       FIRST_NAME
     , LAST_NAME
@@ -512,7 +490,7 @@ SELECT
 FROM
 	CONTACTS;
 
------------------------------------------------
+------------------------------------------
 -- Null 값에서 연산자 '=' 사용안됨
 
 SELECT
@@ -525,7 +503,7 @@ SELECT
        CONTACTS
  WHERE PHONE = NULL;
 
------------------------------------------------
+------------------------------------------
  SELECT
        ID
      , FIRST_NAME
@@ -536,13 +514,13 @@ SELECT
        CONTACTS
 WHERE PHONE IS NULL;
 
-----------------------------------------------------
+------------------------------------------
 SELECT
 	*
 FROM
 	CONTACTS;
 
------------------------------------------------
+------------------------------------------
 SELECT
        ID
      , FIRST_NAME
