@@ -1,6 +1,6 @@
 ---
 title: "[SQL] 기본 구문 - Select, "
-date: 2020-1-5
+date: 2020-11-5
 categories:
   - study
 tags:
@@ -10,7 +10,6 @@ toc_sticky: true
 ---
 
 ## Select
-* 보통 누락된 값을 제외하고 연산
 
 ```sql
 # 전체 선택 '*'
@@ -21,7 +20,6 @@ SELECT
 ;
 ------------------------------------------
 # 특정 칼럼만 선택
-
 SELECT 
        FIRST_NAME 
      , LAST_NAME

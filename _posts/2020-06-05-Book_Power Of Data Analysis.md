@@ -10,7 +10,7 @@ toc_sticky: true
 ---
 
 <br>
-<center><img src="https://user-images.githubusercontent.com/46369038/108839143-00399b00-7618-11eb-889f-0867e3d9b19c.jpg" width="250">
+<center><img src="https://user-images.githubusercontent.com/46369038/108839143-00399b00-7618-11eb-889f-0867e3d9b19c.jpg" width="250"></center>
 <br>
 <br>
 <br>
