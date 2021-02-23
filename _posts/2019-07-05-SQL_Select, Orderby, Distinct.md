@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 기본 구문 - Select, Orderby, Distinct"
+title: "[SQL] 데이터 조회 및 정렬- Select, Orderby, Distinct"
 date: 2019-7-5
 categories:
   - study
@@ -48,7 +48,7 @@ SELECT
   FROM 
        CUSTOMER
  ORDER BY FIRST_NAME ASC
- ;
+;
 ---------- # DESC 내림차순
 SELECT 
        FIRST_NAME
@@ -56,7 +56,7 @@ SELECT
   FROM 
        CUSTOMER
  ORDER BY FIRST_NAME DESC
- ;
+;
 ---------- # ASC + DESC 같이 쓰기
 SELECT 
        FIRST_NAME          --asc: 오름차순, 순차
@@ -65,7 +65,7 @@ SELECT
        CUSTOMER
  ORDER BY FIRST_NAME ASC 
        ,  LAST_NAME DESC
- ;
+;
 ---------- # 1,2로 대체 가능 BUT 가독성 안 좋으므로 비추
 SELECT 
        FIRST_NAME          --asc: 오름차순, 순차
@@ -74,7 +74,7 @@ SELECT
        CUSTOMER
  ORDER BY 1 ASC
        ,  2 DESC
- ;
+;
 ```
 <br>
 <br>
@@ -141,8 +141,6 @@ ORDER BY
     BCOLOR, FCOLOR DESC             -- Null값이 가장 큰 값
 ;
 ```
-<br>
-<br>
 <br>
 <br>
 
