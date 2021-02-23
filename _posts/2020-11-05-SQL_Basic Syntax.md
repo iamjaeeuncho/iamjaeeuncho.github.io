@@ -4,7 +4,7 @@ date: 2020-1-5
 categories:
   - study
 tags:
-  - python
+  - sql
 toc: true
 toc_sticky: true
 ---

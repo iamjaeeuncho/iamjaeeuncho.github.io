@@ -10,9 +10,10 @@ toc_sticky: true
 ---
 
 <br>
-<center><img src="https://user-images.githubusercontent.com/46369038/108839143-00399b00-7618-11eb-889f-0867e3d9b19c.jpg" width="250"><br><br>
-
-
+<center><img src="https://user-images.githubusercontent.com/46369038/108839143-00399b00-7618-11eb-889f-0867e3d9b19c.jpg" width="250">
+<br>
+<br>
+<br>
 
 ### P.33
 인과관계(어떤 요인 X가 결과 Y에 영향을 미쳤는가?)를 입증하기 어려운 이유
