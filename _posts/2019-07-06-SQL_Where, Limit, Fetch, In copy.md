@@ -163,5 +163,3 @@ FETCH FIRST 5 ROW only      -- 5건의 행을 리턴
 ;
 ```
 <br>
-
-※ Credit: Fast Campus, 모두를 위한 SQL/DB 올인원 패키지

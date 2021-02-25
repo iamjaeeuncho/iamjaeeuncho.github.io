@@ -93,6 +93,3 @@ b = 4
 print(a + b * 4)
 print((a + b) * 4) # 순서 강제로 바꾸려면 괄호 사용
 ```
-
-
-※ Credit: Fast Campus, 머신러닝과 데이터분석 A-Z 올인원 패키지 Online
