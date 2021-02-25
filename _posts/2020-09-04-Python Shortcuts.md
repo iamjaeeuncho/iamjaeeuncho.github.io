@@ -9,17 +9,21 @@ toc: true
 toc_sticky: true
 ---
 
-![shortcuts 1](https://user-images.githubusercontent.com/46369038/109161615-9dccd000-77ba-11eb-8a73-16c8786e541b.png)
+## 파이썬에서 단축키 설명 보기
 
+<center><img src="https://user-images.githubusercontent.com/46369038/109161615-9dccd000-77ba-11eb-8a73-16c8786e541b.png" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
+<br>
 
-일단 단축키는 'HELP' 메뉴에서 'Keyboard shortcuts'를 누르거나  
-키보드에서 H 버튼을 누르면 단축키 내용을 볼 수 있다  
+일단 단축키는 'HELP' 메뉴에서 'Keyboard shortcuts'를 누르거나<br>
+키보드에서 H 버튼을 누르면 단축키 내용을 볼 수 있다<br>
+<br>
 
+<img src="https://user-images.githubusercontent.com/46369038/109161610-9c9ba300-77ba-11eb-8c0a-dbe6392ac6cb.png" width="500" style="border: 2px solid rgb(213, 213, 213);">
+</center>
+<br>
+<br>
 
-![shortcuts](https://user-images.githubusercontent.com/46369038/109161610-9c9ba300-77ba-11eb-8c0a-dbe6392ac6cb.png)  
-
-
-자주 쓰는 단축키는 아래 정도  
+## 자주 쓰는 단축키 
 
 Y: 코드 모드로 변경  
 M: 마크다운 모드로 변경  
@@ -40,4 +44,4 @@ D,D: 셀 삭제하기
 L: 줄 번호 표시  
 ctrl+/: 주석처리  
 shift+tab: 함수 상세 설명  
-tab: 자동 완성  
+tab: 자동 완성
