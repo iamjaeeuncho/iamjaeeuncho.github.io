@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 변수 선언 및 값 할당"
+title: "[Python] 파이썬 변수 선언, 주석, 출력, 이름 규칙"
 date: 2020-9-5
 categories:
   - study
@@ -15,8 +15,8 @@ toc_sticky: true
 <br>
 
 ## 변수 선언 및 값 할당
-### = 대입 연산자 (cf. ==는 비교 연산자) 
-- =(대입연산자)를 사용하여 왼쪽은 변수명, 오른쪽은 데이터가 위치
+### = 대입 연산자
+- =(대입연산자)를 사용하여 왼쪽은 변수명, 오른쪽은 데이터가 위치. (cf. ==는 비교 연산자) 
 - 대입의 경우, 오른쪽의 수식이나 값을 계산 한 뒤, 왼쪽에 명시된 변수에 해당 값을 대입
 
 ```python
@@ -105,3 +105,91 @@ print(_class)
 ```
 <br>
 <br>
+
+
+## 기본 데이터 타입 
+- 정수 (int) : 자연수
+- 실수 (float) : 정수를 포함하는 여러가지 숫자 (ex. 소수점)
+- 문자열 (str)
+- 불리언 (boolean): True와 False만 사용
+<br>
+<br>
+
+### 변수 타입 확인 - type 함수
+- 해당 변수 값의 타입(type)을 알고자 할 때 사용
+
+```python
+a = 10
+b = 11.45
+
+# type(a)
+type(b)
+```
+<br>
+<br>
+
+### None
+- 파이썬은 항상 변수 값 설정해야 변수 사용 가능.
+- None은 변수는 생성하고 싶지만 아직 아무것도 모를 때 사용 (빈 변수를 사용하고 싶을때)
+- 기타 언어의 NULL, nil등과 같은 의미로 사용
+
+```python
+c = None
+print(c)
+```
+<br>
+<br>
+
+### 비교 연산자
+- 프로그래밍에서는 비교를 할 경우 = (대입 연산자) 대신 **==**를 사용
+- 비교 연산자의 결과는 bool 타입(True 또는 False)
+  - < , > (작다, 크다)
+  - <= , >= (작거나 같다, 크거나 같다)
+  - == , != (같다, 같지 않다)
+
+```python
+a = 5
+b = 4
+
+print(a > b) # True
+print(a < b) # False
+print(a >= b) # True
+print(a <= b) # False
+print(a == b) # False
+print(a != b) # True
+
+c = a > b
+c = True
+print(type(c))
+print(c)
+```
+<br>
+<br>
+
+## 숫자형 타입 (numbers)
+- 정수, 실수로 구성
+- 수학의 기본 연산자(가감승제) 사용 가능
+
+```python
+a = 5
+b = 4
+
+print(a + b)
+print(a * b) # 곱하기
+print(a - b) 
+print(a / b)
+print(a % b) # 나머지
+print(a ** b) # 지수승
+```
+
+### 연산자 우선순위 (operator priorities)
+- 기본적인 수학의 연산자와 동일
+- 강제로 연산을 선수하기 위해선, 괄호()를 사용
+
+```python
+a = 5
+b = 4
+
+print(a + b * 4)
+print((a + b) * 4) # 순서 강제로 바꾸려면 괄호 사용
+```
