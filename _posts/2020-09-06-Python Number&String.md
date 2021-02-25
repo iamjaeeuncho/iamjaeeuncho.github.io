@@ -146,7 +146,7 @@ print(a[:])        # 전체
 
 ### 문자열 함수
 
-#### upper
+#### · upper
 - 전체를 대문자로 바꿈
 
 ```python
@@ -154,7 +154,7 @@ a = 'hello world'
 a.upper()
 ```
 
-#### lower
+#### · lower
 - 전체를 소문자로 바꿈
 
 ```python
@@ -162,7 +162,7 @@ a = 'HELLO WORLD'
 a.lower()
 ```
 
-#### replace
+#### · replace
 - 문자열 내에서 특정 문자를 지정 문자로 변경
 
 ```python
@@ -170,7 +170,7 @@ a = 'hello world'
 a.replace('h', 'j')
 ```
 
-#### format
+#### · format
 - 특정값을 설정하여 자동으로 변경됨
 
 ```python
@@ -181,7 +181,7 @@ a = '오늘 기온{}도 이고, 비 올 확률은 {}% 입니다.'.format(tempera
 print(a)
 ```
 
-#### split
+#### · split
 - 문자열을 특정한 문자 구분하여 문자열의 리스트로 치환
 
 ```python
