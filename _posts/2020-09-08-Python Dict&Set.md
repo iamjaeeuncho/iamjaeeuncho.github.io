@@ -61,21 +61,6 @@ print(a)
 <br>
 <br>
 
-### 특정 값 찾기
-1. dict[key]로 접급, 키가 없는 경우 에러 발생 
-2. get() 함수로 접근, 키가 없는 경우 None반환
-
-```python
-# 키를 통해서 찾음
-print(a['b'])
-print(a.get('b'))
-
-print(a.get('d'))      # 없는 것은 None으로 반환
-print(a['d'])
-```
-<br>
-<br>
-
 ### 모든 키, 벨류 접근
 1. keys() - 키만 반환
 2. values() - 값만 반환
@@ -97,6 +82,21 @@ list(a.items())
 <br>
 <br>
 
+#### 특정 값 찾기
+1. dict[key]로 접급, 키가 없는 경우 에러 발생 
+2. get() 함수로 접근, 키가 없는 경우 None반환
+
+```python
+# 키를 통해서 찾음
+print(a['b'])
+print(a.get('b'))
+
+print(a.get('d'))      # 없는 것은 None으로 반환
+print(a['d'])
+```
+<br>
+<br>
+
 ### 딕셔너리 함수
 
 #### · update()
@@ -113,6 +113,18 @@ print(a)
 <br>
 <br>
 
+#### · clear()
+- 딕셔너리의 모든 값을 초기화
+
+```python
+a = {'a' : 1, 'b' : 2, 'c' : 3}
+a.clear()
+
+print(a)
+```
+<br>
+<br>
+
 #### · key 삭제하기
 1. del 키워드 사용
 2. pop 함수 이용
@@ -122,18 +134,6 @@ a = {'a' : 1, 'b' : 2, 'c' : 3}
 
 a.pop('b')              # b 제외
 del a['c']
-
-print(a)
-```
-<br>
-<br>
-
-#### · clear()
-- 딕셔너리의 모든 값을 초기화
-
-```python
-a = {'a' : 1, 'b' : 2, 'c' : 3}
-a.clear()
 
 print(a)
 ```
