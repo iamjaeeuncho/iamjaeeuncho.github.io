@@ -9,244 +9,338 @@ toc: true
 toc_sticky: true
 ---
 
-## 반복문?
-- 반복적인 작업을 가능하게 해주는 도구
-- 특정 조건을 만족하는 경우 수행하는 while문과 리스트 같은 컬렉션 타입의 아이템을 하나씩 순회하는 for문이 있음.
-- 주의 할 점: while문의 경우, 무한히 수행되므로 반복을 멈추는 장치가 없으면 재부팅 해야함. (false여야지만 나옴)
-<br>
-<br>
+### 함수?
+* 지금까지 무심코 코드에서 사용된 많은 함수들이 존재 합니다.
+* 예를들면, sum, len, range 같은 함수 등이 있죠.
+* 함수란 우리가 알고있는 개념처럼 주어진 입력(input)에 대해서 의도된 출력(output)를 전달하는 역할을 합니다.
 
-## for 
-- 리스트, 문자열 등등 순회 가능한 객체를 순회하면서 값을 처리할 때 사용
-- for는 순회가 가능한 아이템들을 자동으로 가져와서 순회하고 종료하는 반면 while은 스스로 제어 안 됨
-- 순회할 수 있는건 따로 정해져 있음 - 문자열, 리스트
-- 정수/실수는 순서(인덱스)가 없으므로 순회할 수 없음
-
-```python
-a = [1, 2, 4, 3, 5]
-for i in a:              # i는 그냥 변수명, 다르게 써도 됨
-    print (i, i * 2)
-print('hahah')
-```
-
-### 문자열 아이템 출력하기
-```python
-a = 'hello world'
-for character in a:      # character에 각각의 문자가 들어가며 순회
-    print(character)
-```
-```python
-
-for x in 10:
-    print(x)
-```
-
-### 리스트 아이템 출력하기
-```python
-a = [1, 10, 3, 4, 5]
-for num in a:
-    if num % 2 == 0:           # 짝수인 경우 %2한 값을 출력
-        print(num/2)
-    else:                      # 홀수인 경우 +1한 값을 출력
-        print(num+1)
-```
-
-### dict 아이템 출력하기
-- dictionary의 경우 기본적으로 순회하게 되면 key값을 참조
-- keys()함수를 이용하여 key 값만 순회 가능
-- values()함수를 이용하여 value 값만 순회 가능
-- items()함수를 이용하여 tuple형태로 key, value 순회 가능
+* 그렇다면, 하나씩 살펴보겠습니다.
+  > range 함수는 정수를 입력으로 전달하면 [0, 정수) 로 이루어진 리스트를 생성하는 역할을 합니다.
+  
+  > sum 함수는 리스트, 튜플등을 입력으로 전달하면 전체 아이템의 합을 출력으로 전달하는 역할을 합니다.
+  
+  > len 함수는 리스트, 튜플등을 입력으로 전달하면 아이템의 개수를 출력으로 전달하는 역할을 합니다.
+  
+* 그리고, 위의 함수들은 모두 python 내부에 이미 정의(구현)이 되어 있습니다.
+* 위와 같은 함수를 내장함수(built-in function)이라고 합니다.
 
 ```python
-a = {'korea' : 'seoul', 'japan' : 'tokyo', 'canada' : 'ottawa'}
+# 내장 함수의 예
+a = [1, 2, 3, 4]
+length = len(a)
+print(length)
 
-for key in a:                  # 키만 가져옴
-    print(key)
-------------------------------
-for value in a.values():       # 벨류만 가져옴
-    print(value)
-------------------------------
-list(a.items())                # 튜플을 리스트화
-------------------------------
-for key, value in a.items():   # 튜플 한꺼번에 가져오기
-    print(key, value)    
+summation = sum(a)
+print(summation)
 ```
 
 
-### for에서 index 사용하기
-- while문에서는 인덱스 지정해서 돌렸으나, for문에서는 인덱스 없이 값만 나옴
-- 기본적으로 for문의 경우 값만 추출 가능하나, enumerate 함수 이용시 인덱스와 값 모두 사용 가능
+#### **함수의 정의**
+  + 정의 시 최초에 def 키워드 사용
+  + argument 정의 (함수에 입력으로 전달하는 값을 의미, argument 또는 parameter라고 함) 
+  + : (콜론) -> 함수 역시 코드 블록이기 때문에 콜론(:) 필요
+  + body (함수의 구현 부분, 함수 역시 코드 블록이기 때문에 들여쓰기 된 부분까지 함수의 코드블록으로 인지 함)
+    - 함수를 호출한 코드 (caller)로 함수가 해당 기능을 수행하고 완료된 값(output)을 전달하기 위해 return 키워드 사용
+    - 즉, return 이후에 오는 값을 caller로 전달
+  + 함수의 네이밍 역시 중요
+    - 즉, 어떤 기능을 하는 함수인지 이름으로 최대한 나타날 수 있게 해야함
+    - e.g) get_a (x) get_student_name (o)
 
-```python
-# enumerate(열거하다) 자동으로 인덱스와 벨류값 출력
-# 자료형의 현재 순서와 그 값을 쉽게 알 수 있음
-a = [1, 2, 3, 4, 5]
-for index, value in enumerate(a):
-    if index > 3:
-        print(index, value)
+
+```
+# def = definition
+# def 함수이름(변수) 필수
+#     바디 함사 구현
+#     return 출력값 지정
+
+def add(x, y):
+    n = x + y
+    return n
 ```
 
+```
+l = len([1, 2, 3])
+c = add(30, 300)
 
-###  break
-- for의 경우에도 특정 조건일 때, break로 loop 종료가 가능
-
-```python
-a = [100, 90, 80, 70, 60, 50]
-for num in a:
-    if num < 80:
-        break                          # 참이면 종료
-    print(num)
+print(c)
 ```
 
-
-### continue
-- for의 경우에도, 해당 아이템을 건너 뛰고 싶을 때 continue 사용
-
-```python
-a = [100, 90, 80, 70, 60, 50]
-for num in a:
-    if num >= 60 and num <= 70:
-        continue                       # 참이면 건너뜀
-    print(num)
-```
-
-
-### 중첩 반복문
-- 반복문도 중첩하여 사용 가능하며, 중첩의 경우 무한히 가능
-- 중첩이라는 것은 반복문 블록의 코드안에 또 반복문의 코드가 작성되는 것을 의미
-- 중첩 반복문의 경우 내부 반복문은 외부 반복문이 수행되는 만큼 반복 수행 됨
-
-#### 구구단 출력하기
-```python
-a = [1, 2, 4]
-for i in a:               # i가 1일때
-    for j in a:           # j가 1, 2, 4 다 돌아야 끝내고 위로 이동
-        print(i * j)
-```
-
-```python
-y = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-x = [2, 3, 4, 5, 6, 7, 8, 9]
-for i in x:
-    for j in y:
-        print(i, '*', j, '=', i * j)
-```
-
-
-
-### collection의 길이
-- len, abs, type, range 등으로 콜렉션 타입의 길이를 가져옴
-- cf. 내장함수란 파이썬 내부에 구현되어 있어서, import하지 않고도 사용 가능한 함수를 의미
-
-#### len
-- len함수는 컬렉션 타입의 길이를 가져옴
-```python
-a = [1, 2, 3, 4, 5]
-print(len(a))
-print(len('hello world'))
-```
-
-#### range
-- 리스트를 쉽게 만들 수 있는 내장함수
-- 주어진 값에 따라 다양한 결과를 반환
+#### **함수의 사용(호출)**
+ + 함수명(파라미터1, 파라미터2, ... 파라미터n)
+ + 위와 같이 정의 된 함수의 이름과 전달되는 parameter(인자)를 괄호안에 전달하여 함수를 호출
+ + 함수가 호출되면 실행의 흐름이 호출자(caller)에서 함수(callee)로 변경 됨
  
-```python
-range(10)       -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]     # 1개일때, 0부터 끝 숫자 미포함
-range(2, 10)    -> [2, 3, 4, 5, 6, 7, 8, 9]           # 2개일때, 1부터 끝 숫자 미포함
-range(2, 10, 3) -> [2, 5, 8]                          # 3개일때, 1부터 끝 숫자 미포함 + 간격
-------------------------------
-list(range(5, 101, 5))                                # 1부터 100사이의 5의 배수만을 갖는 리스트
-------------------------------
-list(range(1, 101, 5))                                # 오답 '1 + 간격 5이므로 안됨'
+ + 함수의 입력(인풋) 파라미터(parameter), 아규먼트(argument)라고도 함
+
+```
+# 원래 add함수는 2개의 변수(argument)를 요구하는데 안 맞으면 오류
+c = add()
+```
+
+#### **함수 네이밍(naming)**
+  * 함수 이름으로부터 기능이 명시 
+  * 의미와 반대되거나 맞지 않는 이름은 사용금지
+
+```
+def substract(x, y):
+    sub = x - y
+    return sub
+
+print(substract(4, 3))
+```
+
+#### **parameter(argument) (인자)**
+ + 함수에 전달되는 입력(input)
+ + 입력이 필요하지 않을 수도, 1개의 입력만 있을 수도, 여러개의 입력이 존재할 수 도 있음
+ + 파라미터로 int, string, float, boolm, list, dict 등등 어떤 파이썬 객체도 전달 가능
+ + 심지어, 함수도 함수의 파라미터로 전달 가능
+ 
+ + python의 경우, 타입 명시가 없기 때문에, 함수 생성 시, 의도된 파라미터의 타입에 맞게 입력을 전달하는 것이 중요
+ + 또한 파라미터를 전달 할 때, 정의된 순서에 따라 값을 전달하는 것이 중요
+
+```
+# 파라미터가 없어도 가능
+def test():
+    print('haha')
+    print('good')
+    return 100
+
+a = test()
+print(a)
+```
+```
+# 파라미터가 2개
+def test(x, y):
+    print(x, y)
+    n = x + y
+    return n
+
+a = test(10, 20)
+print(a)
+```
+# 파라미터 타입은 정할 수 없음
+def substract(x, y):
+    sub = x - y
+    return sub
+
+a = substract('you', 'me')
+print(a)
+```
+
+####  Default parameter (기본 인자) 
+ + 함수의 파라미터에 기본값 지정 가능
+ + 파라미터를 명시하지 않을 경우, 지정된 기본값으로 대체
+
+```
+# 만약에 x, y값만 입력되면 z를 기본 파라미터값으로 입력하고
+# z가 입력되면 입력값으로 
+
+def add(x, y, z=5):
+    a = x + y + z
+    return a
+
+print(add(10, 20))
+print(add(10, 20, 30))
+```
+
+* **기본 파라미터의 다른 예**
+ - print 함수
+   - sep, end, file등 여러 기본 파라미터를 가짐 
+
+```
+# shift + tab 눌러서 함수 조건 확인
+
+print(1, 2, 3, sep='!', end='%%')
+print(2, 3, 4, sep='p')
+```
+
+####  Default parameter 사용 시 주의 점
+  * 디폴트 파라미터 뒤에 일반 파라미터가 위치할 수 없음
+  
+  * e.g) 올바른 예
+    > def test(a, b, c = 1)
+    
+    > def test(a, b = 1, c = 2)
+    
+    > def test(a = 1, b = 1, c = 3)
+    
+  * e.g) 올바르지 않은 예
+    > def test(a, b = 1, c)
+    
+    > def test(a = 1, b, c)
+    
+    > def test(a = 1, b = 1, c)
+
+```
+# 기본 파라미터는 끝부터만 가능
+
+def test(a, b=3, c):
+    print(a, b, c)
+    
+test(10, 20, 1)
+```
+
+#### **keyword parameter (키워드 파라미터)**
+  * 파이썬의 경우, 파라미터에 값을 전달 할 때, 파라미터의 이름을 명시하여 전달 가능
+  * 파라미터 이름을 사용하지 않을 경우, 기본적으로 순서에 맞게 전달
+```
+# 파라미터의 이름을 명시하여 전달 가능
+
+def test(x, y, z):
+    a = x + y + z
+    return a
+
+test(x=10, z=20, y=3)           # but 되도록이면 맞춰서 쓰기
+```
+
+#### **return (리턴)**
+ + 기본적으로 함수의 종료를 명시
+   + return 옆에 값이나 수식이 있다면 해당 값을 호출자(caller)에게 반환(전달)
+   + return 만 존재하면 None 반환
+   + return이 없는 경우, 기본적으로 함수 코드 블록이 종료되면 종료로 간주. 이때도 None 반환
+
+```
+# 함수는 returm을 만나면 종료
+
+def weird_multiply(x, y):
+    if x > 10:
+        return x * y
+    print(x + y)
+    return (x + 2) * y
+    print(x + y)             # return 뒤에 print는 출력 X, 함수 이미 끝나서
+
+print(weird_multiply(1, 5))
+print(weird_multiply(12, 5))
+```
+
+```
+# 그냥 return 뒤에 값이 없으면 None을 반환
+
+def weird_multiply(x, y):
+    if x > 10:
+        return
+    
+    print(x + y)
+    return (x + 2) * y
+
+c = weird_multiply(12, 5)
+print(c)                   
+```
+
+```
+# 아예 없으면 None 반환
+
+def weird_multiply(x, y):
+    if x > 10:
+        return x * y
+
+c = weird_multiply(2, 5)
+print(c)         
+```
+
+#### **multiple return (복수 값 반환)**
+ + tuple반환을 하여 복수개의 값 리턴 가능
+
+```
+def add_mul(x, y):
+    s = x + y
+    m = x * y
+    
+    return s, m
+
+c = add_mul(20, 3)
+print(type(c))
+print(c)
+
+a, b = add_mul(40, 5)
+print(a, b)
+```
+
+#### **variable scope (변수의 범위)** 
+ + 변수가 참조 가능한 코드상의 범위를 명시
+ + 함수내의 변수는 자신이 속한 코드 블록이 종료되면 소멸됨
+ + 이렇게 특정 코드 블록에서 선언된 변수를 **지역변수(local variable)** 이라고 함
+ + 반대로 가장 상단에서 정의되어 프로그램 종료 전까지 유지되는 변수를 **전역변수(global variable)**이라고 함
+ + 같은 이름의 지역변수와 전역변수가 존재할 경우, 지역변수의 우선순위가 더 높음
+
+```
+# num1, num2는 함수와 관계없는 변수들
+num1 = 10
+num2 = 30
+
+# num1, num2는 함수 내에서만 소용 있음
+def test(num1, num2):
+    print(num1, num2)
+    return num1 + num2
+
+test(30, 40)
+
+print(num1, num2)
+```
+
+#### **variable length argument (가변길이 인자)**
+ - 전달되는 파라미터의 개수가 고정적이지 않은 경우 사용
+ - e.g)
+   - print 함수
+   - format 함수
+  
+> ***args**,  ****kwargs**
+
+> ***args**    : 파라미터를 튜플의 형태로 전달
+
+> ****kwargs** : 파리미터를 딕셔너리 형태로 전달(네임드 파라미터)
+
+```
+# 만약 변수를 3개만 하면 그걸 넘으면 안 됨
+def print(x, y, z)
+
+print()
+print(1)
+print(1, 2)
+print(1, 2, 3)
+print(1, 2, 3, 4)
+print(1, 2, 3, 4, 5)
+```
+
+```
+# *args(arguments)는 튜플로 인식
+def test(*args):
+    for item in args:
+        print(item)
+ 
+# 몇 개의 변수를 주더라도 함수는 변수를 동적으로 받아들임
+test(10, 20, 30)
 ```
 
 
+#### **keyword parameter (키워드 파라미터)**
+ - \**가 붙은 경우에는 키워드 파라미터로 인식
+ - 즉 함수 호출 시, 파리미터의 이름과 값을 함께 전달 가능
 
-## 연습문제
-
-### 구구단을 2 - 9단까지 출력
-
-```python
-x = list(range(2, 10))
-y = list(range(1, 10))
-
-for i in x:
-    for j in y:
-        print(i, '*', j, '=', i * j)
 ```
-```python
-x = 2
-while x <= 9:                # 초기값 2에서 9까지
-    y = 1                     # y를 안에 써준 이유 = 항상 초기화가 되야해서
-    while y <= 9:
-        print(x, 'x', y, '=', x * y)
-        y += 1
-    x += 1
-```
+def test2(**x):
+    print(type(x))
 
-### 1 - 100까지 정수 중 2의 배수 또는 11의 배수를 모두 출력하시오.
-```python
-nums = list(range(1, 101))
-for x in nums:
-    if x % 2 == 0 or x % 11 == 0:
-        print(x)
+test2(a=1, b=2, c=3, d=4, name='Bob')
+```
+```
+# items함수 - Key, Value 쌍 얻기
+# keyword arguments
+
+def test2(**kwargs):
+    for key, value in kwargs.items():
+        print('key:', key, ', value:', value)
+
+print(test2(a=1))
+print(test2(a=1, b=2, c=3, d=4, name='Bob', age=90))
 ```
 
-### 최대값과 최소값을 찾기
-```python
-# sorted, sort 사용시
-a = [22, 1, 3, 4, 7, 98, 21, 55, 87, 99, 19, 20, 45]
-a.sort()
-a[0], a[-1]
+* 가변길이 함수의 대표적인 예
+ **문자열 포맷 함수**
+ - 여러가지 값과 포맷을 이용하여 문자열을 정의할 수 있는 함수
+ - {} placeholder를 문자열 내에 위치 시킨 후, 해당 위치에 format함수로 전달된 값으로 대체하여 문자열 생성
+ - 포맷 구성은 다음 링크 참조 : https://pyformat.info/
 ```
-
-```python
-# 처음 만나는 수를 최소값으로 가정. 이후 최소값 업데이트
-a = [22, 1, 3, 4, 7, 98, 21, 55, 87, 99, 19, 20, 45]
-
-_min = a[0]
-for x in a:
-    if x < _min:
-        _min = x
-print(_min)
-
-------------------------------
-# 최대값
-_max = a[0]
-for x in a:
-    if x > _max:
-        _max = x
-print(_max)
-```
-
-```python
-# 최대, 최소 동시에
-_min = a[0]
-_max = a[0]
-
-for x in a[1:]:                       # a[0]은 이미 지정했으므로 a[1:]부터로 지정
-    if x < _min:
-        _min = x
-    elif x > _max:
-        _max = x
-print('최소값', _min, '최대값', _max)
-```
-
-### 평균 구하기
-```python
-a = [22, 1, 3, 4, 7, 98, 21, 55, 87, 99, 19, 20, 45]
-total = 0
-
-for i in a:
-    total += i
-```
-```python
-# summary % len
-i = 0
-total = 0
-
-while i < len(a):
-    total += a[i]
-    i += 1
-print(total / len(a))
+a = '오늘 온도: {today_temp}도, 강수확률은: {today_prob}%, 내일온도: {tomorrow_temp}도'.format(today_temp=20, today_prob=50, tomorrow_temp=23)
+print(a)
 ```
