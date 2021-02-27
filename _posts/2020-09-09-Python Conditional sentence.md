@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 조건문 - "
+title: "[Python] 파이썬 조건문 - if, elif, else"
 date: 2020-9-9
 categories:
 - study
