@@ -18,110 +18,65 @@ toc_sticky: true
 
 ## for 
 - 리스트, 문자열 등등 순회 가능한 객체를 순회하면서 값을 처리할 때 사용
-- 아래에서 i는 매번 수행 a 아이템으로 순차적으로 변경 되고, 모두 순회되면 for 블록 종료
- 
-```python
-a = [1, 2, 4, 3, 5]
-for i in a:
-    print (i, i * 2)
-```
+- for는 순회가 가능한 아이템들을 자동으로 가져와서 순회하고 종료하는 반면 while은 스스로 제어 안 됨
+- 순회할 수 있는건 따로 정해져 있음 - 문자열, 리스트
+- 정수/실수는 순서(인덱스)가 없으므로 순회할 수 없음
 
 ```python
-# while은 스스로 제어한 반면
-# for는 순회가 가능한 아이템들을 자동으로 순회 가능
-# 자동으로 각각의 아이템을 가져와서 순회하고 종료
-
 a = [1, 2, 4, 3, 5]
 for i in a:              # i는 그냥 변수명, 다르게 써도 됨
     print (i, i * 2)
 print('hahah')
 ```
 
+### 문자열 아이템 출력하기
 ```python
-#### 문자열의 아이템 출력하기
- - 문자열의 경우 순회 가능, 리스트의 유사하게 순회 가능
-
- a = 'hello world'
+a = 'hello world'
 for character in a:      # character에 각각의 문자가 들어가며 순회
     print(character)
 ```
 ```python
-# 순회할 수 있는건 따로 정해져 있음 - 문자열, 리스트
-# 정수/실수는 순회할 수 없음 bc 순서(인덱스)가 없으므로
+
 for x in 10:
     print(x)
 ```
 
+### 리스트 아이템 출력하기
 ```python
-#### 리스트 아이템 출력하기
-
-# 짝수인 경우 %2한 값을 출력
-# 홀수인 경우 +1한 값을 출력
-
 a = [1, 10, 3, 4, 5]
 for num in a:
-    if num % 2 == 0:
+    if num % 2 == 0:           # 짝수인 경우 %2한 값을 출력
         print(num/2)
-    else:
+    else:                      # 홀수인 경우 +1한 값을 출력
         print(num+1)
 ```
 
-
-#### dict의 아이템 출력하기
-  - dictionary의 경우 기본적으로 순회 하게 되면 key값을 참조
-  - keys()함수를 이용하여 key 값만 순회 가능
-  - values()함수를 이용하여 value 값만 순회 가능
-  - items()함수를 이용하여 tuple형태로 key, value 순회 가능
-
-```python
-# 키만 가져옴
-a = {'korea' : 'seoul', 'japan' : 'tokyo', 'canada' : 'ottawa'}
-
-for key in a:
-    print(key)
-```
+### dict 아이템 출력하기
+- dictionary의 경우 기본적으로 순회하게 되면 key값을 참조
+- keys()함수를 이용하여 key 값만 순회 가능
+- values()함수를 이용하여 value 값만 순회 가능
+- items()함수를 이용하여 tuple형태로 key, value 순회 가능
 
 ```python
 a = {'korea' : 'seoul', 'japan' : 'tokyo', 'canada' : 'ottawa'}
 
-for key in a:
-    print(key, a[key])
-```
-
-```python
-for key in a:
+for key in a:                  # 키만 가져옴
     print(key)
-```
-```python
-for value in a.values():
+------------------------------
+for value in a.values():       # 벨류만 가져옴
     print(value)
-```
-```python
-# 튜플을 리스트화
-list(a.items())
-```
-```python
-# 튜플 한꺼번에 가져오기
-for key, value in a.items():
+------------------------------
+list(a.items())                # 튜플을 리스트화
+------------------------------
+for key, value in a.items():   # 튜플 한꺼번에 가져오기
     print(key, value)    
 ```
 
-#### for에서 index 사용하기
-  - 기본적으로 for에 리스트를 순회하는 경우, 값만 추출 함
-  - 아래와 같은 코드로 인덱스와 값 모두 사용 가능(enumerate 함수 이용)
 
-```python
-a = [1, 2, 4, 3, 5]
-for i, val in enumerate(a):
-    print i, val
-```
-```python
-# while문에서는 인덱스 지정해서 돌렸었음
-# for문에서는 인덱스 없이 값만 나옴
-a = [1, 2, 3, 4, 5]
-for num in a:
-    print(num)
-```
+### for에서 index 사용하기
+- while문에서는 인덱스 지정해서 돌렸으나, for문에서는 인덱스 없이 값만 나옴
+- 기본적으로 for문의 경우 값만 추출 가능하나, enumerate 함수 이용시 인덱스와 값 모두 사용 가능
+
 ```python
 # enumerate(열거하다) 자동으로 인덱스와 벨류값 출력
 # 자료형의 현재 순서와 그 값을 쉽게 알 수 있음
@@ -131,42 +86,38 @@ for index, value in enumerate(a):
         print(index, value)
 ```
 
-####  break
-  - for의 경우에도 특정 조건일 때, loop 종료가 가능
+
+###  break
+- for의 경우에도 특정 조건일 때, break로 loop 종료가 가능
+
 ```python
 a = [100, 90, 80, 70, 60, 50]
 for num in a:
     if num < 80:
-        break
+        break                          # 참이면 종료
     print(num)
 ```
 
-#### continue
-- 해당 아이템을 건너 뛰고 싶을 때 사용
+
+### continue
+- for의 경우에도, 해당 아이템을 건너 뛰고 싶을 때 continue 사용
+
 ```python
 a = [100, 90, 80, 70, 60, 50]
 for num in a:
-    if num >= 60 and num <= 70:     # 해당 값을 건너뜀
-        continue
+    if num >= 60 and num <= 70:
+        continue                       # 참이면 건너뜀
     print(num)
 ```
 
-#### loop 중첩
-- 반복문의 경우에도 중첩하여 사용 가능
+
+### 중첩 반복문
+- 반복문도 중첩하여 사용 가능하며, 중첩의 경우 무한히 가능
 - 중첩이라는 것은 반복문 블록의 코드안에 또 반복문의 코드가 작성되는 것을 의미
-- 이런 경우, 내부 루프는 외부 루프가 수행되는 만큼 반복 수행 됨
-- 또한 중첩의 경우 무한히 가능
+- 중첩 반복문의 경우 내부 반복문은 외부 반복문이 수행되는 만큼 반복 수행 됨
 
-```python
-a = [1, 2, 4]
-for i in a:
-    for j in a:
-        print i * j
-```
-
-```python
 #### 구구단 출력하기
-
+```python
 a = [1, 2, 4]
 for i in a:               # i가 1일때
     for j in a:           # j가 1, 2, 4 다 돌아야 끝내고 위로 이동
@@ -180,6 +131,8 @@ for i in x:
     for j in y:
         print(i, '*', j, '=', i * j)
 ```
+
+
 
 #### collection의 길이
  - len() 내장함수로 계산 가능
