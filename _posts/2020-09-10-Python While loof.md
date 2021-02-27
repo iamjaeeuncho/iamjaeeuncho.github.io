@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 반복문 - "
+title: "[Python] 파이썬 반복문 - while"
 date: 2020-9-10
 categories:
 - study
@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 ---
 
-## 반복문 ?
+## 반복문?
 - 반복적인 작업을 가능하게 해주는 도구
 - 특정 조건을 만족하는 경우 수행하는 while문과 리스트 같은 컬렉션 타입의 아이템을 하나씩 순회하는 for문이 있음.
 - 주의 할 점: while문의 경우, 무한히 수행되므로 반복을 멈추는 장치가 없으면 재부팅 해야함. (false여야지만 나옴)
