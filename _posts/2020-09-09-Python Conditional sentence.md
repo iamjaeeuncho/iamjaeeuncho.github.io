@@ -9,44 +9,14 @@ toc: true
 toc_sticky: true
 ---
 
-## condition (조건문)
- + 특정 조건을 만족하는 경우에만 수행할 작업이 있는 경우 사용
- + 모든 조건은 boolean으로 표현 됨 (예외 사항은 아래 배울 예정)
- + if, elif, else 키워드가 사용
- + 조건문의 경우 if, elif, else 블록에 종속된 코드는 들여쓰기로 표현 가능
- + 즉 아래코드에서와 같이, 조건문 아래에 들여쓰기된 2줄의 코드만이 조건문의 조건에 따라 수행될 수도, 수행되지 않을 수도 있는 코드라고 할 수 있음
- + 들여쓰기 된 코드를 블록(block), 또는 코드블록이라고 함
- + python에서 모든 블록의 시작점의 마지막에는 :(콜론, colon) 추가가 필요
+## 조건문 ?
+- if, elif, else가 있으며, 특정 조건을 만족하는 경우에만 작업을 수행
 
-```python
-if 6 >= 5:
-    print ('6 is greater than 5')
-    print ('Yeah, it is true')
-print ('This code is not belongs to if statements')
-```
 
-* Logical AND, OR, NOT 
-  - 조건문에 사용되는 조건의 경우, boolean이기 때문에, 논리식 AND, OR, NOT 이 사용가능
-  - AND : and
-  - OR : or
-  - NOT : not
-  
-* 논리표 
-  - AND : 두개 다 참이여야 True
-      - T AND T : T
-      - T AND F : F
-      - F AND T : F
-      - F AND F : F
-  - OR : 두개 중 하나라도 참이면 True
-      - T OR T : T
-      - T OR F : T
-      - F OR T : T
-      - F OR F : F
-  - NOT : 반전
-      - NOT T : F
-      - NOT F : T
-* 우선순위
-  - NOT > AND > OR
+### 들여쓰기로 수행문 표현
+- 조건문의 경우 if, elif, else 블록에 종속된 코드는 들여쓰기로 표현 가능
+- 들여쓰기 된 코드를 블록(block), 또는 코드블록이라고 함
+- python에서 모든 블록의 시작줄의 마지막에는 :(콜론, colon) 추가 필요
 
 ```python
 # 파이썬에서는 들여쓰기가 중요
@@ -55,51 +25,43 @@ if 6 >= 5:
     print('6 is greater than 5')
     print('Yeah, it is true')
     print('it is really true')
-    
-print ('This code is not belongs to if statements')
-```
 
-```python
 # if 문구가 거짓(False)인 경우 아래 종속 코드 실행됨
-if 6 == 5:
-    print('6 is greater than 5')
-    print('Yeah, it is true')
-    print('it is really true')
-    
 print ('This code is not belongs to if statements')
 ```
 
-```python
-a = 10
-b = 8
-c = 11
 
-if a == 10 and b != 9:
-    print('that is true')
-```
+### Bool형 조건 형식 (AND, OR, NOT)
+- 조건문에 사용되는 조건의 경우 boolean이기 때문에, 논리식 AND, OR, NOT 사용가능
+- 우선순위: NOT > AND > OR
+* 논리표 
+  - AND : 두개 다 참이여야 True
+      - T AND T : True
+      - T AND F : False
+      - F AND T : False
+      - F AND F : False
+  - OR : 두개 중 하나라도 참이면 True
+      - T OR T : True
+      - T OR F : True
+      - F OR T : True
+      - F OR F : False
+  - NOT : 반전
+      - NOT T : False
+      - NOT F : True
 
-```python
-# b and c 먼저하고 나중에 a or 수행
-if (a == 10 or b ==9) and c == 12:
-    print('that is true')
 
-if not a == 10:
-    print('a is ten')
-```
 
-## if의 조건이 bool이 아닌 경우
- * 일반적으로는 조건문에는 bool이 주로 위치 함
- * 하지만, 정수, 실수, 문자열 리스트 등 기본 타입도 조건에 사용 가능
- * False로 간주되는 값 (각 타입의 기본값)
-     * None
-     * 0 -> 정수형
-     * 0.0 -> 실수형
-     * '' -> 빈 문자열
-     * [] -> 빈 리스트
-     * () -> 빈 튜플
-     * {} -> 빈 딕셔너리
-     * set() -> 빈 집합
- * 그밖에는 모두 True로 간주
+### if의 조건이 bool이 아닌 경우
+* 일반적으로는 조건의 경우 주로 bool이지만, 정수, 실수, 문자열 리스트 등 기본 타입도 조건에 사용 가능
+* False로 간주되는 아래 값( = 각 타입의 기본값) 이외에는 모두 True로 간주
+    * None
+    * 0 -> 정수형
+    * 0.0 -> 실수형
+    * '' -> 빈 문자열
+    * [] -> 빈 리스트
+    * () -> 빈 튜플
+    * {} -> 빈 딕셔너리
+    * set() -> 빈 집합
 
 ```python
 # if는 트루인 경우에만 수행이됨
