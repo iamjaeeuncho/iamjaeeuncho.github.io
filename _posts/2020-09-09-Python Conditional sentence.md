@@ -33,7 +33,7 @@ print ('This code is not belongs to if statements')
 <br>
 <br>
 
-### Bool형 조건 형식 (AND, OR, NOT)
+### Bool형 조건식 - AND/OR/NOT
 - 조건문에 사용되는 조건의 경우 boolean이기 때문에, 논리식 AND, OR, NOT 사용가능
 - 우선순위: NOT > AND > OR
 * 논리표 
@@ -53,7 +53,7 @@ print ('This code is not belongs to if statements')
 <br>
 <br>
 
-### if의 조건이 bool이 아닌 경우
+### 조건이 bool이 아닌 경우
 * 일반적으로는 조건의 경우 주로 bool이지만, 정수, 실수, 문자열 리스트 등 기본 타입도 조건에 사용 가능
 * False로 간주되는 아래 값 이외에는 모두 True로 간주
 　즉, 각 타입의 기본값은 무조건 False로 수행하지 않음
