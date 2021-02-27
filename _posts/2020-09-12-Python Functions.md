@@ -9,20 +9,9 @@ toc: true
 toc_sticky: true
 ---
 
-### 함수?
-* 지금까지 무심코 코드에서 사용된 많은 함수들이 존재 합니다.
-* 예를들면, sum, len, range 같은 함수 등이 있죠.
-* 함수란 우리가 알고있는 개념처럼 주어진 입력(input)에 대해서 의도된 출력(output)를 전달하는 역할을 합니다.
-
-* 그렇다면, 하나씩 살펴보겠습니다.
-  > range 함수는 정수를 입력으로 전달하면 [0, 정수) 로 이루어진 리스트를 생성하는 역할을 합니다.
-  
-  > sum 함수는 리스트, 튜플등을 입력으로 전달하면 전체 아이템의 합을 출력으로 전달하는 역할을 합니다.
-  
-  > len 함수는 리스트, 튜플등을 입력으로 전달하면 아이템의 개수를 출력으로 전달하는 역할을 합니다.
-  
-* 그리고, 위의 함수들은 모두 python 내부에 이미 정의(구현)이 되어 있습니다.
-* 위와 같은 함수를 내장함수(built-in function)이라고 합니다.
+## 함수?
+- 함수란 우리가 알고있는 개념처럼 주어진 입력(input)에 대해서 의도된 출력(output)를 전달하는 역할을 합니다.
+- range, sum, len 처럼 python 내부에 이미 구현 된 함수들을 내장함수(built-in function)라고 합니다.
 
 ```python
 # 내장 함수의 예
@@ -35,19 +24,19 @@ print(summation)
 ```
 
 
-#### **함수의 정의**
-  + 정의 시 최초에 def 키워드 사용
-  + argument 정의 (함수에 입력으로 전달하는 값을 의미, argument 또는 parameter라고 함) 
-  + : (콜론) -> 함수 역시 코드 블록이기 때문에 콜론(:) 필요
-  + body (함수의 구현 부분, 함수 역시 코드 블록이기 때문에 들여쓰기 된 부분까지 함수의 코드블록으로 인지 함)
-    - 함수를 호출한 코드 (caller)로 함수가 해당 기능을 수행하고 완료된 값(output)을 전달하기 위해 return 키워드 사용
-    - 즉, return 이후에 오는 값을 caller로 전달
-  + 함수의 네이밍 역시 중요
-    - 즉, 어떤 기능을 하는 함수인지 이름으로 최대한 나타날 수 있게 해야함
-    - e.g) get_a (x) get_student_name (o)
+### 함수 정의
++ 정의 시 최초에 def 키워드 사용
++ argument 정의 (함수에 입력으로 전달하는 값을 의미, argument 또는 parameter라고 함) 
++ : (콜론) -> 함수 역시 코드 블록이기 때문에 콜론(:) 필요
++ body (함수의 구현 부분, 함수 역시 코드 블록이기 때문에 들여쓰기 된 부분까지 함수의 코드블록으로 인지 함)
+- 함수를 호출한 코드 (caller)로 함수가 해당 기능을 수행하고 완료된 값(output)을 전달하기 위해 return 키워드 사용
+- 즉, return 이후에 오는 값을 caller로 전달
++ 함수의 네이밍 역시 중요
+- 즉, 어떤 기능을 하는 함수인지 이름으로 최대한 나타날 수 있게 해야함
+- e.g) get_a (x) get_student_name (o)
 
 
-```
+```python
 # def = definition
 # def 함수이름(변수) 필수
 #     바디 함사 구현
@@ -58,7 +47,7 @@ def add(x, y):
     return n
 ```
 
-```
+```python
 l = len([1, 2, 3])
 c = add(30, 300)
 
@@ -72,7 +61,7 @@ print(c)
  
  + 함수의 입력(인풋) 파라미터(parameter), 아규먼트(argument)라고도 함
 
-```
+```python
 # 원래 add함수는 2개의 변수(argument)를 요구하는데 안 맞으면 오류
 c = add()
 ```
@@ -81,7 +70,7 @@ c = add()
   * 함수 이름으로부터 기능이 명시 
   * 의미와 반대되거나 맞지 않는 이름은 사용금지
 
-```
+```python
 def substract(x, y):
     sub = x - y
     return sub
@@ -98,7 +87,7 @@ print(substract(4, 3))
  + python의 경우, 타입 명시가 없기 때문에, 함수 생성 시, 의도된 파라미터의 타입에 맞게 입력을 전달하는 것이 중요
  + 또한 파라미터를 전달 할 때, 정의된 순서에 따라 값을 전달하는 것이 중요
 
-```
+```python
 # 파라미터가 없어도 가능
 def test():
     print('haha')
@@ -108,7 +97,7 @@ def test():
 a = test()
 print(a)
 ```
-```
+```python
 # 파라미터가 2개
 def test(x, y):
     print(x, y)
@@ -118,6 +107,7 @@ def test(x, y):
 a = test(10, 20)
 print(a)
 ```
+```python
 # 파라미터 타입은 정할 수 없음
 def substract(x, y):
     sub = x - y
@@ -131,7 +121,7 @@ print(a)
  + 함수의 파라미터에 기본값 지정 가능
  + 파라미터를 명시하지 않을 경우, 지정된 기본값으로 대체
 
-```
+```python
 # 만약에 x, y값만 입력되면 z를 기본 파라미터값으로 입력하고
 # z가 입력되면 입력값으로 
 
@@ -147,7 +137,7 @@ print(add(10, 20, 30))
  - print 함수
    - sep, end, file등 여러 기본 파라미터를 가짐 
 
-```
+```python
 # shift + tab 눌러서 함수 조건 확인
 
 print(1, 2, 3, sep='!', end='%%')
@@ -171,7 +161,7 @@ print(2, 3, 4, sep='p')
     
     > def test(a = 1, b = 1, c)
 
-```
+```python
 # 기본 파라미터는 끝부터만 가능
 
 def test(a, b=3, c):
@@ -183,7 +173,7 @@ test(10, 20, 1)
 #### **keyword parameter (키워드 파라미터)**
   * 파이썬의 경우, 파라미터에 값을 전달 할 때, 파라미터의 이름을 명시하여 전달 가능
   * 파라미터 이름을 사용하지 않을 경우, 기본적으로 순서에 맞게 전달
-```
+```python
 # 파라미터의 이름을 명시하여 전달 가능
 
 def test(x, y, z):
@@ -199,7 +189,7 @@ test(x=10, z=20, y=3)           # but 되도록이면 맞춰서 쓰기
    + return 만 존재하면 None 반환
    + return이 없는 경우, 기본적으로 함수 코드 블록이 종료되면 종료로 간주. 이때도 None 반환
 
-```
+```python
 # 함수는 returm을 만나면 종료
 
 def weird_multiply(x, y):
@@ -213,7 +203,7 @@ print(weird_multiply(1, 5))
 print(weird_multiply(12, 5))
 ```
 
-```
+```python
 # 그냥 return 뒤에 값이 없으면 None을 반환
 
 def weird_multiply(x, y):
@@ -227,7 +217,7 @@ c = weird_multiply(12, 5)
 print(c)                   
 ```
 
-```
+```python
 # 아예 없으면 None 반환
 
 def weird_multiply(x, y):
@@ -241,7 +231,7 @@ print(c)
 #### **multiple return (복수 값 반환)**
  + tuple반환을 하여 복수개의 값 리턴 가능
 
-```
+```python
 def add_mul(x, y):
     s = x + y
     m = x * y
@@ -263,7 +253,7 @@ print(a, b)
  + 반대로 가장 상단에서 정의되어 프로그램 종료 전까지 유지되는 변수를 **전역변수(global variable)**이라고 함
  + 같은 이름의 지역변수와 전역변수가 존재할 경우, 지역변수의 우선순위가 더 높음
 
-```
+```python
 # num1, num2는 함수와 관계없는 변수들
 num1 = 10
 num2 = 30
@@ -290,7 +280,7 @@ print(num1, num2)
 
 > ****kwargs** : 파리미터를 딕셔너리 형태로 전달(네임드 파라미터)
 
-```
+```python
 # 만약 변수를 3개만 하면 그걸 넘으면 안 됨
 def print(x, y, z)
 
@@ -302,7 +292,7 @@ print(1, 2, 3, 4)
 print(1, 2, 3, 4, 5)
 ```
 
-```
+```python
 # *args(arguments)는 튜플로 인식
 def test(*args):
     for item in args:
@@ -317,13 +307,13 @@ test(10, 20, 30)
  - \**가 붙은 경우에는 키워드 파라미터로 인식
  - 즉 함수 호출 시, 파리미터의 이름과 값을 함께 전달 가능
 
-```
+```python
 def test2(**x):
     print(type(x))
 
 test2(a=1, b=2, c=3, d=4, name='Bob')
 ```
-```
+```python
 # items함수 - Key, Value 쌍 얻기
 # keyword arguments
 
@@ -340,7 +330,7 @@ print(test2(a=1, b=2, c=3, d=4, name='Bob', age=90))
  - 여러가지 값과 포맷을 이용하여 문자열을 정의할 수 있는 함수
  - {} placeholder를 문자열 내에 위치 시킨 후, 해당 위치에 format함수로 전달된 값으로 대체하여 문자열 생성
  - 포맷 구성은 다음 링크 참조 : https://pyformat.info/
-```
+```python
 a = '오늘 온도: {today_temp}도, 강수확률은: {today_prob}%, 내일온도: {tomorrow_temp}도'.format(today_temp=20, today_prob=50, tomorrow_temp=23)
 print(a)
 ```
