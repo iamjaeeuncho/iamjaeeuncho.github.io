@@ -38,7 +38,7 @@ math.cos(100)
 <br>
 
 ## from import 
-- 해당 모듈에서 특정한 타입만 import
+- 해당 모듈에서 특정 타입만 import
 
 ```python
 # math에서 pi만 import
@@ -48,29 +48,28 @@ from math import cos
 pi
 cos(100)
 ```
+<br>
+<br>
 
-#### \* 임포트
+## \* import
 - 해당 모듈내에 정의된 모든 것을 import
-- 일반적으로 사용이 권장되지 않음
+- \* 임포트는 여러 import 중 동일명으로 오류 발생 가능하므로 일반적으로 사용이 권장되지 않음
 
 ```python
-sin(100)
-```
-
-```python
-# * 임포트는 지양 bc 여러 import 중 동일명으로 오류 발생 가능
-# ex. math의 e와 a의 e
+# math의 e와 a의 e가 중복되 오류 발생
 from math import *
-# from a import *
-
-sin(100)
+from a import *
 ```
+<br>
+<br>
 
-#### as 
- - 모듈 import 시, alias(별명) 지정가능
+## as 
+- 모듈 import 시, alias(별명) 지정가능
 
 ```python
+import pandas as pd
 
-ddddddddddddddddddddddddddddddddddddddddd
+data = pd.read_csv('data/baseball.csv')
 ```
-
+<br>
+<br>
