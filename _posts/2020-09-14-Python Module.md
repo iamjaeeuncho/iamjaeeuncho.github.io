@@ -68,7 +68,6 @@ from a import *
 
 ```python
 import pandas as pd
-
 data = pd.read_csv('data/baseball.csv')
 ```
 <br>
