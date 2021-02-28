@@ -9,33 +9,35 @@ toc: true
 toc_sticky: true
 ---
 
-### **모듈 임포트**
-+ 그동안 사용했던 함수들 처럼, 다양한 기능들이 미리 함수로 구현되어 모듈 형태로 제공
-+ 대표적으로 추후 과정에서 사용하게 될 아래의 모듈들이 존재
+## 모듈 임포트?
+- 그동안 사용했던 함수들 처럼, 다양한 기능들이 미리 함수로 구현되어 모듈 형태로 제공
+- 대표적으로 추후 과정에서 사용하게 될 아래의 모듈들이 존재
+    + requests - HTTP 요청/응답 모듈
+    + numpy - 수치해석 모듈 
+    + pandas - 데이터 분석 모듈
+<br>
+<br>
 
-+ requests - HTTP 요청/응답 모듈
-+ numpy - 수치해석 모듈 
-+ pandas - 데이터 분석 모듈
-
-
-#### import 
+## import 
 - import를 사용하여 해당 모듈 전체를 import
 
 ```python
-# 네이버 사이트 html 출력
+# Q. 네이버 사이트 html 출력
 import requests
 resp = requests.get('http://naver.com')
 resp.text
 ```
 ```python
+# Q. 수학 모듈
 import math
 
-# 함수명 + tab
 math.pi
 math.cos(100)
 ```
+<br>
+<br>
 
-#### from import 
+## from import 
 - 해당 모듈에서 특정한 타입만 import
 
 ```python
