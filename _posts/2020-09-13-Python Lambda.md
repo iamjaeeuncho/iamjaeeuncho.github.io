@@ -9,69 +9,25 @@ toc: true
 toc_sticky: true
 ---
 
-* **Lambda 함수**
- + 단일문으로 표현되는 익명함수
- + 익명함수란 이름이 없는 구현체만 존재하는 간단한 함수를 의미
- + 코드 상에서 한번만 사용되는 기능이 있을 때, 굳이 함수로 만들지 않고 1회성으로 만들어서 쓸 때 사용.
+## Lambda 함수
+- 'lambda 변수: return 내용' 형식의 단일문으로 표현되는 함수
+- 익명의 함수로 이름이 없는 구현체만 존재하는 간단한 함수를 의미
+- 코드 상에서 한번만 사용되는 기능이 있을 때, 굳이 긴 함수로 만들지 않고 1회성으로 만들어서 쓸 때 사용.
 
 ```python
-def square2(x):
-    return x**2
-
-square2(5)
-```
-
-```python
-# lambda 변수: return 내용
-square = lambda x: x**2
-square(5)
-```
-
-```python
+# 함수 def 함수이름(변수)
 def add(x, y):
     return x + y
 
+# 함수 lambda 변수: return 내용
 add2 = lambda x, y: x + y
 add2(10, 20)
 ```
 
-```python
-# .sort 문자열은 원래 알파벳순으로 정렬됨
-strings = ['bob', 'charles', 'alexander3', 'teddy']
-strings.sort()
-
-print(strings)
-```
-
-```python
-# 내 마음대로 sorting 하고 싶을 때 key값 입력
-# 길이로 정렬하고 싶을 때
-
-def str_len(s):
-    return len(s)
-
-str_len('goods')
 
 
-strings = ['bob', 'charles', 'alexander3', 'teddy']
-strings.sort(key=str_len)
-
-print(strings)
-```
-
-```python
-strings = ['bob', 'charles', 'alexander3', 'teddy']
-strings.sort(key=lambda s:len(s))
-
-print(strings)
-```
-
-#### **filter, map, reduce**
- + lambda가 유용하게 사용되는 3가지 대표적 함수
- + 함수형 프로그래밍의 기본 요소이기도 함
- + filter : 특정 조건을 만족하는 요소만 남기고 필터링
- + map    : 각 원소를 주어진 수식에 따라 변형하여 새로운 리스트를 반환
- + reduce : 차례대로 앞 2개의 원소를 가지고 연산. 연산의 결과가 또 다음 연산의 입력으로 진행됨. 따라서 마지막까지 진행되면 최종 출력은 한개의 값만 남게 됨
+### Lambda 대표 함수 
+- filter, map, reduce는 lambda에서 유용하게 사용되는 3가지 대표적 함수로, 함수형 프로그래밍의 기본 요소이기도 함
 
 ```python
 def even(n):                # 짝수면 True, 홀수면 False
@@ -80,34 +36,38 @@ def even(n):                # 짝수면 True, 홀수면 False
 even(3)
 ```
 
-```python
-# filter(함수, 리스트) : 리스트를 지정 함수로 필터링
 
+#### filter
+- filter(함수, 리스트): 리스트를 지정 함수로 필터링
+- 특정 조건을 만족하는 요소만 남기고 필터링
+
+```python
 nums = [1, 2, 3, 6, 8, 9, 10, 11, 13, 15]
 
 list(filter(even, nums))           # 원래 리스트 nums에서 짝수만 받는 함수로 필터링
-```
-
-```python
+------------------------------
 list(filter(lambda n : n % 2 == 0, nums))
 ```
 
+
+#### map
+- map(함수, 리스트): 원래 리스트에 함수를 적용해 새로운 리스트를 만듬
+- 각 원소를 주어진 수식에 따라 변형하여 새로운 리스트를 반환
+
 ```python
-# map(함수, 리스트) : 원래 리스트에 함수를 적용해 새로운 리스트를 만듬
-# Q. 주어진 리스트, 리스트의 제곱을 한 숫자로 새로운 리스트 만들기
+# Q. 주어진 리스트의 제곱을 한 숫자로 새로운 리스트 만들기
 nums = [1, 2, 3, 6, 8, 9, 10, 11, 13, 15]
 list(map(lambda n:n**2, nums))
 ```
 
-```python
-list(map(lambda n : n % 2 == 0, nums))
-```
+
+
+#### reduce
+- reduce(함수, 리스트): 처음 2개 결과. 그 결과와 다음 것 결과 … 그렇게 최종값 반환
+- 차례대로 앞 2개의 원소를 가지고 연산. 연산의 결과가 또 다음 연산의 입력으로 진행됨. 따라서 마지막까지 진행되면 최종 출력은 한개의 값만 남게 됨
 
 ```python
-# reduce(함수, 리스트) : 처음 2개 결과. 그 결과와 다음 것 결과 … 그렇게 최종값 반환
-
 import functools
-
 a = [1, 3, 5, 8]
 # 리스트 내의 모든 숫자의 합 (ex. 4, 9, 17)
 
@@ -116,10 +76,10 @@ print(functools.reduce(lambda x, y : x * y, a))
 ```
 
 
-#### 함수 연습문제
- 1. 주어진 숫자 리스트의 평균을 구하는 함수를 출력하시오
- 1. 해당 숫자가 소수인지 아닌지 판별하시오.
- 2. 2부터 해당 숫자사이에 소수가 몇개인지 출력하는 함수를 구하시오 
+## 연습문제
+### 주어진 숫자 리스트의 평균을 구하는 함수를 출력하시오
+### 해당 숫자가 소수인지 아닌지 판별하시오.
+### 2부터 해당 숫자사이에 소수가 몇개인지 출력하는 함수를 구하시오 
 
 ```python
 # 입력 : 숫자 리스트
