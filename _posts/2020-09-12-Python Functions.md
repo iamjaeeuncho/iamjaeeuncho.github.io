@@ -22,7 +22,8 @@ print(length)
 summation = sum(a)
 print(summation)
 ```
-
+<br>
+<br>
 
 ## 함수 정의
 - 함수 최초 정의시 def(definition)를 사용하고, 'def 함수이름(변수)'식으로 작성함
@@ -38,8 +39,8 @@ def add(x, y):              # def 함수이름(변수)
     n = x + y               # 바디 함수 구현
     return n                # return 출력값 지정
 ```
-
-
+<br>
+<br>
 
 ## 함수 호출
 - 'def 함수이름(변수1, 변수2, ..., 변수n)'와 같이 함수의 이름과 전달되는 parameter(인자)를 괄호안에 전달하여 함수를 호출
@@ -49,7 +50,8 @@ def add(x, y):              # def 함수이름(변수)
 # 원래 add함수는 2개의 변수(argument)를 요구하는데 안 맞으면 오류
 c = add()
 ```
-
+<br>
+<br>
 
 ## 함수 네이밍
 - 함수 의미와 반대되거나 맞지 않는 이름은 사용금지하며, 함수 기능을 이름에 명시 
@@ -61,7 +63,8 @@ def substract(x, y):
 
 print(substract(4, 3))
 ```
-
+<br>
+<br>
 
 ## 인자 (Parameter)
 - 함수에 전달되는 입력(input)으로 인자, 변수, parameter, argument라고 부름
@@ -97,7 +100,8 @@ def substract(x, y):
 a = substract('you', 'me')
 print(a)
 ```
-
+<br>
+<br>
 
 ### 인자 범위 (variable scope)
 - 변수가 참조 가능한 코드상의 범위를 명시
@@ -119,7 +123,8 @@ test(30, 40)
 
 print(num1, num2)
 ```
-
+<br>
+<br>
 
 ### 기본 인자 (Default)
 - 함수의 파라미터에 기본값 지정 가능
@@ -136,7 +141,8 @@ def add(x, y, z=5):
 print(add(10, 20))
 print(add(10, 20, 30))
 ```
-
+<br>
+<br>
 
 #### 기본 인자의 다른 예
 - print 함수는 sep, end, file등 여러 기본 파라미터를 가짐 
@@ -147,7 +153,8 @@ print(add(10, 20, 30))
 print(1, 2, 3, sep='!', end='%%')
 print(2, 3, 4, sep='p')
 ```
-
+<br>
+<br>
 
 #### 기본 인자 사용 시 주의점
 - 기본 인자 뒤에 일반 인자가 위치할 수 없음. 즉, 기본 파라미터는 끝부터만 가능
@@ -163,13 +170,13 @@ print(2, 3, 4, sep='p')
 > def test(a = 1, b, c)
 > def test(a = 1, b = 1, c)
 ```
-
-
+<br>
+<br>
 
 ### 키워드 인자 (Keyword)
 - 파이썬의 경우, 파라미터에 값을 전달 할 때 파라미터의 이름을 명시하여 전달 가능
 - 파라미터 이름을 사용하지 않을 경우, 기본적으로 순서에 맞게 전달
-
+- \**가 붙은 경우에는 키워드 파라미터로 인식해, 함수 호출 시 파리미터의 이름과 값을 함께 전달 가능
 ```python
 # 파라미터의 이름을 명시하여 전달 가능
 def test(x, y, z):
@@ -179,12 +186,8 @@ def test(x, y, z):
 test(x=10, z=20, y=3)           # but 되도록이면 맞춰서 쓰기
 ```
 
-
-- \**가 붙은 경우에는 키워드 파라미터로 인식
-- 즉 함수 호출 시, 파리미터의 이름과 값을 함께 전달 가능
-
 ```python
-def test2(**x):
+def test2(**x):                  # 파리미터의 이름과 값을 함께 전달
     print(type(x))
 
 test2(a=1, b=2, c=3, d=4, name='Bob')
@@ -198,7 +201,8 @@ def test2(**kwargs):
 print(test2(a=1))
 print(test2(a=1, b=2, c=3, d=4, name='Bob', age=90))
 ```
-
+<br>
+<br>
 
 ### 가변길이 인자 (Variable length)
 - 전달되는 파라미터의 개수가 고정적이지 않은 경우 사용 (ex. print, format 함수)
@@ -226,9 +230,10 @@ def test(*args):
 # 몇 개의 변수를 주더라도 함수는 변수를 동적으로 받아들임
 test(10, 20, 30)
 ```
+<br>
+<br>
 
-
-### 가변길이 예시 - 문자열 포맷 함수
+#### 가변길이 예시 - 문자열 포맷 함수
 - 여러가지 값과 포맷을 이용하여 문자열을 정의할 수 있는 함수
 - {} placeholder를 문자열 내에 위치 시킨 후, 해당 위치에 format함수로 전달된 값으로 대체하여 문자열 생성
 - 포맷 구성은 다음 링크 참조 : https://pyformat.info/
