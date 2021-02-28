@@ -79,25 +79,6 @@ if a:
 <br>
 <br>
 
-## 중첩 조건문
-- 조건문의 경우 중첩하여 작성 가능
-- 중첩의 의미는 depth(깊이)로 생각할 수 있으며, depth의 제한은 없음
-
-```python
-a = 10
-b = 9
-c = 8
-
-if a == 10:              # True면 밑으로 이동
-    if c == 8:
-        if b == 8:
-            print('a is 10 and b is 8')
-        else:
-            print('a is 10 and b is not 8')
-```
-<br>
-<br>
-
 ### if, else
 - if조건이 True인 경우 if 블락의 코드가 수행, 거짓인 경우 else 블락의 코드가 수행
 - 주의 할 점 : if와 else사이에 다른 코드 삽입 불가
@@ -138,6 +119,25 @@ elif a % 4 == 2:
     print('a % 4 is 2')
 else:
     print('a % 4 is 3')
+```
+<br>
+<br>
+
+### 중첩 조건문
+- 조건문의 경우 중첩하여 작성 가능
+- 중첩의 의미는 depth(깊이)로 생각할 수 있으며, depth의 제한은 없음
+
+```python
+a = 10
+b = 9
+c = 8
+
+if a == 10:              # True면 밑으로 이동
+    if c == 8:
+        if b == 8:
+            print('a is 10 and b is 8')
+        else:
+            print('a is 10 and b is not 8')
 ```
 <br>
 <br>
