@@ -296,7 +296,7 @@ bob.work(60)                 # 부모 클래스도 이용하면서 나의 기능
 <br>
 
 ### 메소드 종류
-1. instance method
+#### 1. instance method
 - 객체 메쏘드는 객체 레벨로 호출되기 때문에, 해당 메쏘드를 호출한 객체에만 영향을 미침
 
 ```python
@@ -312,7 +312,7 @@ m.add(10, 20)
 m.multiply(10, 20)
 ```
 
-2. class method
+#### 2. class method
 - 클래스 메쏘드는 클래스 레벨로 호출되기 때문에, 클래스 멤버 변수만 변경 가능
 
 ```python
@@ -332,7 +332,7 @@ Math.multiply(10, 20)
 <br>
 <br>
 
-3. special method
+#### 3. special method
 - __로 시작 __로 끝나는 특수 함수로, 커스텀한 객체에 여러가지 파이썬 내장 함수나 연산자를 적용 가능
 - 오버라이딩 가능한 함수 목록: https://docs.python.org/3/reference/datamodel.html
 
