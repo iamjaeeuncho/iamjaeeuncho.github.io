@@ -59,8 +59,11 @@ toc_sticky: true
 </center>
 
 * 위를 예로 들면, 만약 B/D.txt에서 C/E.txt를 불러오고 싶다면<br>
-> - 현재 작성중인 파일 위치: ``` C:/Users/JEN/Desktop/A/B/D.txt ```
-> - 불러오고 싶는 파일 위치: ``` C:/Users/JEN/Desktop/A/C/E.txt ```
+
+```python
+# 현재 작성중인 파일 위치: C:/Users/JEN/Desktop/A/B/D.txt
+# 불러오고 싶는 파일 위치: C:/Users/JEN/Desktop/A/C/E.txt
+```
 
 1. 동일한 폴더 내에 위치해 있음을 말해주는, 중복되는 상위 폴더들은 모두 지운다  
     - 불러오고 싶는 파일 위치: ``` C/E.txt ```
