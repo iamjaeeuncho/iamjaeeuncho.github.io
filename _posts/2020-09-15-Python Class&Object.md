@@ -32,7 +32,7 @@ print(a)
 <br>
 <br>
 
-### object 란? 
+### object란? 
 - 클래스로 생성되어 구체화된 객체(인스턴스)
 - 파이썬의 모든 것(int, str, list..etc)은 객체(인스턴스)
 - 실제로 class가 인스턴스화 되어 메모리에 상주하는 상태를 의미
@@ -40,7 +40,7 @@ print(a)
 <br>
 <br>
 
-## class 선언하기
+## 클래스 선언
 - 객체를 생성하기 위해선 객체의 모체가 되는 class를 미리 선언해야 함 
 
 ```python
@@ -71,27 +71,21 @@ print(type(a), type(b))
 <br>
 <br>
 
-#### __init__(self)
- + 생성자, 클래스 인스턴스가 생성될 때 호출됨
- + self인자는 항상 첫번째에 오며 자기 자신을 가리킴
- + 이름이 꼭 self일 필요는 없지만, 관례적으로 self로 사용
- 
- + 생성자에서는 해당 클래스가 다루는 데이터를 정의
-   - 이 데이터를 멤버 변수(member variable) 또는 속성(attribute)라고 함
+### __init__(self)
+- init은 파이썬 개체가 생성되는 순간 호출되는  함수로, 주로 클래스가 다루고자하는 데이터를 주로 명시
+- self인자는 항상 첫번째에 오며 자기 자신을 가리킴. 이름이 꼭 self일 필요는 없지만, 관례적으로 self로 사용
+- 생성자에서는 해당 클래스가 다루는 데이터를 정의하며, 이 데이터를 멤버 변수(member variable) 또는 속성(attribute)라 함
 
 ```python
-# init은 파이썬 개체가 생성되는 순간 호출되는  함수
-#        주로 클래스가 다루고자하는 데이터를 주로 명시
-# Person이라는 class의 속성이 name과 age
-# But 이 경우 name과 age가 kate로 고정되어 있음
-
+# Person(class)의 속성(method)이 name과 age
+# 하지만 이 경우 name과 age가 kate로 속성 고정됨
 class Person:
     def __init__(self):
         print(self, 'is generated')
         #   .속성(attribute)
         self.name = 'Kate'
         self.age = 10
-        
+
 p1 = Person()
 p2 = Person()
 
@@ -99,26 +93,11 @@ p1.name = 'aaron'
 p1.age = 20
 
 print(p1.name, p1.age)
-```
-
-```python
+------------------------------
 # 기본값 self 이외의 변수값 받고 싶을 때
-
+# 기본 파라미터값 설정 가능
 class Person:
-    def __init__(self, n, a):          # 속성값과 이름이 같을 필요 없음
-        self.name = n
-        self.age = a
-
-p1 = Person('Bob', 30)
-p2 = Person('Kate', 20)
-
-print(p1.name, p1.age)
-print(p2.name, p2.age)
-```
-```python
-class Person:
-    def __init__(self, n, a=10):          # 기본 파라미터값 설정 가능
-        # print(self, 'is generated')
+    def __init__(self, n, a=10):          # 속성값과 이름 같을 필요 없음
         self.name = n
         self.age = a
 
@@ -130,15 +109,16 @@ print(p1.name, p1.age)
 print(p2.name, p2.age)
 print(p3.name, p3.age)
 ```
-#### **self**
- - 파이썬의 method는 항상 첫번째 인자로 self를 전달
- - self는 현재 해당 메쏘드가 호출되는 객체 자신을 가리킴
- - C++/C#, Java의 this에 해당
- - 역시, 이름이 self일 필요는 없으나, 위치는 항상 맨 처음의 parameter이며 관례적으로 self로 사용
+<br>
+<br>
+
+#### self
+- self는 현재 해당 행동(method)가 호출되는 객체 자신을 가리키며, C++/C#, Java의 this에 해당.
+- 파이썬 method는 항상 첫번째 인자로 self를 전달
+- 이름이 굳이 self일 필요는 없으나, 위치는 항상 맨 처음의 parameter이며 관례적으로 self로 사용
 
 ```python
 # 클래스 Person안에 __init__과 sleep이라는 메소드
-
 class Person:
     def __init__(self, name, age):
         print('self: ', self)           # self는 객체 자체 (ex. Person클래스가 만들어진 a 자체)
@@ -158,31 +138,57 @@ print(b)
 a.sleep()
 b.sleep()
 ```
+<br>
+<br>
 
-#### **mehtod 정의**
- + 멤버함수라고도 하며, 해당 클래스의 object에서만 호출가능
- + 메쏘드는 객체 레벨에서 호출되며, 해당 객체의 속성에 대한 연산을 행함
- + {obj}.{method}() 형태로 호출됨
+## 클래스 상속
+- 기존에 정의해둔 클래스의 기능을 그대로 물려받아, 일부를 추가하거나 변경하여 새로운 클래스를 정의한다.
+- 상속 받고자 하는 대상인 기존 클래스는 'Parent, Super, Base class' 라고 부른고, 상속 받는 새로운 클래스는 'Child, Sub, Derived class' 라고 부른다.
+- 의미적으로 상속 관계(is-a)를 갖으며, 코드를 재사용할 수 있는 장점이 있다
 
 ```python
-# method 클래스의 데이터를 처리하는 행동
-#        함수의 형태로 클래스 내부에서 처리
-#        첫번째 파라미터는 self = 자신의 주소가 넘어오게 되어 있음
-# 객체명.메소드 이름()
+class Person:                          # 부모 클래스
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def eat(self, food):
+        print('{}은 {}를 먹습니다.'.format(self.name, food))
+    def sleep(self, minute):
+        print('{}은 {}분 동안 잡니다.'.format(self.name, minute))
+    def work(self, minute):
+        print('{}은 {}분 동안 일합니다.'.format(self.name, minute))
+        
+class Student(Person):                  # 부모 클래스 상속
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+class Employee(Person):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+bob = Student('Bob', 25)
+bob.eat('BBQ')
+bob.sleep(30)
+bob.work(60)
+```
+<br>
+<br>
+
+## mehtod란?
+- 행동(method) 클래스의 데이터인 객체(object)를 처리하는 행동으로, 함수의 형태로 객체 내부에서 연산 수행
+- 해당 클래스의 object에서만 호출 가능하며, 멤버 함수라고도 함.
+
+```python
+# 메소드 = 객체명.메소드 이름()
 a = list()
 print(a.append(0))
-
-s = 'test'
-print(s.split())
-```
-
-```python
+------------------------------
 # 카운터 기능 1. 숫자 하나씩 증가 2. 숫자 0으로 초기화
-
 class Counter:
-    def __init__(self):
-        self.num = 0      # Counter 클래스는 num 데이터를 갖고 항상 0으로 초기화
+    def __init__(self):              # 첫번째 파라미터는 self = 자신의 주소가 넘어오게 되어 있음
+        self.num = 0                 # Counter 클래스는 num 데이터를 갖고 항상 0으로 초기화
     
     def increment(self):
         self.num += 1
@@ -207,35 +213,28 @@ c2 = Counter()
 c2.increment()
 c2.print_current_value()
 ```
+<br>
+<br>
 
-#### **method type**
- - instance method - 객체로 호출
-   - 메쏘드는 객체 레벨로 호출 되기 때문에, 해당 메쏘드를 호출한 객체에만 영향을 미침
- - class method    - class로 호출
-       - 클래스 메쏘드의 경우, 클래스 레벨로 호출되기 때문에, 클래스 멤버 변수만 변경 가능
-
-```python
-class Math:
-    def add(self, a, b):
-        return a + b
-    
-    def multiply
-```
+#### method type
+1. instance method : 객체로 호출
+- 객체 메쏘드는 객체 레벨로 호출되기 때문에, 해당 메쏘드를 호출한 객체에만 영향을 미침
+2. class method : class로 호출
+- 클래스 메쏘드는 클래스 레벨로 호출되기 때문에, 클래스 멤버 변수만 변경 가능
 
 ```python
+# 객체 메쏘드 (instance method)
 class Math:
     def add(self, a, b):     
         return a + b
-    
     def multiply(self, a, b):
         return a * b
     
 m = Math()
 m.add(10, 20)
 m.multiply(10, 20)
-```
-
-```python
+------------------------------
+# 클래스 메쏘드 (class method)
 class Math:
     @staticmethod
     def add(a, b):           # self 자기 내부의 데이터가 없을때는 삭제 가능
@@ -250,44 +249,6 @@ Math.add(10, 20)             # 클래스 이름으로 불러와 일반 함수처
 Math.multiply(10, 20)
 ```
 
- #### **Class Inheritance (상속)**
-  - 기존에 정의해둔 클래스의 기능을 그대로 물려받을 수 있다.
-  - 기존 클래스에 기능 일부를 추가하거나, 변경하여 새로운 클래스를 정의한다.
-  - 코드를 재사용할 수 있게된다.
-  - 상속 받고자 하는 대상인 기존 클래스는 (Parent, Super, Base class 라고 부른다.)
-  - 상속 받는 새로운 클래스는(Child, Sub, Derived class 라고 부른다.)
-  - 의미적으로 is-a관계를 갖는다
-
-```python
-class Person:                       # 부모 클래스
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-    
-    def eat(self, food):
-        print('{}은 {}를 먹습니다.'.format(self.name, food))
-        
-    def sleep(self, minute):
-        print('{}은 {}분 동안 잡니다.'.format(self.name, minute))
-
-    def work(self, minute):
-        print('{}은 {}분 동안 일합니다.'.format(self.name, minute))
-        
-class Student(Person):             # 부모 클래스 상속
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-class Employee(Person):
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-bob = Student('Bob', 25)
-bob.eat('BBQ')
-bob.sleep(30)
-bob.work(60)
-```
 
 #### **method override**
  - 부모 클래스의 method를 재정의(override)
