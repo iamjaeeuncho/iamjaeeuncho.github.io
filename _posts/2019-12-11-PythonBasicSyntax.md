@@ -1,6 +1,6 @@
 ---
 title: "[Python] 파이썬 기본 구문"
-date: 2019-12-10
+date: 2019-12-11
 categories:
   - study
 tags:

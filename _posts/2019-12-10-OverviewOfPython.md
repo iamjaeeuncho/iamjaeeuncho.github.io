@@ -1,6 +1,6 @@
 ---
 title: "[Python] 파이썬 개요 - 기원, 특징, 에디터"
-date: 2019-12-9
+date: 2019-12-10
 categories:
   - study
 tags:

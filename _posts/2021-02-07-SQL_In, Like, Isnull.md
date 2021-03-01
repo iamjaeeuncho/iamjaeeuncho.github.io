@@ -1,6 +1,6 @@
 ---
 title: "[SQL] 데이터 보유 여부 확인 - In, Like, Isnull"
-date: 2019-7-7
+date: 2021-2-7
 categories:
   - study
 tags:

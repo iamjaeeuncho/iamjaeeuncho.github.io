@@ -1,6 +1,6 @@
 ---
 title: "절대경로와 상대경로 차이점"
-date: 2020-2-1
+date: 2021-2-1
 categories:
 - study
 tags:

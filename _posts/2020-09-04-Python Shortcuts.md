@@ -1,6 +1,6 @@
 ---
 title: "[Python] 파이썬 단축키 모음"
-date: 2020-9-5
+date: 2020-9-4
 categories:
   - study
 tags:
