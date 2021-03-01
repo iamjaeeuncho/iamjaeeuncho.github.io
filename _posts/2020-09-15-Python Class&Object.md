@@ -11,63 +11,66 @@ toc_sticky: true
 
 ## 클래스와 객체?
 
-<center><img src="https://user-images.githubusercontent.com/46369038/109480598-0ec3fe80-7abf-11eb-993d-bb963763c0d3.PNG"><br>
+<center><img src="https://user-images.githubusercontent.com/46369038/109480598-0ec3fe80-7abf-11eb-993d-bb963763c0d3.PNG" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
 <i>Credit: https://www.itple.co.kr/116</i>
 </center>
 <br>
 <br>
 
 ### class란? 
-+ 실세계의 것을 모델링하여 속성(attribute)와 동작(method)를 갖는 데이터 타입
-+ python에서의 string, int, list, dict.. 모두가 다 클래스로 존재
-+ 예를들어 학생이라는 클래스를 만든다면, 학생을 나타내는 속성과 학생이 행하는 행동을 함께 정의 할 수 있음
-+ 따라서, 다루고자 하는 데이터(변수) 와 데이터를 다루는 연산(함수)를 하나로 캡슐화(encapsulation)하여 클래스로 표현
-+ 모델링에서 중요시 하는 속성에 따라 클래스의 속성과 행동이 각각 달라짐
+- 실세계의 것을 모델링하여 속성(attribute)와 행동(method)를 갖는 데이터 타입 
+- 파이썬에서의 string, int, list, dict 등 모두가 다 클래스로 존재
+- 예를 들어 학생이라는 클래스를 만든다면, 학생을 나타내는 속성과 학생이 행하는 행동을 함께 정의 할 수 있음 (ex. 속성 = items, 행동 = append, extend, etc...)
+- 따라서, 다루고자 하는 데이터(변수)와 데이터를 다루는 연산(함수)를 하나로 캡슐화(encapsulation)하여 클래스로 표현
+- 모델링에서 중요시 하는 속성에 따라 클래스의 속성과 행동이 각각 달라짐
 
 ```python
 a = [1, 2, 3, 4]
 a.append(5)
 print(a)
 ```
+<br>
+<br>
 
 ### object 란? 
 - 클래스로 생성되어 구체화된 객체(인스턴스)
 - 파이썬의 모든 것(int, str, list..etc)은 객체(인스턴스)
 - 실제로 class가 인스턴스화 되어 메모리에 상주하는 상태를 의미
 - class가 빵틀이라면, object는 실제로 빵틀로 찍어낸 빵이라고 비유 가능
+<br>
+<br>
 
-#### **class 선언하기**
-  - 객체를 생성하기 위해선 객체의 모체가 되는 class를 미리 선언해야 함 
-
-```python
-# 정의는 하고 싶은데, 내부는 비워두고 싶을 때 'pass'
-
-def test():
-    pass
-```
+## class 선언하기
+- 객체를 생성하기 위해선 객체의 모체가 되는 class를 미리 선언해야 함 
 
 ```python
 # 클래스 만들기
 
 class Person:
     pass
-```
+------------------------------
+# 정의는 하고 싶은데, 내부는 비워두고 싶을 때 'pass'
 
-```python
+def test():
+    pass
+------------------------------
 # a/b는 list 클래스, bob/cathy는 커스텀한 Person 클래스
-
-bob = Person()
-cathy = Person()
 
 a = list()
 b = list()
 
-# a 객체의 행동(method)가 append 등등
+bob = Person()
+cathy = Person()
+
+# a 객체의 행동(method)가 append
 a.append
 
 print(type(bob), type(cathy))
 print(type(a), type(b))
 ```
+<br>
+<br>
+
 #### __init__(self)
  + 생성자, 클래스 인스턴스가 생성될 때 호출됨
  + self인자는 항상 첫번째에 오며 자기 자신을 가리킴
