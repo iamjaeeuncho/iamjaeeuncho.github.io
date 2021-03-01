@@ -218,11 +218,9 @@ c2.print_current_value()
 <br>
 <br>
 
-### method type
-1. instance method : 객체로 호출
+### 메소드 종류
+1. instance method
 - 객체 메쏘드는 객체 레벨로 호출되기 때문에, 해당 메쏘드를 호출한 객체에만 영향을 미침
-2. class method : class로 호출
-- 클래스 메쏘드는 클래스 레벨로 호출되기 때문에, 클래스 멤버 변수만 변경 가능
 
 ```python
 # 객체 메쏘드 (instance method)
@@ -235,7 +233,12 @@ class Math:
 m = Math()
 m.add(10, 20)
 m.multiply(10, 20)
-------------------------------
+```
+
+2. class method
+- 클래스 메쏘드는 클래스 레벨로 호출되기 때문에, 클래스 멤버 변수만 변경 가능
+
+```python
 # 클래스 메쏘드 (class method)
 class Math:
     @staticmethod
@@ -250,34 +253,29 @@ class Math:
 Math.add(10, 20)             # 클래스 이름으로 불러와 일반 함수처럼 사용
 Math.multiply(10, 20)
 ```
+<br>
+<br>
 
-
-#### **method override**
- - 부모 클래스의 method를 재정의(override)
- - 하위 클래스(자식 클래스) 의 인스턴스로 호출시, 재정의된 메소드가 호출됨
+### 메쏘드 재정의
+- 부모 클래스의 method를 다시 써서 재정의(override)함
+- 하위 클래스(자식 클래스)의 인스턴스로 호출시, 재정의된 메소드가 호출됨
 
 ```python
-# override하는 법 - 그냥 다시 쓰면 됨
-
-class Person:                       # 부모 클래스
+class Person:                            # 부모 클래스
     def __init__(self, name, age):
         self.name = name
         self.age = age
-    
     def eat(self, food):
         print('{}은 {}를 먹습니다.'.format(self.name, food))
-        
     def sleep(self, minute):
         print('{}은 {}분 동안 잡니다.'.format(self.name, minute))
-
     def work(self, minute):
         print('{}은 {}분 동안 일합니다.'.format(self.name, minute))
         
-class Student(Person):             # 부모 클래스 상속
+class Student(Person):                    # 부모 클래스 'Person' 상속
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        
     def work(self, minute):
         print('{}은 {}분 동안 공부합니다.'.format(self.name, minute))
 
@@ -285,7 +283,6 @@ class Employee(Person):
     def __init__(self, name, age):
         self.name = name
         self.age = age
-    
     def work(self, minute):
         print('{}은 {}분 동안 업무를 합니다.'.format(self.name, minute))
 
@@ -294,8 +291,11 @@ bob.eat('BBQ')
 bob.sleep(30)
 bob.work(60)
 ```
+<br>
+<br>
+
 #### super 
- - 하위클래스(자식 클래스)에서 부모클래스의 method를 호출할 때 사용
+- 하위클래스(자식 클래스)에서 부모클래스의 method를 호출할 때 사용
 
 ```python
 # 오버라이딩하면 부모 클래스 기능 완전히 사라짐
