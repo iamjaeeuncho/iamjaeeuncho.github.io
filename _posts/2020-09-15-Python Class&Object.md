@@ -11,7 +11,8 @@ toc_sticky: true
 
 ## 클래스와 객체?
 
-<center><img src="https://user-images.githubusercontent.com/46369038/109480598-0ec3fe80-7abf-11eb-993d-bb963763c0d3.PNG" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
+<center>
+<br><img src="https://user-images.githubusercontent.com/46369038/109480598-0ec3fe80-7abf-11eb-993d-bb963763c0d3.PNG" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
 <i>Credit: https://www.itple.co.kr/116</i>
 </center>
 <br>
