@@ -46,17 +46,14 @@ print(a)
 
 ```python
 # 클래스 만들기
-
 class Person:
     pass
 ------------------------------
 # 정의는 하고 싶은데, 내부는 비워두고 싶을 때 'pass'
-
 def test():
     pass
 ------------------------------
 # a/b는 list 클래스, bob/cathy는 커스텀한 Person 클래스
-
 a = list()
 b = list()
 
@@ -371,7 +368,6 @@ class Point:
 
 ```python
 import math
-
 class ComplexNumber:
     def __init__(self, real, img):      # real 실수, img 허수
         self.real = real
