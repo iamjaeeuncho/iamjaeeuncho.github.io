@@ -293,7 +293,7 @@ email_reg = re.compile(r'[\w-]+@[\w.]+\w+')
 email_reg.search('test1@gmail.com.')
 ```
 
-### 올바른(http, https) 웹페이지 찾기
+### 올바른 웹주소 찾기
 ```python
 webs = ['http://www.test.co.kr', 
         'https://www.test1.com', 
