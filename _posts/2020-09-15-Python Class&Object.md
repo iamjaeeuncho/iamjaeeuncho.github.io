@@ -41,7 +41,8 @@ print(a)
 <br>
 <br>
 
-## 클래스 선언
+## Class
+### 클래스 선언
 - 객체를 생성하기 위해선 객체의 모체가 되는 class를 미리 선언해야 함 
 
 ```python
@@ -72,7 +73,7 @@ print(type(a), type(b))
 <br>
 <br>
 
-### __init__(self)
+#### __init__(self)
 - init은 파이썬 개체가 생성되는 순간 호출되는  함수로, 주로 클래스가 다루고자하는 데이터를 주로 명시
 - self인자는 항상 첫번째에 오며 자기 자신을 가리킴. 이름이 꼭 self일 필요는 없지만, 관례적으로 self로 사용
 - 생성자에서는 해당 클래스가 다루는 데이터를 정의하며, 이 데이터를 멤버 변수(member variable) 또는 속성(attribute)라 함
@@ -142,7 +143,7 @@ b.sleep()
 <br>
 <br>
 
-## 클래스 상속
+### 클래스 상속
 - 기존에 정의해둔 클래스의 기능을 그대로 물려받아, 일부를 추가하거나 변경하여 새로운 클래스를 정의한다.
 - 상속 받고자 하는 대상인 기존 클래스는 'Parent, Super, Base class' 라고 부른고, 상속 받는 새로운 클래스는 'Child, Sub, Derived class' 라고 부른다.
 - 의미적으로 상속 관계(is-a)를 갖으며, 코드를 재사용할 수 있는 장점이 있다
@@ -177,7 +178,7 @@ bob.work(60)
 <br>
 <br>
 
-## mehtod란?
+## Mehtod
 - 행동(method) 클래스의 데이터인 객체(object)를 처리하는 행동으로, 함수의 형태로 객체 내부에서 연산 수행
 - 해당 클래스의 object에서만 호출 가능하며, 멤버 함수라고도 함.
 
@@ -217,7 +218,7 @@ c2.print_current_value()
 <br>
 <br>
 
-#### method type
+### method type
 1. instance method : 객체로 호출
 - 객체 메쏘드는 객체 레벨로 호출되기 때문에, 해당 메쏘드를 호출한 객체에만 영향을 미침
 2. class method : class로 호출
