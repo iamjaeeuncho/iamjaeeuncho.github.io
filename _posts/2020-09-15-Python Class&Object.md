@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 클래스와 객체 - import"
+title: "[Python] 파이썬 클래스와 객체"
 date: 2020-9-15
 categories:
 - study
@@ -10,6 +10,13 @@ toc_sticky: true
 ---
 
 ## 클래스와 객체?
+
+<center><img src="https://user-images.githubusercontent.com/46369038/109480598-0ec3fe80-7abf-11eb-993d-bb963763c0d3.PNG"><br>
+<i>Credit: https://www.itple.co.kr/116</i>
+</center>
+<br>
+<br>
+
 ### class란? 
 + 실세계의 것을 모델링하여 속성(attribute)와 동작(method)를 갖는 데이터 타입
 + python에서의 string, int, list, dict.. 모두가 다 클래스로 존재
@@ -24,10 +31,10 @@ print(a)
 ```
 
 ### object 란? 
- - 클래스로 생성되어 구체화된 객체(인스턴스)
- - 파이썬의 모든 것(int, str, list..etc)은 객체(인스턴스)
- - 실제로 class가 인스턴스화 되어 메모리에 상주하는 상태를 의미
- - class가 빵틀이라면, object는 실제로 빵틀로 찍어낸 빵이라고 비유 가능
+- 클래스로 생성되어 구체화된 객체(인스턴스)
+- 파이썬의 모든 것(int, str, list..etc)은 객체(인스턴스)
+- 실제로 class가 인스턴스화 되어 메모리에 상주하는 상태를 의미
+- class가 빵틀이라면, object는 실제로 빵틀로 찍어낸 빵이라고 비유 가능
 
 #### **class 선언하기**
   - 객체를 생성하기 위해선 객체의 모체가 되는 class를 미리 선언해야 함 
