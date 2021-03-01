@@ -16,21 +16,6 @@ toc_sticky: true
 <br>
 <br>
 
-### 문자열로 변환, 'r'
-- 문자열 앞에 r이 붙으면 해당 문자열이 구성된 그대로 문자열로 변환
-
-```python
-# escape 문자열 - \를 앞에 붙여 원래 의미를 벗어나는(escape) 문자들
-
-a = 'abcdef\n'            # \n = 엔터
-print(a)
-
-b = r'abcdef\n'           # r'문자열' = raw string : 문자열 그대로 변환
-print(b)
-```
-<br>
-<br>
-
 ## 기본 패턴
 - a, X, 9 등등 문자 하나하나의 character들은 정확히 해당 문자와 동일. 
 - 대소문자의 경우 기본적으로 구별하나, 구별하지 않도록 설정 가능
@@ -46,26 +31,17 @@ print(b)
 <br>
 <br>
 
-#### search method
-- '.search(찾고자하는 표현, 찾을 대상 문자열)' 형식으로 특정 패턴 찾고자 할 때 사용
-- 첫번째로 패턴을 찾으면 match 객체를 반환하고, 패턴을 찾지 못하면 None을 반환
-- search 함수는 여러가지 중에서 가장 먼저오는 것을 발견 (ex. 11, 12, 11, 19 중에서 11만 출력)
+### 문자열로 변환, 'r'
+- 문자열 앞에 r이 붙으면 해당 문자열이 구성된 그대로 문자열로 변환
 
 ```python
-m = re.search(r'abc', '123abcdef')      # abcdef에서 'abc'가 있는지 찾는
-print(type(m))
-print(m.start())                        # 문자가 검색된 시작 위치 - 시작 포함
-print(m.end())                          # 문자가 검색된 종료 위치 - 종료 미포함
-print(m.group())                        # 해당 검색된 패턴 자체를 출력
-------------------------------
-m = re.search(r'\d\d\d', '112abcdef119')     # 숫자 2개가 나란히 있는지
-m
-------------------------------
-m = re.search(r'\d\d\d\w', '112abcdef119')     # 숫자 3개, 문자 1개
-m
-------------------------------
-m = re.search(r'..\w\w', '@#$%ABCDabcd')       # 어떠한 문자든지 2개+문자2개
-m
+# escape 문자열 - \를 앞에 붙여 원래 의미를 벗어나는(escape) 문자들
+
+a = 'abcdef\n'            # \n = 엔터
+print(a)
+
+b = r'abcdef\n'           # r'문자열' = raw string : 문자열 그대로 변환
+print(b)
 ```
 <br>
 <br>
@@ -73,7 +49,7 @@ m
 ## 메타 캐릭터
 - 메타 캐릭터란, 프로그래밍 언어 등에서 원래 그 문자가 가진 뜻이 아닌 특별한 용도로 사용하는 문자를 말한다
 
-### **[]**
+### []
 - 보통 문자들의 범위를 나타내기 위해 사용하며, 원래 특수의미로 사용하는 것도 []안에 들어가면 원래 의미로 사용됨
   - [abck] : a or b or c or k
   - [abc.^] : a or b or c or . or ^
@@ -96,7 +72,7 @@ re.search(r'[^abc]aron', 'aaron')  # aaron, baron, caron만 아니면 됨
 <br>
 <br>
 
-### **\**
+### \
 1. 다른 문자와 함께 사용되어 특수한 의미를 지니거나
   - \d : 숫자를          [0-9]와 동일
   - \D : 숫자가 아닌 문자  [^0-9]와 동일
@@ -115,94 +91,85 @@ re.search(r'\.and', '.and')             # \가 붙어서 .자체를 의미
 <br>
 <br>
 
-### **.** 
+### .
 - 모든 문자를 의미
-
 ```python
 re.search(r'p.g', 'pig')
 ```
+<br>
+<br>
 
- #### **반복패턴**
- - 패턴 뒤에 위치하는 *, +, ?는 해당 패턴이 반복적으로 존재하는지 검사 
-   - '+' -> 1번 이상의 패턴이 발생 (1, 2 ~ )
-   - '*' -> 0번 이상의 패턴이 발생 (0, 1, 2 ~ )
-   - '?' -> 0 혹은 1번의 패턴이 발생 (있거나 없거나)
- - 반복을 패턴의 경우 greedy하게 검색 함, 즉 가능한 많은 부분이 매칭되도록 함
-  - e.g) a[bcd]*b  패턴을 abcbdccb에서 검색하는 경우
-    - ab, abcb, abcbdccb 전부 가능 하지만 최대한 많은 부분이 매칭된 abcbdccb가 검색된 패턴
+### ^, $
+- ^  문자열의 맨 앞부터 일치하는 경우 검색
+- \$  문자열의 맨 뒤부터 일치하는 경우 검색
 
 ```python
-# a로 시작하고 b,c,d 중 하나가 0번 이상 반복되며 b로 끝나는 것
-# ab, abcb, abcbdccb 전부 가능 하지만
-# 최대한 많은 부분이 매칭된 abcbdccb가 검색된 패턴
-
-re.search(r'a[bcd]*b', 'abcbdccb') 
-```
-```python
-# b로 시작해서 어떤 숫자나 영문자가 1번 이상 반복하고 a로 끝나는 것
-
-re.search(r'b\w+a', 'banana')
-```
-```python
-# i가 반복되는 구간
-# 가장 빨리 찾아진 것을 도출
-
-re.search(r'i+', 'piigiii')
-```
-```python
-# p로 시작하고 i가 1번 이상 반복하고 g로 끝남
-
-# re.search(r'pi+g', 'piig')
-# re.search(r'pi+g', 'pig')
-re.search(r'pi+g', 'pg')
-```
-```python
-# p로 시작하고 i가 0번 이상 반복하고 g로 끝남
-
-# re.search(r'pi*g', 'piig')
-# re.search(r'pi*g', 'pig')
-re.search(r'pi*g', 'pg')
-```
-```python
-# http로 시작하고 s는 1번 있거나 없거나
-
-# re.search(r'https?', 'https://www.naver.com')
-re.search(r'https?', 'http://www.naver.com')
-```
-
-#### **^**, **$**
- - ^  문자열의 맨 앞부터 일치하는 경우 검색
- - \$  문자열의 맨 뒤부터 일치하는 경우 검색
-
-```python
-# b로 시작하고 아무글자 1번 이상 패턴 반복하고 a로 끝남
-# 문자열 어디에서든지 그거 나오면 끝
-
-re.search(r'b\w+a', 'cabana')
-```
-```python
-# ^ 문자열 맨 앞부터 일치할 때
-re.search(r'^b\w+a', 'cabana')
-```
-```python
-# ^ 문자열 맨 앞부터 일치할 때
-re.search(r'^b\w+a', 'babana')
-```
-```python
-# $ 문자열 맨 마지막
-re.search(r'b\w+a$', 'cabana')
-```
-```python
+re.search(r'b\w+a', 'cabana')     # b로 시작하고 아무글자 1번 이상 패턴 반복하고 a로 끝남
+------------------------------
+re.search(r'^b\w+a', 'cabana')    # ^ 문자열 맨 앞부터 일치할 때
+------------------------------
+re.search(r'^b\w+a', 'babana')    # ^ 문자열 맨 앞부터 일치할 때
+------------------------------
+re.search(r'b\w+a$', 'cabana')    # $ 문자열 맨 마지막
+------------------------------
 re.search(r'b\w+a$', 'cabanap')
 ```
+<br>
+<br>
 
- #### **grouping**
-  - ()을 사용하여 그루핑
-  - 매칭 결과를 각 그룹별로 분리 가능
-  - 패턴 명시 할 때, 각 그룹을 괄호() 안에 넣어 분리하여 사용
+### *, +, ?
+- 패턴 뒤에 위치하는 *, +, ?는 해당 패턴이 반복적으로 존재하는지 검사
+  - '+' : 1번 이상의 패턴이 발생 (1, 2 ~ )
+  - '*' : 0번 이상의 패턴이 발생 (0, 1, 2 ~ )
+  - '?' : 0 혹은 1번의 패턴이 발생 (있거나 없거나)
+- 반복을 패턴의 경우 가능한 많은 부분이 매칭되도록 꼼꼼하게(greedy) 검색 하며, 가장 빨리 찾아진 것을 도출함.
+- 예를 들어, a[bcd]*b 패턴을 abcbdccb에서 검색하는 경우, 'ab, abcb, abcbdccb' 전부 가능 하지만 최대한 많은 부분이 매칭된 abcbdccb가 검색됨.
 
-  ```
-  # \w 문자열 한개 이상, .+ 어떤 문자든지 한개 이상
+```python
+re.search(r'a[bcd]*b', 'abcbdccb') # a로 시작하고 b,c,d 중 하나가 0번 이상 반복되며 b로 끝나는 것
+------------------------------
+re.search(r'b\w+a', 'banana')      # b로 시작해서 어떤 숫자나 영문자가 1번 이상 반복하고 a로 끝나는 것
+------------------------------
+re.search(r'i+', 'piigiii')        # i가 반복되는 구간
+------------------------------
+re.search(r'pi+g', 'piig')         # p로 시작하고 i가 1번 이상 반복하고 g로 끝남
+------------------------------
+re.search(r'pi*g', 'piig')         # p로 시작하고 i가 0번 이상 반복하고 g로 끝남
+------------------------------
+re.search(r'https?', 'http://www.naver.com') # http로 시작하고 s는 1번 있거나 없거나
+```
+<br>
+<br>
+
+### {}
+- *, +, ?을 사용하여 반복적인 패턴을 찾는 것이 가능하나, 반복의 횟수 제한은 불가
+- 패턴뒤에 위치하는 중괄호{}에 숫자를 명시하면 해당 숫자 만큼의 반복인 경우에만 매칭
+- ex. {4} - 4번 반복, {3,4} - 3 ~ 4번 반복
+
+```python
+re.search('pi{3}', 'piiig')             # 3번 반복
+re.search('pi{3, 5}', 'piiiiiig')       # 최소 3 ~ 최대 5번 반복
+```
+<br>
+<br>
+
+### {}?
+- {m,n}의 경우 m번에서 n번 반복하나 꼼꼼하게(greedy) 동작
+- {m,n}?로 사용하면 느슨하게(non-greedy) 동작. 즉, 최소 m번만 매칭하면 만족
+
+```python
+re.search(r'a{3,5}', 'aaaaa')            # a를 최소 3번에서 최대 5번까지 검출 - 3개
+------------------------------
+re.search(r'a{3,5}?', 'aaaaa')           # 최소한만 검출 - 5개
+```
+
+#### **grouping**
+- ()을 사용하여 그루핑
+- 매칭 결과를 각 그룹별로 분리 가능
+- 패턴 명시 할 때, 각 그룹을 괄호() 안에 넣어 분리하여 사용
+
+```
+# \w 문자열 한개 이상, .+ 어떤 문자든지 한개 이상
 
 m = re.search(r'\w+@.+', 'test@gmail.com')
 m.group()                   # 그룹 호출하면 문자열 전체 호출
@@ -214,20 +181,6 @@ m = re.search(r'(\w+)@(.+)', 'test@gmail.com')
 print(m.group(0))                # 0번은 전체값
 print(m.group(1))                # 1번은 첫번째 괄호
 print(m.group(2))                # 2번은 두번째 괄호
-```
-
- #### **{}**
-  - *, +, ?을 사용하여 반복적인 패턴을 찾는 것이 가능하나, 반복의 횟수 제한은 불가
-  - 패턴뒤에 위치하는 중괄호{}에 숫자를 명시하면 해당 숫자 만큼의 반복인 경우에만 매칭
-  - {4} - 4번 반복
-  - {3,4} - 3 ~ 4번 반복
-
-```python
-# 반복횟수 명시 불가능
-# re.search('pi+g', 'piiig')
-
-# re.search('pi{3}', 'piiig')       # 3번 반복
-re.search('pi{3, 5}', 'piiiiiig')       # 최소 3 ~ 최대 5번 반복
 ```
 
 #### **미니멈 매칭(non-greedy way)**
@@ -243,68 +196,71 @@ re.search(r'<.+>', '<html>haha</html>')
 re.search(r'<.+?>', '<html>haha</html>')
 ```
 
-#### **{}?**
- - {m,n}의 경우 m번 에서 n번 반복하나 greedy하게 동작
- - {m,n}?로 사용하면 non-greedy하게 동작. 즉, 최소 m번만 매칭하면 만족
+
+## 관련 함수
+#### search
+- '.search(찾고자하는 패턴, 찾을 대상)' 형식으로 특정 패턴 찾고자 할 때 사용
+- 첫번째로 패턴을 찾으면 match 객체를 반환하고, 패턴을 찾지 못하면 None을 반환
+- search 함수는 여러가지 중에서 가장 먼저오는 것을 발견 (ex. 11, 12, 11, 19 중에서 11만 출력)
 
 ```python
-# a를 최소 3번에서 최대 5번까지 검출 - 3개
-re.search(r'a{3,5}', 'aaaaa')
+# .search(찾고자하는 패턴, 찾을 대상)
+m = re.search(r'abc', '123abcdef')             # abcdef에서 'abc'가 있는지 찾는
+print(type(m))
+print(m.start())                               # 문자가 검색된 시작 위치 - 시작 포함
+print(m.end())                                 # 문자가 검색된 종료 위치 - 종료 미포함
+print(m.group())                               # 해당 검색된 패턴 자체를 출력
+------------------------------
+m = re.search(r'\d\d\d', '112abcdef119')       # 숫자 2개가 나란히 있는지
+------------------------------
+m = re.search(r'\d\d\d\w', '112abcdef119')     # 숫자 3개, 문자 1개
+------------------------------
+m = re.search(r'..\w\w', '@#$%ABCDabcd')       # 어떠한 문자든지 2개+문자2개
 ```
-```python
-# 최소한만 검출 - 5개
-re.search(r'a{3,5}?', 'aaaaa')
-```
+<br>
+<br>
 
-#### **match** method
- - search와 유사하나, 주어진 문자열의 시작부터 비교하여 패턴이 있는지 확인
- - 시작부터 해당 패턴이 존재하지 않다면 None 반환
+#### match
+- search와 match 둘 다 검색 함수이나 match는 처음부터 맞는지 확인, search는 어디에 있어도 있으면 출력
+- 시작부터 해당 패턴이 존재하지 않다면 None 반환
 
 ```python
-# search와 match 둘 다 검색 함수이나
-# match는 처음부터 맞는지 확인, search는 어디에 있어도 있으면 출력
-# .match(r'패턴', '문자열')
-
-re.match(r'\d\d\d', 'my number is 123') # 처음부터 안 나오므로 호출안됨
-```
-```python
+# .match(찾고자하는 패턴, 찾을 대상)
+re.match(r'\d\d\d', 'my number is 123')          # 처음부터 안 나오므로 호출안됨
+------------------------------
 re.match(r'\d\d\d', '123 is my number')
+------------------------------
+re.search(r'^\d\d\d', '123 is my number')        # ^ 문자열 시작부터 탐색
 ```
-```python
-# ^ 문자열 시작부터 탐색
+<br>
+<br>
 
-re.search(r'^\d\d\d', '123 is my number')
-```
-
-#### **findall**
- - search가 최초로 매칭되는 패턴만 반환한다면, findall은 매칭되는 전체의 패턴을 반환
- - 매칭되는 모든 결과를 리스트 형태로 반환
+#### findall
+- search가 최초로 매칭되는 패턴만 반환한다면, findall은 매칭되는 전체의 패턴을 반환
+- 매칭되는 모든 결과를 리스트 형태로 반환
 
 ```python
-# search는 최초로 매칭되는 패턴만
-# findall은 매칭되는 전체 패턴 반환
-
 re.findall(r'[\w-]+@[\w.]+', 'test@gmail.com haha test2@gmail.com nice test test')
 ```
+<br>
+<br>
 
-#### **sub**
- - 주어진 문자열에서 일치하는 모든 패턴을 replace
- - 그 결과를 문자열로 다시 반환함
- - 두번째 인자는 특정 문자열이 될 수도 있고, 함수가 될 수 도 있음
- - count가 0인 경우는 전체를, 1이상이면 해당 숫자만큼 치환 됨
+#### sub
+- 주어진 문자열에서 일치하는 모든 패턴을 찾아서 치환(substitute)하고 그 결과를 문자열로 다시 반환
+- 두번째 인자는 특정 문자열이 될 수도 있고, 함수가 될 수 도 있음
+- count가 0인 경우는 전체를, 1이상이면 해당 숫자만큼 치환 됨
 
 ```python
-# substitute
-# .sub(r'패턴', '치환','문자열') : 문자열에서 패턴을 찾아서 치환
-
+# .sub(r'패턴', '치환','문자열')
 print(re.sub(r'[\w-]+@[\w.]+', 'great', 'test@gmail.com haha test2@gmail.com nice test test'))
 print(re.sub(r'[\w-]+@[\w.]+', 'great', 'test@gmail.com haha test2@gmail.com nice test test', count=1))
 ```
+<br>
+<br>
 
-#### **compile**
- - 동일한 정규표현식을 매번 다시 쓰기 번거로움을 해결
- - compile로 해당표현식을 re.RegexObject 객체로 저장하여 사용가능
-
+#### compile
+- 동일한 정규표현식을 매번 다시 쓰기 번거로움을 해결
+- compile로 해당표현식을 re.RegexObject 객체로 저장하여 사용가능
 
 ```python
 # 자주 사용하는 패턴을 컴파일해 사용
@@ -314,6 +270,9 @@ email_reg = re.compile(r'[\w-]+@[\w.]+')
 print(email_reg.search('test@gmail.com haha good'))
 print(email_reg.findall('test@gmail.com haha good'))
 ```
+<br>
+<br>
+
 
 ### 연습문제 
   - 아래 뉴스에서 이메일 주소를 추출해 보세요
