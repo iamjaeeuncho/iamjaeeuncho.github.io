@@ -12,10 +12,9 @@ toc_sticky: true
 ## 클래스와 객체?
 
 <center>
-<br><img src="https://user-images.githubusercontent.com/46369038/109480598-0ec3fe80-7abf-11eb-993d-bb963763c0d3.PNG" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
+<br><img src="https://user-images.githubusercontent.com/46369038/109480598-0ec3fe80-7abf-11eb-993d-bb963763c0d3.PNG" width="500" style="border: 2px solid rgb(213, 213, 213);"><br><br>
 <i>Credit: https://www.itple.co.kr/116</i>
 </center>
-<br>
 <br>
 
 ### 클래스(class)
@@ -334,19 +333,10 @@ Math.multiply(10, 20)
 <br>
 
 3. special method
-- __로 시작 __로 끝나는 특수 함수
-- 해당 메쏘드들을 구현하면, 커스텀 객체에 여러가지 파이썬 내장 함수나 연산자를 적용 가능
-- 오버라이딩 가능한 함수 목록은 아래 링크에서 참조 
-- https://docs.python.org/3/reference/datamodel.html
+- __로 시작 __로 끝나는 특수 함수로, 커스텀한 객체에 여러가지 파이썬 내장 함수나 연산자를 적용 가능
+- 오버라이딩 가능한 함수 목록: https://docs.python.org/3/reference/datamodel.html
 
 ```python
-# Point 클래스
-# 2차원 좌표평면 두 점의 덧셈 뺄셈 ex. (1, 2) + (3, 4) = (4, 6)
-# 함점과 숫자의 곱셈
-# 원점 부터의 거리
-# x, y값 가져오기
-# 출력하기
-
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -372,99 +362,53 @@ class Point:
             return self.y
         else:
             return -1
-        
-#     def get_x(self):
-#         return self.x
-
-#     def get_y(self):
-#         return self.y
-
-    def __len__(self):
-        return self.x ** 2 + self.y ** 2
-        
-#     def print_pt(self):
-#         print('({}, {})'.format(self.x, self.y))
-    
-    def __str__(self):           # __str__함수는 print 대신 자동으로 출력
-        return '({}, {})'.format(self.x, self.y)
-
-p1 = Point(3, 4)
-p2 = Point(2, 7)
-
-# p3 = p1.add(p2)                         # p1(self) + p2
-p3 = p1 + p2
-p4 = p1 - p2
-
-# p5 = p1.multiply(3)
-p5 = p1 * 3
-
-# print(p1.length())                     
-print(len(p1))
-
-# 포인트에 인덱스 적용하기
-# p1[0] -> x
-# p1[0] -> y
-
-print(p1[0])
-print(p1[1])
-
-# print(p1.get_x())
-# print(p1.get_y())
-
-print(p1)
-print(p2)
-print(p3)
-print(p4)
-print(p5)
 ```
+<br>
+<br>
 
-#### 연습문제)
- - 복소수 클래스를 정의 해봅시다.
- - 덧셈, 뺄셈, 곱셈 연산자 지원
- - 길이 (복소수의 크기) 지원 
- - 복소수 출력 '1 + 4j'와 같이 표현
- - 비교 연산 ==, != 지원
- - >=, <= , <, > 연산 지원
- - 절대값 지원
+## 연습문제
+### 복소수 클래스 정의
 
 ```python
-# 복소수 클래스 정의
 import math
 
 class ComplexNumber:
     def __init__(self, real, img):      # real 실수, img 허수
         self.real = real
         self.img = img
-    
+
+# 복소수의 덧셈, 뺄셈
     def __add__(self, cn):
         return ComplexNumber(self.real + cn.real, self.img + cn.img)
-    
     def __sub__(self, cn):
         return ComplexNumber(self.real - cn.real, self.img - cn.img)
 
+# 복소수의 곱셈 (a + bj) * (c + dj) = (ac - bd) + (ad + bd)j   
     def __mul__(self, x):
         if type(x) == int:
             return ComplexNumber(self.real * x, self.img * x)
         elif type(x) == ComplexNumber:
             return ComplexNumber(self.real * x.real - self.img * x.img, self.real * x.img + self.img + x.real)
-# 복소수의 곱셈 (a + bj) * (c + dj) = (ac - bd) + (ad + bd)j
-    
+
+# 복소수 '1 + 4j'와 같이 표현
     def __str__(self):
         if self.img > 0:
             return '{} + {}j'.format(self.real, self.img)
         else:                           # self.img < 0:
             return '{} - {}j'.format(self.real, abs(self.img)) # abs = 0
-        
+
+# 복소수 비교 연산 ==, != 지원
     def __eq__(self, cn):               # equal
         return self.real == cn.real and self.img == cn.img
-    
     def __ne__(self, cn):               # not equal
         return not (self.real == cn.real and self.img == cn.img)
-    
-    def __abs__(self):                 # 절대값
+
+# 복소수의 절대값 지원
+    def __abs__(self):                 
         return math.sqrt(self.real ** 2 + self.img ** 2)
 
-    def __len__(self):                 # 길이는 
+# 복소수의 길이 (복소수의 크기) 지원
+    def __len__(self):                 
         return math.sqrt(self.real ** 2 + self.img ** 2)
     
 a = ComplexNumber(1, 2)
