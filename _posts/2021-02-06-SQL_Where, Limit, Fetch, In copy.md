@@ -1,6 +1,6 @@
 ---
 title: "[SQL] 데이터 조건문 - Where, Between, Limit, Fetch"
-date: 2019-7-6
+date: 2021-2-6
 categories:
   - study
 tags:
