@@ -18,7 +18,7 @@ toc_sticky: true
 <br>
 <br>
 
-### class란? 
+### 클래스(class)
 - 실세계의 것을 모델링하여 속성(attribute)와 행동(method)를 갖는 데이터 타입 
 - 파이썬에서의 string, int, list, dict 등 모두가 다 클래스로 존재
 - 예를 들어 학생이라는 클래스를 만든다면, 학생을 나타내는 속성과 학생이 행하는 행동을 함께 정의 할 수 있음 (ex. 속성 = items, 행동 = append, extend, etc...)
@@ -33,7 +33,7 @@ print(a)
 <br>
 <br>
 
-### object란? 
+### 객체(object) 
 - 클래스로 생성되어 구체화된 객체(인스턴스)
 - 파이썬의 모든 것(int, str, list..etc)은 객체(인스턴스)
 - 실제로 class가 인스턴스화 되어 메모리에 상주하는 상태를 의미
@@ -114,7 +114,7 @@ print(p3.name, p3.age)
 <br>
 <br>
 
-#### self
+##### self
 - self는 현재 해당 행동(method)가 호출되는 객체 자신을 가리키며, C++/C#, Java의 this에 해당.
 - 파이썬 method는 항상 첫번째 인자로 self를 전달
 - 이름이 굳이 self일 필요는 없으나, 위치는 항상 맨 처음의 parameter이며 관례적으로 self로 사용
