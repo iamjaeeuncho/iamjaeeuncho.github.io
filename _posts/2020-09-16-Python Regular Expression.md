@@ -259,11 +259,10 @@ print(re.sub(r'[\w-]+@[\w.]+', 'great', 'test@gmail.com haha test2@gmail.com nic
 <br>
 
 #### compile
-- 동일한 정규표현식을 매번 다시 쓰기 번거로움을 해결
-- compile로 해당표현식을 re.RegexObject 객체로 저장하여 사용가능
+- 자주 사용하는 패턴을 compile로 해당표현식을 re.RegexObject 객체로 저장하여 사용
+- 동일한 정규표현식을 매번 다시 쓰기 번거로움 해결
 
 ```python
-# 자주 사용하는 패턴을 컴파일해 사용
 email_reg = re.compile(r'[\w-]+@[\w.]+')
 
 # 이미 패턴은 넘겨져 있으므로 문자열만 입력
@@ -273,11 +272,9 @@ print(email_reg.findall('test@gmail.com haha good'))
 <br>
 <br>
 
+## 연습문제 
 
-### 연습문제 
-  - 아래 뉴스에서 이메일 주소를 추출해 보세요
-  - 다음중 올바른 (http, https) 웹페이지만 찾으시오
-
+### 이메일 주소 추출
 ```python
 import requests
 from bs4 import BeautifulSoup
@@ -320,6 +317,8 @@ webs = ['http://www.test.co.kr',
        'http://www.google.com', 
        'https://www.homepage.com.']
 ```
+
+### 다음중 올바른 (http, https) 웹페이지만 찾으시오
 ```python
 # 불린타입으로 출력하기
 # map(함수, 리스트) : 원래 리스트에 함수를 적용해 새로운 리스트를 만듬
