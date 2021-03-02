@@ -1,0 +1,314 @@
+---
+title: "[Python] 파이썬 request 모듈"
+date: 2020-9-18
+categories:
+- study
+tags:
+- python
+toc: true
+toc_sticky: true
+---
+
+<br>
+<br>
+
+
+
+#### Parsing
+: 어떤 문장을 분석하거나 문법적 관계를 해석하는 행위로
+컴퓨터 과학에서는 일련의 문자열을 의미있는 token(어휘 분석) 단위로 분해하고
+그것들로 이루어진 Parse tree를 만드는 과정
+
+#### Parser
+: parsing을 수행하는 프로그램으로 문법 및 구문 분석하는 프로그램
+
+```
+from bs4 import BeautifulSoup
+```
+
+#### html 문자열 파싱
+ - 문자열로 정의된 html 데이터 파싱하기
+
+```
+# parsing : HTML에서 특정값만 추출
+
+# <h3 title='Good Content Title'>Contents Title</h3>
+# h3 : tag,  title= : attribute 속성
+
+html = '''
+<html>
+  <head>
+    <title>BeautifulSoup test</title>
+  </head>
+  <body>
+    <div id='upper' class='test' custom='good'>
+      <h3 title='Good Content Title'>Contents Title</h3>
+      <p>Test contents</p>
+    </div>
+    <div id='lower' class='test' custom='nice'>
+      <p>Test Test Test 1</p>
+      <p>Test Test Test 2</p>
+      <p>Test Test Test 3</p>
+    </div>
+  </body>
+</html>'''
+```
+
+#### find 함수
+ - 특정 html tag를 검색
+ - 검색 조건을 명시하여 찾고자하는 tag를 검색
+
+```
+soup = BeautifulSoup(html)
+```
+```
+# .find함수는 html tag명으로 검색
+soup.find('h3')
+```
+```
+# soup.find('div')
+# soup.find('div', custom='nice')
+# soup.find('div', id='upper')
+
+# soup.find('div', class='test')        class는 키워드라 검색이 안됨
+soup.find('div', class_='test')
+```
+```
+# attribute는 기본적으로 dict
+
+attrs = {'id': 'upper', 'class': 'test'}
+soup.find('div', attrs=attrs)            # id가 upper이면서 class가 test인 것
+```
+
+#### find_all 함수
+ - find가 조건에 만족하는 하나의 tag만 검색한다면, find_all은 조건에 맞는 모든 tag를 리스트로 반환
+
+ ```
+ # find는 첫번째 함수만 반환
+# find_all은 모두 반환하나 list 형식으로
+
+# soup.find_all('div')
+soup.find_all('div', class_='test')
+```
+
+#### get_text 함수
+ - tag안의 value를 추출
+ - 부모tag의 경우, 모든 자식 tag의 value를 추출
+
+```
+# get_text : 태그 안의 value를 추출
+tag = soup.find('h3')
+print(tag)
+tag.get_text()
+```
+
+```
+tag = soup.find('p')
+print(tag)
+tag.get_text()
+```
+```
+# div는 텍스트 없이 다른 태그를 감쌈
+# 부모태그에서 get_text를 하면 차일드태그 다 가져옴
+# .strip(): String의 왼쪽과 오른쪽 제거.
+# .lstrip(): String의 왼쪽 제거.
+# .rstrip(): String의 오른쪽 제거.
+
+tag = soup.find('div', id='upper')
+print(tag)
+tag.get_text()
+```
+
+#### attribute 값 추출하기
+ - 경우에 따라 추출하고자 하는 값이 attribute에도 존재함
+ - 이 경우에는 검색한 tag에 attribute 이름을 [ ]연산을 통해 추출가능
+ - 예) div.find('h3')['title']
+
+```
+
+value = soup.find('h3')
+
+
+print(tag)
+
+tag['title']
+```
+
+
+
+
+
+
+
+
+# 02~04.beautifulsoup 모듈 사용하기
+
+```
+import requests
+from bs4 import BeautifulSoup
+```
+
+#### 다음 뉴스 데이터 추출
+ - 뉴스기사에서 제목, 작성자, 작성일
+ , 댓글 개수 추출
+ - [뉴스링크](https://news.v.daum.net/v/20190728165812603)
+ - tag를 추출할때는 가장 그 tag를 쉽게 특정할 수 있는 속성을 사용
+  - id의 경우 원칙적으로 한 html 문서 내에서 유일
+  
+
+* id, class 속성으로 tag 찾기
+ - 타이틀
+ - 작성자, 작성일
+
+```
+url = 'https://news.v.daum.net/v/20190728165812603'
+resp = requests.get(url)
+
+resp.text # url에 담겨진 텍스트 가져옴
+```
+
+```
+url = 'https://news.v.daum.net/v/20190728165812603'
+resp = requests.get(url)
+
+soup = BeautifulSoup(resp.text)             # url에 담겨진 텍스트 가져옴
+title = soup.find('h3', class_='tit_view')
+title.get_text()                            # title의 텍스트만
+```
+
+```
+# <span class="txt_info"> 똑같은 값이 여러개 있을 때, 순서로 표시
+
+url = 'https://news.v.daum.net/v/20190728165812603'
+resp = requests.get(url)
+
+soup = BeautifulSoup(resp.text)             # url에 담겨진 텍스트 가져옴
+
+soup.find_all('span', class_='txt_info')[0]
+soup.find_all('span', class_='txt_info')[1]
+```
+
+```
+# <span class="txt_info"> 똑같은 값이 여러개 있을 때
+# 부모 먼저 찾고 그 안에서 또 찾음 -> 범위 줄여나가기
+
+url = 'https://news.v.daum.net/v/20190728165812603'
+resp = requests.get(url)
+
+soup = BeautifulSoup(resp.text)                  # url에 담겨진 텍스트 가져옴
+
+info = soup.find('span', class_='info_view')   # 전체
+info.find('span', class_='txt_info')            # 세분화
+```
+
+```
+url = 'https://news.v.daum.net/v/20190728165812603'
+resp = requests.get(url)
+
+soup = BeautifulSoup(resp.text)
+
+# beaurifulsoup 활용해 div 중에서 id가 할머니컨테이너 찾음
+container = soup.find('div', id='harmonyContainer')
+
+contents = ''
+for p in container.find_all('p'):
+    contents += p.get_text().strip()
+
+contents
+```
+
+* CSS를 이용하여 tag 찾기
+ - select(모두), select_one(첫번째)함수 사용 
+ - css selector 사용법
+   - 태그명 찾기 tag 
+   - 자손 태그 찾기 - 자손 관계 (tag tag) : 띄어쓰기로 구분
+   - 자식 태그 찾기 - 다이렉트 자식 관계 (tag > tag) : '>' 기호로 구분
+   - 아이디 찾기 #id
+   - 클래스 찾기 .class
+   - 속성값 찾기 [name='test']
+     - 속성값 prefix 찾기 [name ^='test']
+     - 속성값 suffix 찾기 [name $='test']
+     - 속성값 substring 찾기 [name *='test]
+   - n번째 자식 tag 찾기 :nth-child(n)
+
+#### find랑 select 차이?
+find의 목적은 원하는 태그를 찾는 것이다.
+        태그는 이름(name), 속성(attribute), 속성값(value)로 구성된다.
+        따라서 find로 이름, 속성, 속성값을 특정하여 태그를 찾을 수 있다.
+
+select는 CSS selector로 tag 객체를 찾아 반환한다.
+        가장 첫 번째 결과를 반환하는 select_one()은 find()에,
+        전체 결과를 리스트로 반환하는 select()는 find_all()에 대응한다.
+
+```
+url = 'https://news.v.daum.net/v/20190728165812603'
+resp = requests.get(url)
+soup = BeautifulSoup(resp.text)
+
+soup.select('h3')
+```
+```
+# div 태그이면서 id가 harmonyContainer인 것
+# soup.select('div#harmonyContainer')
+
+# id가 harmonyContainer인 것 중에 id가 p인 것 모두 찾기
+soup.select('#harmonyContainer p')
+```
+
+```
+# p는 직계 자식이 아니라 자손이므로 띄어쓰기
+# harmonyContainer 바로 밑에 있는 section이 자식이므로 >
+
+soup.select('#harmonyContainer > section')
+```
+
+```
+# 클래스명은 .으로 구분
+
+# soup.select('h3.tit_view')
+# soup.select('.txt_newsview')
+# soup.select('h3[class="txt_newsview"]')
+
+# soup.select('h3[class^="tx"]')           # tx로 시작하는 것 추출
+# soup.select('h3[class$="_view"]')        # 끝나는 것
+soup.select('h3[class*="_"]')              # 포함하는 것
+
+```
+
+```
+# n번째 자식 tag 찾기 :nth-child(n)
+
+#span이면서 class가 txt_info인 것 중에 1번째꺼
+# soup.select('span.txt_info')     
+soup.select('span.txt_info:nth-child(2)')       
+```
+
+* 정규표현식으로 tag 찾기
+
+```
+import re
+soup.find_all('h1')
+```
+```
+soup.find_all(re.compile('h\d'))        # h로 시작해서 숫자 한개로 끝나는
+```
+```
+# 모든 이미지 불러오기
+# 모든거 다, 문자 쩜 '\.'
+# soup.find_all('img', attrs={'src': re.compile('.+\.jpg')})
+# soup.find_all('img', attrs={'src': re.compile('.+\.png')})
+soup.find_all('img', attrs={'src': re.compile('.+\.gif')})
+```
+
+```
+# view로 끝나는 모든 것
+
+# soup.find_all('h3', class_='tit_view')
+soup.find_all('h3', class_=re.compile('..+newsview$'))
+```
+
+* 댓글 개수 추출
+ - 댓글의 경우, 최초 로딩시에 전달되지 않음
+ - 이 경우는 추가적으로 AJAX로 비동기적 호출을 하여 따로 data 전송을 함
+   - 개발자 도구의 network 탭에서 확인(XHR: XmlHTTPRequest)
+   - 비동기적 호출: 사이트의 전체가 아닌 일부분만 업데이트 가능하도록 함

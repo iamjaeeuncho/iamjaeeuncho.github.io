@@ -76,4 +76,5 @@ toc_sticky: true
 <br>
 <br>
 
-<i> ※ Credit: https://www.microstrategy.com/kr/resources/introductory-guides/predictive-modeling-the-only-guide-you-need</i>
+<i> ※ reference
+https://www.microstrategy.com/kr/resources/introductory-guides/predictive-modeling-the-only-guide-you-need</i>
