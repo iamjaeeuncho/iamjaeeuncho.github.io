@@ -122,3 +122,6 @@ f.close()
 with open("foo.txt", "w") as f:                    # with 블록을 벗어나는 순간
     f.write("Life is too short, you need python")  # 열린 파일 객체 f가 자동으로 close
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

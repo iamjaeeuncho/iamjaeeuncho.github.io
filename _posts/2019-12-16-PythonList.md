@@ -224,3 +224,6 @@ ValueError: 0 is not in list
 >>> ' '.join(a)
 'Life is too short'
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

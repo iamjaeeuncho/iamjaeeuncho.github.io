@@ -149,3 +149,6 @@ C:\doit>python                           # mod2.py 파일이 있는 C:\doit\mymo
 >>> print(mod2.add(3,4))                 # mod2 모듈을 불러와서 사용 가능
 7
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

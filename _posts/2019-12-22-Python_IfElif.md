@@ -162,3 +162,6 @@ message = "success" if score >= 60 else "failure"
 <img src="https://user-images.githubusercontent.com/46369038/107739804-0ba1e200-6d4d-11eb-8cd3-c0d087332e95.png" width="450px"><br>
 <i>credit: https://blog.naver.com/mathesis_time/221466775716</i><br><br>
 </center>
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

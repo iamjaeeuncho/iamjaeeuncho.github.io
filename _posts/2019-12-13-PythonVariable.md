@@ -138,3 +138,6 @@ True
 >>> from copy import copy   #  copy라는 함수를 쓰기 위해서 사용
 >>> b = copy(a)             # b = a[:]과 동일
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

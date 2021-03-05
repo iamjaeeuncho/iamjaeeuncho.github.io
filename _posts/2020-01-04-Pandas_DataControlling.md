@@ -346,3 +346,10 @@ df['F'] = s1
 2013-01-03  False  False  False  False  False   True
 2013-01-04  False  False  False  False  False   True
 ```
+<br>
+<br>
+
+※ reference
+  * 10 minutes to pandas https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
+  * 번역본 10분 판다스 https://dataitgirls2.github.io/10minutes2pandas/
+  * 판다스 자료구조 https://yujuwon.tistory.com/entry/Pandas-자료구조 

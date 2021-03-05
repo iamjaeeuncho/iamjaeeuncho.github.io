@@ -396,3 +396,6 @@ Mo Tu We Th Fr Sa Su
 
 >>> webbrowser.open_new("http://google.com")   # 이미 열려있어도 새창에서 open
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

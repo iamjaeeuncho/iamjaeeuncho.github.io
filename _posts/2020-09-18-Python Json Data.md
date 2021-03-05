@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 request 모듈"
+title: "[Python] 파이썬 OPEN API로 Json 데이터 불러오기"
 date: 2020-9-18
 categories:
 - study

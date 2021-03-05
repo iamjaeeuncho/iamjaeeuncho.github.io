@@ -54,3 +54,6 @@ print('x가 0보다 큽니다.')
 else:
 print('x가 0보다 크지 않습니다.')
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

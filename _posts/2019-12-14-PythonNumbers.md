@@ -92,3 +92,6 @@ complex_var2 = 4.53e1-7j
 * 실수(Real Number): 실제로 존재하는 숫자
 * 허수(Imaginary Number): 허구의 숫자로 실제로 존재 할 수 없는 숫자 (ex. i)
 * 복소수(Complex Number): 실수와 허수를 합친 숫자로 모든 숫자 표현 가능
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

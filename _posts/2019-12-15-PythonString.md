@@ -325,3 +325,6 @@ ValueError: substring not found
 >>> a.split(':')
 ['a', 'b', 'c', 'd']
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

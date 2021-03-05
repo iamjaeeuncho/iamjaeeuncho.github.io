@@ -54,3 +54,6 @@ toc_sticky: true
 * ord(x) Converts a single character to its integer value.
 * hex(x) Converts an integer to a hexadecimal string.
 * oct(x) Converts an integer to an octal string.
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

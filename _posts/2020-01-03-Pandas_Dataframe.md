@@ -231,7 +231,7 @@ b'World'  2  3.0
 <br>
 <br>
 
-* 참고자료
+※ reference
   * 10 minutes to pandas https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
   * 번역본 10분 판다스 https://dataitgirls2.github.io/10minutes2pandas/
   * 판다스 자료구조 https://yujuwon.tistory.com/entry/Pandas-자료구조 

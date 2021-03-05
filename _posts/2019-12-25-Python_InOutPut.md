@@ -114,3 +114,6 @@ youneedpython
 >>> for i in range(1, 10):
 >>>    print(i*dan, end= ' ')  # 한줄로 출력하기 위해 줄바꿈 문자 대신 공백문자를 마지막에 출력한다
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

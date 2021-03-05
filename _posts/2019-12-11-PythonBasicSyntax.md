@@ -94,3 +94,6 @@ paragraph = """This is a paragraph. It is
 # First comment   ----- 주석 부분
 >>> print("Hello, Python!")
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

@@ -105,3 +105,6 @@ toc_sticky: true
 >>> s1
 {1, 3}
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

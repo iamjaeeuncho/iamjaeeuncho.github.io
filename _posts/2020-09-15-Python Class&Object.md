@@ -418,5 +418,6 @@ a != b                        # 다른 객체와 메모리값이라 false로 나
 
 abs(a)
 ```
-
-
+<br>
+<br>
+<i> ※ credit: Fast Campus, 머신러닝과 데이터분석 A-Z 올인원 패키지 </i>

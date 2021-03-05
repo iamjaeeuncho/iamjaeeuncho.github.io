@@ -125,3 +125,6 @@ True
 >>> 'email' in a                          # 딕셔너리 a에 name 키값이 없으면 False
 False
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

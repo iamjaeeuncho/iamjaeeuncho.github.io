@@ -67,3 +67,6 @@ toc_sticky: true
 >>> len(t1)
 4
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

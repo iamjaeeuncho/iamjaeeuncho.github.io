@@ -573,4 +573,7 @@ dtype: int64
 <br>
 <br>
 
-출처: https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html﻿
+※ reference
+  * 10 minutes to pandas https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
+  * 번역본 10분 판다스 https://dataitgirls2.github.io/10minutes2pandas/
+  * 판다스 자료구조 https://yujuwon.tistory.com/entry/Pandas-자료구조 

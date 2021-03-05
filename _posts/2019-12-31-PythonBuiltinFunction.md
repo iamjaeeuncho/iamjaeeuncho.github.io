@@ -520,3 +520,6 @@ False
 >>> list(zip("abc", "def")) 
 [('a', 'd'), ('b', 'e'), ('c', 'f')]
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

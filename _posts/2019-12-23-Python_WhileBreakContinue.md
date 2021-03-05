@@ -176,3 +176,6 @@ Ctrl+C를 눌러야 while문을 빠져나갈 수 있습니다.
 >>>    if i > 4: break      # i 값이 4보다 크면 while문을 벗어난다.
 >>>    print ('*' * i)      # i 값 개수만큼 *를 출력한다
 ```
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>

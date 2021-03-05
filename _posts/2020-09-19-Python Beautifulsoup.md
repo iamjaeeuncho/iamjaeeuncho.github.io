@@ -312,3 +312,4 @@ soup.find_all('h3', class_=re.compile('..+newsview$'))
  - 이 경우는 추가적으로 AJAX로 비동기적 호출을 하여 따로 data 전송을 함
    - 개발자 도구의 network 탭에서 확인(XHR: XmlHTTPRequest)
    - 비동기적 호출: 사이트의 전체가 아닌 일부분만 업데이트 가능하도록 함
+

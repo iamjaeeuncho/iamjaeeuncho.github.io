@@ -143,3 +143,6 @@ False
   - is is not 식별 연산자
   - in not in 맴버 연산자
   - not or and 논리 연산자
+<br>
+<br>
+<i> ※ credit: 점프 투 파이썬 https://wikidocs.net/book/1 </i>
