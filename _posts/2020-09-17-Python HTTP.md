@@ -66,7 +66,7 @@ resp.text
 <br>
 <br>
 
-## HTTP Header 데이터 이용
+## HTTP Header 이용
 
 ```python
 url = 'https://news.v.daum.net/v/20190728165812603'
