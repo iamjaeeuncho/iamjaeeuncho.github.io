@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 request 모듈"
+title: "[Python] 파이썬 웹 크롤링 - BeautifulSoup"
 date: 2020-9-18
 categories:
 - study
@@ -9,12 +9,16 @@ toc: true
 toc_sticky: true
 ---
 
+
+뷰티플 수프는 HTML과 XML 문서를 파싱하기위한 파이썬 패키지입니다. 웹 스크래핑에 유용한 HTML에서 데이터를 추출하는 데 사용할 수있는 구문 분석 된 페이지에 대한 구문 분석 트리를 생성합니다.
+
+
 ## Parsing
 : 어떤 문장을 분석하거나 문법적 관계를 해석하는 행위로
 컴퓨터 과학에서는 일련의 문자열을 의미있는 token(어휘 분석) 단위로 분해하고
 그것들로 이루어진 Parse tree를 만드는 과정
 
-#### Parser
+### Parser
 : parsing을 수행하는 프로그램으로 문법 및 구문 분석하는 프로그램
 
 ```python
