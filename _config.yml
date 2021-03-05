@@ -98,15 +98,11 @@ author:
   avatar           : "/assets/images/biophoto.png"
   bio              : "<b>Data analyst</b><br><br>
                       다차원적으로 접근하고 <br>
-                      더 깊고 새롭게 이해하기위해 기록합니다 <br>
-                      다양한 분야에 관심이 많아요 
-                      "
+                      더 깊고 새롭게 생각하려 기록합니다 <br>
+                      다양한 분야에 관심이 많아요"
   location         : "South Korea"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:redjoun@gmail.com"
     - label: "Linkedein"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/jaeeuncho/"
@@ -116,6 +112,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/jen_onearth"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:redjoun@gmail.com"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   # url: "https://twitter.com/"
