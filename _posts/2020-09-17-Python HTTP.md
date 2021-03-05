@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 request 모듈"
+title: "[Python] 파이썬 HTTP 메쏘드 - request"
 date: 2020-9-17
 categories:
 - study
@@ -9,9 +9,20 @@ toc: true
 toc_sticky: true
 ---
 
-<br>
-<br>
+## HTTP Method
+- HTTP(HyperText Transfer Protocol): HTML 문서 등의 리소스를 전송하는 프로토콜
 
+<center>
+<img src="https://user-images.githubusercontent.com/46369038/110088610-6b355f80-7dd8-11eb-99db-2e923ba7a29c.png" style="border: 2px solid rgb(213, 213, 213);">
+<br>
+<i>credit: https://github.com/VanHakobyan/HTTP-Protocol-Manipulation</i>
+</center>
+
+### GET
+- Get 요청:데이터를 URL에 포함하여 전달, 주로 리소스 요청에 사용
+
+### POST
+- Post 요청: 데이터를 Form data에 포함하여 전달, 주로 로그인에 사용
 
 ## requests 모듈
 1. http request/response를 위한 모듈
