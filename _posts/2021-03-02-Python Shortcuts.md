@@ -11,15 +11,17 @@ toc_sticky: true
 
 ## 단축키 설명 찾기
 <br>
-<center><img src="https://user-images.githubusercontent.com/46369038/109161615-9dccd000-77ba-11eb-8a73-16c8786e541b.png" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
+<center><img src="https://user-images.githubusercontent.com/46369038/109161615-9dccd000-77ba-11eb-8a73-16c8786e541b.png" width="500" style="border: 2px solid rgb(213, 213, 213);"></center>
+<br>
 <br>
 
 일단 단축키는 'HELP' 메뉴에서 'Keyboard shortcuts'를 누르거나<br>
 키보드에서 H 버튼을 누르면 단축키 내용을 볼 수 있다<br>
 <br>
 
-<img src="https://user-images.githubusercontent.com/46369038/109161610-9c9ba300-77ba-11eb-8c0a-dbe6392ac6cb.png" width="500" style="border: 2px solid rgb(213, 213, 213);">
-</center>
+## 단축키 전체
+<br>
+<center><img src="https://user-images.githubusercontent.com/46369038/109161610-9c9ba300-77ba-11eb-8c0a-dbe6392ac6cb.png" width="500" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>
 <br>
 

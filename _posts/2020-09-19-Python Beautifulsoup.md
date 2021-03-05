@@ -9,12 +9,7 @@ toc: true
 toc_sticky: true
 ---
 
-<br>
-<br>
-
-
-
-#### Parsing
+## Parsing
 : 어떤 문장을 분석하거나 문법적 관계를 해석하는 행위로
 컴퓨터 과학에서는 일련의 문자열을 의미있는 token(어휘 분석) 단위로 분해하고
 그것들로 이루어진 Parse tree를 만드는 과정
