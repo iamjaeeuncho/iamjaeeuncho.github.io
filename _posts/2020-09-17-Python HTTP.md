@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 HTTP 메쏘드 - request"
+title: "[Python] 파이썬 HTTP 메쏘드 - Request와 Response"
 date: 2020-9-17
 categories:
 - study
@@ -26,18 +26,18 @@ toc_sticky: true
 <br>
 <br>
 
-## requests 모듈
-- http request/response를 위한 모듈
-- HTTP method를 메소드 명으로 사용하여 request 요청 예) get, post
+## HTTP Requests 모듈
+- http request/response를 위한 모듈로, HTTP method를 메소드 명으로 사용하여 request 요청 예) get, post
 
 ```python
 import requests
 url = 'https://news.v.daum.net/v/20190728165812603'
 ```
+<br>
+<br>
 
-### get 요청
-- http get 요청하기
-- query parameter 이용하여 데이터 전달하기
+### Get 요청
+- http get 요청하기는 query parameter 이용하여 데이터 전달
 
 ```python
 url = 'https://news.v.daum.net/v/20190728165812603'
@@ -47,15 +47,14 @@ print(resp)
 
 resp.text
 ```
+<br>
+<br>
 
-### post 요청
-- http post 요청하기
-- post data 이용하여 데이터 전달하기
+### Post 요청
+- http post 요청하기는 post에 전달하는 form data를 이용하여 데이터 전달
 
 ```python
 url = 'http://www.kangcom.com/member/member_check.asp'
-
-# post에 전달하는 form 데이타
 data = {
     'id' : 'macmath22',
     'pwd' : 'Test1357!'
@@ -64,10 +63,10 @@ data = {
 resp = requests.post(url, data=data)
 resp.text
 ```
+<br>
+<br>
 
-## HTTP header 데이터 이용하기
-- header 데이터 구성하기
-- header 데이터 전달하기
+## HTTP Header 데이터 이용
 
 ```python
 url = 'https://news.v.daum.net/v/20190728165812603'
@@ -78,21 +77,16 @@ headers = {
 resp = requests.get(url, headers=headers)
 resp.text
 ```
+<br>
+<br>
 
-## HTTP response 처리하기
-1. response 객체의 이해
-2. status_code 확인하기
-3. text 속성 확인하기
+## HTTP Response 처리
+- status_code 및 text 속성 확인하기
 
 ```python
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 resp.st
 ```
-
-
-## HTML 요소
-- HTML(Hyper Text Markup Language)
-웹사이트를 생성하기 위한 언어로 문서와 문서가 링크로 연결되어 있고,태그를 사용하는 언어
-- 태그(Tag)란, HTML문서의 기본 블락으로 브라우저에게 어떻게 렌더링(화면에 표시)될지 전달
-- ex. <태그명 속성1=“속성값1" 속성2=“속성값2”>Value</태그명>
+<br>
+<br>
