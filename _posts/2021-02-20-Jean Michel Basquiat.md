@@ -1,5 +1,5 @@
 ---
-title: "[Exhibition] Jean Michel Basquiat in Seoul"
+title: "[Exhibition] Jean Michel Basquiat"
 date: 2021-2-20
 categories:
 - inspiration
