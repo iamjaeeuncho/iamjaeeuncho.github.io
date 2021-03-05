@@ -17,17 +17,14 @@ toc_sticky: true
 <br>
 <i>credit: https://github.com/VanHakobyan/HTTP-Protocol-Manipulation</i>
 </center>
+<br>
+<br>
 
 ### 데이터 요청 방식
 - Get 요청: 데이터를 URL에 포함하여 전달, 주로 리소스 요청에 사용
 - Post 요청: 데이터를 Form data에 포함하여 전달, 주로 로그인 같이 민감한 데이터를 전송할때 사용
-
-## HTML 요소
-- HTML(Hyper Text Markup Language)
-웹사이트를 생성하기 위한 언어로 문서와 문서가 링크로 연결되어 있고,태그를 사용하는 언어
-- 태그(Tag)란, HTML문서의 기본 블락으로 브라우저에게 어떻게 렌더링(화면에 표시)될지 전달
-- ex. <태그명 속성1=“속성값1" 속성2=“속성값2”>Value</태그명>
-
+<br>
+<br>
 
 ## requests 모듈
 - http request/response를 위한 모듈
@@ -93,3 +90,9 @@ resp = requests.get(url)
 resp.st
 ```
 
+
+## HTML 요소
+- HTML(Hyper Text Markup Language)
+웹사이트를 생성하기 위한 언어로 문서와 문서가 링크로 연결되어 있고,태그를 사용하는 언어
+- 태그(Tag)란, HTML문서의 기본 블락으로 브라우저에게 어떻게 렌더링(화면에 표시)될지 전달
+- ex. <태그명 속성1=“속성값1" 속성2=“속성값2”>Value</태그명>
