@@ -14,7 +14,7 @@ toc_sticky: true
 
 #### 다음 뉴스 댓글 개수 크롤링하기
 
-```
+```python
 import requests
 ```
 
@@ -27,7 +27,7 @@ import requests
 
 [출처: 위키피디아](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C)
 
-```
+```python
 url = 'https://comment.daum.net/apis/v1/posts/@20190728165812603'
 
 # Network > 주로 XHR 탭에서 찾음 > 
@@ -40,7 +40,7 @@ print(resp)
 # 4로 시작하면 오류
 ```
 
-```
+```python
 # header를 만들어서 같이 호출하면 호출될 확률 상승함 (l00%는 아니지만)
 # Name > Headers 복사
 
@@ -70,14 +70,14 @@ resp.json()['commentCount']     # 바로 dict로 반환, 댓글수
  4. 이후 session 객체로 원하는 페이지로 이동하여 크롤링
  
 
-```
+```python
 import requests
 from bs4 import BeautifulSoup
 ```
 
 * endpoint 찾기
 
-```
+```python
 # 개발자 도구 켜놓은 상태에서 로그인
 # 개발자 도구 > member_check.asp 클릭
 
@@ -88,7 +88,7 @@ url = 'https://www.kangcom.com/member/member_check.asp'
 
 * id, password로 구성된 form data 생성하기
 
-```
+```python
 # 로그인은 form data가 중요
 
 data = {
@@ -102,7 +102,7 @@ data = {
  - endpoint(url)과 data를 구성하여 post 요청
  - login의 경우 post로 구성하는 것이 정상적인 웹사이트!
 
-```
+```python
 # 마일리지 데이터 읽기
 
 s = requests.Session()
@@ -114,7 +114,7 @@ print(resp)
 * crawling
  - login 시 사용했던 session을 다시 사용하여 요청
 
-```
+```python
 my_page = 'https://www.kangcom.com/mypage'
 resp = s.get(my_page)                       # mypage html 받아옴
 
@@ -136,7 +136,7 @@ mileage
 
 # 모듈 사용하기
 
-```
+```python
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -178,7 +178,7 @@ cf. 경로
 
 
 
-```
+```python
 chrome_driver = './chromedriver'
 driver = webdriver.Chrome(chrome_driver)
 
@@ -201,7 +201,7 @@ driver.close()
 #### selenium을 이용한 다음뉴스 웹사이트 크롤링
  - driver 객체의 find_xxx_by 함수 활용
 
- ```
+ ```python
 chrome_driver = './chromedriver'
 driver = webdriver.Chrome(chrome_driver)
 
@@ -225,7 +225,7 @@ comment.get_text()
  - WebDriverWait(driver, 시간(초)).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'CSS_RULE')))
  
 
- ```
+ ```python
 chrome_driver = './chromedriver'
 driver = webdriver.Chrome(chrome_driver)
 
@@ -257,14 +257,14 @@ comment.get_text()
 
 # 웹 크롤링
 
-```
+```python
 import requests
 from bs4 import BeautifulSoup
 ```
 
 #### 뉴스 제목 크롤링
 
-```
+```python
 # def 함수명(input)
 def get_daum_news_title(news_id):
     # daum.net/v/뒤는 동적으로 바뀌므로 {}로 변경하고 format 지정
@@ -282,17 +282,17 @@ def get_daum_news_title(news_id):
     return ""
 ```
 
-```
+```python
 get_daum_news_title('20190728165812603')
 ```
 
-```
+```python
 get_daum_news_title('20190801114158041')
 ```
 
 #### 뉴스 본문 크롤링
 
-```
+```python
 def get_daum_news_content(news_id):
     url = 'https://news.v.daum.net/v/{}'.format(news_id)
     resp = requests.get(url)
@@ -306,17 +306,17 @@ def get_daum_news_content(news_id):
     return content                # 최종 content 반환
 ```
 
-```
+```python
 get_daum_news_content('20190728165812603')
 ```
 
-```
+```python
 get_daum_news_content('20190801114158041')
 ```
 
 
 #### 뉴스 댓글 크롤링
-```
+```python
 # 구글 개발자 모드로 '댓글 더보기' 클릭시 어떻게 반응하는지 확인
 # comments?로 시작하는 페이지 생성됨
 # request url 복사 및 규칙 찾기 (ex. offset과 limit으로 댓글 갯수 유추)
@@ -336,7 +336,7 @@ resp = requests.get(url, headers=headers)
 resp.json()
 ```
 
-```
+```python
 # offset 3부터 시작해서 빈리스트이면 끝
 
 def get_daum_news_comments(news_id):
@@ -366,12 +366,12 @@ def get_daum_news_comments(news_id):
     return comments
 ```
 
-```
+```python
 resp = requests.get(url)
 url_template.text()
 ```
 
-```
+```python
 len(get_daum_news_comments('133493400'))
 len(get_daum_news_comments('20190801114158041'))
 ```

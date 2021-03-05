@@ -22,14 +22,14 @@ toc_sticky: true
 #### Parser
 : parsing을 수행하는 프로그램으로 문법 및 구문 분석하는 프로그램
 
-```
+```python
 from bs4 import BeautifulSoup
 ```
 
 #### html 문자열 파싱
  - 문자열로 정의된 html 데이터 파싱하기
 
-```
+```python
 # parsing : HTML에서 특정값만 추출
 
 # <h3 title='Good Content Title'>Contents Title</h3>
@@ -58,14 +58,14 @@ html = '''
  - 특정 html tag를 검색
  - 검색 조건을 명시하여 찾고자하는 tag를 검색
 
-```
+```python
 soup = BeautifulSoup(html)
 ```
-```
+```python
 # .find함수는 html tag명으로 검색
 soup.find('h3')
 ```
-```
+```python
 # soup.find('div')
 # soup.find('div', custom='nice')
 # soup.find('div', id='upper')
@@ -73,7 +73,7 @@ soup.find('h3')
 # soup.find('div', class='test')        class는 키워드라 검색이 안됨
 soup.find('div', class_='test')
 ```
-```
+```python
 # attribute는 기본적으로 dict
 
 attrs = {'id': 'upper', 'class': 'test'}
@@ -83,7 +83,7 @@ soup.find('div', attrs=attrs)            # id가 upper이면서 class가 test인
 #### find_all 함수
  - find가 조건에 만족하는 하나의 tag만 검색한다면, find_all은 조건에 맞는 모든 tag를 리스트로 반환
 
- ```
+```python
  # find는 첫번째 함수만 반환
 # find_all은 모두 반환하나 list 형식으로
 
@@ -95,19 +95,19 @@ soup.find_all('div', class_='test')
  - tag안의 value를 추출
  - 부모tag의 경우, 모든 자식 tag의 value를 추출
 
-```
+```python
 # get_text : 태그 안의 value를 추출
 tag = soup.find('h3')
 print(tag)
 tag.get_text()
 ```
 
-```
+```python
 tag = soup.find('p')
 print(tag)
 tag.get_text()
 ```
-```
+```python
 # div는 텍스트 없이 다른 태그를 감쌈
 # 부모태그에서 get_text를 하면 차일드태그 다 가져옴
 # .strip(): String의 왼쪽과 오른쪽 제거.
@@ -124,7 +124,7 @@ tag.get_text()
  - 이 경우에는 검색한 tag에 attribute 이름을 [ ]연산을 통해 추출가능
  - 예) div.find('h3')['title']
 
-```
+```python
 
 value = soup.find('h3')
 
@@ -143,7 +143,7 @@ tag['title']
 
 # 02~04.beautifulsoup 모듈 사용하기
 
-```
+```python
 import requests
 from bs4 import BeautifulSoup
 ```
@@ -160,14 +160,14 @@ from bs4 import BeautifulSoup
  - 타이틀
  - 작성자, 작성일
 
-```
+```python
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
 resp.text # url에 담겨진 텍스트 가져옴
 ```
 
-```
+```python
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
@@ -176,7 +176,7 @@ title = soup.find('h3', class_='tit_view')
 title.get_text()                            # title의 텍스트만
 ```
 
-```
+```python
 # <span class="txt_info"> 똑같은 값이 여러개 있을 때, 순서로 표시
 
 url = 'https://news.v.daum.net/v/20190728165812603'
@@ -188,7 +188,7 @@ soup.find_all('span', class_='txt_info')[0]
 soup.find_all('span', class_='txt_info')[1]
 ```
 
-```
+```python
 # <span class="txt_info"> 똑같은 값이 여러개 있을 때
 # 부모 먼저 찾고 그 안에서 또 찾음 -> 범위 줄여나가기
 
@@ -201,7 +201,7 @@ info = soup.find('span', class_='info_view')   # 전체
 info.find('span', class_='txt_info')            # 세분화
 ```
 
-```
+```python
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
@@ -240,14 +240,14 @@ select는 CSS selector로 tag 객체를 찾아 반환한다.
         가장 첫 번째 결과를 반환하는 select_one()은 find()에,
         전체 결과를 리스트로 반환하는 select()는 find_all()에 대응한다.
 
-```
+```python
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 soup = BeautifulSoup(resp.text)
 
 soup.select('h3')
 ```
-```
+```python
 # div 태그이면서 id가 harmonyContainer인 것
 # soup.select('div#harmonyContainer')
 
@@ -255,14 +255,14 @@ soup.select('h3')
 soup.select('#harmonyContainer p')
 ```
 
-```
+```python
 # p는 직계 자식이 아니라 자손이므로 띄어쓰기
 # harmonyContainer 바로 밑에 있는 section이 자식이므로 >
 
 soup.select('#harmonyContainer > section')
 ```
 
-```
+```python
 # 클래스명은 .으로 구분
 
 # soup.select('h3.tit_view')
@@ -275,7 +275,7 @@ soup.select('h3[class*="_"]')              # 포함하는 것
 
 ```
 
-```
+```python
 # n번째 자식 tag 찾기 :nth-child(n)
 
 #span이면서 class가 txt_info인 것 중에 1번째꺼
@@ -285,14 +285,14 @@ soup.select('span.txt_info:nth-child(2)')
 
 * 정규표현식으로 tag 찾기
 
-```
+```python
 import re
 soup.find_all('h1')
 ```
-```
+```python
 soup.find_all(re.compile('h\d'))        # h로 시작해서 숫자 한개로 끝나는
 ```
-```
+```python
 # 모든 이미지 불러오기
 # 모든거 다, 문자 쩜 '\.'
 # soup.find_all('img', attrs={'src': re.compile('.+\.jpg')})
@@ -300,7 +300,7 @@ soup.find_all(re.compile('h\d'))        # h로 시작해서 숫자 한개로 끝
 soup.find_all('img', attrs={'src': re.compile('.+\.gif')})
 ```
 
-```
+```python
 # view로 끝나는 모든 것
 
 # soup.find_all('h3', class_='tit_view')

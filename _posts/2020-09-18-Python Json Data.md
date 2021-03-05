@@ -11,10 +11,6 @@ toc_sticky: true
 
 <br>
 <br>
-```
-!pip install IPython 
-from IPython.display import Image
-```
 
 #### API는 프로그램들이 서로 상호작용하는 것을 도와주는 매개체
 
@@ -41,14 +37,14 @@ from IPython.display import Image
  - 서비스 호출 트래킹할 목적이나 악의적인 사용을 금지할 목적으로 주로 사용
  - 새로 발급받은 키는 1시간 이후 사용 가능
 
-```
+```python
 serviceKey = 'GOe7vW0EjFIGLKTPBW2kPET%2FzYRtXB2WJ9i1oHP8PcONPPAgidtCTDBkPskKt2NMbCvTjiN13jAttzmsNXoX1Q%3D%3D'
 ```
 
 #### Endpoint 확인하기
  - API가 서비스되는 서버의 IP 혹은 domain 주소
 
-```
+```python
 # endpoint = 종점
 # 주소 = 기본주소 + endpoint에 전송하는 데이터
 # serviceKey=인증키 부분을 serviceKey={}.format(serviceKey)로 변경
@@ -61,7 +57,7 @@ print(endpoint)
 #### Parameter 확인하기
  - API 호출에 필요한 parameter 값 확인 및 구성
 
-```
+```python
 # pageNo={}로 변경하고 .format(1) 추가
 import requests
 endpoint = 'http://api.visitkorea.or.kr/openapi/service/rest/EngService/areaCode?serviceKey={}&numOfRows=10&pageSize=10&pageNo={}&MobileOS=ETC&MobileApp=AppTest&_type=json'.format(serviceKey, 1)
