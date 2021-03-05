@@ -18,11 +18,10 @@ toc_sticky: true
 <i>credit: https://github.com/VanHakobyan/HTTP-Protocol-Manipulation</i>
 </center>
 
-### GET
-- Get 요청:데이터를 URL에 포함하여 전달, 주로 리소스 요청에 사용
-
-### POST
+### 데이터 요청 방식
+- Get 요청: 데이터를 URL에 포함하여 전달, 주로 리소스 요청에 사용
 - Post 요청: 데이터를 Form data에 포함하여 전달, 주로 로그인에 사용
+
 
 ## requests 모듈
 1. http request/response를 위한 모듈
