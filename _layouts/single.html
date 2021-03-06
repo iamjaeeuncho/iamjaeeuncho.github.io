@@ -61,9 +61,12 @@ layout: default
         {% include page__date.html %}
       </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+      <!-- GoogleAdSense -->
+      <div class="GoogleAdSense">
+        {% include GoogleAdSenseSquare.html %}
+      </div>
 
-      {% include GoogleAdSenseSquare.html %}
+      {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
     </div>
