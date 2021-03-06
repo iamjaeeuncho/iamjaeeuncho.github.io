@@ -1,11 +1,12 @@
 ---
-title: "절대경로와 상대경로 차이점"
+title: "절대경로와 상대경로"
 date: 2021-2-1
 categories:
 - study
 tags:
 - programming
 toc: true
+toc_ads: true
 toc_sticky: true
 ---
 

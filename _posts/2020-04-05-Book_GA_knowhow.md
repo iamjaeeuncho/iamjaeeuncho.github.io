@@ -6,6 +6,7 @@ categories:
 tags:
   - book
 toc: true
+toc_ads: true
 toc_sticky: true
 ---
 

@@ -6,6 +6,7 @@ categories:
 tags:
   - sql
 toc: true
+toc_ads: true
 toc_sticky: true
 ---
 
