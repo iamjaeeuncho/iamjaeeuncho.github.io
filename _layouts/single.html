@@ -49,23 +49,22 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        
-        {{ content }}
 
-        <!-- GoogleAdSense_horizon -->
-          <nav class="GoogleAdSense">
-            {% include GoogleAdSenseHorizon.html %}
-          </nav>
+        {{ content }}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
       <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-        {% include page__date.html %}
+        <!-- GoogleAdSense_horizon -->
+        <nav class="GoogleAdSense">
+          {% include GoogleAdSenseHorizon.html %}
+        </nav>
+          {% if site.data.ui-text[site.locale].meta_label %}
+            <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+          {% endif %}
+          {% include page__taxonomy.html %}
+          {% include page__date.html %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
