@@ -245,7 +245,7 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 post_archive:
   type: liquid
-  path: /archive/
+  path: /categories/
 tag_archive:
   type: liquid
   path: /tags/

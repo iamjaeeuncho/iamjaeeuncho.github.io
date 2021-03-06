@@ -1,6 +1,6 @@
 ---
 title: "Archive"
-layout: archive
-permalink: /archive/
+layout: categories
+permalink: /categories/
 author_profile: true
 ---
