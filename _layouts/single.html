@@ -49,14 +49,16 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        
         {{ content }}
+
+        <!-- GoogleAdSense_horizon -->
+          <nav class="GoogleAdSense">
+            {% include GoogleAdSenseHorizon.html %}
+          </nav>
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
-
-      <!-- GoogleAdSense_horizon -->
-      <nav class="GoogleAdSense">
-        {% include GoogleAdSenseHorizon.html %}
-      </nav>
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
