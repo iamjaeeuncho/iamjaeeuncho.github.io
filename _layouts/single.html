@@ -41,7 +41,7 @@ layout: default
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
             {% endif %}
           </nav>
-          <!-- devinlife comment : right-sidebar ads -->
+          <!-- GoogleAdSens_sidebar ads -->
             <nav class="toc-custom">
               {% if page.toc_ads %}
                 {% include GoogleAdSenseSidbar.html %}
@@ -52,6 +52,11 @@ layout: default
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
+
+      <!-- GoogleAdSense_horizon -->
+      <nav class="GoogleAdSense">
+        {% include GoogleAdSenseHorizon.html %}
+      </nav>
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
@@ -95,10 +100,4 @@ layout: default
       </div>
     </div>
   {% endif %}
-
-  <!-- GoogleAdSense -->
-  <div class="GoogleAdSense">
-    {% include GoogleAdSenseSquare.html %}
-  </div>
-
 </div>
