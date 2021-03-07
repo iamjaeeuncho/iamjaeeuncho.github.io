@@ -178,8 +178,8 @@ contents
 <br>
 <br>
 
-#### CSS를 이용하여 tag 찾기
-- select(모두), select_one(첫번째)함수 사용 
+#### Css를 이용하여 tag 찾기
+- select(모두 반환), select_one(첫번째만 반환)함수 사용하여 Css 태그 찾기 가능
 - css selector 사용법
   - 태그명 찾기 tag 
   - 자손 태그 찾기 - 자손 관계 (tag tag) : 띄어쓰기로 구분
@@ -194,7 +194,7 @@ contents
 <br>
 <br>
 
-##### find, select 차이?
+##### find와 select 차이?
 - > find의 목적은 원하는 태그를 찾는 것이다.
   > 태그는 이름(name), 속성(attribute), 속성값(value)로 구성된다.
   > 따라서 find로 이름, 속성, 속성값을 특정하여 태그를 찾을 수 있다.
@@ -210,33 +210,27 @@ soup = BeautifulSoup(resp.text)
 
 soup.select('h3')
 ------------------------------
-# div 태그이면서 id가 harmonyContainer인 것
-# soup.select('div#harmonyContainer')
-
-# id가 harmonyContainer인 것 중에 id가 p인 것 모두 찾기
-soup.select('#harmonyContainer p')
+soup.select('div#harmonyContainer')        # div 태그이면서 id가 harmonyContainer인 모두
+soup.select('#harmonyContainer p')         # id가 harmonyContainer인 것 중에 id가 p인 모두
 ------------------------------
 # p는 직계 자식이 아니라 자손이므로 띄어쓰기
 # harmonyContainer 바로 밑에 있는 section이 자식이므로 >
 
 soup.select('#harmonyContainer > section')
 ------------------------------
-# 클래스명은 .으로 구분
+soup.select('h3.tit_view')                 # 클래스명은 .으로 구분
+soup.select('.txt_newsview')
+soup.select('h3[class="txt_newsview"]')
 
-# soup.select('h3.tit_view')
-# soup.select('.txt_newsview')
-# soup.select('h3[class="txt_newsview"]')
-
-# soup.select('h3[class^="tx"]')           # tx로 시작하는 것 추출
-# soup.select('h3[class$="_view"]')        # 끝나는 것
+soup.select('h3[class^="tx"]')             # tx로 시작하는 것 추출
+soup.select('h3[class$="_view"]')          # 끝나는 것
 soup.select('h3[class*="_"]')              # 포함하는 것
 ------------------------------
-# n번째 자식 tag 찾기 :nth-child(n)
-
-#span이면서 class가 txt_info인 것 중에 1번째꺼
-# soup.select('span.txt_info')     
-soup.select('span.txt_info:nth-child(2)')       
+soup.select('span.txt_info')               # span이면서 class가 txt_info인 것 중에 1번째꺼
+soup.select('span.txt_info:nth-child(2)')  # n번째 자식 tag 찾기 :nth-child(n)   
 ```
+<br>
+<br>
 
 #### 정규표현식으로 tag 찾기
 
@@ -244,12 +238,12 @@ soup.select('span.txt_info:nth-child(2)')
 import re
 soup.find_all('h1')
 ------------------------------
-soup.find_all(re.compile('h\d'))        # h로 시작해서 숫자 한개로 끝나는
+soup.find_all(re.compile('h\d'))          # h로 시작해서 숫자 한개로 끝나는
 ------------------------------
 # 모든 이미지 불러오기
 # 모든거 다, 문자 쩜 '\.'
-# soup.find_all('img', attrs={'src': re.compile('.+\.jpg')})
-# soup.find_all('img', attrs={'src': re.compile('.+\.png')})
+soup.find_all('img', attrs={'src': re.compile('.+\.jpg')})
+soup.find_all('img', attrs={'src': re.compile('.+\.png')})
 soup.find_all('img', attrs={'src': re.compile('.+\.gif')})
 ------------------------------
 # view로 끝나는 모든 것
