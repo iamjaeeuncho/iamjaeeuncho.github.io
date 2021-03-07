@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 request 모듈"
+title: "[Python] 파이썬 크롤링 - Selenium"
 date: 2020-9-18
 categories:
 - study
@@ -9,9 +9,6 @@ toc: true
 toc_ads: true
 toc_sticky: true
 ---
-
-<br>
-<br>
 
 #### 다음 뉴스 댓글 개수 크롤링하기
 

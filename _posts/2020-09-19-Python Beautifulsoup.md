@@ -10,7 +10,6 @@ toc_ads: true
 toc_sticky: true
 ---
 
-
 ## BeautifulSoup란?
 - 뷰티플 수프는 HTML과 XML 문서를 파싱하기위한 파이썬 패키지
 - 웹 스크래핑에 유용한 HTML에서 데이터를 추출하는 데 사용할 수있는 구문 분석 된 페이지에 대한 구문 분석 트리를 생성
