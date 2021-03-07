@@ -5,7 +5,7 @@ categories:
 - inspiration
 tags:
 - exhibition
-toc: true
+toc: false
 toc_ads: true
 toc_sticky: true
 ---
