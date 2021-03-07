@@ -20,7 +20,7 @@ toc_sticky: true
 키보드에서 H 버튼을 누르면 단축키 내용을 볼 수 있다<br>
 <br>
 
-## 단축키 전체
+## 전체 단축키
 <br>
 <center><img src="https://user-images.githubusercontent.com/46369038/109161610-9c9ba300-77ba-11eb-8c0a-dbe6392ac6cb.png" width="500" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>

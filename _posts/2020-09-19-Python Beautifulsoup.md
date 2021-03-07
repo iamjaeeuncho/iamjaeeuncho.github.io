@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 request 모듈"
+title: "[Python] 파이썬 크롤링 - BeautifulSoup"
 date: 2020-9-18
 categories:
 - study
