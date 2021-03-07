@@ -1,5 +1,5 @@
 ---
-title: "[Python] 파이썬 크롤링 - Selenium"
+title: "[Python] 파이썬 웹페이지 자동화 - Selenium"
 date: 2020-9-18
 categories:
 - study
@@ -18,32 +18,20 @@ toc_sticky: true
 <br>
 <br>
 
-#### selenium 예제
- - python.org 로 이동하여 자동으로 검색해보기
-   1. python.org 사이트 오픈
-   2. input 필드를 검색하여 Key 이벤트 전달
- 
+### Selenium 모듈 설치
+1. Anaconda Navigator > Environments > All 선택 > selenium 검색 및 선택 > Apply
+2. [크롬 드라이버 다운로드](https://chromedriver.chromium.org/downloads)
+3. ChromeDriver 88.0.4324.27 부분 클릭 > window용 다운로드
+<br>
+<br>
 
-- selenium 모듈 설치
-: Anaconda Navigator > Environments > All 선택 > selenium 검색 및 선택 > Apply
-- [크롬 드라이버 다운로드](https://chromedriver.chromium.org/downloads)
-: ChromeDriver 88.0.4324.27 부분 클릭 > window용 다운로드
-
-cf. 경로
-1. 절대경로: 어떠한 웹페이지나 파일이 가지고 있는 고유한 경로
-2. 상대경로: '현재 위치한 곳을 기준'으로 해서 '그곳의 위치'
-  * / : 루트 -> 가장 최상의 디렉토리로 이동한다.(Web root)
-  * ./ : 현재 위치 -> 파일이 현재 디렉토리를 의미
-  * ../ : 현재 위치의 상단 폴더 -> 상위 디렉토리로 이동
-  * ../../ : 두단계 상위 디렉토리로 이동하려면
-    - ex) index.php가 C:\index\a에 위치한다면,
-      여기서 / 는 C:, ./ 는 a, ../ 는 index라는 것.
-
-
-
-# 모듈 사용하기
+## 연습문제
+### 웹페이지 이동 및 자동 검색
+1. python.org 사이트 오픈
+2. input 필드를 검색하여 Key 이벤트 전달
 
 ```python
+# 모듈 사용하기
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -52,9 +40,7 @@ from selenium.webdriver.common.by import By
 
 from bs4 import BeautifulSoup
 import time
-```
-
-```python
+------------------------------
 chrome_driver = './chromedriver'
 driver = webdriver.Chrome(chrome_driver)
 
@@ -62,22 +48,24 @@ driver.get('https://www.python.org')
 
 search = driver.find_element_by_id('id-search-field')   # .find_element_by_id : id로 검색
 
-search.clear()                                 # .clear : 인풋 박스 내용 제거
+search.clear()                                          # .clear : 인풋 박스 내용 제거
 time.sleep(3)
 
-search.send_keys('lambda')                     # 검색어 입력
+search.send_keys('lambda')                              # 검색어 입력
 time.sleep(3)
 
-search.send_keys(Keys.RETURN)                  # ENTER 키
+search.send_keys(Keys.RETURN)                           # ENTER 키
 time.sleep(3)
 
 driver.close()
 ```
+<br>
+<br>
 
-#### selenium을 이용한 다음뉴스 웹사이트 크롤링
- - driver 객체의 find_xxx_by 함수 활용
+### 뉴스 웹사이트 크롤링
+- driver 객체의 find_xxx_by 함수 활용
 
- ```python
+```python
 chrome_driver = './chromedriver'
 driver = webdriver.Chrome(chrome_driver)
 
@@ -93,15 +81,15 @@ driver.close()
 comment = soup.select_one('span.alex-count-area')    # 댓글 영역 선택
 comment.get_text()
 ```
+<br>
+<br>
 
+### 특정 element의 로딩 대기
+- WebDriverWait 객체를 이용하여 해당 element가 로딩 되는 것을 대기
+- 실제로 해당 기능을 활용하여 거의 모든 사이트의 크롤링이 가능
+- WebDriverWait(driver, 시간(초)).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'CSS_RULE')))
 
-#### selenium을 활용하여 특정 element의 로딩 대기
- - WebDriverWait 객체를 이용하여 해당 element가 로딩 되는 것을 대기
- - 실제로 해당 기능을 활용하여 거의 모든 사이트의 크롤링이 가능
- - WebDriverWait(driver, 시간(초)).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'CSS_RULE')))
- 
-
- ```python
+```python
 chrome_driver = './chromedriver'
 driver = webdriver.Chrome(chrome_driver)
 
@@ -119,28 +107,18 @@ soup = BeautifulSoup(src)
 
 driver.close()
 
-comment = soup.select_one('span.u_cbox_count')      # 댓글갯수 선택
+comment = soup.select_one('span.u_cbox_count')       # 댓글갯수 선택
 comment.get_text()
 ```
+<br>
+<br>
 
-
-
-
-
-
-
-
-
-# 웹 크롤링
+### 뉴스 제목 크롤링
 
 ```python
 import requests
 from bs4 import BeautifulSoup
-```
-
-#### 뉴스 제목 크롤링
-
-```python
+------------------------------
 # def 함수명(input)
 def get_daum_news_title(news_id):
     # daum.net/v/뒤는 동적으로 바뀌므로 {}로 변경하고 format 지정
@@ -156,17 +134,13 @@ def get_daum_news_title(news_id):
     if title_tag:                   
         return title_tag.get_text()
     return ""
-```
-
-```python
+------------------------------
 get_daum_news_title('20190728165812603')
 ```
+<br>
+<br>
 
-```python
-get_daum_news_title('20190801114158041')
-```
-
-#### 뉴스 본문 크롤링
+### 뉴스 본문 크롤링
 
 ```python
 def get_daum_news_content(news_id):
@@ -180,23 +154,18 @@ def get_daum_news_content(news_id):
     for p in soup.select('div#harmonyContainer p'):
         content += p.get_text()   # p가 계속 반복하면서 get_text에 누적
     return content                # 최종 content 반환
-```
-
-```python
+------------------------------
 get_daum_news_content('20190728165812603')
 ```
+<br>
+<br>
 
-```python
-get_daum_news_content('20190801114158041')
-```
+### 뉴스 댓글 크롤링
 
-
-#### 뉴스 댓글 크롤링
 ```python
 # 구글 개발자 모드로 '댓글 더보기' 클릭시 어떻게 반응하는지 확인
 # comments?로 시작하는 페이지 생성됨
 # request url 복사 및 규칙 찾기 (ex. offset과 limit으로 댓글 갯수 유추)
-
 # requests.get(url)만 하면 오류나므로 headers도 같이 불러옴
 
 url = 'https://comment.daum.net/apis/v1/posts/133493400/comments?parentId=0&offset=3&limit=10&sort=POPULAR&isInitial=false&hasNext=true&randomSeed=1609266058'
@@ -210,11 +179,8 @@ headers = {
 
 resp = requests.get(url, headers=headers)
 resp.json()
-```
-
-```python
+------------------------------
 # offset 3부터 시작해서 빈리스트이면 끝
-
 def get_daum_news_comments(news_id):
     
     headers = {
@@ -240,20 +206,13 @@ def get_daum_news_comments(news_id):
         offset += 10                      # limit이 10씩 증가하므로
         
     return comments
-```
-
-```python
+------------------------------
 resp = requests.get(url)
 url_template.text()
-```
-
-```python
+------------------------------
 len(get_daum_news_comments('133493400'))
 len(get_daum_news_comments('20190801114158041'))
 ```
-
-
-
-
-
-
+<br>
+<br>
+<i> ※ credit: Fast Campus, 머신러닝과 데이터분석 A-Z 올인원 패키지 </i>
