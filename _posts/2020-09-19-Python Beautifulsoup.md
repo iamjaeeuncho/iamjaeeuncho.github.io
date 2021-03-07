@@ -21,7 +21,7 @@ toc_sticky: true
 - 어떤 문장을 분석하거나 문법적 관계를 해석하는 행위로, 컴퓨터 과학에서는 일련의 문자열을 의미있는 token(어휘 분석) 단위로 분해하고, 그것들로 이루어진 Parse tree를 만드는 과정
 - Parser는 문법 및 구문 분석하는 parsing을 수행하는 프로그램
 
-<center><img src="https://user-images.githubusercontent.com/46369038/110205592-2be03f00-7ebc-11eb-83b1-ba3c1a11044b.png" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
+<center><img src="https://user-images.githubusercontent.com/46369038/110205592-2be03f00-7ebc-11eb-83b1-ba3c1a11044b.png" width="700" style="border: 2px solid rgb(213, 213, 213);"><br>
 <i>credit: http://web.eecs.utk.edu/~azh/blog/teenytinycompiler2.html</i></center>
 <br>
 <br>
@@ -125,8 +125,6 @@ tag['title']
 - id의 경우 원칙적으로 한 html 문서 내에서 유일
   
 #### id, class 속성으로 tag 찾기
-- 타이틀
-- 작성자, 작성일
 
 ```python
 import requests
@@ -138,20 +136,23 @@ resp = requests.get(url)
 
 resp.text
 ------------------------------
-# title의 텍스트만
+# Title 추출
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
-soup = BeautifulSoup(resp.text)             
+soup = BeautifulSoup(resp.text)       
+
+# Title의 텍스트만
 title = soup.find('h3', class_='tit_view')
 title.get_text()                            
 ------------------------------
-# <span class="txt_info"> 똑같은 값이 여러개 있을 때, 순서로 표시
+# 작성자, 작성일  추출
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
 soup = BeautifulSoup(resp.text)             
 
+# <span class="txt_info"> 똑같은 값이 여러개 있을 때, 순서로 표시
 soup.find_all('span', class_='txt_info')[0]
 soup.find_all('span', class_='txt_info')[1]
 ------------------------------
@@ -181,7 +182,7 @@ contents
 ```
 
 
-* CSS를 이용하여 tag 찾기
+#### CSS를 이용하여 tag 찾기
  - select(모두), select_one(첫번째)함수 사용 
  - css selector 사용법
    - 태그명 찾기 tag 
@@ -195,7 +196,7 @@ contents
      - 속성값 substring 찾기 [name *='test]
    - n번째 자식 tag 찾기 :nth-child(n)
 
-#### find랑 select 차이?
+##### find랑 select 차이?
 find의 목적은 원하는 태그를 찾는 것이다.
         태그는 이름(name), 속성(attribute), 속성값(value)로 구성된다.
         따라서 find로 이름, 속성, 속성값을 특정하여 태그를 찾을 수 있다.
@@ -239,7 +240,7 @@ soup.select('h3[class*="_"]')              # 포함하는 것
 soup.select('span.txt_info:nth-child(2)')       
 ```
 
-* 정규표현식으로 tag 찾기
+#### 정규표현식으로 tag 찾기
 
 ```python
 import re
