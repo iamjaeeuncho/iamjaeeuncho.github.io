@@ -10,6 +10,36 @@ toc_ads: true
 toc_sticky: true
 ---
 
+## Selenium란?
+- BeautifulSoup 라이브러리만으로도 다양한 사이트의 정보를 추출 가능하나, 자바스크립트로 동적으로 생성된 정보는 가져올 수 없는 한계
+- Request와 Beautifulsoup으로 크롤링 실패시 Selenium 사용하면 끝
+- Selenium은 웹페이지 테스트 자동화용 모듈로, 개발/테스트용 드라이버(웹브라우저)를 사용하여 실제 사용자가 사용하는 것처럼 동작하게 만듬.
+- 인스타그램 좋아요 등 보통 반복적으로 하고 있는 웹상의 행동들을 자동화하기에 좋음.
+<br>
+<br>
+
+#### selenium 예제
+ - python.org 로 이동하여 자동으로 검색해보기
+   1. python.org 사이트 오픈
+   2. input 필드를 검색하여 Key 이벤트 전달
+ 
+
+- selenium 모듈 설치
+: Anaconda Navigator > Environments > All 선택 > selenium 검색 및 선택 > Apply
+- [크롬 드라이버 다운로드](https://chromedriver.chromium.org/downloads)
+: ChromeDriver 88.0.4324.27 부분 클릭 > window용 다운로드
+
+cf. 경로
+1. 절대경로: 어떠한 웹페이지나 파일이 가지고 있는 고유한 경로
+2. 상대경로: '현재 위치한 곳을 기준'으로 해서 '그곳의 위치'
+  * / : 루트 -> 가장 최상의 디렉토리로 이동한다.(Web root)
+  * ./ : 현재 위치 -> 파일이 현재 디렉토리를 의미
+  * ../ : 현재 위치의 상단 폴더 -> 상위 디렉토리로 이동
+  * ../../ : 두단계 상위 디렉토리로 이동하려면
+    - ex) index.php가 C:\index\a에 위치한다면,
+      여기서 / 는 C:, ./ 는 a, ../ 는 index라는 것.
+
+
 
 # 모듈 사용하기
 
@@ -23,37 +53,6 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import time
 ```
-
-#### selenium
- - 웹페이지 테스트 자동화용 모듈
- - 개발/테스트용 드라이버(웹브라우저)를 사용하여 실제 사용자가 사용하는 것처럼 동작
- - 실습전 확인사항
-   - selenium 모듈 설치
-   : Anaconda Navigator > Environments > All 선택 > selenium 검색 및 선택 > Apply
-   - [크롬 드라이버 다운로드](https://chromedriver.chromium.org/downloads)
-   : ChromeDriver 88.0.4324.27 부분 클릭 > window용 다운로드
-- 크롤링 끝판왕, request와 beautifulsoup으로 실패하면 selenium 사용하면 끝
-- selenium은 프로그래밍으로 하는게 아니라 웹브라우저 동작하는 것처럼 함
-
-
-#### selenium 예제
- - python.org 로 이동하여 자동으로 검색해보기
-   1. python.org 사이트 오픈
-   2. input 필드를 검색하여 Key 이벤트 전달
- 
-
-
-cf. 경로
-1. 절대경로: 어떠한 웹페이지나 파일이 가지고 있는 고유한 경로
-2. 상대경로: '현재 위치한 곳을 기준'으로 해서 '그곳의 위치'
-  * / : 루트 -> 가장 최상의 디렉토리로 이동한다.(Web root)
-  * ./ : 현재 위치 -> 파일이 현재 디렉토리를 의미
-  * ../ : 현재 위치의 상단 폴더 -> 상위 디렉토리로 이동
-  * ../../ : 두단계 상위 디렉토리로 이동하려면
-    - ex) index.php가 C:\index\a에 위치한다면,
-      여기서 / 는 C:, ./ 는 a, ../ 는 index라는 것.
-
-
 
 ```python
 chrome_driver = './chromedriver'
