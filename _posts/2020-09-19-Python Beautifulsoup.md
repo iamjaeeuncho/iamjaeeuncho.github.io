@@ -119,7 +119,7 @@ tag['title']
 
 ## 연습문제
 ### 뉴스 데이터 크롤링
-#### ID, CLASS 속성으로 tag 찾기
+#### Id, Class 속성으로 태그 찾기
 
 ```python
 import requests
@@ -178,7 +178,7 @@ contents
 <br>
 <br>
 
-#### Css를 이용하여 tag 찾기
+#### Css를 이용하여 태그 찾기
 - select(모두 반환), select_one(첫번째만 반환)함수 사용하여 Css 태그 찾기 가능
 - css selector 사용법
   - 태그명 찾기 tag 
@@ -232,29 +232,29 @@ soup.select('span.txt_info:nth-child(2)')  # n번째 자식 tag 찾기 :nth-chil
 <br>
 <br>
 
-#### 정규표현식으로 tag 찾기
+#### 정규표현식으로 태그 찾기
 
 ```python
 import re
 soup.find_all('h1')
 ------------------------------
-soup.find_all(re.compile('h\d'))          # h로 시작해서 숫자 한개로 끝나는
+soup.find_all(re.compile('h\d'))                 # h로 시작해서 숫자 한개로 끝나는
 ------------------------------
-# 모든 이미지 불러오기
-# 모든거 다, 문자 쩜 '\.'
+# 모든 이미지 불러오기. 모든거 다, 문자 쩜 '\.'
 soup.find_all('img', attrs={'src': re.compile('.+\.jpg')})
 soup.find_all('img', attrs={'src': re.compile('.+\.png')})
 soup.find_all('img', attrs={'src': re.compile('.+\.gif')})
 ------------------------------
-# view로 끝나는 모든 것
-
-# soup.find_all('h3', class_='tit_view')
-soup.find_all('h3', class_=re.compile('..+newsview$'))
+soup.find_all('h3', class_='tit_view')     
+soup.find_all('h3', class_=re.compile('..+newsview$'))    # view로 끝나는 모든 것
 ```
+<br>
+<br>
 
-* 댓글 개수 추출
- - 댓글의 경우, 최초 로딩시에 전달되지 않음
- - 이 경우는 추가적으로 AJAX로 비동기적 호출을 하여 따로 data 전송을 함
-   - 개발자 도구의 network 탭에서 확인(XHR: XmlHTTPRequest)
-   - 비동기적 호출: 사이트의 전체가 아닌 일부분만 업데이트 가능하도록 함
-
+#### 댓글 개수 추출
+- 댓글의 경우, 최초 로딩시에 전달되지 않음
+- 이 경우는 추가적으로 AJAX로 비동기적 호출을 하여 따로 data 전송을 함
+  - 개발자 도구의 network 탭에서 확인(XHR: XmlHTTPRequest)
+  - 비동기적 호출: 사이트의 전체가 아닌 일부분만 업데이트 가능하도록 함
+<br>
+<br>
