@@ -304,7 +304,7 @@ resp.json()['commentCount']      # 바로 dict로 반환, 댓글수
 > 3. session 객체 생성하여 login 진행
 > 4. 이후 session 객체로 원하는 페이지로 이동하여 크롤링
 
-1. endpoint 찾기
+#### 1. endpoint 찾기
 
 ```python
 import requests
@@ -317,7 +317,7 @@ from bs4 import BeautifulSoup
 url = 'https://www.kangcom.com/member/member_check.asp'
 ```
 
-2. id, password로 구성된 form data 생성하기
+#### 2. id, password로 구성된 form data 생성하기
 
 ```python
 # 로그인은 form data가 중요
@@ -328,7 +328,7 @@ data = {
 }
 ```
 
-3. login
+#### 3. login
 - endpoint(url)과 data를 구성하여 post 요청
 - login의 경우 post로 구성하는 것이 정상적인 웹사이트!
 
@@ -341,7 +341,7 @@ resp = s.post(url, data=data)
 print(resp)
 ```
 
-4. crawling
+#### 4. crawling
 - login 시 사용했던 session을 다시 사용하여 요청
 
 ```python
