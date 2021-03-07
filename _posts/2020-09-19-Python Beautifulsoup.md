@@ -21,8 +21,7 @@ toc_sticky: true
 - 어떤 문장을 분석하거나 문법적 관계를 해석하는 행위로, 컴퓨터 과학에서는 일련의 문자열을 의미있는 token(어휘 분석) 단위로 분해하고, 그것들로 이루어진 Parse tree를 만드는 과정
 - Parser는 문법 및 구문 분석하는 parsing을 수행하는 프로그램
 
-<br>
-<center><img src="https://user-images.githubusercontent.com/46369038/110205592-2be03f00-7ebc-11eb-83b1-ba3c1a11044b.png" style="border: 2px solid rgb(213, 213, 213);"><br>
+<center><img src="https://user-images.githubusercontent.com/46369038/110205592-2be03f00-7ebc-11eb-83b1-ba3c1a11044b.png" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
 <i>credit: http://web.eecs.utk.edu/~azh/blog/teenytinycompiler2.html</i></center>
 <br>
 <br>
@@ -125,53 +124,53 @@ tag['title']
 - tag를 추출할때는 가장 그 tag를 쉽게 특정할 수 있는 속성을 사용
 - id의 경우 원칙적으로 한 html 문서 내에서 유일
   
-* id, class 속성으로 tag 찾기
- - 타이틀
- - 작성자, 작성일
+#### id, class 속성으로 tag 찾기
+- 타이틀
+- 작성자, 작성일
 
 ```python
 import requests
 from bs4 import BeautifulSoup
 ------------------------------
+# url에 담겨진 텍스트 가져옴
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
-resp.text # url에 담겨진 텍스트 가져옴
+resp.text
 ------------------------------
+# title의 텍스트만
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
-soup = BeautifulSoup(resp.text)             # url에 담겨진 텍스트 가져옴
+soup = BeautifulSoup(resp.text)             
 title = soup.find('h3', class_='tit_view')
-title.get_text()                            # title의 텍스트만
+title.get_text()                            
 ------------------------------
 # <span class="txt_info"> 똑같은 값이 여러개 있을 때, 순서로 표시
-
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
-soup = BeautifulSoup(resp.text)             # url에 담겨진 텍스트 가져옴
+soup = BeautifulSoup(resp.text)             
 
 soup.find_all('span', class_='txt_info')[0]
 soup.find_all('span', class_='txt_info')[1]
 ------------------------------
 # <span class="txt_info"> 똑같은 값이 여러개 있을 때
 # 부모 먼저 찾고 그 안에서 또 찾음 -> 범위 줄여나가기
-
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
 soup = BeautifulSoup(resp.text)                  # url에 담겨진 텍스트 가져옴
 
-info = soup.find('span', class_='info_view')   # 전체
-info.find('span', class_='txt_info')            # 세분화
+info = soup.find('span', class_='info_view')     # 전체
+info.find('span', class_='txt_info')             # 세분화
 ------------------------------
+# beautifulsoup 활용해 div 중에서 id가 할머니컨테이너 찾음
 url = 'https://news.v.daum.net/v/20190728165812603'
 resp = requests.get(url)
 
 soup = BeautifulSoup(resp.text)
 
-# beaurifulsoup 활용해 div 중에서 id가 할머니컨테이너 찾음
 container = soup.find('div', id='harmonyContainer')
 
 contents = ''
@@ -180,6 +179,7 @@ for p in container.find_all('p'):
 
 contents
 ```
+
 
 * CSS를 이용하여 tag 찾기
  - select(모두), select_one(첫번째)함수 사용 
