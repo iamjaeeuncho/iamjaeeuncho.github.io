@@ -28,7 +28,7 @@ toc_sticky: true
 
 ## HTML 문자열 파싱
 - 문자열로 정의된 html 데이터 파싱(parsing : HTML에서 특정값만 추출)하기
-- 예를 들어 <h3 title='Good Content Title'>Contents Title</h3>에서 h3는 태그(tag), title은 속성(attribute), Good Content Title은 벨류(Value)
+- 예를 들어 <h3 title='Good Content Title'>Contents Title</h3> 구문에서 h3는 태그(tag), title은 속성(attribute), Good Content Title은 속성값(Value)
 
 ```python
 from bs4 import BeautifulSoup
@@ -118,13 +118,8 @@ tag['title']
 <br>
 
 ## 연습문제
-### 다음 뉴스 데이터 추출
-- 뉴스기사에서 제목, 작성자, 작성일, 댓글 개수 추출
-- [뉴스링크](https://news.v.daum.net/v/20190728165812603)
-- tag를 추출할때는 가장 그 tag를 쉽게 특정할 수 있는 속성을 사용
-- id의 경우 원칙적으로 한 html 문서 내에서 유일
-  
-#### id, class 속성으로 tag 찾기
+### 뉴스 데이터 크롤링
+#### ID, CLASS 속성으로 tag 찾기
 
 ```python
 import requests
@@ -180,30 +175,33 @@ for p in container.find_all('p'):
 
 contents
 ```
-
+<br>
+<br>
 
 #### CSS를 이용하여 tag 찾기
- - select(모두), select_one(첫번째)함수 사용 
- - css selector 사용법
-   - 태그명 찾기 tag 
-   - 자손 태그 찾기 - 자손 관계 (tag tag) : 띄어쓰기로 구분
-   - 자식 태그 찾기 - 다이렉트 자식 관계 (tag > tag) : '>' 기호로 구분
-   - 아이디 찾기 #id
-   - 클래스 찾기 .class
-   - 속성값 찾기 [name='test']
-     - 속성값 prefix 찾기 [name ^='test']
-     - 속성값 suffix 찾기 [name $='test']
-     - 속성값 substring 찾기 [name *='test]
-   - n번째 자식 tag 찾기 :nth-child(n)
+- select(모두), select_one(첫번째)함수 사용 
+- css selector 사용법
+  - 태그명 찾기 tag 
+  - 자손 태그 찾기 - 자손 관계 (tag tag) : 띄어쓰기로 구분
+  - 자식 태그 찾기 - 다이렉트 자식 관계 (tag > tag) : '>' 기호로 구분
+  - 아이디 찾기 #id
+  - 클래스 찾기 .class
+  - 속성값 찾기 [name='test']
+    - 속성값 prefix 찾기 [name ^='test']
+    - 속성값 suffix 찾기 [name $='test']
+    - 속성값 substring 찾기 [name *='test]
+  - n번째 자식 tag 찾기 :nth-child(n)
+<br>
+<br>
 
-##### find랑 select 차이?
-find의 목적은 원하는 태그를 찾는 것이다.
-        태그는 이름(name), 속성(attribute), 속성값(value)로 구성된다.
-        따라서 find로 이름, 속성, 속성값을 특정하여 태그를 찾을 수 있다.
+##### find, select 차이?
+- > find의 목적은 원하는 태그를 찾는 것이다.
+  > 태그는 이름(name), 속성(attribute), 속성값(value)로 구성된다.
+  > 따라서 find로 이름, 속성, 속성값을 특정하여 태그를 찾을 수 있다.
 
-select는 CSS selector로 tag 객체를 찾아 반환한다.
-        가장 첫 번째 결과를 반환하는 select_one()은 find()에,
-        전체 결과를 리스트로 반환하는 select()는 find_all()에 대응한다.
+- > select는 CSS selector로 tag 객체를 찾아 반환한다.
+  > 가장 첫 번째 결과를 반환하는 select_one()은 find()에,
+  > 전체 결과를 리스트로 반환하는 select()는 find_all()에 대응한다.
 
 ```python
 url = 'https://news.v.daum.net/v/20190728165812603'
