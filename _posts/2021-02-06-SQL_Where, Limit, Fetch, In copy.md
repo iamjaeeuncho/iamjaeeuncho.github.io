@@ -11,6 +11,16 @@ toc_sticky: true
 ---
 
 ## Where: 조건
+- 집합을 가져올 때 어떤 조건의 집합을 가져올 것인지 설정하는 절
+- 연산자
+ = 같은
+ > ~보다 큰
+ < ~보다 작은
+ >= ~보다 크거나 같은
+ <= ~보다 작거나 같은
+ <>, != ~가 아닌
+ AND 그리고
+ OR 혹은
 
 ```sql
 ---------- # where 조건이 한 개일 때
@@ -47,7 +57,7 @@ OR      AMOUNT >= 8               -- 8 이상
 <br>
 
 ## Between: 사잇값
-- between 사잇값
+- 특정 범위 안에 들어가는 집합을 출력하는 연산자
 - between A And B: sth >= A & sth <= B
 - not between A And B: sth < A or sth > B
 
@@ -97,6 +107,7 @@ BETWEEN '2007-02-07' AND '2007-02-15'
 <br>
 
 ## Limit: 출력수 제한
+- 특정 집합 출력시 출력하는 행의 수를 한정 (PostgreSQL, MySQL 등에서 지원)
 
 ```sql
 ---------- # LIMIT 출력하는 행의 수를 한정
@@ -132,6 +143,7 @@ ORDER BY RENTAL_RATE DESC LIMIT 10
 <br>
 
 ## Fetch: 출력수 제한
+- 특정 집합 출력시 출력하는 행의 수를 한정
 
 ```sql
 ---------- # fetch(가져오다) first N (처음 몇개부터)
