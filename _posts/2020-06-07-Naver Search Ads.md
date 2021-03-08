@@ -1,5 +1,5 @@
 ---
-title: "네이버 검색 광고 가입하기"
+title: "[Marketing] 네이버 검색 광고 가입하기"
 date: 2020-6-7
 categories:
   - business
@@ -12,13 +12,15 @@ toc_sticky: true
 
 
 
-
-<center>프리랜서로 중소기업 마케팅을 담당하다보면 가끔 네이버 검색 광고에 가입조차 안되어 있는 곳이 많다<br>
-그래서 나중에 보면서 진행할 겸 기록용 포스팅</center>
+<br>
+<center>프리랜서로 마케팅하다보면 가끔 네이버 검색 광고에 가입조차 안되어 있는 곳이 많다<br>
+그래서 나중에 보면서 진행할 겸 기록용 포스팅
+</center>
+<br>
 
 1. 네이버 광고 홈페이지
 
-
+![1](https://user-images.githubusercontent.com/46369038/110330316-fb85d580-8060-11eb-9f99-52089e9da851.png)
 ​
 
 네이버 검색 광고 홈페이지에서 네이버 아이디로 로그인 클릭
@@ -27,18 +29,15 @@ toc_sticky: true
 
 https://searchad.naver.com/
 
- 
-네이버 광고
-searchad.naver.com
 
-​
+​![2](https://user-images.githubusercontent.com/46369038/110330322-fcb70280-8060-11eb-8bea-f05f0f9beee6.png)
 
 
 ​
 
 네이버 아이디로 신규 회원 가입 클릭
 
-​
+​![3](https://user-images.githubusercontent.com/46369038/110330325-fd4f9900-8060-11eb-8258-4f5276020ea5.png)
 
 ​
 
@@ -54,7 +53,7 @@ searchad.naver.com
 ​
 
 ​
-
+![4](https://user-images.githubusercontent.com/46369038/110330333-fe80c600-8060-11eb-9d1d-411c395eb4e8.png)
 
 ​
 
@@ -62,7 +61,7 @@ searchad.naver.com
 
 ​
 
-​
+​![5](https://user-images.githubusercontent.com/46369038/110330335-fe80c600-8060-11eb-9ada-5097a1128c8d.png)
 
 
 ​
