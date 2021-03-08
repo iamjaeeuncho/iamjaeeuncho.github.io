@@ -10,14 +10,6 @@ toc_ads: true
 toc_sticky: true
 ---
 
-<br>
-<center>프리랜서로 마케팅하다보면 가끔 네이버 검색 광고에 가입조차 안되어 있는 곳이 많다<br>
-그래서 나중에 보면서 진행할 겸 기록용 포스팅
-</center>
-<br>
-<br>
-
-
 <center>
 <img src="https://user-images.githubusercontent.com/46369038/110332779-21f94000-8064-11eb-8e65-f6311a5a109e.png" style="border: 2px solid rgb(213, 213, 213);">
 </center>
@@ -36,10 +28,14 @@ toc_sticky: true
 
 
 
+
 ## 키워드 수집 
 ### 1. 통합 검색시 연관 검색어
 
-![1](https://user-images.githubusercontent.com/46369038/110333471-f3c83000-8064-11eb-9389-4c6da526f0b1.png)
+<center>
+<img src="https://user-images.githubusercontent.com/46369038/110333471-f3c83000-8064-11eb-9389-4c6da526f0b1.png" style="border: 2px solid rgb(213, 213, 213);">
+</center>
+<br>
 
 
 네이버 통합검색시 연관검색어를 사용할 수 있다
@@ -52,7 +48,11 @@ toc_sticky: true
 
 ### 2. 네이버 쇼핑 검색시 연관 검색어
 
-![2](https://user-images.githubusercontent.com/46369038/110333488-f62a8a00-8064-11eb-985f-40255c2b0ff2.png)
+<center>
+<img src="https://user-images.githubusercontent.com/46369038/110333488-f62a8a00-8064-11eb-985f-40255c2b0ff2.png" style="border: 2px solid rgb(213, 213, 213);">
+</center>
+<br>
+
 
 네이버 쇼핑 검색시 보다 더 자세한 키워드가 나온다
 
@@ -64,14 +64,20 @@ toc_sticky: true
 
 ### 3. 네이버 광고 키워드 도구
 
-![3](https://user-images.githubusercontent.com/46369038/110333478-f4f95d00-8064-11eb-9ee2-3cb0d5a9c4af.png)
+<center>
+<img src="https://user-images.githubusercontent.com/46369038/110333478-f4f95d00-8064-11eb-9ee2-3cb0d5a9c4af.png" style="border: 2px solid rgb(213, 213, 213);">
+</center>
+<br>
+
 
 https://searchad.naver.com/
 
 네이버 광고에서 키워드 도구 버튼 클릭
 
-
-![4](https://user-images.githubusercontent.com/46369038/110333483-f591f380-8064-11eb-919f-958b5ca9d672.png)
+<center>
+<img src="https://user-images.githubusercontent.com/46369038/110333483-f591f380-8064-11eb-919f-958b5ca9d672.png" style="border: 2px solid rgb(213, 213, 213);">
+</center>
+<br>
 
 
 연관 키워드 부분에 키워드를 입력하면 관련 키워드가 나온다
@@ -81,10 +87,15 @@ https://searchad.naver.com/
 
 
 
+
 ## 키워드 분석
 ### 셀러마스터로 키워드 효율성 분석
 
-![5](https://user-images.githubusercontent.com/46369038/110333484-f591f380-8064-11eb-8169-a393f7e9a0b3.png)
+<center>
+<img src="https://user-images.githubusercontent.com/46369038/110333484-f591f380-8064-11eb-8169-a393f7e9a0b3.png" style="border: 2px solid rgb(213, 213, 213);">
+</center>
+<br>
+
 
 http://whereispost.com/seller
 
@@ -99,5 +110,6 @@ http://whereispost.com/seller
 
 
 + 세부 카테고리 키워드를 장악하면 상위 키워드에서도 순위가 상승한다고 함
+
 
 
