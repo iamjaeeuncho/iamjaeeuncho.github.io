@@ -30,7 +30,10 @@ toc_sticky: true
 ​
 
 ​
-이전에는 검색 키워드를 뽑는 별도의 프로그램을 썼다는데 https://www.i-boss.co.kr/ab-1486499-25
+이전에는 검색 키워드를 뽑는 별도의 프로그램을 썼다는데 
+
+
+예를 들어 아이보스(https://www.i-boss.co.kr/ab-1486499-25)
 ​
 
 이제는 네이버 광고 자체적으로 세팅이 되기때문에 그럴 필요는 없는 것 같다
@@ -47,12 +50,14 @@ toc_sticky: true
 
 
 
+
 <center><img src="https://user-images.githubusercontent.com/46369038/110334160-caf46a80-8065-11eb-881b-b34d8d5adb40.png" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>
 
 쇼핑검색 유형을 선택하고, 이름과 하루예산을 선택한다
 
 ​
+
 
 ​<center><img src="https://user-images.githubusercontent.com/46369038/110334162-cb8d0100-8065-11eb-8b4b-ff520405917d.png" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>
@@ -63,6 +68,7 @@ toc_sticky: true
 저는 일단 최소 입찰가인 50원을 입력했어요
 
 
+
 ​
 <center><img src="https://user-images.githubusercontent.com/46369038/110334163-ccbe2e00-8065-11eb-9f22-4d8c7e771a3e.png" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>
@@ -71,6 +77,7 @@ toc_sticky: true
 
 
 그런데 디지털 가전 등 몇가지 카테고리는 쇼핑 광고가 안되더라구요
+
 
 
 
