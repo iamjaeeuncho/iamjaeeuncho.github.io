@@ -47,17 +47,15 @@ toc_sticky: true
 <br>
 
 네이버 광고 페이지(https://searchad.naver.com/)에서 '광고 만들기'를 클릭
-
-
-
+<br>
+<br>
 
 <center><img src="https://user-images.githubusercontent.com/46369038/110334160-caf46a80-8065-11eb-881b-b34d8d5adb40.png" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>
 
 쇼핑검색 유형을 선택하고, 이름과 하루예산을 선택한다
-
-​
-
+<br>
+​<br>
 
 ​<center><img src="https://user-images.githubusercontent.com/46369038/110334162-cb8d0100-8065-11eb-8b4b-ff520405917d.png" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>
@@ -66,9 +64,8 @@ toc_sticky: true
 
 ​
 저는 일단 최소 입찰가인 50원을 입력했어요
-
-
-
+<br>
+<br>
 ​
 <center><img src="https://user-images.githubusercontent.com/46369038/110334163-ccbe2e00-8065-11eb-9f22-4d8c7e771a3e.png" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>
@@ -77,15 +74,13 @@ toc_sticky: true
 
 
 그런데 디지털 가전 등 몇가지 카테고리는 쇼핑 광고가 안되더라구요
-
-
-
+<br>
+<br>
 
 ​<center><img src="https://user-images.githubusercontent.com/46369038/110334191-d3e53c00-8065-11eb-9e0a-099015887891.png" style="border: 2px solid rgb(213, 213, 213);"></center>
 <br>
 
 광고를 등록하면 대략 1~2일의 소재 검토 후 광고가 진행된다고 해요
-
-​
-
+<br>
+<br>
 ​
