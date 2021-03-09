@@ -20,7 +20,7 @@ toc_sticky: true
 ## 네이버 광고 종류
 
 <center><img src="https://user-images.githubusercontent.com/46369038/110334151-c92aa700-8065-11eb-84a5-1261145bf00e.png" style="border: 2px solid rgb(213, 213, 213);"></center>
-
+<br>
 
 네이버에는 검색광고와 디스플레이광고를 지원하는데,
 
@@ -41,21 +41,21 @@ toc_sticky: true
 ## 네이버 광고 세팅하기
 
 <center><img src="https://user-images.githubusercontent.com/46369038/110334153-ca5bd400-8065-11eb-9a3b-847c23ff6791.png" style="border: 2px solid rgb(213, 213, 213);"></center>
-
+<br>
 
 네이버 광고 페이지(https://searchad.naver.com/)에서 '광고 만들기'를 클릭
 
 
 
 <center><img src="https://user-images.githubusercontent.com/46369038/110334160-caf46a80-8065-11eb-881b-b34d8d5adb40.png" style="border: 2px solid rgb(213, 213, 213);"></center>
-
+<br>
 
 쇼핑검색 유형을 선택하고, 이름과 하루예산을 선택한다
 
 ​
 
 ​<center><img src="https://user-images.githubusercontent.com/46369038/110334162-cb8d0100-8065-11eb-8b4b-ff520405917d.png" style="border: 2px solid rgb(213, 213, 213);"></center>
-
+<br>
 ​
 쇼핑몰 상품형과 쇼핑몰을 선택하고, 기본 입찰가를 입력한다
 
@@ -65,7 +65,7 @@ toc_sticky: true
 
 ​
 <center><img src="https://user-images.githubusercontent.com/46369038/110334163-ccbe2e00-8065-11eb-9f22-4d8c7e771a3e.png" style="border: 2px solid rgb(213, 213, 213);"></center>
-
+<br>
 
 광고만들기 탭에서 검색하기를 눌러서 제품이 뜨면 선택해서 광고 만들기 클릭하면 끝! 굉장히 쉽더라구요
 
@@ -75,7 +75,7 @@ toc_sticky: true
 
 
 ​<center><img src="https://user-images.githubusercontent.com/46369038/110334191-d3e53c00-8065-11eb-9e0a-099015887891.png" style="border: 2px solid rgb(213, 213, 213);"></center>
-
+<br>
 
 광고를 등록하면 대략 1~2일의 소재 검토 후 광고가 진행된다고 해요
 
