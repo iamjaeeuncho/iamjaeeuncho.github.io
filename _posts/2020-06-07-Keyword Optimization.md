@@ -11,10 +11,7 @@ toc_sticky: true
 ---
 
 <center>
-<img src="https://user-images.githubusercontent.com/46369038/110332779-21f94000-8064-11eb-8e65-f6311a5a109e.png" style="border: 2px solid rgb(213, 213, 213);">
 <br>
-<br>
-
 이커머스에서 제품 노출의 가장 중요한 부분음 제목 키워드다
 <br>
 <br>
@@ -24,9 +21,9 @@ toc_sticky: true
 <br>
 </center>
 
-> 1. 연관 키워드 수집
-(통합 검색, 네이버 쇼핑, 광고 키워드 도구)
+> 1. 연관 키워드 수집 (통합 검색, 네이버 쇼핑, 광고 키워드 도구)
 > 2. 키워드 효율성 분석 (셀러마스터)
+<br>
 <br>
 <br>
 
@@ -45,6 +42,7 @@ toc_sticky: true
 예전에는 검색시 최상단에 나왔었는데, 2020년 이후로는 맨 하단에 위치해있다
 <br>
 <br>
+<br>
 </center>
 
 ### 2. 네이버 쇼핑 검색시 연관 검색어
@@ -61,6 +59,7 @@ toc_sticky: true
 해당 키워드가 가장 많이 검색되는 키워드이므로 판매하려는 제품과 잘 맞는 키워드를 찾아 집어넣으면 된다
 <br>
 <br>
+<br>
 </center>
 
 
@@ -71,15 +70,11 @@ toc_sticky: true
 <br>
 <br>
 
-https://searchad.naver.com/
+네이버 광고(https://searchad.naver.com/)에서 키워드 도구 버튼 클릭
 <br>
-<br>
-
-네이버 광고에서 키워드 도구 버튼 클릭
 <br>
 <br>
 
-<center>
 <img src="https://user-images.githubusercontent.com/46369038/110333483-f591f380-8064-11eb-919f-958b5ca9d672.png" style="border: 2px solid rgb(213, 213, 213);">
 <br>
 <br>
@@ -89,6 +84,7 @@ https://searchad.naver.com/
 <br>
 
 경쟁정도가 낮은 키워드를 중심으로 본인 상품과 잘 맞는 상품 키워드를 찾으면 된다
+<br>
 <br>
 <br>
 </center>
@@ -101,11 +97,7 @@ https://searchad.naver.com/
 <br>
 <br>
 
-http://whereispost.com/seller
-<br>
-<br>
-
-수집한 키워드를 셀러마스터에 입력하고 엑셀파일로 다운받는다
+수집한 키워드를 셀러마스터(http://whereispost.com/seller)에 입력하고 엑셀파일로 다운받는다
 <br>
 <br>
 
@@ -120,5 +112,5 @@ http://whereispost.com/seller
 + 세부 카테고리 키워드를 장악하면 상위 키워드에서도 순위가 상승한다고 함
 <br>
 <br>
-
+<br>
 </center>
