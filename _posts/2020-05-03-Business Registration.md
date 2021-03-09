@@ -127,7 +127,9 @@ toc_sticky: true
 #### 8. 최종 확인
 
 <br>
+<center>
 <img src="https://user-images.githubusercontent.com/46369038/110329102-8665d080-805f-11eb-9df5-a588d9e81f50.png" style="border: 2px solid rgb(213, 213, 213);">
+</center>
 <br>
 
 최종확인에서 동의하고, 제출서류 확인하기 누르고, 신청서 제출하면 끝​
@@ -136,5 +138,5 @@ toc_sticky: true
 그러면 보통 2~3일 뒤에 개인 사업자 허가가 난다
 
 ​
-</center>
+
 ​
