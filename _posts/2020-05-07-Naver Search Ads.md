@@ -5,7 +5,7 @@ categories:
   - business
 tags:
   - marketing
-toc: true
+toc: false
 toc_ads: true
 toc_sticky: true
 ---
