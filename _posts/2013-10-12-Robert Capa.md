@@ -86,22 +86,16 @@ toc_sticky: true
  
 
 <center>
-<img src="https://user-images.githubusercontent.com/46369038/111897452-4fca8580-8a63-11eb-9ebd-5d8ae3803bf9.jpg"><br>
+<img src="https://user-images.githubusercontent.com/46369038/111897452-4fca8580-8a63-11eb-9ebd-5d8ae3803bf9.jpg"><p>
 
 
- 
-
-꼭 조지클루니를 닮은 듯한 카파
+꼭 조지클루니를 닮은 듯한 카파<p><p>
 
  
-
- 
-<img src="https://user-images.githubusercontent.com/46369038/111897453-50631c00-8a63-11eb-9c6b-84fb2be5f243.jpg"><br>
+<img src="https://user-images.githubusercontent.com/46369038/111897453-50631c00-8a63-11eb-9c6b-84fb2be5f243.jpg"><p>
 
 
-<img src="https://user-images.githubusercontent.com/46369038/111897454-50631c00-8a63-11eb-8632-b713698e9c70.png"><br>
-
- 
+<img src="https://user-images.githubusercontent.com/46369038/111897454-50631c00-8a63-11eb-8632-b713698e9c70.png"><p> 
 
 
 평소도 멋있지만, 사진 찍을때 카파의 모습은 범접할 수 없이 매력적이다
