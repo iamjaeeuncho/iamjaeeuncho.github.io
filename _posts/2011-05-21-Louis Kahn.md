@@ -24,7 +24,7 @@ toc_sticky: true
 ### 루이스칸의 이야기 
 
 ​<br>
-![2](https://user-images.githubusercontent.com/46369038/111904890-620ce980-8a8c-11eb-9bf4-26055d04d886.jpg){: width="400"}{: .align-center}
+![2](https://user-images.githubusercontent.com/46369038/111904890-620ce980-8a8c-11eb-9bf4-26055d04d886.jpg){: width="500"}{: .align-center}
 ​<br><br>
 
 루이스칸 은 1901년 러시아 영토였던 에스토니아 회셀 섬에서 유태인으로 태어났다. 그가 4살일 때, 그의 가족은 미국으로 이주하는데, 이후 그는 펜실베니아 대학을 졸업하고 건축 디자이너가 되었다. 그리고 1947년 46살에 예일 대학의 건축학 교수로 10년 동안 재직했으며, 이후에는 펜실베니아 대학의 학장을 지내기도 했었다.
