@@ -1,5 +1,5 @@
 ---
-title:  "총 대신 카메라를 든 전쟁을 증오했던 사진가, 로버트 카파 (Robert Capa)"
+title:  "총 대신 카메라를 든 전쟁 보도 사진가, 로버트 카파 (Robert Capa)"
 date: 2013-10-12
 categories:
   - inspiration
@@ -11,35 +11,32 @@ toc_sticky: true
 ---
 
 <center>
-<br>
-<img src="https://user-images.githubusercontent.com/46369038/111897450-4fca8580-8a63-11eb-9ffa-960877a96d8c.jpg" width="300">
-<br>
-<br>
-
+<br><img src="https://user-images.githubusercontent.com/46369038/111897450-4fca8580-8a63-11eb-9ffa-960877a96d8c.jpg"><br>
+<p>
 
 배우보다 더 배우스러운 외모와 사교계를 사로 잡은 유머감각,
-
+<p>
 
 그리고 20세기 최고의 사진작가라는 명성을 등에 업은 로버트 카파.
-
+<p>
 
 헝가리 태생의 유태인으로 수많은 사교계 여성들의 워너비가 되었고
-
+<p>
 
 헤밍웨이-피카소등 유명인사들의 친구가 되기도 했다.
-
+<p>
 
 그는 평소에는 도박과 술, 여자를 좋아하는 방탕한 사람이었지만,
-
+<p>
 
 일을 할 때 만큼은 누구보다 열정적인 사람이었다고 한다
-
+<p>
 
 "만약 당신의 사진이 마음에 들지 않는다면,
-
+<p>
 
 그것은 당신이 충분히 가까이가지 않았기 때문이다."라는 말에서
-
+<p>
 
 사진에 대한 그의 열정을 알 수 있다.
 
@@ -92,7 +89,7 @@ toc_sticky: true
  
 
  
-![2](https://user-images.githubusercontent.com/46369038/111897452-4fca8580-8a63-11eb-9ebd-5d8ae3803bf9.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897452-4fca8580-8a63-11eb-9ebd-5d8ae3803bf9.jpg"><br>
 
 
  
@@ -102,10 +99,10 @@ toc_sticky: true
  
 
  
-![3](https://user-images.githubusercontent.com/46369038/111897453-50631c00-8a63-11eb-9c6b-84fb2be5f243.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897453-50631c00-8a63-11eb-9c6b-84fb2be5f243.jpg"><br>
 
 
-![4](https://user-images.githubusercontent.com/46369038/111897454-50631c00-8a63-11eb-8632-b713698e9c70.png)
+<img src="https://user-images.githubusercontent.com/46369038/111897454-50631c00-8a63-11eb-8632-b713698e9c70.png"><br>
 
  
 
@@ -115,7 +112,7 @@ toc_sticky: true
 
  
 
-![5](https://user-images.githubusercontent.com/46369038/111897455-50fbb280-8a63-11eb-9c1d-b645a92a7f67.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897455-50fbb280-8a63-11eb-9c1d-b645a92a7f67.jpg"><br>
 
 
 DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.
@@ -133,9 +130,9 @@ DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.
  
 
  
-![6](https://user-images.githubusercontent.com/46369038/111897456-51944900-8a63-11eb-8a8d-1fdd8730e4d8.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897456-51944900-8a63-11eb-8a8d-1fdd8730e4d8.jpg"><br>
 
-<i>SPAIN. Cordoba front. September, 1936. Death of a loyalist militiaman.</i>
+SPAIN. Cordoba front. September, 1936. Death of a loyalist militiaman.
 
  
 
@@ -154,7 +151,7 @@ DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.
  
 
  
-![7](https://user-images.githubusercontent.com/46369038/111897417-44775a00-8a63-11eb-86fb-26ae8bd70d54.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897417-44775a00-8a63-11eb-86fb-26ae8bd70d54.jpg"><br>
 
 SPAIN. Teruel. December 21st - 24th, 1937. Republican soldier in a tree on the Aragon front.
 
@@ -174,7 +171,7 @@ SPAIN. Teruel. December 21st - 24th, 1937. Republican soldier in a tree on the A
 
  
 
-![8](https://user-images.githubusercontent.com/46369038/111897418-45a88700-8a63-11eb-8416-d514c70b533c.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897418-45a88700-8a63-11eb-8416-d514c70b533c.jpg"><br>
 
 SPAIN. Madrid. Winter 1936-1937. After an Italo-German air raid.  
 
@@ -197,21 +194,21 @@ The Nationalist offensive on Madrid, which lasted from November 1936 to February
  
 
  
-![9](https://user-images.githubusercontent.com/46369038/111897419-46411d80-8a63-11eb-9b27-f39dc77f9ad4.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897419-46411d80-8a63-11eb-9b27-f39dc77f9ad4.jpg"><br>
 
 Running for shelter during the air raids. Bilbao, Spain, May 1937.
  
  
-![10](https://user-images.githubusercontent.com/46369038/111897420-46411d80-8a63-11eb-8fa8-af91a64f27bb.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897420-46411d80-8a63-11eb-8fa8-af91a64f27bb.jpg"><br>
 
 ICP 558, October, 1943.
  
-![11](https://user-images.githubusercontent.com/46369038/111897421-46d9b400-8a63-11eb-842b-0c290a6116c0.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897421-46d9b400-8a63-11eb-842b-0c290a6116c0.jpg"><br>
 Near Troina. August 4th-5th, 1943.
  
  
  
-![12](https://user-images.githubusercontent.com/46369038/111897422-46d9b400-8a63-11eb-878a-b0e7a231efe5.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897422-46d9b400-8a63-11eb-878a-b0e7a231efe5.jpg"><br>
 
 A member of the American Medical Corps treats a German prisoner of war. Italy, July 1943.
  
@@ -220,7 +217,7 @@ A member of the American Medical Corps treats a German prisoner of war. Italy, J
 
  
 
-![13](https://user-images.githubusercontent.com/46369038/111897423-47724a80-8a63-11eb-8262-2a70ab3e1703.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897423-47724a80-8a63-11eb-8262-2a70ab3e1703.jpg"><br>
 
 ITALY. Sicily. Near Troina. An American soldier. August 1943.
 
@@ -231,7 +228,7 @@ ITALY. Sicily. Near Troina. An American soldier. August 1943.
  
 
 
-![14](https://user-images.githubusercontent.com/46369038/111897424-480ae100-8a63-11eb-8eba-ae86e635a08e.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897424-480ae100-8a63-11eb-8eba-ae86e635a08e.jpg"><br>
 
 Funeral of 20 teenage partisans of the Liceo Sannazaro, in the Vomero district. Naples, Italy, October 2, 1943.
 
@@ -241,14 +238,14 @@ Funeral of 20 teenage partisans of the Liceo Sannazaro, in the Vomero district. 
 위에 잠든 소년병의 모습과 오버랩되니 더더욱 슬프다
 
 
-![15](https://user-images.githubusercontent.com/46369038/111897425-480ae100-8a63-11eb-9552-44c36d6fa061.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897425-480ae100-8a63-11eb-9552-44c36d6fa061.jpg"><br>
 
 FRANCE. Normandy. June 6th, 1944. Landing of the American troops on Omaha Beach.
 
 
  
 
-![16](https://user-images.githubusercontent.com/46369038/111897426-48a37780-8a63-11eb-8f04-b6c362a25256.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897426-48a37780-8a63-11eb-8f04-b6c362a25256.jpg"><br>
 
 FRANCE. Normandy. June 6th, 1944. Landing of the American troops on Omaha Beach.
 
@@ -278,7 +275,7 @@ FRANCE. Normandy. June 6th, 1944. Landing of the American troops on Omaha Beach.
  
 
  
-![17](https://user-images.githubusercontent.com/46369038/111897427-493c0e00-8a63-11eb-9181-fc078288b5b2.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897427-493c0e00-8a63-11eb-9181-fc078288b5b2.jpg"><br>
  
 
 
@@ -296,8 +293,8 @@ FRANCE. Normandy. Omaha Beach. June, 1944. French fishermen looking at corpses o
  
  
 
-![18](https://user-images.githubusercontent.com/46369038/111897428-493c0e00-8a63-11eb-9d11-efdf4a11d070.jpg)
-![19](https://user-images.githubusercontent.com/46369038/111897430-49d4a480-8a63-11eb-8186-f10d05d7838b.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897428-493c0e00-8a63-11eb-9d11-efdf4a11d070.jpg"><br>
+<img src="https://user-images.githubusercontent.com/46369038/111897430-49d4a480-8a63-11eb-8186-f10d05d7838b.jpg"><br>
 
 FRANCE. Chartres. August 18th, 1944. French woman, who had had a baby by a Germany soldier,
 
@@ -316,7 +313,7 @@ being marched home after being punished by having her head shaved
 
 
  
-![20](https://user-images.githubusercontent.com/46369038/111897432-49d4a480-8a63-11eb-9657-704b3a3148cf.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897432-49d4a480-8a63-11eb-9657-704b3a3148cf.jpg"><br>
 
 
 Soldiers of the U.S. 82nd Airborne Division. Saint-Sauveur-le-Vicomte, France, June 16, 1944.
@@ -324,7 +321,7 @@ Soldiers of the U.S. 82nd Airborne Division. Saint-Sauveur-le-Vicomte, France, J
 
 
  
-![21](https://user-images.githubusercontent.com/46369038/111897433-4a6d3b00-8a63-11eb-9e28-d800f70071a6.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897433-4a6d3b00-8a63-11eb-9e28-d800f70071a6.jpg"><br>
 
 GERMANY. Leipzig. April 18, 1945. American soldierkilled by a German sniper.
 
@@ -335,7 +332,7 @@ GERMANY. Leipzig. April 18, 1945. American soldierkilled by a German sniper.
 
  
 
-![22](https://user-images.githubusercontent.com/46369038/111897434-4b05d180-8a63-11eb-8df7-ba210f1d880f.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897434-4b05d180-8a63-11eb-8df7-ba210f1d880f.jpg"><br>
 
 GERMANY. Berlin. August, 1945. People on street lined with ruined buildings.
 
@@ -344,7 +341,7 @@ GERMANY. Berlin. August, 1945. People on street lined with ruined buildings.
  
 
  
-![23](https://user-images.githubusercontent.com/46369038/111897435-4b05d180-8a63-11eb-98a2-1f942e693685.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897435-4b05d180-8a63-11eb-98a2-1f942e693685.jpg"><br>
  
 
 
@@ -364,7 +361,7 @@ Namdinh. May 21st, 1954. Military
  
 
  
-![24](https://user-images.githubusercontent.com/46369038/111897436-4b9e6800-8a63-11eb-9694-12ba4465c323.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897436-4b9e6800-8a63-11eb-9694-12ba4465c323.jpg"><br>
 
 
 On the road from Namdinh to Thaibinh. May 25, 1954
@@ -383,7 +380,7 @@ On the road from Namdinh to Thaibinh. May 25, 1954
 
  
 
-![25](https://user-images.githubusercontent.com/46369038/111897438-4c36fe80-8a63-11eb-8a14-c952cfd93f01.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897438-4c36fe80-8a63-11eb-8a14-c952cfd93f01.jpg"><br>
 
  
 
@@ -410,7 +407,7 @@ VIETNAM. May 25, 1954. On the road from Namdinh to Thaibinh. One of Capa's last 
 
  
 
-![26](https://user-images.githubusercontent.com/46369038/111897439-4c36fe80-8a63-11eb-9dae-dc6855192a06.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897439-4c36fe80-8a63-11eb-9dae-dc6855192a06.jpg"><br>
 
 
 After a Japanese air raid. Hankou, China, July-Sept, 1938.
@@ -427,14 +424,14 @@ After a Japanese air raid. Hankou, China, July-Sept, 1938.
 
  
 
-![27](https://user-images.githubusercontent.com/46369038/111897440-4ccf9500-8a63-11eb-9d1b-fef155478d6e.jpg)
-![28](https://user-images.githubusercontent.com/46369038/111897441-4ccf9500-8a63-11eb-897a-2b6dc79f384c.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897440-4ccf9500-8a63-11eb-9d1b-fef155478d6e.jpg"><br>
+<img src="https://user-images.githubusercontent.com/46369038/111897441-4ccf9500-8a63-11eb-897a-2b6dc79f384c.jpg"><br>
 
 Tour de France, 1939
  
  
  
-![29](https://user-images.githubusercontent.com/46369038/111897442-4d682b80-8a63-11eb-9886-3fa24baf7d68.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897442-4d682b80-8a63-11eb-9886-3fa24baf7d68.jpg"><br>
 
 
 
@@ -444,7 +441,7 @@ Ernest Hemingway. Sun Valley, Idaho, USA. October 1941.
 사냥을 하고 있는 헤밍웨이
  
  
-![30](https://user-images.githubusercontent.com/46369038/111897444-4d682b80-8a63-11eb-800e-47c9e8547b17.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897444-4d682b80-8a63-11eb-800e-47c9e8547b17.jpg"><br>
 
 
 FRANCE. Golfe-Juan. August, 1948. Pablo Picasso and Françoise Gilot.
@@ -453,7 +450,7 @@ FRANCE. Golfe-Juan. August, 1948. Pablo Picasso and Françoise Gilot.
 살면서 7명의 아내를 두었다는 피카소..... 그 중 1명과 함께
  
  
-![31](https://user-images.githubusercontent.com/46369038/111897445-4e00c200-8a63-11eb-8425-8703a82d3db7.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897445-4e00c200-8a63-11eb-8425-8703a82d3db7.jpg"><br>
 
 
 FRANCE. Golfe-Juan. August, 1948. Pablo PICASSO with his son Claude.
@@ -464,21 +461,21 @@ FRANCE. Golfe-Juan. August, 1948. Pablo PICASSO with his son Claude.
 개인적으로 너무 좋아하는 사진, 피카소와 아들의 익살스러움을 순간포착한 사진
  
 
-![32](https://user-images.githubusercontent.com/46369038/111897446-4e995880-8a63-11eb-947e-1f6f7453eba0.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897446-4e995880-8a63-11eb-947e-1f6f7453eba0.jpg"><br>
 
 FRANCE. Near France. August, 1949. Henri Matisse in his studio,
 
  
 
  
-![33](https://user-images.githubusercontent.com/46369038/111897448-4e995880-8a63-11eb-965e-5d499011ce26.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897448-4e995880-8a63-11eb-965e-5d499011ce26.jpg"><br>
 
 
 July 14th, 1952. The Tour d'Argent
 
  
 
-![34](https://user-images.githubusercontent.com/46369038/111897449-4f31ef00-8a63-11eb-80f0-60531f758fba.jpg)
+<img src="https://user-images.githubusercontent.com/46369038/111897449-4f31ef00-8a63-11eb-80f0-60531f758fba.jpg"><br>
 
 
 
