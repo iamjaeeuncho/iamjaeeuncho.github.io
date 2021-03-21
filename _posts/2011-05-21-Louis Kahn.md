@@ -10,19 +10,21 @@ toc_ads: true
 toc_sticky: true
 ---
 
+​<br>
 ![1](https://user-images.githubusercontent.com/46369038/111904889-61745300-8a8c-11eb-9097-d5d72c681188.jpg){: .align-center}
 ​<br><br>
 
 저번 학기에 '현대건축의 이해'라는 교양과목을 수강했다. 원래 건축학과를 가려고 했을 만큼 컨축에 관심이 많았기 때문에, 레포트와 팀플등의 무리한 조건에도 선뜻 수강신청을 했었는데. 건축학 수업을 들으면서 굉장히 많이 듣게 된 이름 바로 '루이스 칸' 
 
-그 사람의 건축물을 보며 '어떻게 저런 크고 무미건조한 건물에서 고결함이 느껴질까?'라는 생각을 들었다. 그래서 꼭 포스팅하고 싶었는데, 1년이나 지난 지금에서야 포스팅을 하게되었....  
+그 사람의 건축물을 보며 '어떻게 저런 크고 무미건조한 건물에서 고결함이 느껴질까'라는 생각을 들었다. 그래서 꼭 포스팅하고 싶었는데, 1년이나 지난 지금에서야 포스팅을 하게되었....  
 ​<br><br>​<br>
 
 
 
 ### 루이스칸의 이야기 
 
-![2](https://user-images.githubusercontent.com/46369038/111904890-620ce980-8a8c-11eb-9bf4-26055d04d886.jpg){: .align-center}
+​<br>
+![2](https://user-images.githubusercontent.com/46369038/111904890-620ce980-8a8c-11eb-9bf4-26055d04d886.jpg){: width="400"}{: .align-center}
 ​<br><br>
 
 루이스칸 은 1901년 러시아 영토였던 에스토니아 회셀 섬에서 유태인으로 태어났다. 그가 4살일 때, 그의 가족은 미국으로 이주하는데, 이후 그는 펜실베니아 대학을 졸업하고 건축 디자이너가 되었다. 그리고 1947년 46살에 예일 대학의 건축학 교수로 10년 동안 재직했으며, 이후에는 펜실베니아 대학의 학장을 지내기도 했었다.
@@ -41,6 +43,7 @@ toc_sticky: true
  
 ### 루이스칸의 대표작들
 
+​<br>
 ![3](https://user-images.githubusercontent.com/46369038/111904893-62a58000-8a8c-11eb-958f-0e02da4baa4a.jpg){: .align-center}
 
 
@@ -103,6 +106,7 @@ toc_sticky: true
 
 ### 루이스칸의 건축물에 대한 영화 
 
+​<br>
 ![15](https://user-images.githubusercontent.com/46369038/111904907-6933f780-8a8c-11eb-998c-cfcd59b3a53a.jpg){: .align-center}
 ​<br><br>
 
@@ -115,7 +119,8 @@ toc_sticky: true
 
 
 
-▶  EBS 지식채널 E : 루이스칸편 (1부+2부)
+####  EBS 지식채널 E : 루이스칸편 (1부+2부)
+​<br>
 
 {% include video id="HFa4GJu8LsU" provider="youtube" %}
 
