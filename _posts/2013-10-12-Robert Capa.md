@@ -4,7 +4,7 @@ date: 2013-10-12
 categories:
   - inspiration
 tags:
-  - history
+  - interest
 toc: false
 toc_ads: true
 toc_sticky: true
