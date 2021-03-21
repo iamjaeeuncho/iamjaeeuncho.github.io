@@ -11,7 +11,7 @@ toc_sticky: true
 ---
 
 <center>
-<img src="https://user-images.githubusercontent.com/46369038/111897450-4fca8580-8a63-11eb-9ffa-960877a96d8c.jpg">
+<img src="https://user-images.githubusercontent.com/46369038/111904889-61745300-8a8c-11eb-9097-d5d72c681188.jpg" >
 
 ​
 저번 학기에 '현대건축의 이해'라는 교양과목을 수강했다
