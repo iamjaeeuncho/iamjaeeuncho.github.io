@@ -10,29 +10,29 @@ toc_ads: true
 toc_sticky: true
 ---
 
-<center>
-<img src="https://user-images.githubusercontent.com/46369038/111904889-61745300-8a8c-11eb-9097-d5d72c681188.jpg" >
+
+<img src="https://user-images.githubusercontent.com/46369038/111904889-61745300-8a8c-11eb-9097-d5d72c681188.jpg" class="center">
 
 ​
 저번 학기에 '현대건축의 이해'라는 교양과목을 수강했다
 
-원래 건축에 대해서 관심이 많았기 때문에, 레포트와 팀플등의 무리한 조건에도 선뜻 수강신청을 했었던 듯
+원래 건축학과를 가려고 했을 만큼 컨축에 관심이 많았기 때문에,
+
+레포트와 팀플등의 무리한 조건에도 선뜻 수강신청을 했었는데
+
+건축학 수업을 들으면서 굉장히 많이 듣게 된 이름 바로 '루이스 칸' 
 
 
-
-그 중에서도 수업을 들으면서 굉장히 많이 듣게 된 이름 바로 '루이스 칸' 
-
-
-항상 그의 건축물을 보며, '어떻게 저런 크고 무미건조한 건물에서 고결함이 느껴질까....?'라는 생각이 들었었어요. 
+그 사람의 건축물을 보며 '어떻게 저런 크고 무미건조한 건물에서 고결함이 느껴질까?'라는 생각을 들었다. 
 
 
-그래서 꼭 포스팅하고 싶었는데, 1년이나 지난 지금에서야 포스팅을 하게되었네요......ㅋㅋㅋㅋㅋㅋ  
+그래서 꼭 포스팅하고 싶었는데, 1년이나 지난 지금에서야 포스팅을 하게되었....  
 
 
 
 ▶ 루이스칸의 이야기 
 
- 
+ ![2](https://user-images.githubusercontent.com/46369038/111904890-620ce980-8a8c-11eb-9bf4-26055d04d886.jpg)
 
 
 
@@ -115,7 +115,9 @@ toc_sticky: true
  
 
 
- 
+![3](https://user-images.githubusercontent.com/46369038/111904893-62a58000-8a8c-11eb-958f-0e02da4baa4a.jpg)
+![4](https://user-images.githubusercontent.com/46369038/111904894-633e1680-8a8c-11eb-94e7-7ee9a7504a6c.jpg)
+![5](https://user-images.githubusercontent.com/46369038/111904895-63d6ad00-8a8c-11eb-8c5d-e527b0010f45.jpg)
 
 
 
@@ -155,7 +157,8 @@ toc_sticky: true
  
 
  
-
+![6](https://user-images.githubusercontent.com/46369038/111904896-646f4380-8a8c-11eb-9a2f-fd7b0e5535bd.jpg)
+![7](https://user-images.githubusercontent.com/46369038/111904897-646f4380-8a8c-11eb-8c67-d4312db7fdc2.jpg)
 
 
 
@@ -167,10 +170,9 @@ toc_sticky: true
 
   
 
-﻿ 
-
- 
-
+![8](https://user-images.githubusercontent.com/46369038/111904898-6507da00-8a8c-11eb-8715-5aed4f98a4f1.jpg)
+![9](https://user-images.githubusercontent.com/46369038/111904899-65a07080-8a8c-11eb-9cf2-b78d8d109aec.jpg)
+![10](https://user-images.githubusercontent.com/46369038/111904900-66390700-8a8c-11eb-953a-9c2e97e231b3.jpg)
 
 
  
@@ -210,8 +212,10 @@ toc_sticky: true
 
 
 
-
-
+![11](https://user-images.githubusercontent.com/46369038/111904901-66d19d80-8a8c-11eb-8a18-de1ac80968a5.jpg)
+![12](https://user-images.githubusercontent.com/46369038/111904903-676a3400-8a8c-11eb-91ed-32c3e8ae9daa.jpg)
+![13](https://user-images.githubusercontent.com/46369038/111904905-6802ca80-8a8c-11eb-85e2-1ff8f1f1385f.jpg)
+![14](https://user-images.githubusercontent.com/46369038/111904906-689b6100-8a8c-11eb-86c0-014cb3df1e4e.jpg)
  
 
  
@@ -232,9 +236,7 @@ toc_sticky: true
  
 
 ▶ 루이스칸의 건축물에 대한 영화 
-
-﻿ 
-
+![15](https://user-images.githubusercontent.com/46369038/111904907-6933f780-8a8c-11eb-998c-cfcd59b3a53a.jpg)
  
 
 
