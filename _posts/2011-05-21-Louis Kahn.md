@@ -173,7 +173,7 @@ toc_sticky: true
 ![8](https://user-images.githubusercontent.com/46369038/111904898-6507da00-8a8c-11eb-8715-5aed4f98a4f1.jpg)
 ![9](https://user-images.githubusercontent.com/46369038/111904899-65a07080-8a8c-11eb-9cf2-b78d8d109aec.jpg)
 ![10](https://user-images.githubusercontent.com/46369038/111904900-66390700-8a8c-11eb-953a-9c2e97e231b3.jpg)
-
+![11](https://user-images.githubusercontent.com/46369038/111904901-66d19d80-8a8c-11eb-8a18-de1ac80968a5.jpg)
 
  
 
@@ -212,7 +212,7 @@ toc_sticky: true
 
 
 
-![11](https://user-images.githubusercontent.com/46369038/111904901-66d19d80-8a8c-11eb-8a18-de1ac80968a5.jpg)
+
 ![12](https://user-images.githubusercontent.com/46369038/111904903-676a3400-8a8c-11eb-91ed-32c3e8ae9daa.jpg)
 ![13](https://user-images.githubusercontent.com/46369038/111904905-6802ca80-8a8c-11eb-85e2-1ff8f1f1385f.jpg)
 ![14](https://user-images.githubusercontent.com/46369038/111904906-689b6100-8a8c-11eb-86c0-014cb3df1e4e.jpg)
@@ -250,14 +250,9 @@ toc_sticky: true
 
  
 
-﻿ 
+{% include video id="HFa4GJu8LsU" provider="youtube" %}
 
-
-  
-
-﻿ 
-
- 
+ {% include video id="sVXS304JOws" provider="youtube" %}
 
  
 
