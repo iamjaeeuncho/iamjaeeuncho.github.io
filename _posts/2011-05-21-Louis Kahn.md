@@ -10,12 +10,9 @@ toc_ads: true
 toc_sticky: true
 ---
 
-<center>
-<img src="https://user-images.githubusercontent.com/46369038/111904889-61745300-8a8c-11eb-9097-d5d72c681188.jpg">
-</center>
-<br><br>
+![1](https://user-images.githubusercontent.com/46369038/111904889-61745300-8a8c-11eb-9097-d5d72c681188.jpg){: .align-center}
+​<br><br>
 
-​
 저번 학기에 '현대건축의 이해'라는 교양과목을 수강했다. 원래 건축학과를 가려고 했을 만큼 컨축에 관심이 많았기 때문에, 레포트와 팀플등의 무리한 조건에도 선뜻 수강신청을 했었는데. 건축학 수업을 들으면서 굉장히 많이 듣게 된 이름 바로 '루이스 칸' 
 
 그 사람의 건축물을 보며 '어떻게 저런 크고 무미건조한 건물에서 고결함이 느껴질까?'라는 생각을 들었다. 그래서 꼭 포스팅하고 싶었는데, 1년이나 지난 지금에서야 포스팅을 하게되었....  
@@ -26,7 +23,7 @@ toc_sticky: true
 
 ### 루이스칸의 이야기 
 
-<img src="https://user-images.githubusercontent.com/46369038/111904890-620ce980-8a8c-11eb-9bf4-26055d04d886.jpg">
+![2](https://user-images.githubusercontent.com/46369038/111904890-620ce980-8a8c-11eb-9bf4-26055d04d886.jpg){: .align-center}
 
 루이스칸 은 1901년 러시아 영토였던 에스토니아 회셀 섬에서 유태인으로 태어났다. 그가 4살일 때, 그의 가족은 미국으로 이주하는데, 이후 그는 펜실베니아 대학을 졸업하고 건축 디자이너가 되었다. 그리고 1947년 46살에 예일 대학의 건축학 교수로 10년 동안 재직했으며, 이후에는 펜실베니아 대학의 학장을 지내기도 했었다.
 
@@ -45,16 +42,14 @@ toc_sticky: true
 
 ### 루이스칸의 대표작들
 
-![3](https://user-images.githubusercontent.com/46369038/111904893-62a58000-8a8c-11eb-958f-0e02da4baa4a.jpg)
+![3](https://user-images.githubusercontent.com/46369038/111904893-62a58000-8a8c-11eb-958f-0e02da4baa4a.jpg){: .align-center}
 
 
-![4](https://user-images.githubusercontent.com/46369038/111904894-633e1680-8a8c-11eb-94e7-7ee9a7504a6c.jpg)
+![4](https://user-images.githubusercontent.com/46369038/111904894-633e1680-8a8c-11eb-94e7-7ee9a7504a6c.jpg){: .align-center}
 
 
-![5](https://user-images.githubusercontent.com/46369038/111904895-63d6ad00-8a8c-11eb-8c5d-e527b0010f45.jpg)
-
-
-소크 생물학연구소 : 1959~1965, 캘리포니아주 라졸라
+![5](https://user-images.githubusercontent.com/46369038/111904895-63d6ad00-8a8c-11eb-8c5d-e527b0010f45.jpg){: .align-center}
+<center>소크 생물학연구소 : 1959~1965, 캘리포니아주 라졸라</center>
 
 
 
@@ -68,29 +63,25 @@ toc_sticky: true
 
 
 
-![6](https://user-images.githubusercontent.com/46369038/111904896-646f4380-8a8c-11eb-9a2f-fd7b0e5535bd.jpg)
+![6](https://user-images.githubusercontent.com/46369038/111904896-646f4380-8a8c-11eb-9a2f-fd7b0e5535bd.jpg){: .align-center}
 
 
-![7](https://user-images.githubusercontent.com/46369038/111904897-646f4380-8a8c-11eb-8c67-d4312db7fdc2.jpg)
-
-
-필립 엑서터 도서관 : 1965~1972, 뉴햄프셔
+![7](https://user-images.githubusercontent.com/46369038/111904897-646f4380-8a8c-11eb-8c67-d4312db7fdc2.jpg){: .align-center}
+<center>필립 엑서터 도서관 : 1965~1972, 뉴햄프셔</center>
 
  
 
-![8](https://user-images.githubusercontent.com/46369038/111904898-6507da00-8a8c-11eb-8715-5aed4f98a4f1.jpg)
+![8](https://user-images.githubusercontent.com/46369038/111904898-6507da00-8a8c-11eb-8715-5aed4f98a4f1.jpg){: .align-center}
 
 
-![9](https://user-images.githubusercontent.com/46369038/111904899-65a07080-8a8c-11eb-9cf2-b78d8d109aec.jpg)
+![9](https://user-images.githubusercontent.com/46369038/111904899-65a07080-8a8c-11eb-9cf2-b78d8d109aec.jpg){: .align-center}
 
 
-![10](https://user-images.githubusercontent.com/46369038/111904900-66390700-8a8c-11eb-953a-9c2e97e231b3.jpg)
+![10](https://user-images.githubusercontent.com/46369038/111904900-66390700-8a8c-11eb-953a-9c2e97e231b3.jpg){: .align-center}
 
 
-![11](https://user-images.githubusercontent.com/46369038/111904901-66d19d80-8a8c-11eb-8a18-de1ac80968a5.jpg)
-
-
-킴벨 미술관 : 1966~1972, 텍사스주 포트워스
+![11](https://user-images.githubusercontent.com/46369038/111904901-66d19d80-8a8c-11eb-8a18-de1ac80968a5.jpg){: .align-center}
+<center>킴벨 미술관 : 1966~1972, 텍사스주 포트워스</center>
 
 
 처음보고 비닐하우스인 줄 ㅎㅎ
@@ -119,16 +110,14 @@ toc_sticky: true
 
  
 
-![12](https://user-images.githubusercontent.com/46369038/111904903-676a3400-8a8c-11eb-91ed-32c3e8ae9daa.jpg)
+![12](https://user-images.githubusercontent.com/46369038/111904903-676a3400-8a8c-11eb-91ed-32c3e8ae9daa.jpg){: .align-center}
 
 
-![13](https://user-images.githubusercontent.com/46369038/111904905-6802ca80-8a8c-11eb-85e2-1ff8f1f1385f.jpg)
+![13](https://user-images.githubusercontent.com/46369038/111904905-6802ca80-8a8c-11eb-85e2-1ff8f1f1385f.jpg){: .align-center}
 
 
-![14](https://user-images.githubusercontent.com/46369038/111904906-689b6100-8a8c-11eb-86c0-014cb3df1e4e.jpg)
- 
-
-방글라데시 국회의사당 : 1962~1976, 방글라데시 다카
+![14](https://user-images.githubusercontent.com/46369038/111904906-689b6100-8a8c-11eb-86c0-014cb3df1e4e.jpg){: .align-center}
+<center>방글라데시 국회의사당 : 1962~1976, 방글라데시 다카</center>
 
 
  
@@ -136,7 +125,7 @@ toc_sticky: true
 
 ### 루이스칸의 건축물에 대한 영화 
 
-![15](https://user-images.githubusercontent.com/46369038/111904907-6933f780-8a8c-11eb-998c-cfcd59b3a53a.jpg)
+![15](https://user-images.githubusercontent.com/46369038/111904907-6933f780-8a8c-11eb-998c-cfcd59b3a53a.jpg){: .align-center}
  
 
 루이스칸의 세번째 부인의 아들이 그의 아버지의 발자취를 따라가면서 만든 영화입니다
