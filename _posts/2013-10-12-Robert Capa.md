@@ -11,107 +11,74 @@ toc_sticky: true
 ---
 
 <center>
-<br><img src="https://user-images.githubusercontent.com/46369038/111897450-4fca8580-8a63-11eb-9ffa-960877a96d8c.jpg"><br>
-</center>
-<p>
+<img src="https://user-images.githubusercontent.com/46369038/111897450-4fca8580-8a63-11eb-9ffa-960877a96d8c.jpg"><p><p>
 
-배우보다 더 배우스러운 외모와 사교계를 사로 잡은 유머감각,
-<p>
+배우보다 더 배우스러운 외모와 사교계를 사로 잡은 유머감각,<p>
 
-그리고 20세기 최고의 사진작가라는 명성을 등에 업은 로버트 카파.
-<p>
+그리고 20세기 최고의 사진작가라는 명성을 등에 업은 로버트 카파.<p>
 
-헝가리 태생의 유태인으로 수많은 사교계 여성들의 워너비가 되었고
-<p>
+헝가리 태생의 유태인으로 수많은 사교계 여성들의 워너비가 되었고<p>
 
-헤밍웨이-피카소등 유명인사들의 친구가 되기도 했다.
-<p>
+헤밍웨이-피카소등 유명인사들의 친구가 되기도 했다.<p>
 
-그는 평소에는 도박과 술, 여자를 좋아하는 방탕한 사람이었지만,
-<p>
+그는 평소에는 도박과 술, 여자를 좋아하는 방탕한 사람이었지만,<p>
 
-일을 할 때 만큼은 누구보다 열정적인 사람이었다고 한다
-<p>
+일을 할 때 만큼은 누구보다 열정적인 사람이었다고 한다<p>
 
-"만약 당신의 사진이 마음에 들지 않는다면,
-<p>
+"만약 당신의 사진이 마음에 들지 않는다면,<p>
 
-그것은 당신이 충분히 가까이가지 않았기 때문이다."라는 말에서
-<p>
+그것은 당신이 충분히 가까이가지 않았기 때문이다."라는 말에서<p>
 
-사진에 대한 그의 열정을 알 수 있다.
-<p>
-
-그리고 지인들과 함께 설립한 세계 최고이자 최초의 사진기사에이젼시 '매그넘'을 만들어
-<p>
-
-사진작가들의 보다 자유로운 활동과 권익추구에 앞장섰고
-<p>
-
-신생 작가들을 적극적으로 등용하고 그들에게 큰 일감들을 몰아주기도 하면서,
-<p>
-
-사진사 발전에 큰 공헌을 이끌었다고 한다
-<p>
-
-또한 자신의 첫사랑이자 한때는 결혼을 약속했던 여인을 잊지 못해,
-<p>
-
-수많은 여자들을 만나면서도 그는 독신으로 살아갔는데,
-<p>
-
-그는 그의 첫사랑 '타로'에게 사진을 가르쳤던 것을 많이 후회했다고 한다.
-<p>
-
-그녀가 스페인 내전을 취재하다가 탱크에 깔려 죽었기 때문이다. 
+사진에 대한 그의 열정을 알 수 있다.<p><p>
 
 
-그는 세계대전을 비롯해 총 4번의 전쟁에 참가했고,
+그리고 지인들과 함께 설립한 세계 최고이자 최초의 사진기사에이젼시 '매그넘'을 만들어<p>
+
+사진작가들의 보다 자유로운 활동과 권익추구에 앞장섰고<p>
+
+신생 작가들을 적극적으로 등용하고 그들에게 큰 일감들을 몰아주기도 하면서,<p>
+
+사진사 발전에 큰 공헌을 이끌었다고 한다<p>
+
+또한 자신의 첫사랑이자 한때는 결혼을 약속했던 여인을 잊지 못해,<p>
+
+수많은 여자들을 만나면서도 그는 독신으로 살아갔는데,<p>
+
+그는 그의 첫사랑 '타로'에게 사진을 가르쳤던 것을 많이 후회했다고 한다.<p>
+
+그녀가 스페인 내전을 취재하다가 탱크에 깔려 죽었기 때문이다.<p>
+
+그는 세계대전을 비롯해 총 4번의 전쟁에 참가했고,<p>
+
+그 이외에도 일본, 중국 등 여러나라를 돌며 사진을 찍었다.<p>
+
+그리고 그의 나이 41세에 결국 베트남전쟁에서 지뢰를 밟고 죽었다.<p>
+
+그 당시 한 병사가 지뢰를 터지는 것을 보고는,<p>
+
+"저 순간이 바로 카파가 원하는 사진인데!"라는 말을 남겼다고 하는데,<p>
+
+결국 카파는 안쓰럽게도 그 사진의 주인공이 되었다.<p><p>
 
 
-그 이외에도 일본, 중국 등 여러나라를 돌며 사진을 찍었다.
-
-
-그리고 그의 나이 41세에 결국 베트남전쟁에서 지뢰를 밟고 죽었다.
-
-
-그 당시 한 병사가 지뢰를 터지는 것을 보고는,
-
- 
-"제길, 저 순간이 바로 카파가 원하는 사진인데 !"라는 말을 남겼다고 하는데,
-
-
-결국 카파는 안쓰럽게도 그 사진의 주인공이 되었다.
-
- 
-
-<center>
-<img src="https://user-images.githubusercontent.com/46369038/111897452-4fca8580-8a63-11eb-9ebd-5d8ae3803bf9.jpg"><p>
-
+<img src="https://user-images.githubusercontent.com/46369038/111897452-4fca8580-8a63-11eb-9ebd-5d8ae3803bf9.jpg"><p><p>
 
 꼭 조지클루니를 닮은 듯한 카파<p><p>
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897453-50631c00-8a63-11eb-9c6b-84fb2be5f243.jpg"><p>
 
-
-<img src="https://user-images.githubusercontent.com/46369038/111897454-50631c00-8a63-11eb-8632-b713698e9c70.png"><p> 
-
-
-평소도 멋있지만, 사진 찍을때 카파의 모습은 범접할 수 없이 매력적이다
+<img src="https://user-images.githubusercontent.com/46369038/111897454-50631c00-8a63-11eb-8632-b713698e9c70.png"><p><p>
 
 
- 
+평소도 멋있지만, 사진 찍을때 카파의 모습은 범접할 수 없이 매력적이다<p><p>
+
 
 <img src="https://user-images.githubusercontent.com/46369038/111897455-50fbb280-8a63-11eb-9c1d-b645a92a7f67.jpg"><br>
+DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.<p><p>
 
 
-DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.
-
-
- 
-
-암실 보조원으로 일할 시절, 러시아 혁명가인 레온 트로츠키의 강연 사진을 찍어 사진작가로 인정받게 되는데
+암실 보조원으로 일할 시절, 러시아 혁명가인 레온 트로츠키의 강연 사진을 찍어 사진작가로 인정받게 되는데<p>
 
  
 이 당시 레온 트로츠키 강연회에서 제대로 된 사진을 찍은 사람이 카파밖에 없어서 였다고 한다.
@@ -122,7 +89,6 @@ DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897456-51944900-8a63-11eb-8a8d-1fdd8730e4d8.jpg"><br>
-
 SPAIN. Cordoba front. September, 1936. Death of a loyalist militiaman.
 
  
@@ -143,7 +109,6 @@ SPAIN. Cordoba front. September, 1936. Death of a loyalist militiaman.
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897417-44775a00-8a63-11eb-86fb-26ae8bd70d54.jpg"><br>
-
 SPAIN. Teruel. December 21st - 24th, 1937. Republican soldier in a tree on the Aragon front.
 
 
@@ -163,7 +128,6 @@ SPAIN. Teruel. December 21st - 24th, 1937. Republican soldier in a tree on the A
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897418-45a88700-8a63-11eb-8416-d514c70b533c.jpg"><br>
-
 SPAIN. Madrid. Winter 1936-1937. After an Italo-German air raid.  
 
 The Nationalist offensive on Madrid, which lasted from November 1936 to February 1937, was one of the fiercest  
@@ -186,12 +150,10 @@ The Nationalist offensive on Madrid, which lasted from November 1936 to February
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897419-46411d80-8a63-11eb-9b27-f39dc77f9ad4.jpg"><br>
-
 Running for shelter during the air raids. Bilbao, Spain, May 1937.
  
  
 <img src="https://user-images.githubusercontent.com/46369038/111897420-46411d80-8a63-11eb-8fa8-af91a64f27bb.jpg"><br>
-
 ICP 558, October, 1943.
  
 <img src="https://user-images.githubusercontent.com/46369038/111897421-46d9b400-8a63-11eb-842b-0c290a6116c0.jpg"><br>
@@ -200,7 +162,6 @@ Near Troina. August 4th-5th, 1943.
  
  
 <img src="https://user-images.githubusercontent.com/46369038/111897422-46d9b400-8a63-11eb-878a-b0e7a231efe5.jpg"><br>
-
 A member of the American Medical Corps treats a German prisoner of war. Italy, July 1943.
  
 
@@ -209,7 +170,6 @@ A member of the American Medical Corps treats a German prisoner of war. Italy, J
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897423-47724a80-8a63-11eb-8262-2a70ab3e1703.jpg"><br>
-
 ITALY. Sicily. Near Troina. An American soldier. August 1943.
 
  
@@ -220,7 +180,6 @@ ITALY. Sicily. Near Troina. An American soldier. August 1943.
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897424-480ae100-8a63-11eb-8eba-ae86e635a08e.jpg"><br>
-
 Funeral of 20 teenage partisans of the Liceo Sannazaro, in the Vomero district. Naples, Italy, October 2, 1943.
 
 
@@ -230,14 +189,12 @@ Funeral of 20 teenage partisans of the Liceo Sannazaro, in the Vomero district. 
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897425-480ae100-8a63-11eb-9552-44c36d6fa061.jpg"><br>
-
 FRANCE. Normandy. June 6th, 1944. Landing of the American troops on Omaha Beach.
 
 
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897426-48a37780-8a63-11eb-8f04-b6c362a25256.jpg"><br>
-
 FRANCE. Normandy. June 6th, 1944. Landing of the American troops on Omaha Beach.
 
 
@@ -267,10 +224,6 @@ FRANCE. Normandy. June 6th, 1944. Landing of the American troops on Omaha Beach.
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897427-493c0e00-8a63-11eb-9181-fc078288b5b2.jpg"><br>
- 
-
-
-
 FRANCE. Normandy. Omaha Beach. June, 1944. French fishermen looking at corpses on the beach after the D-Day landing.
  
 
@@ -284,12 +237,11 @@ FRANCE. Normandy. Omaha Beach. June, 1944. French fishermen looking at corpses o
  
  
 
-<img src="https://user-images.githubusercontent.com/46369038/111897428-493c0e00-8a63-11eb-9d11-efdf4a11d070.jpg"><br>
+<img src="https://user-images.githubusercontent.com/46369038/111897428-493c0e00-8a63-11eb-9d11-efdf4a11d070.jpg"><br><br>
+
 <img src="https://user-images.githubusercontent.com/46369038/111897430-49d4a480-8a63-11eb-8186-f10d05d7838b.jpg"><br>
-
-FRANCE. Chartres. August 18th, 1944. French woman, who had had a baby by a Germany soldier,
-
-being marched home after being punished by having her head shaved
+FRANCE. Chartres. August 18th, 1944. French woman, who had had a baby by a Germany soldier,<br>
+being marched home after being punished by having her head shaved<br>
 
  
 
@@ -305,15 +257,9 @@ being marched home after being punished by having her head shaved
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897432-49d4a480-8a63-11eb-9657-704b3a3148cf.jpg"><br>
-
-
 Soldiers of the U.S. 82nd Airborne Division. Saint-Sauveur-le-Vicomte, France, June 16, 1944.
 
-
-
- 
 <img src="https://user-images.githubusercontent.com/46369038/111897433-4a6d3b00-8a63-11eb-9e28-d800f70071a6.jpg"><br>
-
 GERMANY. Leipzig. April 18, 1945. American soldierkilled by a German sniper.
 
 
@@ -324,7 +270,6 @@ GERMANY. Leipzig. April 18, 1945. American soldierkilled by a German sniper.
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897434-4b05d180-8a63-11eb-8df7-ba210f1d880f.jpg"><br>
-
 GERMANY. Berlin. August, 1945. People on street lined with ruined buildings.
 
  
@@ -333,10 +278,6 @@ GERMANY. Berlin. August, 1945. People on street lined with ruined buildings.
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897435-4b05d180-8a63-11eb-98a2-1f942e693685.jpg"><br>
- 
-
-
-
 Namdinh. May 21st, 1954. Military
 
  
@@ -353,8 +294,6 @@ Namdinh. May 21st, 1954. Military
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897436-4b9e6800-8a63-11eb-9694-12ba4465c323.jpg"><br>
-
-
 On the road from Namdinh to Thaibinh. May 25, 1954
 
  
@@ -372,11 +311,6 @@ On the road from Namdinh to Thaibinh. May 25, 1954
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897438-4c36fe80-8a63-11eb-8a14-c952cfd93f01.jpg"><br>
-
- 
-
-
-
 VIETNAM. May 25, 1954. On the road from Namdinh to Thaibinh. One of Capa's last pictures.
  
 
@@ -399,8 +333,6 @@ VIETNAM. May 25, 1954. On the road from Namdinh to Thaibinh. One of Capa's last 
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897439-4c36fe80-8a63-11eb-9dae-dc6855192a06.jpg"><br>
-
-
 After a Japanese air raid. Hankou, China, July-Sept, 1938.
 
  
@@ -415,17 +347,14 @@ After a Japanese air raid. Hankou, China, July-Sept, 1938.
 
  
 
-<img src="https://user-images.githubusercontent.com/46369038/111897440-4ccf9500-8a63-11eb-9d1b-fef155478d6e.jpg"><br>
-<img src="https://user-images.githubusercontent.com/46369038/111897441-4ccf9500-8a63-11eb-897a-2b6dc79f384c.jpg"><br>
+<img src="https://user-images.githubusercontent.com/46369038/111897440-4ccf9500-8a63-11eb-9d1b-fef155478d6e.jpg"><br><br>
 
+<img src="https://user-images.githubusercontent.com/46369038/111897441-4ccf9500-8a63-11eb-897a-2b6dc79f384c.jpg"><br>
 Tour de France, 1939
  
  
  
 <img src="https://user-images.githubusercontent.com/46369038/111897442-4d682b80-8a63-11eb-9886-3fa24baf7d68.jpg"><br>
-
-
-
 Ernest Hemingway. Sun Valley, Idaho, USA. October 1941.
  
  
@@ -433,8 +362,6 @@ Ernest Hemingway. Sun Valley, Idaho, USA. October 1941.
  
  
 <img src="https://user-images.githubusercontent.com/46369038/111897444-4d682b80-8a63-11eb-800e-47c9e8547b17.jpg"><br>
-
-
 FRANCE. Golfe-Juan. August, 1948. Pablo Picasso and Françoise Gilot.
  
  
@@ -442,8 +369,6 @@ FRANCE. Golfe-Juan. August, 1948. Pablo Picasso and Françoise Gilot.
  
  
 <img src="https://user-images.githubusercontent.com/46369038/111897445-4e00c200-8a63-11eb-8425-8703a82d3db7.jpg"><br>
-
-
 FRANCE. Golfe-Juan. August, 1948. Pablo PICASSO with his son Claude.
  
 
@@ -453,24 +378,17 @@ FRANCE. Golfe-Juan. August, 1948. Pablo PICASSO with his son Claude.
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897446-4e995880-8a63-11eb-947e-1f6f7453eba0.jpg"><br>
-
 FRANCE. Near France. August, 1949. Henri Matisse in his studio,
 
  
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897448-4e995880-8a63-11eb-965e-5d499011ce26.jpg"><br>
-
-
 July 14th, 1952. The Tour d'Argent
 
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897449-4f31ef00-8a63-11eb-80f0-60531f758fba.jpg"><br>
-
-
-
-
 Yaizu, Shizuoka, April 20, 1954
 
  
