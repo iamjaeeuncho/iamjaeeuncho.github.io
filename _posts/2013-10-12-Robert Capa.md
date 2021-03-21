@@ -22,7 +22,7 @@ toc_sticky: true
 <br><br>
 
 그는 세계대전을 비롯해 총 4번의 전쟁에 참가했고, 그 이외에도 일본, 중국 등 여러나라를 돌며 사진을 찍었다. 그리고 그의 나이 41세에 결국 베트남전쟁에서 지뢰를 밟고 죽었다. 그 당시 한 병사가 지뢰를 터지는 것을 보고는, "저 순간이 바로 카파가 원하는 사진인데!"라는 말을 남겼다고 하는데, 결국 카파는 안쓰럽게도 그 사진의 주인공이 되었다.
-<br><br>
+<br><br><br>
 
 <center>
 <pre>
@@ -45,7 +45,9 @@ DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.
 
 러시아 혁명가인 레온 트로츠키의 강연 사진을 찍어 사진작가로 인정받게 되는데
 
-이 당시 레온 트로츠키 강연회에서 제대로 된 사진을 찍은 사람이 카파밖에 없어서 였다고 한다.
+이 당시 레온 트로츠키 강연회에서 제대로 된 사진을 찍은 사람이
+
+카파밖에 없어서 였다고 한다.
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897456-51944900-8a63-11eb-8a8d-1fdd8730e4d8.jpg">
@@ -70,8 +72,9 @@ Republican soldier in a tree on the Aragon front.
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897418-45a88700-8a63-11eb-8416-d514c70b533c.jpg">
-SPAIN. Madrid. Winter 1936-1937. After an Italo-German air raid.  
-The Nationalist offensive on Madrid, which lasted from November 1936 to February 1937, was one of the fiercest  
+SPAIN. Madrid. Winter 1936-1937.
+After an Italo-German air raid. The Nationalist offensive on Madrid,
+which lasted from November 1936 to February 1937, was one of the fiercest  
 
 가운데를 위치한 경계선을 기준으로
 
@@ -149,14 +152,15 @@ being marched home after being punished by having her head shaved
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897432-49d4a480-8a63-11eb-9657-704b3a3148cf.jpg">
-Soldiers of the U.S. 82nd Airborne Division. Saint-Sauveur-le-Vicomte, France, June 16, 1944.
+Soldiers of the U.S. 82nd Airborne Division. Saint-Sauveur-le-Vicomte,
+France, June 16, 1944.
 
 <img src="https://user-images.githubusercontent.com/46369038/111897433-4a6d3b00-8a63-11eb-9e28-d800f70071a6.jpg">
 GERMANY. Leipzig. April 18, 1945. American soldierkilled by a German sniper.
 
-카파가 생전에 꼽은 가장 안타까운 사진.  
+카파가 생전에 꼽은 가장 안타까운 사진. 독일 저격수에게 희생된 미군 병사라는데
 
-독일 저격수에게 희생된 미군 병사라는데, 하루만 더 살았더라면 독일군이 퇴각하는 모습을 볼 수 있었다고 한다.
+하루만 더 살았더라면 독일군이 퇴각하는 모습을 볼 수 있었다고 한다.
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897434-4b05d180-8a63-11eb-8df7-ba210f1d880f.jpg">
@@ -177,15 +181,16 @@ On the road from Namdinh to Thaibinh. May 25, 1954
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897438-4c36fe80-8a63-11eb-8a14-c952cfd93f01.jpg">
-VIETNAM. May 25, 1954. On the road from Namdinh to Thaibinh. One of Capa's last pictures.
+VIETNAM. May 25, 1954.
+On the road from Namdinh to Thaibinh. One of Capa's last pictures.
  
-카파가 남긴 마지막 사진. 그는 이 사진을 찍고 세상을 떠났다.
+카파가 남긴 마지막 사진. 그는 이 사진을 찍고 죽었다
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897439-4c36fe80-8a63-11eb-9dae-dc6855192a06.jpg">
 After a Japanese air raid. Hankou, China, July-Sept, 1938.
 
-슬픔이 너무 잘 뭍어나오는 사진...
+슬픔이 너무 잘 느껴지는 사진
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897440-4ccf9500-8a63-11eb-9d1b-fef155478d6e.jpg">
