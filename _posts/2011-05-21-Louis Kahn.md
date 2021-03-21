@@ -44,13 +44,13 @@ toc_sticky: true
 ### 루이스칸의 대표작들
 
 ​<br>
-![3](https://user-images.githubusercontent.com/46369038/111904893-62a58000-8a8c-11eb-958f-0e02da4baa4a.jpg){: .align-center}
+![3](https://user-images.githubusercontent.com/46369038/111904893-62a58000-8a8c-11eb-958f-0e02da4baa4a.jpg){: width="500"}{: .align-center}
 
 
-![4](https://user-images.githubusercontent.com/46369038/111904894-633e1680-8a8c-11eb-94e7-7ee9a7504a6c.jpg){: .align-center}
+![4](https://user-images.githubusercontent.com/46369038/111904894-633e1680-8a8c-11eb-94e7-7ee9a7504a6c.jpg){: width="500"}{: .align-center}
 
 
-![5](https://user-images.githubusercontent.com/46369038/111904895-63d6ad00-8a8c-11eb-8c5d-e527b0010f45.jpg){: .align-center}
+![5](https://user-images.githubusercontent.com/46369038/111904895-63d6ad00-8a8c-11eb-8c5d-e527b0010f45.jpg){: width="500"}{: .align-center}
 <center>소크 생물학연구소 : 1959~1965, 캘리포니아주 라졸라</center>
 ​<br><br>
 
@@ -61,24 +61,24 @@ toc_sticky: true
 
 
 
-![6](https://user-images.githubusercontent.com/46369038/111904896-646f4380-8a8c-11eb-9a2f-fd7b0e5535bd.jpg){: .align-center}
+![6](https://user-images.githubusercontent.com/46369038/111904896-646f4380-8a8c-11eb-9a2f-fd7b0e5535bd.jpg){: width="500"}{: .align-center}
 
 
-![7](https://user-images.githubusercontent.com/46369038/111904897-646f4380-8a8c-11eb-8c67-d4312db7fdc2.jpg){: .align-center}
+![7](https://user-images.githubusercontent.com/46369038/111904897-646f4380-8a8c-11eb-8c67-d4312db7fdc2.jpg){: width="500"}{: .align-center}
 <center>필립 엑서터 도서관 : 1965~1972, 뉴햄프셔</center>
 ​<br><br>
  
 
-![8](https://user-images.githubusercontent.com/46369038/111904898-6507da00-8a8c-11eb-8715-5aed4f98a4f1.jpg){: .align-center}
+![8](https://user-images.githubusercontent.com/46369038/111904898-6507da00-8a8c-11eb-8715-5aed4f98a4f1.jpg){: width="500"}{: .align-center}
 
 
-![9](https://user-images.githubusercontent.com/46369038/111904899-65a07080-8a8c-11eb-9cf2-b78d8d109aec.jpg){: .align-center}
+![9](https://user-images.githubusercontent.com/46369038/111904899-65a07080-8a8c-11eb-9cf2-b78d8d109aec.jpg){: width="500"}{: .align-center}
 
 
-![10](https://user-images.githubusercontent.com/46369038/111904900-66390700-8a8c-11eb-953a-9c2e97e231b3.jpg){: .align-center}
+![10](https://user-images.githubusercontent.com/46369038/111904900-66390700-8a8c-11eb-953a-9c2e97e231b3.jpg){: width="500"}{: .align-center}
 
 
-![11](https://user-images.githubusercontent.com/46369038/111904901-66d19d80-8a8c-11eb-8a18-de1ac80968a5.jpg){: .align-center}
+![11](https://user-images.githubusercontent.com/46369038/111904901-66d19d80-8a8c-11eb-8a18-de1ac80968a5.jpg){: width="500"}{: .align-center}
 <center>킴벨 미술관 : 1966~1972, 텍사스주 포트워스</center>
 ​<br><br>
 
@@ -91,13 +91,13 @@ toc_sticky: true
 
  
 
-![12](https://user-images.githubusercontent.com/46369038/111904903-676a3400-8a8c-11eb-91ed-32c3e8ae9daa.jpg){: .align-center}
+![12](https://user-images.githubusercontent.com/46369038/111904903-676a3400-8a8c-11eb-91ed-32c3e8ae9daa.jpg){: width="500"}{: .align-center}
 
 
-![13](https://user-images.githubusercontent.com/46369038/111904905-6802ca80-8a8c-11eb-85e2-1ff8f1f1385f.jpg){: .align-center}
+![13](https://user-images.githubusercontent.com/46369038/111904905-6802ca80-8a8c-11eb-85e2-1ff8f1f1385f.jpg){: width="500"}{: .align-center}
 
 
-![14](https://user-images.githubusercontent.com/46369038/111904906-689b6100-8a8c-11eb-86c0-014cb3df1e4e.jpg){: .align-center}
+![14](https://user-images.githubusercontent.com/46369038/111904906-689b6100-8a8c-11eb-86c0-014cb3df1e4e.jpg){: width="500"}{: .align-center}
 <center>방글라데시 국회의사당 : 1962~1976, 방글라데시 다카</center>
 ​<br><br>​<br>
 
@@ -107,7 +107,7 @@ toc_sticky: true
 ### 루이스칸의 건축물에 대한 영화 
 
 ​<br>
-![15](https://user-images.githubusercontent.com/46369038/111904907-6933f780-8a8c-11eb-998c-cfcd59b3a53a.jpg){: .align-center}
+![15](https://user-images.githubusercontent.com/46369038/111904907-6933f780-8a8c-11eb-998c-cfcd59b3a53a.jpg){: width="500"}{: .align-center}
 ​<br><br>
 
 루이스칸의 세번째 부인의 아들이 그의 아버지의 발자취를 따라가면서 만든 영화입니다
