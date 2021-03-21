@@ -76,11 +76,6 @@ ins {
   }
 }
 
-/* 구글 애드 센스의 아래 바 레이아웃 삭제 */
-ins.adsbygoogle {
-  border-bottom: none !important;
-}
-
 del a {
   color: inherit;
 }
@@ -131,8 +126,6 @@ blockquote {
 /* links */
 
 a {
-  // a link 하단 줄무늬 제거
-  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }
