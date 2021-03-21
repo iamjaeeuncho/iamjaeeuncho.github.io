@@ -21,13 +21,15 @@
 
     <div class="initial-content">
       {{ content }}
-    </div>
 
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
       </div>
     {% endif %}
+
+    <!-- 구글 애드센스 추가 -->
+    <script data-ad-client="ca-pub-5651268894958279" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <div id="footer" class="page__footer">
       <footer>
