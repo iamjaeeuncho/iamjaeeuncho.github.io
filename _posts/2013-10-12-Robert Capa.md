@@ -11,7 +11,6 @@ toc_sticky: true
 ---
 
 <center>
-<pre>
 <img src="https://user-images.githubusercontent.com/46369038/111897450-4fca8580-8a63-11eb-9ffa-960877a96d8c.jpg">
 
 
@@ -24,7 +23,7 @@ toc_sticky: true
 그는 세계대전을 비롯해 총 4번의 전쟁에 참가했고, 그 이외에도 일본, 중국 등 여러나라를 돌며 사진을 찍었다. 그리고 그의 나이 41세에 결국 베트남전쟁에서 지뢰를 밟고 죽었다. 그 당시 한 병사가 지뢰를 터지는 것을 보고는, "저 순간이 바로 카파가 원하는 사진인데!"라는 말을 남겼다고 하는데, 결국 카파는 안쓰럽게도 그 사진의 주인공이 되었다.
 
 
-
+<pre>
 <img src="https://user-images.githubusercontent.com/46369038/111897452-4fca8580-8a63-11eb-9ebd-5d8ae3803bf9.jpg">
 
 꼭 조지클루니를 닮은 듯한 카파
@@ -40,7 +39,9 @@ toc_sticky: true
 <img src="https://user-images.githubusercontent.com/46369038/111897455-50fbb280-8a63-11eb-9c1d-b645a92a7f67.jpg">
 DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.
 
-암실 보조원으로 일할 시절, 러시아 혁명가인 레온 트로츠키의 강연 사진을 찍어 사진작가로 인정받게 되는데
+암실 보조원으로 일할 시절
+
+러시아 혁명가인 레온 트로츠키의 강연 사진을 찍어 사진작가로 인정받게 되는데
 
 이 당시 레온 트로츠키 강연회에서 제대로 된 사진을 찍은 사람이 카파밖에 없어서 였다고 한다.
 
@@ -48,24 +49,31 @@ DENMARK. Copenhagen. November 27th, 1932. Leon Trotsky lecturing.
 <img src="https://user-images.githubusercontent.com/46369038/111897456-51944900-8a63-11eb-8a8d-1fdd8730e4d8.jpg">
 SPAIN. Cordoba front. September, 1936. Death of a loyalist militiaman.
 
-로버트 카파를 세상에 알린 첫 작품, 스페인 내전때 총알에 맞고 쓰러지는 병사를 찍은 사진이다.
+로버트 카파를 세상에 알린 첫 작품
 
-수많은 조작의혹이 있기는 하지만, 개인적으로는 조작했을리는 없을 것 같다는 생각이 든다. 하지만 그 사실은 카파만 알겠지....
+스페인 내전때 총알에 맞고 쓰러지는 병사를 찍은 사진.
+
+수많은 조작의혹이 있기는 하지만, 그 사실은 카파만 알겠지....
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897417-44775a00-8a63-11eb-86fb-26ae8bd70d54.jpg">
-SPAIN. Teruel. December 21st - 24th, 1937. Republican soldier in a tree on the Aragon front.
+SPAIN. Teruel. December 21st - 24th, 1937. 
+Republican soldier in a tree on the Aragon front.
 
 전선을 고치다가 적의 총알에 맞아 죽은 병사라고 한다.
 
-꼭 나뭇가지가 몸을 뚫은 듯한 배경하며, 소리치는 듯  절망적인 표정의 젊은 군인을 보니, 내가 더 한스럽다.
+꼭 나뭇가지가 몸을 뚫은 듯한 배경하며,
+
+소리치는 듯 절망적인 표정의 젊은 군인의 감정이 잘 느껴진다
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897418-45a88700-8a63-11eb-8416-d514c70b533c.jpg">
 SPAIN. Madrid. Winter 1936-1937. After an Italo-German air raid.  
 The Nationalist offensive on Madrid, which lasted from November 1936 to February 1937, was one of the fiercest  
 
-가운데를 위치한 경계선을 기준으로 꼭 거울을 두고 뒷모습을 찍은 듯한 배경이 드는 오묘한 사진.
+가운데를 위치한 경계선을 기준으로
+
+꼭 거울을 두고 뒷모습을 찍은 듯한 배경이 드는 오묘한 사진.
 
 괜히 카파를 20세기 최고의 사진작가라고 하는 것이 아니구나 하는 생각이 든다
 
@@ -80,13 +88,15 @@ ICP 558, October, 1943.
 Near Troina. August 4th-5th, 1943.
 
 <img src="https://user-images.githubusercontent.com/46369038/111897422-46d9b400-8a63-11eb-878a-b0e7a231efe5.jpg">
-A member of the American Medical Corps treats a German prisoner of war. Italy, July 1943.
+A member of the American Medical Corps treats a German prisoner of war.
+Italy, July 1943.
 
 <img src="https://user-images.githubusercontent.com/46369038/111897423-47724a80-8a63-11eb-8262-2a70ab3e1703.jpg">
 ITALY. Sicily. Near Troina. An American soldier. August 1943.
 
 <img src="https://user-images.githubusercontent.com/46369038/111897424-480ae100-8a63-11eb-8eba-ae86e635a08e.jpg">
-Funeral of 20 teenage partisans of the Liceo Sannazaro, in the Vomero district. Naples, Italy, October 2, 1943.
+Funeral of 20 teenage partisans of the Liceo Sannazaro,
+in the Vomero district. Naples, Italy, October 2, 1943.
 
 10대 소년병 어머니들이 자신의 아들 장례식 장에서 울부짖는 모습
 
@@ -94,25 +104,34 @@ Funeral of 20 teenage partisans of the Liceo Sannazaro, in the Vomero district. 
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897425-480ae100-8a63-11eb-9552-44c36d6fa061.jpg">
-FRANCE. Normandy. June 6th, 1944. Landing of the American troops on Omaha Beach.
-
-<img src="https://user-images.githubusercontent.com/46369038/111897426-48a37780-8a63-11eb-8f04-b6c362a25256.jpg">
-FRANCE. Normandy. June 6th, 1944. Landing of the American troops on Omaha Beach.
+FRANCE. Normandy. June 6th, 1944.
+Landing of the American troops on Omaha Beach.
 
 라이언일병 구하기의 모태가 되기도 했던 그 유명한 노르망디 상륙장면의 사진.
 
-필름을 받은 라이프 잡지의 암실 담당자가 흥분한 온도를 너무 높여 8장의 사진이 남았는데, 이것이 오히려 사진을 더 유명하게 만들었단다.
+필름을 받은 라이프 잡지의 암실 담당자가 흥분한 나머지
+
+온도를 너무 높여 8장의 사진이 남았는데,
+
+이것이 오히려 사진을 더 유명하게 만들었단다.
 
 
-동이 틀 무렵, 가장 먼저 상륙하는 부대와 함께 찍었다는 사진. 수중 지뢰와 총알등을 뚫고, 카메라에 달라붙는 살점덩어리등
+<img src="https://user-images.githubusercontent.com/46369038/111897426-48a37780-8a63-11eb-8f04-b6c362a25256.jpg">
+FRANCE. Normandy. June 6th, 1944.
+Landing of the American troops on Omaha Beach.
 
-최악에 상황에서도 카메라를 들고 사진을 찍었다는데, 이후에 이때를 회고하며 카파가 책을 썻다.
+동이 틀 무렵, 가장 먼저 상륙하는 부대와 함께 찍었다는 사진.
 
-그 책이 바로 "그때 카파의 손은 떨리고 있었다"다.
+수중 지뢰와 총알등을 뚫고, 카메라에 달라붙는 살점덩어리등
+
+최악에 상황에서도 카메라를 들고 사진을 찍었다는데,
+
+이후에 이때를 회고하며 카파가 책을 썻는데, 그게 "그때 카파의 손은 떨리고 있었다"다.
 
  
 <img src="https://user-images.githubusercontent.com/46369038/111897427-493c0e00-8a63-11eb-9181-fc078288b5b2.jpg">
-FRANCE. Normandy. Omaha Beach. June, 1944. French fishermen looking at corpses on the beach after the D-Day landing.
+FRANCE. Normandy. Omaha Beach. June, 1944.
+French fishermen looking at corpses on the beach after the D-Day landing.
  
 노르망디 상륙작전 이후 죽은 시체들을 바라보는 사람들. 시선이 뭔가 섬뜻하다.
 
@@ -150,7 +169,9 @@ Namdinh. May 21st, 1954. Military
 <img src="https://user-images.githubusercontent.com/46369038/111897436-4b9e6800-8a63-11eb-9694-12ba4465c323.jpg">
 On the road from Namdinh to Thaibinh. May 25, 1954
 
-나에게 가장 큰 충격을 준 사진. 전시회장에서도 이 사진 앞에서는 쉽사리 자리를 떠날 수 없었다.
+나에게 가장 큰 충격을 준 사진.
+
+전시회장에서도 이 사진 앞에서는 쉽사리 자리를 떠날 수 없었다.
 
 
 <img src="https://user-images.githubusercontent.com/46369038/111897438-4c36fe80-8a63-11eb-8a14-c952cfd93f01.jpg">
@@ -179,7 +200,7 @@ Ernest Hemingway. Sun Valley, Idaho, USA. October 1941.
 <img src="https://user-images.githubusercontent.com/46369038/111897444-4d682b80-8a63-11eb-800e-47c9e8547b17.jpg">
 FRANCE. Golfe-Juan. August, 1948. Pablo Picasso and Françoise Gilot.
  
-살면서 7명의 아내를 두었다는 피카소..... 그 중 1명과 함께
+살면서 7명의 아내를 두었다는 피카소. 그 중 1명과 함께
  
 
 <img src="https://user-images.githubusercontent.com/46369038/111897445-4e00c200-8a63-11eb-8425-8703a82d3db7.jpg">
