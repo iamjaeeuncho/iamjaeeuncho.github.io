@@ -1,12 +1,12 @@
 /* ==========================================================================
-   SIDEBAR
-   ========================================================================== */
+  SIDEBAR
+  ========================================================================== */
 
 /*
-   Default
-   ========================================================================== */
+  Default
+  ========================================================================== */
 
-.sidebar {
+  .sidebar {
   @include clearfix();
   // @include breakpoint(max-width $large) {
   //   /* fix z-index order of follow links */
@@ -18,19 +18,22 @@
 
   @include breakpoint($large) {
     float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
+    //     width: calc(#{$right-sidebar-width-narrow} - 1em);
+    width: calc(#{$right-sidebar-width-narrow} - 0.5em);
+    // 강도 변경 opacity: 0.75;
+    opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 
     &:hover {
-      opacity: 1;
+      // 강도 변경 opacity: 1;
+      opacity: 0.8;
     }
 
     &.sticky {
       overflow-y: auto;
       /* calculate height of nav list
-         viewport height - nav height - masthead x-padding
+          viewport height - nav height - masthead x-padding
       */
       max-height: calc(100vh - #{$nav-height} - 2em);
     }
@@ -111,8 +114,8 @@
 }
 
 /*
-   Author profile and links
-   ========================================================================== */
+    Author profile and links
+    ========================================================================== */
 
 .author__avatar {
   display: table-cell;
@@ -318,8 +321,8 @@
 }
 
 /*
-   Wide Pages
-   ========================================================================== */
+    Wide Pages
+    ========================================================================== */
 
 .wide .sidebar__right {
   margin-bottom: 1em;
