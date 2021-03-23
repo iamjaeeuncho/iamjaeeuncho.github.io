@@ -4,7 +4,7 @@ date: 2020-9-27
 categories:
 - interest
 tags:
-- exhibition
+- photo
 toc: false
 toc_ads: true
 toc_sticky: true
