@@ -2,7 +2,7 @@
 title: "[Book] 국제개발협력 첫걸음 (KOICA ODA교육원, 2012)"
 date: 2014-11-9
 categories:
-  - inspiration
+  - interest
 tags:
   - book
 toc: true

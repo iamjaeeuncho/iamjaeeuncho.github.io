@@ -2,7 +2,7 @@
 title: "[Book] 데이터 분석의 힘 (이토 고이치로, 2018)"
 date: 2020-6-20
 categories:
-  - inspiration
+  - interest
 tags:
   - book
 toc: true

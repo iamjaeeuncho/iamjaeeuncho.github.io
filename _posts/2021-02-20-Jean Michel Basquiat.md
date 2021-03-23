@@ -2,7 +2,7 @@
 title: "[Exhibition] Jean Michel Basquiat in Seoul"
 date: 2021-2-20
 categories:
-- inspiration
+- interest
 tags:
 - exhibition
 toc: false

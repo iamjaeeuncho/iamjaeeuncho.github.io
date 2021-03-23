@@ -2,7 +2,7 @@
 title: "[Exhibition] Hassan Hajjaj: A Taste of Things To Come"
 date: 2020-9-27
 categories:
-- inspiration
+- interest
 tags:
 - exhibition
 toc: false

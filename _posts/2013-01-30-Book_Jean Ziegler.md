@@ -2,7 +2,7 @@
 title: "[Book] 왜 세계의 절반은 굶주리는가? (장 지글러, 2007)"
 date: 2013-1-30
 categories:
-  - inspiration
+  - interest
 tags:
   - book
 toc: true

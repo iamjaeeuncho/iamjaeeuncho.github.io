@@ -2,7 +2,7 @@
 title: "[Book] 셰익스피어 비극선 (윌리엄 셰익스피어, 2008)"
 date: 2015-1-31
 categories:
-  - inspiration
+  - interest
 tags:
   - book
 toc: true

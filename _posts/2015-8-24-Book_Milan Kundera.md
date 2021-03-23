@@ -2,7 +2,7 @@
 title: "[Book] 무의미의 축제 (밀란 쿤데라, 2014)"
 date: 2015-8-24
 categories:
-  - inspiration
+  - interest
 tags:
   - book
 toc: true

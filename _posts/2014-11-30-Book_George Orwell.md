@@ -2,7 +2,7 @@
 title: "[Book] 조지오웰 인생 마지막 작품, 1984 (조지오웰, 온스토리)"
 date: 2014-11-30
 categories:
-  - inspiration
+  - interest
 tags:
   - book
 toc: true

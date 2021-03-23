@@ -2,7 +2,7 @@
 title: "[Book] 여장 남자의 성평등 이야기, 지구에서 여자로 산다는 것 (크리스티안 자이델, 2015)"
 date: 2018-11-15
 categories:
-  - inspiration
+  - interest
 tags:
   - book
 toc: true

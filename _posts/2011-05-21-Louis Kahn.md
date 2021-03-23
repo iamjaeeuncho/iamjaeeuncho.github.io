@@ -2,10 +2,10 @@
 title:  "천재 건축가이자 빛의 마법사, 루이스 칸(Louis Kahn)"
 date: 2011-5-21
 categories:
-  - blog
+  - interest
 tags:
   - interest
-toc: false
+toc: true
 toc_ads: true
 toc_sticky: true
 ---

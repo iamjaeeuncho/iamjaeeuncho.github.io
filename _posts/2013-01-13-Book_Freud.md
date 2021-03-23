@@ -2,7 +2,7 @@
 title: "[Book] 프로이트의 의자 (정도언, 2009)"
 date: 2013-1-13
 categories:
-  - inspiration
+  - interest
 tags:
   - book
 toc: true
