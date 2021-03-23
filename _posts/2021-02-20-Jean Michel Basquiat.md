@@ -4,7 +4,7 @@ date: 2021-2-20
 categories:
 - interest
 tags:
-- exhibition
+- photo
 toc: false
 toc_ads: true
 toc_sticky: true
