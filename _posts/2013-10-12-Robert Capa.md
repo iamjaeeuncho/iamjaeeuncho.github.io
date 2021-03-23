@@ -2,9 +2,9 @@
 title:  "총 대신 카메라를 든 전쟁 보도 사진가, 로버트 카파 (Robert Capa)"
 date: 2013-10-12
 categories:
-  - blog
-tags:
   - interest
+tags:
+  - information
 toc: false
 toc_ads: true
 toc_sticky: true

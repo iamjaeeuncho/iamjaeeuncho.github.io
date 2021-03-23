@@ -4,7 +4,7 @@ date: 2011-5-21
 categories:
   - interest
 tags:
-  - interest
+  - information
 toc: true
 toc_ads: true
 toc_sticky: true
