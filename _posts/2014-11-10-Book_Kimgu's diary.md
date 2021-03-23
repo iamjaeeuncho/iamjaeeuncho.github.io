@@ -1,5 +1,5 @@
 ---
-title: "[Book] '백범일지' (김구, 2005)"
+title: "[Book] 백범일지 (김구, 2005)"
 date: 2014-11-10
 categories:
   - inspiration

@@ -1,5 +1,5 @@
 ---
-title: "[Book] 하찮고 의미 없는 것에 대한 본질, 책 '무의미의 축제' (밀란 쿤데라, 2014)"
+title: "[Book] 무의미의 축제 (밀란 쿤데라, 2014)"
 date: 2015-8-24
 categories:
   - inspiration

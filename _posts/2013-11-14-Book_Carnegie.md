@@ -1,5 +1,5 @@
 ---
-title: "[Book] 데일 카네기의 인간관계론 (데일 카네기, 더 클래식)"
+title: "[Book] 데일 카네기의 인간관계론 (데일 카네기, 2010)"
 date: 2013-11-14
 categories:
   - inspiration

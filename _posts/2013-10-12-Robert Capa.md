@@ -226,7 +226,9 @@ Yaizu, Shizuoka, April 20, 1954
 
 
 
-매그넘 포토에이젼시 http://www.magnumphotos.com/
+매그넘 포토에이젼시
+
+http://www.magnumphotos.com/
 
 
 

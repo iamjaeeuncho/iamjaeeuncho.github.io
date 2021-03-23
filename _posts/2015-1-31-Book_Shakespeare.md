@@ -1,5 +1,5 @@
 ---
-title: "[Book] 아름다운 표현의 고전, 책 '셰익스피어 비극선' (윌리엄 셰익스피어, 일송북)"
+title: "[Book] 셰익스피어 비극선 (윌리엄 셰익스피어, 2008)"
 date: 2015-1-31
 categories:
   - inspiration
