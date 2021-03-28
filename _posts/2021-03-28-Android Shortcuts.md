@@ -29,7 +29,7 @@ toc_sticky: true
 <br>
 <br>
 
-## 자주 쓰는 단축키들 
+## 자주 쓰는 단축키들 (Win)
 
 - ctrl + s : 저장 및 실행
 
