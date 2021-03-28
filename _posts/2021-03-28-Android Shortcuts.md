@@ -15,7 +15,7 @@ toc_sticky: true
 최근 만들고 싶은 어플이 생겨서 찾다가 알게 된 flutter
 
 
-- 진심 flutter 만든 사람 천재다. 쉽고 간단한게 완전 내 스타일- 
+- 진심 flutter 만든 사람 천재다. 쉽고 간단하고 효율적인게 딱 내 스타일- 
 
 
 요즘 거의 flutter로 어플 만드는데 빠져있어서 계속 안드로이드 스튜디오를 만지고 있는데,
@@ -27,7 +27,7 @@ toc_sticky: true
 
 ## 전체 단축키 보러가기
 <br>
-<center><img src="https://user-images.githubusercontent.com/46369038/112753511-ba0a9980-9012-11eb-94b0-476ad1b57956.png" width="500" style="border: 2px solid rgb(213, 213, 213);"><br>
+<center><img src="https://user-images.githubusercontent.com/46369038/112753511-ba0a9980-9012-11eb-94b0-476ad1b57956.png" width="800" style="border: 2px solid rgb(213, 213, 213);"><br>
 ※ credit : https://developer.android.com/studio/intro/keyboard-shortcuts?hl=ko</center>
 <br>
 <br>
