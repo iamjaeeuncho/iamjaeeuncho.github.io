@@ -1,20 +1,20 @@
 ---
-title: "[Python] 안드로이드 스튜디오 단축키 모음"
+title: "[Android]] 안드로이드 스튜디오 단축키 모음"
 date: 2021-3-2
 categories:
   - study
 tags:
-  - python
+  - android
 toc: true
 toc_ads: true
 toc_sticky: true
 ---
 
 
-요즘 flutter로 어플 만드는데 빠져있어서 계속 안드로이드 스튜디오를 만지고 있는데
+요즘 flutter로 어플 만드는데 빠져있어서 (진심 flutter 만든 사람 천재다)
 
 
-매번 단축키 찾아보기 귀찮아서 쓰는 포스팅
+계속 안드로이드 스튜디오를 만지고 있는데, 매번 단축키 찾아보기 귀찮아서 쓰는 포스팅
 
 
 
