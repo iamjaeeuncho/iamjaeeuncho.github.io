@@ -2,7 +2,7 @@
 title: "[Marketing] 상품 경쟁강도 구하기, 아이템스카우트 사용법"
 date: 2020-6-2
 categories:
-  - business
+  - study
 tags:
   - marketing
 toc: true

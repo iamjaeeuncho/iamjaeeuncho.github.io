@@ -2,7 +2,7 @@
 title: "국세청 홈택스 개인사업자 등록하기"
 date: 2020-5-3
 categories:
-  - business
+  - blog
 tags:
   - information
 toc: true

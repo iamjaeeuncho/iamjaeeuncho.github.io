@@ -2,7 +2,7 @@
 title: "[Marketing] 네이버 광고 종류 및 세팅하기"
 date: 2020-5-12
 categories:
-  - business
+  - study
 tags:
   - marketing
 toc: true

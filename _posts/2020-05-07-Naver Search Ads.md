@@ -2,7 +2,7 @@
 title: "[Marketing] 네이버 검색 광고 가입하기"
 date: 2020-5-7
 categories:
-  - business
+  - study
 tags:
   - marketing
 toc: false

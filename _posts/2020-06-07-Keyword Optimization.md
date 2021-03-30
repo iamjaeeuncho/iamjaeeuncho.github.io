@@ -2,7 +2,7 @@
 title: "[Marketing] 제품 검색 최적화 키워드 찾기 - 잘 검색되는 제목 만들기"
 date: 2020-6-7
 categories:
-  - business
+  - study
 tags:
   - marketing
 toc: true
