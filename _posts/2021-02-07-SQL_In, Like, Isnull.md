@@ -164,3 +164,16 @@ SELECT
 WHERE PHONE IS NOT NULL;
 ```
 <br>
+<br>
+
+## 연습문제
+
+```sql
+---------- # 이메일 형식에 맞지 않는 이메일 주소 제외
+SELECT EMAIL
+FROM CUSTOMER
+WHERE EMAIL NOT LIKE '@%'
+  AND EMAIL NOT LIKE '%@'
+  AND EMAIL LIKE '%r%'
+;
+```
