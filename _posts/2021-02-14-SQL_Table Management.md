@@ -1,6 +1,6 @@
 ---
 title: "[SQL] 테이블 관리-데이터 타입, 테이블 생성, CTAS, 테이블 및 컬럼 변경, 임시 테이블, TRUNCATE"
-date: 2021-2-13
+date: 2021-2-14
 categories:
   - study
 tags:

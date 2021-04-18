@@ -1,6 +1,6 @@
 ---
 title: "[SQL] 제약조건-기본키, 외래키, Check, Unique, Not Null"
-date: 2021-2-13
+date: 2021-2-16
 categories:
   - study
 tags:
