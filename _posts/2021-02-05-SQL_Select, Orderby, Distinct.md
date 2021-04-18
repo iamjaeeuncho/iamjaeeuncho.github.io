@@ -86,63 +86,36 @@ SELECT
 - 같은 결과의 중복된 값을 제거할 수 있음
 
 ```sql
----------- # 테이블 생성하자마자 바로 적용되므로 CREAT는 커밋할 필요 없음
-CREATE TABLE T1 ( ID SERIAL NOT NULL PRIMARY KEY, BCOLOR VARCHAR, FCOLOR VARCHAR );
-
-INSERT
-  INTO T1 (BCOLOR, FCOLOR)
-VALUES
-         ('red', 'red')
-       , ('red', 'red')
-       , ('red', NULL)
-       , (NULL, 'red')
-       , ('red', 'green')
-       , ('red', 'blue')
-       , ('green', 'red')
-       , ('green', 'blue')
-       , ('green', 'green')
-       , ('blue', 'red')
-       , ('blue', 'green')
-       , ('blue', 'blue')
-;
-		
-COMMIT; 
-
+---------- # Select + Distinct + 컬럼 한 개
 SELECT
-             *
- FROM
-             T1
-;
----------- # select + distinct + 컬럼 한 개
-SELECT
-    DISTINCT BCOLOR                -- BCOLOR 값 출력시 중복행 제거
+    DISTINCT BCOLOR                -- BCOLOR 값 기준 중복행 제거
 FROM
     T1
 ORDER BY BCOLOR                    -- BCOLOR로 정렬
 ;
----------- # select + distinct + 컬럼 두 개
+---------- # Select + Distinct + 컬럼 두 개
 SELECT
-    DISTINCT BCOLOR, FCOLOR
+    DISTINCT BCOLOR, FCOLOR        -- BCOLOR+FCOLOR 중복행 제거
 FROM
     T1
 ORDER BY BCOLOR, FCOLOR            -- BCOLOR 먼저 정렬, FCOLOR 나중 정렬
 ;
----------- # select + distinct + 컬럼 두 개 + on
+---------- # Select + Distinct + 컬럼 두 개 + On
 SELECT
-      DISTINCT ON (BCOLOR) BCOLOR  -- BCOLOR 컬럼 값 기준 중복 제거함
+      DISTINCT ON (BCOLOR) BCOLOR  -- BCOLOR 컬럼 값 기준 중복 제거
    ,  FCOLOR                       -- FCOLOR 컬럼 값은 단 한 개 값 만을 보여줌
 FROM
     T1
 ORDER BY BCOLOR, FCOLOR
 ;
----------- # select + distinct + 컬럼 두 개 + on + DESC 정렬
+---------- # Select + Distinct + 컬럼 두 개 + on + DESC 정렬
 SELECT
       DISTINCT ON (BCOLOR) BCOLOR
    ,  FCOLOR
 FROM
     T1
 ORDER BY
-    BCOLOR, FCOLOR DESC             -- Null값이 가장 큰 값
+    BCOLOR, FCOLOR DESC
 ;
 ```
 <br>

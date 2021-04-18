@@ -17,14 +17,14 @@ toc_sticky: true
 - 간단하게 쓰는게 가독성이 좋으므로 추천. 옵티마이저 특성상 IN조건이 유리할때가 많다. (DBMS/SQL 최적화 문법)
 
 ```sql
----------- # IN()이 있는지 없는지
+---------- # IN()이 있는지 없는지 (or 조건)
 SELECT
        CUSTOMER_ID
      , RENTAL_ID
      , RETURN_DATE
   FROM RENTAL
  WHERE
-       CUSTOMER_ID IN (1, 2)            -- customerid가 1 또는 2 (or 조건)
+       CUSTOMER_ID IN (1, 2)         -- customerid가 1 또는 2 
 ORDER BY RETURN_DATE DESC
 ;
 ---------- # IN 대신 OR 사용, 동일함.
@@ -34,8 +34,8 @@ SELECT
      , RETURN_DATE
   FROM RENTAL
  WHERE
-          CUSTOMER_ID = 1              -- customerid가 1 또는 2 (or 조건)
-       OR CUSTOMER_ID = 2
+       CUSTOMER_ID = 1              -- customerid가 1 또는 2
+    OR CUSTOMER_ID = 2
 ORDER BY RETURN_DATE DESC
 ;
 ---------- # NOT IN 아닌 경우
