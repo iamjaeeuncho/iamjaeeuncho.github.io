@@ -119,3 +119,19 @@ ORDER BY
 ;
 ```
 <br>
+<br>
+
+## 연습문제
+
+```sql
+---------- # Amout 액수가 가장 많은 CUSTOMER_ID 추출
+SELECT DISTINCT
+A.CUSTOMER_ID
+FROM PAYMENT A
+WHERE A.AMOUNT = (
+      SELECT A.AMOUNT
+      FROM PAYMENT A
+      ORDER BY A.AMOUNT DESC
+      LIMIT 1)
+;
+```
