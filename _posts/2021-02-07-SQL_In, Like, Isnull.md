@@ -24,7 +24,7 @@ SELECT
      , RETURN_DATE
   FROM RENTAL
  WHERE
-       CUSTOMER_ID IN (1, 2)         -- customerid가 1 또는 2 
+       CUSTOMER_ID IN (1, 2)                   -- customerid가 1 또는 2 
 ORDER BY RETURN_DATE DESC
 ;
 ---------- # IN 대신 OR 사용, 동일함.
@@ -34,7 +34,7 @@ SELECT
      , RETURN_DATE
   FROM RENTAL
  WHERE
-       CUSTOMER_ID = 1              -- customerid가 1 또는 2
+       CUSTOMER_ID = 1                         -- customerid가 1 또는 2
     OR CUSTOMER_ID = 2
 ORDER BY RETURN_DATE DESC
 ;
@@ -45,7 +45,7 @@ SELECT
      , RETURN_DATE
   FROM RENTAL
  WHERE
-       CUSTOMER_ID NOT IN (1, 2)        -- 1 또는 2가 아닌 것
+       CUSTOMER_ID NOT IN (1, 2)               -- 1 또는 2가 아닌 것
 ORDER BY RETURN_DATE DESC
 ;
 ---------- # NOT IN + AND (<>와 같음)
@@ -65,8 +65,7 @@ SELECT
 FROM
              RENTAL
 WHERE
-    CAST (RETURN_DATE AS DATE) = '2005-05-27'
-    -- returndate를 date 타입 변환 후 '2005-05-27'의 customer_id 불러오기
+    CAST (RETURN_DATE AS DATE) = '2005-05-27'  -- returndate를 date 타입 변환 후 '2005-05-27'의 customer_id 불러오기
 ;
 ```
 <br>
@@ -85,13 +84,13 @@ SELECT
  FROM
       CUSTOMER
 WHERE
-      FIRST_NAME LIKE 'Jen%'    -- firstname이 jen으로 시작하는
+      FIRST_NAME LIKE 'Jen%'        -- firstname이 jen으로 시작하는
 ;
 ---------- # '%'는 어떤 문자든 가능
 SELECT
 	     'FOO' LIKE 'FOO'         -- true
 	   , 'FOO' LIKE 'F%'          -- true
-     , 'FOO' LIKE '_O_'         -- true
+         , 'FOO' LIKE '_O_'         -- true
 	   , 'BAR' LIKE 'B_'          -- false
 ;
 ---------- # '-'는 한 개의 임의의 문자
@@ -101,7 +100,7 @@ SELECT
  FROM
       CUSTOMER
 WHERE
-      FIRST_NAME LIKE '%er%'    -- 어떤 문자든지 중간에 er 들어감
+      FIRST_NAME LIKE '%er%'        -- 어떤 문자든지 중간에 er 들어감
 ;
 ---------- # '-' + '%'
 SELECT
@@ -110,7 +109,7 @@ SELECT
  FROM
       CUSTOMER
 WHERE
-    FIRST_NAME LIKE '_her%'      -- 첫 임의의 글자로 시작, 중간에 er 들어감
+    FIRST_NAME LIKE '_her%'         -- 첫 임의의 글자로 시작, 중간에 er 들어감
 ;
 ---------- # NOT LIKE : 아닌 경우
 SELECT
@@ -167,9 +166,9 @@ WHERE PHONE IS NOT NULL;
 <br>
 
 ## 연습문제
+- 이메일 형식에 맞지 않는 이메일 주소 제외
 
 ```sql
----------- # 이메일 형식에 맞지 않는 이메일 주소 제외
 SELECT EMAIL
 FROM CUSTOMER
 WHERE EMAIL NOT LIKE '@%'
