@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 테이블 관리 - 데이터 타입, 테이블 및 컬럼 생성/변경, CTAS, TRUNCATE"
+title: "[SQL] 테이블 관리 - 데이터 타입, 테이블 및 컬럼 생성/변경, CTAS, Truncate"
 date: 2021-2-14
 categories:
   - study
