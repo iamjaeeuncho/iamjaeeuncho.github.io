@@ -215,30 +215,11 @@ ORDER BY BRAND, SEGMENT
 <br>
 
 ## RollUp
+- ROLLUP은 GROUP BY 절과 같이 사용 되며, GROUP BY절에 의해서 그룹 지어진 집합 결과에 대해서 좀 더 상세한 정보를 반환하는 기능을 수행 한다.
+- SELECT절에 ROLLUP을 사용함으로써 보통의 SELECT된 데이터와 그 데이터의 총계를 구할 수 있다.
 
-```sql
--- 자주씀
-
-SELECT
-       SEGMENT
-     , SUM (QUANTITY)
-  FROM
-            SALES
-GROUP BY  SEGMENT;     
-      
---------------------------------------------------------------------------------------      
-SELECT
-       SEGMENT
-     , SUM (QUANTITY)
-  FROM
-            SALES
-GROUP BY 
-ROLLUP (SEGMENT)      -- 추가로 전체 합계가 나옴
-ORDER BY
-       SEGMENT;
-
-
-
+```sql   
+---------- # 응용
 SELECT
        BRAND
      , SEGMENT
@@ -246,85 +227,42 @@ SELECT
   FROM
        SALES
 GROUP BY
+       ROLLUP (BRAND, SEGMENT)     -- BRAND,SEGMENT 컬럼 기준으로 ROLLUP
+ORDER BY
        BRAND, SEGMENT
-ORDER BY
-       BRAND, SEGMENT;
-      
-      
-      
-      
-
-SELECT
-       BRAND
-     , SEGMENT
-     , SUM (QUANTITY)
-  FROM
-       SALES
-GROUP BY
-       ROLLUP (BRAND, SEGMENT)
-ORDER BY
-       BRAND, SEGMENT;
-      
---group by별 합계 + rollup절에 맨 앞에 쓴 컬럼 기준의 합계도 나오고 + 전체 합계도 나왔다 
-      
-SELECT
-       BRAND
-     , SEGMENT
-     , SUM (QUANTITY)
-  FROM
-       SALES
-GROUP BY BRAND, 
-       ROLLUP (SEGMENT)
-ORDER BY
-       BRAND, SEGMENT;
-      
-      
-      
---------------------------------------------------------------------------------------      
+;
+---------- # 
 SELECT
        SEGMENT
      , BRAND
      , SUM (QUANTITY)
   FROM
-            SALES
-GROUP BY SEGMENT,
-ROLLUP (BRAND)
+       SALES
+GROUP BY SEGMENT,                   -- SEGMENT 기준으로 GROUPBY
+       ROLLUP (BRAND)               -- BRAND 컬럼 기준으로 ROLLUP
 ORDER BY
-       SEGMENT, BRAND;
-      
---부분 rollup = group by 별 합계 + 맨앞에 쓴 컬럼별 합계 + 전체 합계는 구하지 않는다.       
+       SEGMENT, BRAND
+;  
 ```
 <br>
 <br>
 
 ## Cube
+- 지정된 Grouping 컬럼의 다차원 합계를 생성하는데 사용
 
 ```sql
+---------- # 전체 Cube: group by별 합계 + brand별 + segment별 + 전체합계 
 SELECT
        BRAND, SEGMENT
      , SUM (QUANTITY)
-  FROM   SALES
+  FROM
+     SALES
 GROUP BY
-        CUBE (BRAND, SEGMENT)
+       CUBE (BRAND, SEGMENT)         -- BRAND,SEGMENT 컬럼 기준으로 CUBE
 ORDER BY
-        BRAND, SEGMENT;
-       
---cube = group by 절 합계 + brand별 + segment별 + 전체합계 
-
-SELECT
        BRAND, SEGMENT
-     , SUM (QUANTITY)
-  FROM   SALES
-GROUP BY
-        rollup (BRAND, SEGMENT)
-ORDER BY
-        BRAND, SEGMENT;
-       
---rollup = group by 절 합계 + brand별 + 전체합계
---세그먼트별 합계는 나오지 않음 
-       
-       
-       
+;
+---------- # 부분 Cube: group by별 합계 + 맨앞에 쓴 컬럼별 합계. 뒤에쓴 컬럼이랑 전체 합계는 구하지 않음.
 SELECT
        BRAND, SEGMENT
      , SUM (QUANTITY)
@@ -332,11 +270,8 @@ SELECT
 GROUP BY BRAND,
          CUBE (SEGMENT)
 ORDER BY
-         BRAND, SEGMENT;
-
---부분 cube = group by별 합계 + 맨앞에 쓴 컬럼별 합계 
---        = 뒤에쓴 컬럼이랑 전체 합계는 구하지 않는다. 
-       
+         BRAND, SEGMENT
+;  
 ```
 <br>
 <br>
