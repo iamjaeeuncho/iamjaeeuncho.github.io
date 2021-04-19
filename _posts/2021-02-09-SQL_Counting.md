@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 기초 집계 데이터 - GroupBy, Having, Grouping Set, RollUp, Cube"
+title: "[SQL] 기초 집계 데이터 - GroupBy, Having, GroupingSet, RollUp, Cube"
 date: 2021-2-9
 categories:
   - study
@@ -10,42 +10,33 @@ toc_ads: true
 toc_sticky: true
 ---
 
-## GroupBy
+## Group By
+- 특정 컬럼 기준으로 그룹을 만듬
+- Select문에서 선택된 행을 그룹별로 묶어, 합계/평균/카운트 등을 계산할 수 있게 함
 
 ```sql
--- 특정 컬럼 기준으로 그룹을 만듬
-
-
-SELECT * FROM payment; 
-
+---------- # Group By
 SELECT
       CUSTOMER_ID
   FROM
       PAYMENT
-GROUP BY CUSTOMER_ID;
+GROUP BY CUSTOMER_ID               -- 중복 값이 제거된 CUSTOMER_ID 구하기
+;
 
 SELECT
       DISTINCT CUSTOMER_ID
   FROM
       PAYMENT
 ;      
-
---거래액이 가장 많은 고객순으로 출력 
+---------- # Group By + 합계 및 정렬
 SELECT
-       CUSTOMER_ID
-     , SUM(AMOUNT) AS AMOUNT_SUM
+       CUSTOMER_ID                  -- GROUPBY컬럼인 CUSTOMER_ID를 출력
+     , SUM(AMOUNT) AS AMOUNT_SUM    -- 그룹핑한 CUSTOMER_ID기준 AMOUNT의 합계를 출력
   FROM
        PAYMENT
-GROUP BY CUSTOMER_ID
-ORDER BY SUM(AMOUNT) DESC;
-
-SELECT
-       CUSTOMER_ID
-     , SUM(AMOUNT) AS AMOUNT_SUM
-  FROM
-       PAYMENT
-GROUP BY CUSTOMER_ID
-ORDER BY AMOUNT_SUM DESC; -- 추천
+GROUP BY CUSTOMER_ID                -- PAYMENT테이블을 CUSTOMER_ID기준으로 GROUPBY
+ORDER BY SUM(AMOUNT) DESC           -- 거래액이 가장 많은 고객순으로 출력
+;
 
 SELECT
        CUSTOMER_ID
@@ -53,28 +44,24 @@ SELECT
   FROM
        PAYMENT
 GROUP BY CUSTOMER_ID
-ORDER BY 2 DESC;     -- 비추
+ORDER BY AMOUNT_SUM DESC            -- 추천
+;
 
-
-
-
-
-SELECT * FROM customer WHERE customer_id = 148; 
-
-
-
-
-
-
+SELECT
+       CUSTOMER_ID
+     , SUM(AMOUNT) AS AMOUNT_SUM
+  FROM
+       PAYMENT
+GROUP BY CUSTOMER_ID
+ORDER BY 2 DESC                     -- 비추
+;
+---------- # Group By + 카운트
 SELECT 
-       STAFF_ID
-     , COUNT(PAYMENT_ID) AS COUNT
+       STAFF_ID                     -- GROUPBY컬럼인 STAFF_ID를 출력
+     , COUNT(PAYMENT_ID) AS COUNT   -- STAFF_ID기준 PAYMENT_ID의 카운트를 출력
   FROM PAYMENT
-GROUP BY STAFF_ID;
-
-
-
---직원 1번, 2번 -> 1번은 이름이 하나, 2번도 이름이 하나, staff_id + fist_name + last_name => 2건 
+GROUP BY STAFF_ID
+;
 
 SELECT 
        a.STAFF_ID
@@ -85,37 +72,28 @@ SELECT
   FROM PAYMENT a, staff b
   WHERE a.staff_id = b.staff_id
 GROUP BY a.STAFF_ID
-, b.staff_id
-     , b.first_name 
-     , b.last_name;
-
-SELECT * FROM staff 
-WHERE STAFF_ID = 1;
-
-SELECT * FROM staff ;
+       , b.staff_id
+       , b.first_name 
+       , b.last_name
+;
 ```
 <br>
 <br>
 
 ## Having
-
-```sql
 -- where과 having의 차이점
 -- 테이블의 행을 뽑는건 where절, 그룹핑한 테이블에서 어떤 데이터를 뽑는건 having절 
+
+
+```sql
 SELECT
        CUSTOMER_ID
      , SUM(AMOUNT) AS AMOUNT
   FROM
        PAYMENT
 GROUP BY CUSTOMER_ID
-ORDER BY amount DESC ;
-
-
-
-
-
-
-
+ORDER BY amount DESC
+;
 
 SELECT
        A.CUSTOMER_ID
@@ -132,39 +110,13 @@ HAVING SUM(A.AMOUNT) > 200
 --having 절은 group by를 한 결과 중에서 -> 뽑을 정보만 뽑는다. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 SELECT
        STORE_ID
      , COUNT(CUSTOMER_ID) AS COUNT
   FROM
        CUSTOMER
-GROUP BY STORE_ID;
-
-
-
-
-
-
-
-
-
-
-
-
-
+GROUP BY STORE_ID
+;
 
 
 SELECT
@@ -178,7 +130,8 @@ HAVING COUNT(CUSTOMER_ID)  > 300
 
 
 SELECT * FROM store 
-WHERE store_id = 1; 
+WHERE store_id = 1
+; 
 ```
 <br>
 <br>
