@@ -10,7 +10,7 @@ toc_ads: true
 toc_sticky: true
 ---
 
-## Select: 선택
+## Select - 선택
 - 테이블에 저장된 데이터를 가져오는데 쓰는 구문
 
 ```sql
@@ -40,7 +40,7 @@ SELECT
 <br>
 <br>
 
-## Orderby: 정렬
+## Orderby - 정렬
 - Select문에서 가져온 데이터를 정렬하는데 사용
 
 ```sql
@@ -82,7 +82,7 @@ SELECT
 <br>
 <br>
 
-## Distinct: 중복제거
+## Distinct - 중복제거
 - 같은 결과의 중복된 값을 제거할 수 있음
 
 ```sql
