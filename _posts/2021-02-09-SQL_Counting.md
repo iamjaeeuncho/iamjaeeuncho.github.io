@@ -81,35 +81,32 @@ GROUP BY a.STAFF_ID
 <br>
 
 ## Having
--- where과 having의 차이점
--- 테이블의 행을 뽑는건 where절, 그룹핑한 테이블에서 어떤 데이터를 뽑는건 having절 
-
+- Group By의 결과를 특정 조건으로 필터링하는 기능
+- Having절은 group by를 한 결과 중에서 뽑을 정보만 뽑는다
+> - Where과 Having의 차이점?
+>       - ```Having```은 GroupBy절에 의해 생성된 그룹행의 조건 설정
+>       - ```Where```은 GroupBy절 이전의 개별 행의 조건 설정
+>       - 즉, 테이블의 행 조건은 ``Where``, 그룹핑한 데이터의 조건은 ``Having``
 
 ```sql
+---------- # Group By
 SELECT
-       CUSTOMER_ID
-     , SUM(AMOUNT) AS AMOUNT
+         CUSTOMER_ID
+       , SUM(AMOUNT) AS AMOUNT
   FROM
        PAYMENT
 GROUP BY CUSTOMER_ID
-ORDER BY amount DESC
 ;
-
+---------- # Group By + Having
 SELECT
-       A.CUSTOMER_ID
-     , B.EMAIL
-     , SUM(A.AMOUNT) AS AMOUNT_SUM
+         CUSTOMER_ID                      -- GROUPBY컬럼인 CUSTOMER_ID를 출력
+       , SUM(AMOUNT) AS AMOUNT_SUM        -- CUSOMER_ID기준 AMOUNT의 합계를 출력
   FROM
-       PAYMENT A
-     , CUSTOMER B 
- WHERE A.CUSTOMER_ID = B.CUSTOMER_ID       
-GROUP BY A.CUSTOMER_ID,B.EMAIL
-HAVING SUM(A.AMOUNT) > 200
+       PAYMENT
+GROUP BY CUSTOMER_ID                      -- CUSTOMER_ID기준으로 GROUPBY
+HAVING SUM(AMOUNT) > 200                  -- GROUPBY의 결과 중 SUM(AMOUNT)가 200 초과행 출력
 ;
-
---having 절은 group by를 한 결과 중에서 -> 뽑을 정보만 뽑는다. 
-
-
+---------- # Group By
 SELECT
        STORE_ID
      , COUNT(CUSTOMER_ID) AS COUNT
@@ -117,8 +114,7 @@ SELECT
        CUSTOMER
 GROUP BY STORE_ID
 ;
-
-
+---------- # Group By + Having
 SELECT
         STORE_ID
      ,  COUNT(CUSTOMER_ID) AS COUNT
@@ -127,214 +123,93 @@ SELECT
 GROUP BY STORE_ID
 HAVING COUNT(CUSTOMER_ID)  > 300
 ;
-
-
-SELECT * FROM store 
-WHERE store_id = 1
-; 
 ```
 <br>
 <br>
 
 ## Grouping Set
+- 여러개의 Union All을 사용한 SQL과 같은 결과 도출 가능
+> - cf. 조회한 다수의 SELECT 문을 하나로 합치고싶을때 유니온(UNION) 을 사용
+>       - UNION 은 결과를 합칠때 중복되는 행은 하나만 표시
+>       - UNION ALL 은 중복제거를 하지 않고 모두 합쳐서 보여줌
 
 ```sql
-CREATE TABLE SALES 
-(
-BRAND VARCHAR NOT NULL,
-SEGMENT VARCHAR NOT NULL,
-QUANTITY INT NOT NULL,
-PRIMARY KEY (BRAND, SEGMENT)
-);
-
-INSERT INTO SALES (BRAND, SEGMENT, QUANTITY)
-VALUES
-  ('ABC', 'Premium', 100)
-, ('ABC', 'Basic', 200)
-, ('XYZ', 'Premium', 100)
-, ('XYZ', 'Basic', 300);
-
-COMMIT;
-
-SELECT * FROM sales; 
-
-
-
-
-
-
-
-
-SELECT
-       BRAND
-     , SEGMENT
-     , SUM (QUANTITY)
-  FROM
-       SALES
-GROUP BY BRAND, SEGMENT;
-
-
-
-
-
-
-
-
-
-SELECT
-       BRAND
-     , SUM (QUANTITY)
-  FROM
-       SALES
-GROUP BY
-       BRAND;
-
-     
-      
-      
-      
-      
-      
-SELECT
-       SEGMENT
-     , SUM (QUANTITY)
-  FROM
-       SALES
-GROUP BY SEGMENT;
-
-
-
-
-
-
-
-
-
-
-SELECT
-       SUM (QUANTITY)
-  FROM
-       SALES;
-   
-      
-      
---동일한 테이블을 4번씩이나 읽고있다. -> 성능저하 가능성이 존재합니다.
---너무 sql문이 길어진다. -> 복잡해진다 -> 유지보수가 용이하지않다.
+---------- # Union All
 SELECT BRAND
      , SEGMENT
-     , SUM (QUANTITY)
+     , SUM (QUANTITY)             -- BRAND,SEGMENT 기준 QUANTITY컬럼의 합계
   FROM SALES
-GROUP BY BRAND, SEGMENT
+GROUP BY BRAND, SEGMENT           -- BRAND,SEGMENT 기준으로 GROUPBY
 UNION ALL 
 SELECT BRAND
+     , NULL
+     , SUM (QUANTITY)             -- BRAND 기준 QUANTITY컬럼의 합계
+FROM SALES
+GROUP BY BRAND                    -- BRAND컬럼 기준으로 GROUPBY
+UNION ALL 
+SELECT NULL
+     , SEGMENT
+     , SUM (QUANTITY)             -- SEGMENT 컬럼 기준QUANTITY컬럼의 합계
+  FROM SALES
+GROUP BY SEGMENT                  -- SEGMENT컬럼 기준으로 GROUPBY
+UNION ALL 
+SELECT NULL
      , NULL
      , SUM (QUANTITY)
 FROM SALES
-GROUP BY BRAND
-UNION ALL 
-SELECT NULL
-     , SEGMENT
-     , SUM (QUANTITY)
- FROM SALES
-GROUP BY SEGMENT
-UNION ALL 
-SELECT NULL
-     , NULL
-     , SUM (QUANTITY)
-FROM SALES;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- union all과 grouping set이 동일
-
+;
+---------- # Grouping Set: Union all과 동일하나 Grouping이 더 간결
 SELECT
 	  BRAND
 	, SEGMENT
 	, SUM (QUANTITY)
-FROM
+  FROM
 	SALES
 GROUP BY                     -- GROUP by를 하는데 기준을 GROUPING SETS
-	GROUPING SETS ( 
-	  (BRAND, SEGMENT)
-	, (BRAND)
-	, (SEGMENT)
-	, () 
-);
-
-
-
-
-
-
+	GROUPING SETS (
+	  (BRAND, SEGMENT)    -- BRAND,SEGMENT컬럼 기준으로 합계
+	, (BRAND)             -- BRAND컬럼 기준으로 합계
+	, (SEGMENT)           -- SEGMENT컬럼 기준으로 합계
+	, ())                 -- 테이블 전체를 기준으로 합계
+;
+---------- # Grouping + Grouping Set
 SELECT
-       GROUPING(BRAND) GROUPING_BRAND       -- GROUPING 하면 해당 컬럼이 집계에 사용되면 0, 아니면 1
-     , GROUPING(SEGMENT) GROUPING_SEGEMENT
+       GROUPING(BRAND) GROUPING_BRAND       -- GROUPING 하면 해당 컬럼이
+     , GROUPING(SEGMENT) GROUPING_SEGEMENT  -- 집계에 사용되면 0, 아니면(Null) 1으로 출력됨
      , BRAND
      , SEGMENT
      , SUM (QUANTITY)
  FROM
       SALES
 GROUP BY
-GROUPING SETS 
-( 
-  (BRAND, SEGMENT)
-, (BRAND)
-, (SEGMENT)
-, () 
-)
-ORDER BY BRAND, SEGMENT;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       GROUPING SETS ( 
+       (BRAND, SEGMENT)
+       , (BRAND)
+       , (SEGMENT)
+       , ())
+ORDER BY BRAND, SEGMENT
+;
+---------- # 응용
 SELECT
-		CASE WHEN GROUPING(BRAND) = 0 AND GROUPING(SEGMENT) = 0 THEN '브랜드별+등급별' -- 브랜드와 세그먼트가 0이면 둘 다 사용된 것 
-			 WHEN GROUPING(BRAND) = 0 AND GROUPING(SEGMENT) = 1 THEN '브랜드별'      -- 브랜드가 0이면 브랜드만 사용된 것 
-		     WHEN GROUPING(BRAND) = 1 AND GROUPING(SEGMENT) = 0 THEN '등급별'
-			 WHEN GROUPING(BRAND) = 1 AND GROUPING(SEGMENT) = 1 THEN '전체합계'
-			 ELSE '' 
-			 END AS "집계기준"	
+       CASE WHEN GROUPING(BRAND) = 0 AND GROUPING(SEGMENT) = 0 THEN '브랜드별+등급별' -- 브랜드와 세그먼트가 0이면 둘 다 사용된 것 
+            WHEN GROUPING(BRAND) = 0 AND GROUPING(SEGMENT) = 1 THEN '브랜드별'        -- 브랜드가 0이면 브랜드만 사용된 것 
+            WHEN GROUPING(BRAND) = 1 AND GROUPING(SEGMENT) = 0 THEN '등급별'
+            WHEN GROUPING(BRAND) = 1 AND GROUPING(SEGMENT) = 1 THEN '전체합계'
+            ELSE '' 
+            END AS "집계기준"	
      , BRAND
      , SEGMENT
      , SUM (QUANTITY)
  FROM
       SALES
 GROUP BY
-GROUPING SETS 
-( 
-  (BRAND, SEGMENT)
-, (BRAND)
-, (SEGMENT)
-, () 
-)
-ORDER BY BRAND, SEGMENT;
-
+       GROUPING SETS ( 
+       (BRAND, SEGMENT)
+       , (BRAND)
+       , (SEGMENT)
+       , ())
+ORDER BY BRAND, SEGMENT
+;
 ```
 <br>
 <br>
@@ -404,12 +279,6 @@ ORDER BY
        BRAND, SEGMENT;
       
       
-
-      
-      
-      
-      
-      
       
 --------------------------------------------------------------------------------------      
 SELECT
@@ -453,16 +322,6 @@ ORDER BY
        
 --rollup = group by 절 합계 + brand별 + 전체합계
 --세그먼트별 합계는 나오지 않음 
-
-       
-       
-       
-       
-       
-       
-       
-       
-       
        
        
        
