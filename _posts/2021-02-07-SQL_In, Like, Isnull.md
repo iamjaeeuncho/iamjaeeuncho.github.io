@@ -85,7 +85,7 @@ SELECT
  FROM
       CUSTOMER
 WHERE
-      FIRST_NAME LIKE 'Jen%'        -- firstname이 jen으로 시작하는
+      FIRST_NAME LIKE 'Jen%'                   -- firstname이 jen으로 시작하는
 ;
 ---------- # '%'는 어떤 문자든 가능
 SELECT
@@ -101,7 +101,7 @@ SELECT
  FROM
       CUSTOMER
 WHERE
-      FIRST_NAME LIKE '%er%'        -- 어떤 문자든지 중간에 er 들어감
+      FIRST_NAME LIKE '%er%'                    -- 어떤 문자든지 중간에 er 들어감
 ;
 ---------- # '-' + '%'
 SELECT
@@ -110,7 +110,7 @@ SELECT
  FROM
       CUSTOMER
 WHERE
-    FIRST_NAME LIKE '_her%'         -- 첫 임의의 글자로 시작, 중간에 er 들어감
+    FIRST_NAME LIKE '_her%'                     -- 첫 임의의 글자로 시작, 중간에 er 들어감
 ;
 ---------- # NOT LIKE : 아닌 경우
 SELECT
@@ -119,7 +119,7 @@ SELECT
 FROM
       CUSTOMER
 WHERE
-    FIRST_NAME NOT LIKE 'Jen%'      -- jen으로 시작하지 않는 것
+    FIRST_NAME NOT LIKE 'Jen%'                  -- jen으로 시작하지 않는 것
 ;
 ```
 <br>
