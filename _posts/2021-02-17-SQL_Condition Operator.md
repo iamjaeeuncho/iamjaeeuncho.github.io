@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 조건 연산자-Case, Coalesce, NullIf, Cast"
+title: "[SQL] 조건 연산자 - Case, Coalesce, NullIf, Cast"
 date: 2021-2-17
 categories:
   - study

@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 분석 함수 - AVG, Row_Number, Rank, Dense_Rank, First_Value, Last_Value, Lag, Lead"
+title: "[SQL] 분석 함수 - AVG, Row_Number, Rank, Dense_Rank, First/Last_Value, Lag, Lead"
 date: 2021-2-10
 categories:
   - study

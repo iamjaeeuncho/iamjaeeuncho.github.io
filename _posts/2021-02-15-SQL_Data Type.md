@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 데이터 타입-Boolean, Char/Varchar/Text, Numeric, Integer, Serial, Date/Time/Timestamp"
+title: "[SQL] 데이터 타입 - Boolean, Char/Varchar/Text, Numeric, Integer, Serial, Date/Time/Timestamp"
 date: 2021-2-15
 categories:
   - study

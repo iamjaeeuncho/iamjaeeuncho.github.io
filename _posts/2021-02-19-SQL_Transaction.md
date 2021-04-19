@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 트랜잭션-Begin/Commit/Rollback"
+title: "[SQL] 트랜잭션 - Begin/Commit/Rollback"
 date: 2021-2-19
 categories:
   - study

@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 서브쿼리-Any, All, Exists"
+title: "[SQL] 서브쿼리 - Any, All, Exists"
 date: 2021-2-12
 categories:
   - study

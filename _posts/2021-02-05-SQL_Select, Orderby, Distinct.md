@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 데이터 선택 및 정렬- Select, Orderby, Distinct"
+title: "[SQL] 데이터 선택 및 정렬 - Select, Orderby, Distinct"
 date: 2021-2-5
 categories:
   - study

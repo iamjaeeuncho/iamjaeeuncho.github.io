@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 데이터 조작-Insert, Update, UpdateJoin, Delete, Upsert, Export, Import"
+title: "[SQL] 데이터 조작 - Insert, Update, UpdateJoin, Delete, Upsert, Export, Import"
 date: 2021-2-13
 categories:
   - study
