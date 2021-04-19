@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 기초 집계 데이터 - GroupBy, Having, GroupingSet, RollUp, Cube"
+title: "[SQL] 기초 집계 - GroupBy, Having, GroupingSet, RollUp, Cube"
 date: 2021-2-9
 categories:
   - study
