@@ -58,8 +58,8 @@ OR      AMOUNT >= 8               -- AMOUNT가 8이상인 행을 출력
 
 ## Between - 사잇값
 - 특정 범위 안에 들어가는 집합을 출력하는 연산자
-- between A And B: sth >= A & sth <= B
-- not between A And B: sth < A or sth > B
+- ``between A And B`` sth >= A & sth <= B
+- ``not between A And B`` sth < A or sth > B
 
 ```sql
 ---------- # BETWEEN AND
