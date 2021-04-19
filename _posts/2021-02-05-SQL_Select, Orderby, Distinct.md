@@ -122,9 +122,9 @@ ORDER BY
 <br>
 
 ## 연습문제
+- Amout 액수가 가장 많은 CUSTOMER_ID 추출
 
 ```sql
----------- # Amout 액수가 가장 많은 CUSTOMER_ID 추출
 SELECT DISTINCT
 A.CUSTOMER_ID
 FROM PAYMENT A
