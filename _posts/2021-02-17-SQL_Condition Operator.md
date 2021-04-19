@@ -10,7 +10,6 @@ toc_ads: true
 toc_sticky: true
 ---
 
-
 ## Case
 ```sql
 SELECT

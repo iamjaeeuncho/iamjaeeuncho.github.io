@@ -10,8 +10,6 @@ toc_ads: true
 toc_sticky: true
 ---
 
-
-
 ## 기본키
 ```sql
 CREATE TABLE TB_PRODUCT_PK_TEST (

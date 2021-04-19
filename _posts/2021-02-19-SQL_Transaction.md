@@ -10,8 +10,6 @@ toc_ads: true
 toc_sticky: true
 ---
 
-
-
 ## Begin/Commit/Rollback
 ```sql
 DROP TABLE TB_ACCOUNT_TRANSACTION_TEST; 

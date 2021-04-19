@@ -10,7 +10,6 @@ toc_ads: true
 toc_sticky: true
 ---
 
-
 ## GroupBy
 
 ```sql
@@ -30,15 +29,6 @@ SELECT
   FROM
       PAYMENT
 ;      
-
-
-
-
-
-
-
-
-
 
 --거래액이 가장 많은 고객순으로 출력 
 SELECT
@@ -84,11 +74,6 @@ GROUP BY STAFF_ID;
 
 
 
-
-
-
-
-
 --직원 1번, 2번 -> 1번은 이름이 하나, 2번도 이름이 하나, staff_id + fist_name + last_name => 2건 
 
 SELECT 
@@ -124,14 +109,6 @@ SELECT
        PAYMENT
 GROUP BY CUSTOMER_ID
 ORDER BY amount DESC ;
-
-
-
-
-
-
-
-
 
 
 
