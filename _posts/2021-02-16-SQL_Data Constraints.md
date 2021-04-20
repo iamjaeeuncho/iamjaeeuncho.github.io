@@ -10,7 +10,7 @@ toc_ads: true
 toc_sticky: true
 ---
 
-## 기본키
+## 기본키 - 메인
 - 기본키는 테이블 내에서 유일한 값이어야하고 NOT NULL이어야 한다
 - 테이블 내에서 반드시 존재해야하는 실체 무결성에 대한 제약
 
@@ -35,7 +35,7 @@ ALTER TABLE TB_PRODUCT_PK_TEST
 <br>
 <br>
 
-## 외래키
+## 외래키 - 참조
 - 외래키는 자식 테이블의 특정 컬럼이 부모 테이블의 특정 컬럼 값을 참조하는 것이다.
 - 이를 참조 무결성이라고 한다.
 
@@ -68,7 +68,7 @@ DROP CONSTRAINT FK_SO_HEADERS_ID;
 <br>
 <br>
 
-## Check
+## Check - 제약
 - 체크 제약 조건은 특정 컬럼에 들어가는 값에 대한 제약을 가하는 것이다.
 - 절대로 들어갈 수 없는 값이 들어가서 오류가 나는 것을 사전에 차단
 
@@ -91,7 +91,7 @@ ALTER TABLE TB_EMP_CHECK_TEST
 <br>
 <br>
 
-## Unique
+## Unique - 유일
 - 특정 컬럼 값이 한 테이블 내에서 유일하기를 보장
 
 ```sql
@@ -117,7 +117,7 @@ ON PERSON_UNIQUE_INDEX_TEST(EMAIL);
 <br>
 <br>
 
-## Not Null
+## Not Null - Null값 방지
 - NOT NULL 제약 조건은 특정 컬럼에 NULL 값이 들어가는 것을 방지
 
 ```sql

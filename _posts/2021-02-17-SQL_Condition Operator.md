@@ -10,7 +10,7 @@ toc_ads: true
 toc_sticky: true
 ---
 
-## Case
+## Case ≒ IF/ELSE문
 - Case 표현식으로 IF/ELSE문과 같은 다양한 조건문 처리를 할 수 있다
 
 ```sql
@@ -74,8 +74,8 @@ FROM (
 <br>
 <br>
 
-## Coalesce
-- Coalsesce함수는 입력한 인자값 중에서 Null값이 아닌 첫번째 값을 리턴한다
+## Coalesce - 첫번째 값 리턴
+- Coalsesce 함수는 입력한 인자값 중에서 Null값이 아닌 첫번째 값을 리턴한다
 - Null 처리할 때 유용 (ex. 500 - Null = Null)
 
 ```sql
@@ -101,7 +101,7 @@ FROM
 <br>
 <br>
 
-## NullIf
+## NullIf - Null or 첫번째값
 - NullIf 함수는 입력한 두개의 인자값이 동일하면 Null을 리턴하고, 아니면 첫번째 인자값을 리턴한다
 
 ```sql
@@ -149,7 +149,7 @@ FROM
 <br>
 <br>
 
-## Cast
+## Cast - 형변환
 - Cast 표현식은 데이터값을 특정 데이터 타입으로 형변환이 가능하도록 한다
 - 각종 데이터 값을 CAST 표현식을 이용해 적절하게 형변환 한다
 
