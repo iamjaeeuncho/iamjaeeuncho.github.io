@@ -176,7 +176,7 @@ INNER JOIN PRODUCT_GROUP B
 <br>
 
 ## 연습문제
-### 1. 연/연월/연월일/전체 Rental_ID 기준 렌탈 일어난 횟수 
+1. 연/연월/연월일/전체 Rental_ID 기준 렌탈 일어난 횟수 
 
 ```sql
 ---------- # 일반
@@ -214,7 +214,7 @@ ROLLUP(
 <br>
 <br>
 
-### 2. 가장 많이 Rental 한 고객ID/렌탈순위/누적렌탈횟수/이름 출력
+2. 가장 많이 Rental 한 고객ID/렌탈순위/누적렌탈횟수/이름 출력
 
 ```sql
 ---------- # RENTAL 순위 구하기
@@ -242,3 +242,5 @@ WHERE A.CUSTOMER_ID = B.CUSTOMER_ID
 GROUP BY A.CUSTOMER_ID ORDER BY RENTAL_RANK LIMIT 1
 ;
 ```
+<br>
+<br>
