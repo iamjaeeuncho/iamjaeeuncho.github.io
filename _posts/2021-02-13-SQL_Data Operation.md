@@ -10,7 +10,7 @@ toc_ads: true
 toc_sticky: true
 ---
 
-## Insert
+## Insert - 삽입
 - 테이블 안에 데이터 삽입
 
 ```sql
@@ -52,7 +52,7 @@ SELECT * FROM LINK;                   -- B-A=0
 <br>
 <br>
 
-## Update
+## Update - 수정
 - 테이블 데이터 수정
 - 동시성에 유의해야 함
 
@@ -78,43 +78,7 @@ UPDATE LINK
 <br>
 <br>
 
-## Update Join
-- 업데이트시 다른 테이블 내용 참조하고 싶을 때 사용
-
-```sql
-UPDATE PRODUCT A
-   SET NET_PRICE = A.PRICE - (A.PRICE * B.DISCOUNT)  -- NET PRICE는 내부라 ALIAS 쓰지 않음
-  FROM PRODUCT_SEGMENT B
-   WHERE A.SEGMENT_ID = B.ID;
-```
-<br>
-<br>
-
-## Delete
-- 전체 테이블이나 특정 데이터를 삭제할 때 사용
-
-```sql
----------- # Delete + 전체 행
-DELETE FROM LINK;
-DELETE FROM LINK_TMP; 
----------- # Delete + 특정 조건의 행
-DELETE 
-  FROM 
-       LINK
-WHERE ID = 5                    -- id가 5인걸 삭제
-;
----------- # Delete Join
-DELETE 
-  FROM 
-      LINK_TMP A                -- LINK_TMP테이블 삭제
-USING LINK B                    -- LINK테이블과 조인해서
-WHERE A.ID = B.ID               -- id가 매칭되는 것만
-;
-```
-<br>
-<br>
-
-## Upsert
+### Upsert - 조건문
 - Insert 시도할 때 조건에 따라 Update할 수 있는 구문
 
 ```sql
@@ -136,6 +100,42 @@ DO UPDATE                       -- 충돌시 수정
    SET EMAIL = EXCLUDED.EMAIL ||
                           ';' ||
                CUSTOMERS.EMAIL
+;
+```
+<br>
+<br>
+
+### Update Join
+- 업데이트시 다른 테이블 내용 참조하고 싶을 때 사용
+
+```sql
+UPDATE PRODUCT A
+   SET NET_PRICE = A.PRICE - (A.PRICE * B.DISCOUNT)  -- NET PRICE는 내부라 ALIAS 쓰지 않음
+  FROM PRODUCT_SEGMENT B
+   WHERE A.SEGMENT_ID = B.ID;
+```
+<br>
+<br>
+
+## Delete - 삭제
+- 전체 테이블이나 특정 데이터를 삭제할 때 사용
+
+```sql
+---------- # Delete + 전체 행
+DELETE FROM LINK;
+DELETE FROM LINK_TMP; 
+---------- # Delete + 특정 조건의 행
+DELETE 
+  FROM 
+       LINK
+WHERE ID = 5                    -- id가 5인걸 삭제
+;
+---------- # Delete Join
+DELETE 
+  FROM 
+      LINK_TMP A                -- LINK_TMP테이블 삭제
+USING LINK B                    -- LINK테이블과 조인해서
+WHERE A.ID = B.ID               -- id가 매칭되는 것만
 ;
 ```
 <br>
