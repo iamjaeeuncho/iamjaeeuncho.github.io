@@ -215,7 +215,7 @@ ORDER BY FIRST_NAME, LAST_NAME
 <br>
 
 ## 연습문제
-1. 2번 스캔하는 SQL문을 1번 스캔해 동일 집합 구하기
+* 2번 스캔하는 SQL문을 1번 스캔해 동일 집합 구하기
 
 ```sql
 ---------- # 문제의 SQL - 2번 스캔하는 SQL문
@@ -254,7 +254,7 @@ WHERE A.RENTAL_RATE > A.AVG_RENTAL_RATE
 <br>
 <br>
 
-2. Except연산 사용하지 말고 같은 결과 도출하기
+* Except연산 사용하지 말고 같은 결과 도출하기
 
 ```sql
 ---------- # 문제의 SQL - 재고가 없는 영화 구하기
