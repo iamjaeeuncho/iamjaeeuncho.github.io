@@ -83,10 +83,10 @@ GROUP BY a.STAFF_ID
 ## Having
 - Group By의 결과를 특정 조건으로 필터링하는 기능
 - Having절은 group by를 한 결과 중에서 뽑을 정보만 뽑는다
-> - Where과 Having의 차이점?
->       - ```Having```은 GroupBy절에 의해 생성된 그룹행의 조건 설정
->       - ```Where```은 GroupBy절 이전의 개별 행의 조건 설정
->       - 즉, 테이블의 행 조건은 ``Where``, 그룹핑한 데이터의 조건은 ``Having``
+> - Where과 Having의 차이점?  
+>       - ```Having```은 GroupBy절에 의해 생성된 그룹행의 조건 설정  
+>       - ```Where```은 GroupBy절 이전의 개별 행의 조건 설정  
+>       - 즉, 테이블의 행 조건은 ``Where``, 그룹핑한 데이터의 조건은 ``Having``  
 
 ```sql
 ---------- # Group By
@@ -129,9 +129,9 @@ HAVING COUNT(CUSTOMER_ID)  > 300
 
 ## Grouping Set
 - 여러개의 Union All을 사용한 SQL과 같은 결과 도출 가능
-> - cf. 조회한 다수의 SELECT 문을 하나로 합치고싶을때 유니온(UNION) 을 사용
->       - UNION 은 결과를 합칠때 중복되는 행은 하나만 표시
->       - UNION ALL 은 중복제거를 하지 않고 모두 합쳐서 보여줌
+> - cf. 조회한 다수의 SELECT 문을 하나로 합치고싶을때 유니온(UNION) 을 사용  
+>       - UNION 은 결과를 합칠때 중복되는 행은 하나만 표시  
+>       - UNION ALL 은 중복제거를 하지 않고 모두 합쳐서 보여줌  
 
 ```sql
 ---------- # Union All

@@ -177,3 +177,5 @@ WHERE EMAIL NOT LIKE '@%'
   AND EMAIL LIKE '%r%'
 ;
 ```
+<br>
+<br>
