@@ -11,93 +11,34 @@ toc_sticky: true
 ---
 
 ## Insert
+- 테이블 안에 데이터 삽입
+
 ```sql
-DROP TABLE LINK; 
-
-CREATE TABLE LINK (
-  ID SERIAL PRIMARY KEY
-, URL VARCHAR (255) NOT NULL
-, NAME VARCHAR (255) NOT NULL
-, DESCRIPTION VARCHAR (255)
-, REL VARCHAR (50)
-);
-
-SELECT * FROM link; 
-
-
-
- INSERT 
+---------- # INSERT 
+INSERT 
   INTO LINK 
 (URL, NAME)
 VALUES
  ('http://naver.com','Naver')
 ;
-
-COMMIT;
-
-
-
-
-SELECT * FROM LINK; 
-
-
-
-
-
- INSERT 
+---------- # 작은따옴표 자체를 데이터로 입력
+INSERT 
    INTO LINK 
 (URL, NAME)
 VALUES
  ('''http://naver.com''','''Naver''')
 ;
-
-COMMIT;
-
-
-
-
-
-
-SELECT * FROM LINK; 
-
-
-
-
-
-
-
-
-
-
- INSERT INTO LINK 
+---------- # 동시에 N개 로우 입력
+INSERT INTO LINK 
 (URL, NAME)
 VALUES
   ('http://www.google.com','Google')
 , ('http://www.yahoo.com','Yahoo')
 , ('http://www.bing.com','Bing')
 ;
-COMMIT;
-
-SELECT * FROM link; 
-
-
-
- 
-
-CREATE TABLE LINK_TMP AS 
-SELECT * FROM LINK WHERE 0=1;
-
-
-
-
-
-
-
-
-
-
-
-
+---------- # 테이블을 테이블에 입력
+CREATE TABLE LINK_TMP AS             -- LINK 테이블의 스키마(껍데기)만 가져와서 LINK_TMP 테이블을 생성
+SELECT * FROM LINK WHERE 0=1;        -- LINK_TMP 테이블은 구조는 LINK와 같고 데이터는 0건
 
 INSERT 
    INTO LINK_TMP 
@@ -105,398 +46,151 @@ SELECT *
   FROM LINK
 ;
 
-COMMiT;
-
-SELECT * FROM LINK_TMP
-EXCEPT 
-SELECT * FROM link;
-
-SELECT * FROM link
-EXCEPT 
-SELECT * FROM LINK_TMP; 
-
-
---A-B=0
---B-A=0
-
-
+SELECT * FROM LINK_TMP;               -- A-B=0
+SELECT * FROM LINK;                   -- B-A=0
 ```
 <br>
 <br>
 
 ## Update
+- 테이블 데이터 수정
+- 동시성에 유의해야 함
+
 ```sql
-ALTER TABLE LINK ADD COLUMN LAST_UPDATE DATE;
-ALTER TABLE LINK ALTER COLUMN LAST_UPDATE SET DEFAULT CURRENT_DATE;
--- link 테이블 lastupdate 컬럼 변경, 디폴트 값을 currentdate로
+---------- # Update
+ALTER TABLE LINK ADD COLUMN LAST_UPDATE DATE;                       -- 테이블에 컬럼 추가
+ALTER TABLE LINK ALTER COLUMN LAST_UPDATE SET DEFAULT CURRENT_DATE; -- lastupdate 컬럼 변경 및 디폴트 값을 currentdate로
 
-
-SELECT * FROM LINK;
-
-
-
--- default는 currentdate로 이미 설정됨
 UPDATE LINK
-   SET LAST_UPDATE = DEFAULT     -- lastupdate를 default로 설정
- WHERE 
-       LAST_UPDATE IS NULL;
-
-COMMiT;
-
-SELECT * FROM LINK;
-
-
-
-
-
--- where절이 없으면 전체 테이블 대상
+   SET LAST_UPDATE = DEFAULT     -- lastupdate를 default로 update
+ WHERE                           -- default는 currentdate로 이미 설정됨
+       LAST_UPDATE IS NULL       -- LAST_UPDATE컬럼이 NULL인 값을 대상으로
+;
+---------- # Update: where절이 없으면 전체 테이블 대상
 UPDATE LINK
    SET REL = 'NO DATA'
 ;
-
-COMMIT;
-
-
-SELECT * FROM LINK;
-
-
-
-
-
-
-
-
-
-
-
+---------- # Update 전체 테이블 대상 + 특정 컬럼을 이용
 UPDATE LINK
-   SET DESCRIPTION = NAME
+   SET DESCRIPTION = NAME         -- DESCRIPTION컬럼의 값을 NAME컬럼으로 수정
 ;
-
-COMMIT;
-
-
-
-
-SELECT * FROM LINK;
-
-
 ```
 <br>
 <br>
 
 ## Update Join
+- 업데이트시 다른 테이블 내용 참조하고 싶을 때 사용
+
 ```sql
-CREATE TABLE PRODUCT_SEGMENT 
-(
-  ID SERIAL PRIMARY KEY
-, SEGMENT VARCHAR NOT NULL
-, DISCOUNT NUMERIC (4, 2)
-);
- 
-INSERT INTO PRODUCT_SEGMENT 
-(SEGMENT, DISCOUNT)
-VALUES
-       ('Grand Luxury', 0.05)
-     , ('Luxury', 0.06)
-     , ('Mass', 0.1);
-     
-COMMIT; 
-
-SELECT * FROM PRODUCT_SEGMENT; 
-
-
-
-
-
-
-
-
-DROP TABLE PRODUCT; 
-CREATE TABLE PRODUCT(
-  ID SERIAL PRIMARY KEY
-, NAME VARCHAR NOT NULL
-, PRICE NUMERIC(10, 2)
-, NET_PRICE NUMERIC(10, 2)
-, SEGMENT_ID INT NOT NULL
-, FOREIGN KEY(SEGMENT_ID) 
-  REFERENCES PRODUCT_SEGMENT(ID)
-);
-
-
-
-
-
-
-
-
-
-
-
-
-INSERT INTO PRODUCT (NAME, PRICE, SEGMENT_ID) 
-VALUES   
-         ('K5', 804.89, 1)
-       , ('K7', 228.55, 3)
-       , ('K9', 366.45, 2)
-       , ('SONATA', 145.33, 3)
-       , ('SPARK', 551.77, 2)
-       , ('AVANTE', 261.58, 3)
-       , ('LOZTE', 519.62, 2)
-       , ('SANTAFE', 843.31, 1)
-       , ('TUSON', 254.18, 3)
-       , ('TRAX', 427.78, 2)
-       , ('ORANDO', 936.29, 1)
-       , ('RAY', 910.34, 1)
-       , ('MORNING', 208.33, 3)
-       , ('VERNA', 985.45, 1)
-       , ('K8', 841.26, 1)
-       , ('TICO', 896.38, 1)
-       , ('MATIZ', 575.74, 2)
-       , ('SPORTAGE', 530.64, 2)
-       , ('ACCENT', 892.43, 1)
-       , ('TOSCA', 161.71, 3);
-
-COMMIT; 
-
-SELECT * FROM PRODUCT;
-
-
-
-
-
-
-
-
-
-
-
-
-
 UPDATE PRODUCT A
    SET NET_PRICE = A.PRICE - (A.PRICE * B.DISCOUNT)  -- NET PRICE는 내부라 ALIAS 쓰지 않음
   FROM PRODUCT_SEGMENT B
- WHERE A.SEGMENT_ID = B.ID;
-
-SELECT * FROM PRODUCT; 
-
-COMMIT; 
-
-
-
+   WHERE A.SEGMENT_ID = B.ID;
 ```
 <br>
 <br>
 
 ## Delete
+- 전체 테이블이나 특정 데이터를 삭제할 때 사용
+
 ```sql
-SELECT * FROM LINK_TMP; 
-
-SELECT * FROM LINK; 
-
--- id가 5인걸 삭제해라
+---------- # Delete + 전체 행
+DELETE FROM LINK;
+DELETE FROM LINK_TMP; 
+---------- # Delete + 특정 조건의 행
 DELETE 
   FROM 
        LINK
-WHERE ID = 5
+WHERE ID = 5                    -- id가 5인걸 삭제
 ;
-
-COMMIT;
-
-
-
-
-
-
-
-SELECT * FROM LINK; 
-
-SELECT * FROM LINK_TMP;
-
-
---LINK_TMP A를 삭제, link b와 조인해서 id가 매칭되는 것만
---1 2 3 4 매칭 -> 1 2 3 4 날라가고 5는 살아남는다. 
+---------- # Delete Join
 DELETE 
   FROM 
-      LINK_TMP A
-USING LINK B
-WHERE A.ID = B.ID
+      LINK_TMP A                -- LINK_TMP테이블 삭제
+USING LINK B                    -- LINK테이블과 조인해서
+WHERE A.ID = B.ID               -- id가 매칭되는 것만
 ;
-
-COMMIT; 
-
-SELECT * FROM LINK_TMP;
-
---------------------------------------
-
-DELETE FROM LINK;
-
-COMMIT; 
-
-DELETE FROM LINK_TMP; 
-
-COMMIT;
-
-SELECT COUNT(*) FROM LINK; 
-
-SELECT COUNT(*) FROM LINK_TMP;
-
-
-
-
 ```
 <br>
 <br>
 
 ## Upsert
+- Insert 시도할 때 조건에 따라 Update할 수 있는 구문
+
 ```sql
-CREATE TABLE CUSTOMERS 
-(
-   CUSTOMER_ID SERIAL PRIMARY KEY
- , NAME VARCHAR UNIQUE
- , EMAIL VARCHAR NOT NULL
- , ACTIVE BOOL NOT NULL DEFAULT TRUE
-);
-
-INSERT INTO CUSTOMERS (NAME, EMAIL)
-VALUES
- ('IBM', 'contact@ibm.com'),
- ('Microsoft', 'contact@microsoft.com'),
- ('Intel', 'contact@intel.com');
- 
-COMMIT; 
-
-SELECT * FROM CUSTOMERS; 
-
+---------- # Upsert + DO NOTHING
 INSERT INTO CUSTOMERS (NAME, EMAIL)
 VALUES
  (
- 'Microsoft',                -- name이 unique 조건인데, microsoft 이미있는데 추가 입력하므로 에러 발생
+ 'Microsoft',                   -- name이 unique 조건인데, microsoft 이미있는데 추가 입력하므로 에러 발생
  'hotline@microsoft.com'
- ) 
-ON CONFLICT (NAME)           -- name이 충돌 에러 발생시 아무것도 하지 마라
-DO NOTHING;
-
+ ) ON CONFLICT (NAME)           -- name이 충돌 에러 발생시 
+DO NOTHING;                     -- 아무것도 하지 마라
+---------- # Upsert + DO NOTHING
 INSERT INTO CUSTOMERS (NAME, EMAIL)
-VALUES
- (
+VALUES (
  'Microsoft',
  'hotline@microsoft.com'
- ) 
- ;
-ON CONFLICT (NAME) 
-DO NOTHING;
-
-COMMIT;
-
-SELECT * FROM CUSTOMERS; 
-
-INSERT INTO CUSTOMERS (NAME, EMAIL)
-VALUES
- (
- 'Microsoft',
- 'hotline@microsoft.com'
- ) 
-ON CONFLICT (NAME) 
-DO
- UPDATE
-   SET EMAIL = EXCLUDED.EMAIL || ';' || CUSTOMERS.EMAIL;
-
-  COMMIT;
-
-SELECT * FROM CUSTOMERS; 
-
-
-  
-
-
+ ) ON CONFLICT (NAME) 
+DO UPDATE                       -- 충돌시 수정
+   SET EMAIL = EXCLUDED.EMAIL ||
+                          ';' ||
+               CUSTOMERS.EMAIL
+;
 ```
 <br>
 <br>
 
 ## Export
+- 테이블 데이터를 다른 형태의 데이터로 추출
+- 대표적으로 csv형식으로 가장 많이 추출함
+
 ```sql
-SELECT * FROM CATEGORY;
-
-COPY CATEGORY(CATEGORY_ID, NAME, LAST_UPDATE) 
-TO 'C:\tmp\DB_CATEGORY.csv' 
-DELIMITER ',' 
-CSV HEADER;
-
-
-
-
-
-
-
-
-
-
-
-
+---------- # Export + 엑셀형식
+COPY CATEGORY(CATEGORY_ID, NAME, LAST_UPDATE) -- 추출할 테이블과 컬럼 지정
+TO 'C:\tmp\DB_CATEGORY.csv'                   -- 추출한 데이터를 저장할 파일을 지정
+DELIMITER ','                                 -- 구분자
+CSV HEADER                                    -- 파일형식
+;
+---------- # Export + 텍스트형식
 COPY CATEGORY(CATEGORY_ID, NAME, LAST_UPDATE) 
 TO 'C:\tmp\DB_CATEGORY.txt' 
 DELIMITER '|' 
 CSV HEADER
 ;
-
-
-
-
-
-
-
+---------- # Export + 컬럼명 없이
 COPY CATEGORY(CATEGORY_ID, NAME, LAST_UPDATE) 
 TO 'C:\tmp\DB_CATEGORY_2.csv' 
 DELIMITER ',' 
-CSV;
-
+CSV
+;
 ```
 <br>
 <br>
 
 ## Import
+- 다른 형식의 데이터를 테이블에 넣는 작업
+- 데이터 구축시 사용
+
 ```sql
-CREATE TABLE CATEGORY_IMPORT
-(
-  CATEGORY_ID SERIAL NOT NULL
-, "NAME" VARCHAR(25) NOT NULL
-, LAST_UPDATE TIMESTAMP NOT NULL DEFAULT NOW()
-, CONSTRAINT CATEGORY_IMPORT_PKEY PRIMARY KEY (CATEGORY_ID)
-);
-
-SELECT * FROM CATEGORY_IMPORT; 
-
-COPY CATEGORY_IMPORT(CATEGORY_ID, "NAME", LAST_UPDATE) 
-FROM 'C:\tmp\DB_CATEGORY.csv' 
-DELIMITER ',' 
-CSV HEADER
-;
-
-SELECT * FROM CATEGORY_IMPORT;
-
-DELETE FROM CATEGORY_IMPORT; 
-COMMIT;
-
+---------- # Import + 텍스트파일 적재
 COPY CATEGORY_IMPORT(CATEGORY_ID, "NAME", LAST_UPDATE) 
 FROM 'C:\tmp\DB_CATEGORY.txt' 
 DELIMITER '|' 
 CSV HEADER
 ;
-
-SELECT * FROM CATEGORY_IMPORT;
-
-DELETE FROM CATEGORY_IMPORT; 
-COMMIT;
-
+---------- # Import + 엑셀파일 적재
+COPY CATEGORY_IMPORT(CATEGORY_ID, "NAME", LAST_UPDATE)   -- 적재할 테이블 및 컬럼 지정
+FROM 'C:\tmp\DB_CATEGORY.csv'                            -- 적재할 파일 지정
+DELIMITER ','                                            -- 구분자
+CSV HEADER                                               -- 파일형식
+;
+---------- # Import + 컬럼명 없는 엑셀 파일 적재
 COPY CATEGORY_IMPORT(CATEGORY_ID, "NAME", LAST_UPDATE) 
 FROM 'C:\tmp\DB_CATEGORY_2.csv' 
 DELIMITER ',' 
 CSV
 ;
-
-
-SELECT * FROM CATEGORY_IMPORT;
 ```
 <br>
 <br>
