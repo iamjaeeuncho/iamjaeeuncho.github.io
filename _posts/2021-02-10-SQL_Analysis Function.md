@@ -15,7 +15,7 @@ toc_sticky: true
 <br>
 <br>
 
-## AVG
+## AVG - 평균
 - 특정 집합 내에서 결과 건수의 변화 없이 해당 집합안에서 특정 컬럼의 평균을 구하는 함수
 
 ```sql
@@ -58,7 +58,7 @@ ON (A.GROUP_ID = B.GROUP_ID)
 <br>
 <br>
 
-## Row_Number, Rank, Dense_Rank
+## Row_Number, Rank, Dense_Rank - 순위
 - 특정 집합 내에서 결과 건수의 변화와 상관없이, 해당 집합안에서 특정 컬럼의 순위를 구하는 함수
 
 ```sql
@@ -99,7 +99,7 @@ INNER JOIN PRODUCT_GROUP B
 <br>
 <br>
 
-## First/Last_Value
+## First/Last_Value - 값 구하기
 - 특정 집합 내에서 결과 건수의 변화 없이, 해당 집합안에서 특정 컬럼의 첫번째 또는 마지막 값을 구하는 함수
 
 ```sql
@@ -139,7 +139,7 @@ INNER JOIN PRODUCT_GROUP B
 <br>
 <br>
 
-## Lag, Lead
+## Lag, Lead - 이전/다음행의 값
 - 특정 집합 내에서 결과 건수의 변화 없이, 해당 집합안에서 특정 컬럼의 이전이나 다음 행의 값을 구함
 
 ```sql
