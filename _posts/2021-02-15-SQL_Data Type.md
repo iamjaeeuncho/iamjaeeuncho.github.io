@@ -277,3 +277,4 @@ INSERT INTO FRUITS(ID,NAME) VALUES(DEFAULT,'apple');     -- ID컬럼은 자동�
 ```
 <br>
 <br>
+<i> ※ credit: Fast Campus, 모두를 위한 SQL/DB 올인원 패키지 Online </i>
