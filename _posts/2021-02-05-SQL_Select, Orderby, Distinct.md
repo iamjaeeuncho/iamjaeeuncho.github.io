@@ -1,5 +1,5 @@
 ---
-title: "[SQL] 데이터 선택 및 정렬 - Select, Orderby, Distinct"
+title: "[SQL] 데이터 수행/선택/정렬 - Select, Orderby, Distinct"
 date: 2021-2-5
 categories:
   - study
@@ -9,6 +9,25 @@ toc: true
 toc_ads: true
 toc_sticky: true
 ---
+
+## Begin/Commit/Rollback
+- DML(Data Manipulation Language) 작업을 하고 DBMS에 반영할건지 아닌지를 결정하는 명령어들
+
+```sql
+---------- # BEGIN 시작 - 생략 가능
+BEGIN;                               
+
+INSERT INTO TB_ACCOUNT_TRANSACTION_TEST (NAME,BALANCE)
+VALUES('Alice',10000);
+
+---------- # COMMIT - 수행
+COMMIT; 
+
+---------- # ROLLBACK - 취소
+ROLLBACK;
+```
+<br>
+<br>
 
 ## Select - 선택
 - 테이블에 저장된 데이터를 가져오는데 쓰는 구문
