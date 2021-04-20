@@ -83,7 +83,7 @@ WHERE A.RENTAL_RATE > A.AVG_RENTAL_RATE
 <br>
 <br>
 
-## Any
+## Any - 어떤 값이든 가능
 - Any 연산자는 서브쿼리의 값이 어떠한 값이라도 만족하면 조건이 성립됨
 
 ```sql
@@ -135,7 +135,7 @@ WHERE LENGTH IN (
 <br>
 <br>
 
-## All
+## All - 모든 값 만족해야
 - All 연산자는 서브쿼리의 모든 값이 만족해야만 조건이 성립됨
 
 
@@ -177,7 +177,7 @@ SELECT FILM_ID
 <br>
 <br>
 
-## Exists
+## Exists - 존재 여부
 - Exists 연산자는 서브쿼리 내에 집합이 존재하는지 존재 여부만을 판단
 - 해당 집합이 존재하기만 하면 더이상 연산을 멈추므로 성능상 유리함
 
@@ -215,7 +215,8 @@ ORDER BY FIRST_NAME, LAST_NAME
 <br>
 
 ## 연습문제
-### 1. 2번 스캔하는 SQL문을 1번 스캔해 동일 집합 구하기
+1. 2번 스캔하는 SQL문을 1번 스캔해 동일 집합 구하기
+
 ```sql
 ---------- # 문제의 SQL - 2번 스캔하는 SQL문
 SELECT
@@ -253,7 +254,8 @@ WHERE A.RENTAL_RATE > A.AVG_RENTAL_RATE
 <br>
 <br>
 
-### 2. Except연산 사용하지 말고 같은 결과 도출하기
+2. Except연산 사용하지 말고 같은 결과 도출하기
+
 ```sql
 ---------- # 문제의 SQL - 재고가 없는 영화 구하기
 SELECT
