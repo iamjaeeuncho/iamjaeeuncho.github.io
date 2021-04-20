@@ -10,7 +10,7 @@ toc_ads: true
 toc_sticky: true
 ---
 
-## Union
+## Union - 결합
 - 두 개 이상의 Select문의 결과를 결합.
 - 결합시 중복된 데이터는 제거됨
 
@@ -42,7 +42,7 @@ ORDER BY AMOUNT DESC
 <br>
 <br>
 
-## Union All 
+### Union All 
 - 두 개 이상의 Select문의 결과를 결합.
 - 결합시 중복된 데이터도 모두 출력.
 
@@ -74,7 +74,7 @@ ORDER BY AMOUNT DESC
 <br>
 <br>
 
-## Intersect
+## Intersect - 교집합
 - 두 개 이상의 Select문의 결과 집합을 하나로 결합
 - 최종 결과는 A와 B의 교집합을 리턴 → 이너 조인과 결과가 동일
 - inner join이랑 똑같아서 intersect 잘 안 씀.
@@ -114,7 +114,7 @@ ORDER BY EMPLOYEE_ID DESC
 <br>
 <br>
 
-## Except
+## Except - 제외
 - 큰 Select 문 안에 있는 Select문의 결과를 제외하고 리턴
 
 ```sql
