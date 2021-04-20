@@ -11,269 +11,167 @@ toc_sticky: true
 ---
 
 ## Case
+- Case 표현식으로 IF/ELSE문과 같은 다양한 조건문 처리를 할 수 있다
+
 ```sql
+---------- # CASE
 SELECT
 	    SUM (
 			CASE
 		    WHEN RENTAL_RATE = 0.99 THEN 1
 		    ELSE 0
-	         END 
-	       ) AS "C"
+			END ) AS "C"
 	  , SUM (
 	        CASE
 		    WHEN RENTAL_RATE = 2.99 THEN 1
 		    ELSE 0
-	         END ) AS "B"
+			END ) AS "B"
 	  , SUM (
 	        CASE
 		    WHEN RENTAL_RATE = 4.99 THEN 1
 		    ELSE 0
-	         END ) AS "A"
+			END ) AS "A"
    FROM
-	    FILM;
-	   
--- 행은 1개만 가져가면서, 컬럼은 3개로 출력한다
-	   
-|C  |B  |A  
-|---|---|---
+	    FILM
+;
+	   	   
+|C  |B  |A              -- 행은 1개만 가져가면서
+|---|---|---            -- 컬럼은 3개로 출력
 |341|323|336
 ;
 
-
-SELECT 
-	RENTAL_RATE, COUNT(*) CNT 
-FROM FILM 
-GROUP BY RENTAL_RATE; 
--- rentalrate별 건수
-
-|rental_rate|cnt
-|-----------|---
-|       2.99|323
-|       4.99|336
-|       0.99|341;
- 
-
-
+---------- # CASE
+SELECT
+	  SUM (
+		CASE
+		WHEN RENTAL_RATE = 0.99 THEN 1
+		ELSE 0 END ) AS "C"
+	, SUM (
+		CASE
+		WHEN RENTAL_RATE = 2.99 THEN 1
+		ELSE 0 END ) AS "B"
+	, SUM (
+		CASE
+		WHEN RENTAL_RATE = 4.99 THEN 1
+		ELSE 0 END ) AS "A"
+	FROM FILM
+;
+---------- # 위와 동일한 일반 SQL문
 SELECT * 
-FROM 
-	(
+FROM (
 	SELECT 
 		  SUM(CASE WHEN RENTAL_RATE = 0.99 THEN CNT ELSE 0 END) AS C 
 		, SUM(CASE WHEN RENTAL_RATE = 2.99 THEN CNT ELSE 0 END) AS B
 		, SUM(CASE WHEN RENTAL_RATE = 4.99 THEN CNT ELSE 0 END) AS A		   
-	FROM 
-	(
+	FROM (
 		SELECT 
 			RENTAL_RATE, COUNT(*) CNT 
 		FROM FILM 
-		GROUP BY RENTAL_RATE
-	) A
-) A 
+		GROUP BY RENTAL_RATE) A
+	) A 
 ;
 ```
 <br>
 <br>
 
 ## Coalesce
+- Coalsesce함수는 입력한 인자값 중에서 Null값이 아닌 첫번째 값을 리턴한다
+- Null 처리할 때 유용 (ex. 500 - Null = Null)
+
 ```sql
-DROP TABLE TB_ITEM_COALESCE_TEST; 
-
-CREATE TABLE TB_ITEM_COALESCE_TEST (
-  ID SERIAL PRIMARY KEY
-, PRODUCT VARCHAR (100) NOT NULL
-, PRICE NUMERIC NOT NULL
-, DISCOUNT NUMERIC
-);
-
-INSERT INTO TB_ITEM_COALESCE_TEST (PRODUCT, PRICE, DISCOUNT)
-VALUES
- ('A', 1000 ,10),
- ('B', 1500 ,20),
- ('C', 800 ,5),
- ('D', 500, NULL);
- 
-COMMIT; 
-
-SELECT * FROM TB_ITEM_COALESCE_TEST; 
-
+---------- # Coalesce
+SELECT
+	  PRODUCT
+	, (PRICE - COALESCE(DISCOUNT, 0)) AS NET_PRICE    -- Discount가 Null이면 0
+FROM
+	TB_ITEM_COALESCE_TEST
+;
+---------- # CASE
 SELECT
 	   PRODUCT
-	 , (PRICE - DISCOUNT) AS NET_PRICE
-  FROM
-	  TB_ITEM_COALESCE_TEST;
-	  
-	 
-|product|net_price
-|-------|---------
-|A      |      990
-|B      |     1480
-|C      |      795
-|D      |         	 
+	, (PRICE -
+		CASE
+			WHEN DISCOUNT IS NULL THEN 0              -- Discount가 Null이면 0
+			ELSE DISCOUNT                             -- 아니면 Discount 값
+			END ) AS NET_PRICE
+FROM
+	TB_ITEM_COALESCE_TEST
 ;
-
-SELECT
-	   PRODUCT, price, discount, COALESCE(DISCOUNT, 0)
-	 , (PRICE - COALESCE(DISCOUNT, 0)) AS NET_PRICE
-  FROM
-	   TB_ITEM_COALESCE_TEST;
-	   
-|product|net_price
-|-------|---------
-|A      |      990
-|B      |     1480
-|C      |      795
-|D      |      500
-;
-
-SELECT
-	   PRODUCT
-	 , ( PRICE -
-	             CASE
-		         WHEN DISCOUNT IS NULL THEN 0
-		         ELSE DISCOUNT
-	              END ) AS NET_PRICE
-  FROM
-	   TB_ITEM_COALESCE_TEST;
 ```
 <br>
 <br>
 
 ## NullIf
+- NullIf 함수는 입력한 두개의 인자값이 동일하면 Null을 리턴하고, 아니면 첫번째 인자값을 리턴한다
+
 ```sql
-CREATE TABLE TB_MEMBER_NULLIF_TEST (
-  ID SERIAL PRIMARY KEY
-, first_name VARCHAR (50) NOT NULL
-, last_name VARCHAR (50) NOT NULL
-, gender SMALLINT NOT NULL -- 1: male, 2 female
-);
-
-
-
-INSERT INTO TB_MEMBER_NULLIF_TEST (
-  FIRST_NAME
-, LAST_NAME
-, GENDER
-)
-VALUES
-   ('John', 'Doe', 1)
- , ('David', 'Dave', 1)
- , ('Bush', 'Lily', 2)
-;
-
-COMMIT;
-
-SELECT * FROM TB_MEMBER_NULLIF_TEST;
-
-|id|first_name|last_name|gender
-|--|----------|---------|------
-| 1|John      |Doe      |     1
-| 2|David     |Dave     |     1
-| 3|Bush      |Lily     |     2
-;
-
+---------- # 여자 대비 남자 비율 구하기
 SELECT
 	(SUM (
-	CASE
-		WHEN GENDER = 1 THEN 1
-		ELSE 0
-	END ) / SUM (
-	CASE
-		WHEN GENDER = 2 THEN 1
-		ELSE 0
-	END ) ) * 100 AS "MALE/FEMALE RATIO"
+		  CASE
+			WHEN GENDER = 1 THEN 1
+			ELSE 0
+			END) /
+	 SUM (
+		  CASE
+			WHEN GENDER = 2 THEN 1
+			ELSE 0
+			END)) * 100 AS "MALE/FEMALE RATIO"
 FROM
-	TB_MEMBER_NULLIF_TEST;
+	TB_MEMBER_NULLIF_TEST
+;
 	
 |MALE/FEMALE RATIO
 |-----------------
 |              200
-;
 
-UPDATE TB_MEMBER_NULLIF_TEST 
-   SET GENDER = 1
- WHERE GENDER = 2;
-
-COMMIT; 
- 
-SELECT * FROM TB_MEMBER_NULLIF_TEST;
-
--- 0으로 나누면 에러남
+---------- # 여자 대비 남자 비율 구하기 + NullIf
 SELECT
-(SUM(CASE WHEN GENDER = 1 THEN 1 ELSE 0 END) / SUM(CASE WHEN GENDER = 2 THEN 1 ELSE 0 END) ) * 100 AS "MALE/FEMALE RATIO"
+	   (SUM (
+		  CASE
+			WHEN GENDER = 1 THEN 1
+			ELSE 0
+			END) /                         -- 0으로 나누면 에러남
+NULLIF (SUM (                              -- 0이면 null 나오도록해서 sql 오류 피하기
+		  CASE
+			WHEN GENDER = 2 THEN 1
+			ELSE 0
+			END), 0)
+			) * 100 AS "MALE/FEMALE RATIO"
 FROM
-TB_MEMBER_NULLIF_TEST;
-
-SQL Error [22012]: 오류: 0으로는 나눌수 없습니다.
+	TB_MEMBER_NULLIF_TEST
 ;
-
-
--- 0이면 null이 나오도록해서 sql 오류 피하게
--- 3 나누기 null = null
-
-SELECT
-(SUM(CASE WHEN GENDER = 1 THEN 1 ELSE 0 END) / 
- NULLIF(SUM(CASE WHEN GENDER = 2 THEN 1 ELSE 0 END), 0)
- ) * 100 AS "MALE/FEMALE RATIO"
-FROM
-TB_MEMBER_NULLIF_TEST;
 
 |MALE/FEMALE RATIO
 |-----------------
 |           (NULL)
-
-
 ```
 <br>
 <br>
 
 ## Cast
+- Cast 표현식은 데이터값을 특정 데이터 타입으로 형변환이 가능하도록 한다
+- 각종 데이터 값을 CAST 표현식을 이용해 적절하게 형변환 한다
+
 ```sql
+---------- # 문자열을 정수형으로 형변환
 SELECT
  CAST ('100' AS INTEGER);
- 
-|int4
-|----
-| 100
-;
-
-SELECT
- CAST ('10C' AS INTEGER);
- 
-SQL Error [22P02]: 오류: 정수 자료형 대한 잘못된 입력 구문: "10C"
-  Position: 16
-  ;
-  
-SELECT
- CAST ('2015-01-01' AS DATE);
- 
-|date      
-|----------
-|2015-01-01
-;
-
-SELECT
- CAST ('10.2' AS DOUBLE PRECISION);
- 
-|float8
-|------
-|  10.2
-
-;
 
 SELECT
  '100'::INTEGER;
+---------- # 문자열을 실수형으로 형변환
+SELECT
+ CAST ('10.2' AS DOUBLE PRECISION);
 
 SELECT
- '10C'::INTEGER;
-
+  '10.2'::DOUBLE PRECISION;
+---------- # DATE타입으로 형변환
+SELECT
+ CAST ('2015-01-01' AS DATE);
+ 
 SELECT 
   '2015-01-01'::DATE; 
- 
- SELECT
-  '10.2'::DOUBLE PRECISION;
-
-
-
 ```
 <br>
 <br>
