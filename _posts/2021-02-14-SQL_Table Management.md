@@ -179,6 +179,7 @@ ALTER TABLE SUPPLIER_GROUPS RENAME TO GROUPS;
 ## 테이블 제거
 - 자식 테이블은 삭제할 수 있어도 부모 테이블은 삭제 못 함
 
+### DROP
 ```sql
 ---------- # FK제약조건으로 인해 테이블 제거 실패
 DROP TABLE AUTHOR; 
@@ -186,6 +187,29 @@ DROP TABLE AUTHOR;
 DROP TABLE AUTHOR CASCADE;
 ---------- # 자식 테이블은 존재하지만 FK제약조건은 삭제됨
 SELECT * FROM PAGE;
+```
+<br>
+<br>
+
+### TRUNCATE
+- 대용량의 테이블을 빠르게 지우는 방법
+- 테이블의 세그먼트 자체를 바로 지워서 빠르다
+- Delete와 Truncate 차이
+  - DELETE명령어
+    - 데이터는 지워지지만 테이블 용량은 줄어 들지 않는다
+    - 원하는 데이터만 지울 수 있다
+    - 삭제 후 잘못 삭제한 것을 되돌릴 수있다
+    - 속도가 느리다
+  - TRUNCATE명령어
+    - 용량이 줄어 들어 든다
+    - 테이블은 삭제하지는 않고, 데이터만 삭제한다
+    - 한꺼번에 다 지워야 한다
+    - 삭제 후 되돌릴 수 없다
+    - 속도가 빠르다
+
+```sql
+TRUNCATE TABLE BIG_TABLE;                          -- 테이블 데이터를 빠르게 삭제
+TRUNCATE TABLE BIG_TABLE, BIG_TABLE_2;             -- N개 테이블의 데이터를 빠르게 삭제
 ```
 <br>
 <br>
@@ -246,7 +270,6 @@ ALTER TABLE ASSETS                                    -- 성공
 ### 컬럼 제거
 - 컬럼 하나만 삭제해도 다른게 다 삭제되므로 항상 조심
 
-### DROP
 ```sql
 ---------- # categoryid 제거시 fk도 함께 삭제
 ALTER TABLE BOOKS DROP COLUMN CATEGORY_ID;
@@ -259,29 +282,6 @@ ALTER TABLE BOOKS
   DROP COLUMN ISBN,
   DROP COLUMN DESCRIPTION
 ;
-```
-<br>
-<br>
-
-### TRUNCATE
-- 대용량의 테이블을 빠르게 지우는 방법
-- 테이블의 세그먼트 자체를 바로 지워서 빠르다
-- Delete와 Truncate 차이
-  - DELETE명령어
-    - 데이터는 지워지지만 테이블 용량은 줄어 들지 않는다
-    - 원하는 데이터만 지울 수 있다
-    - 삭제 후 잘못 삭제한 것을 되돌릴 수있다
-    - 속도가 느리다
-  - TRUNCATE명령어
-    - 용량이 줄어 들어 든다
-    - 테이블은 삭제하지는 않고, 데이터만 삭제한다
-    - 한꺼번에 다 지워야 한다
-    - 삭제 후 되돌릴 수 없다
-    - 속도가 빠르다
-
-```sql
-TRUNCATE TABLE BIG_TABLE;                          -- 테이블 데이터를 빠르게 삭제
-TRUNCATE TABLE BIG_TABLE, BIG_TABLE_2;             -- N개 테이블의 데이터를 빠르게 삭제
 ```
 <br>
 <br>
