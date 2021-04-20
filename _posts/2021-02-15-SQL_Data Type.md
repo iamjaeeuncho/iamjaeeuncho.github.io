@@ -79,7 +79,7 @@ VALUES (
 <br>
 <br>
 
-## Boolean
+### Boolean
 - 참과 거짓에 대한 값을 저장하는 데이터 타입.
 > ``참``: TRUE, true, t, yest, y, 1  
 > ``거짓``: FALSE, false, f, no, n, 0  
@@ -95,7 +95,7 @@ SELECT * FROM STOCK_AVAILABILITY WHERE NOT AVAILABLE;
 <br>
 <br>
 
-## Char/Varchar/Text
+### Char/Varchar/Text
 - 문자 및 문자열을 다루는 데이터 타입
 > Char(길이): 고정형 길이,공간이 남을시 공백으로 패딩
 > Varchar(길이): 가변형 길이,공간이 남을시 공백으로 패딩하지 않음
@@ -115,7 +115,7 @@ CREATE TABLE CHARACTER_TESTS (
 <br>
 <br>
 
-## Numeric
+### Numeric
 - 정수부터 실수형까지의 숫자를 표현하며 각각의 자릿수를 지정할 수 있는 데이터 타입
 
 ```sql
@@ -145,7 +145,7 @@ VALUES
 <br>
 <br>
 
-## Integer
+### Integer
 - 각 데이터 타입의 사이즈를 감안하여 테이블 생성 시 활용해야 함
 
 > SMAILLINT (2바이트): -32,768 ~ +32,767
@@ -169,39 +169,11 @@ CREATE TABLE CITIES (
 <br>
 <br>
 
-## Serial
-- Integer형식으로 구현된 순차적인(Sequential) 데이터
-- 유일성을 보장하는 PK에 자주 사용
-
-```sql
----------- # 시퀀스를 이용한 컬럼 생성
-CREATE SEQUENCE TABLE_NAME_ID_SEQ;
- 
-CREATE TABLE TABLE_NAME (
-    ID INTEGER NOT NULL DEFAULT NEXTVAL('TABLE_NAME_ID_SEQ')
-);
- 
-ALTER SEQUENCE TABLE_NAME_ID_SEQ OWNED BY TABLE_NAME.ID;
----------- # 현재의 시퀀스 값 알고 싶을 때
-SELECT CURRVAL(PG_GET_SERIAL_SEQUENCE('fruits', 'id'));  -- CURRVAL 현재 벨류값 구함
-
----------- # SERIAL 데이터 타입 사용
-CREATE TABLE FRUITS(
-  ID SERIAL PRIMARY KEY
-, NAME VARCHAR NOT NULL
-);
-
-INSERT INTO FRUITS(NAME) VALUES('orange');               -- ID컬럼은 자동으로 1부터
-INSERT INTO FRUITS(ID,NAME) VALUES(DEFAULT,'apple');     -- ID컬럼은 자동으로 2부터
-```
-<br>
-<br>
-
-## Date/Time/Timestamp
+### Date/Time/Timestamp
 - 일자 및 시간을 관리하는 주요 데이터 타입
 - Date는 일자, Time은 시간, Timestamp는 일자 및 시간 관리
 
-### DATE 데이터 타입
+#### DATE 데이터 타입
 - DB기준 현재 일자
   - SELECT NOW()::date;
   - SELECT CURRENT_DATE;
@@ -230,7 +202,7 @@ SELECT
 ```
 
 
-### TIME 데이터 타입
+#### TIME 데이터 타입
 - DB기준 현재 시간
   - SELECT CURRENT_TIME;
   - SELECT LOCALTIME;
@@ -256,7 +228,7 @@ SELECT LOCALTIME
 ```
 
 
-### TIMESTAMP 데이터 타입
+#### TIMESTAMP 데이터 타입
 - DB기준 현재 일자 및 시간
   - SELECT NOW();
   - SELECT CURRENT_TIMESTAMP;
@@ -274,6 +246,34 @@ SELECT
 	, TO_CHAR(current_timestamp, 'YYYY-MM-DD HH24:MI:SS')
   , TO_CHAR(current_timestamp, 'YYYY-MM-DD HH24:MI:SS.MS')
   , TO_CHAR(current_timestamp, 'YYYY-MM-DD HH24:MI:SS.US');
+```
+<br>
+<br>
+
+### Serial
+- Integer형식으로 구현된 순차적인(Sequential) 데이터
+- 유일성을 보장하는 PK에 자주 사용
+
+```sql
+---------- # 시퀀스를 이용한 컬럼 생성
+CREATE SEQUENCE TABLE_NAME_ID_SEQ;
+ 
+CREATE TABLE TABLE_NAME (
+    ID INTEGER NOT NULL DEFAULT NEXTVAL('TABLE_NAME_ID_SEQ')
+);
+ 
+ALTER SEQUENCE TABLE_NAME_ID_SEQ OWNED BY TABLE_NAME.ID;
+---------- # 현재의 시퀀스 값 알고 싶을 때
+SELECT CURRVAL(PG_GET_SERIAL_SEQUENCE('fruits', 'id'));  -- CURRVAL 현재 벨류값 구함
+
+---------- # SERIAL 데이터 타입 사용
+CREATE TABLE FRUITS(
+  ID SERIAL PRIMARY KEY
+, NAME VARCHAR NOT NULL
+);
+
+INSERT INTO FRUITS(NAME) VALUES('orange');               -- ID컬럼은 자동으로 1부터
+INSERT INTO FRUITS(ID,NAME) VALUES(DEFAULT,'apple');     -- ID컬럼은 자동으로 2부터
 ```
 <br>
 <br>
