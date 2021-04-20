@@ -12,8 +12,6 @@ toc_sticky: true
 
 ## 서브쿼리
 - 서브쿼리란 SQL문에서 메인 쿼리가 아닌 하위에 존재하는 쿼리를 말한다
-- From절 안에 있으면 인라인 뷰
-- 인라인 안에 select 구문 안 서브쿼리를 스칼라 쿼리라고 함
 
 ```sql
 ---------- # 평균 구하기
@@ -41,6 +39,12 @@ SELECT
     AVG (RENTAL_RATE)
     FROM FILM)
 ;
+```
+
+### 인라인뷰
+- From절 안에 있으면 인라인 뷰
+
+```sql
 ---------- # 인라인뷰
 SELECT
        A.FILM_ID
@@ -53,6 +57,12 @@ FROM FILM A, (
     FROM FILM) B
 WHERE A.RENTAL_RATE > B.AVG_RENTAL_RATE
 ;
+```
+
+#### 스칼라 쿼리
+- 인라인 안에 select 구문 안 서브쿼리를 스칼라 쿼리라고 함
+
+```sql
 ---------- # 스칼라 서브쿼리
 SELECT 	  
        A.FILM_ID
