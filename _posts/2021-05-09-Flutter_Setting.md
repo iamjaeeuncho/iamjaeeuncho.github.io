@@ -32,23 +32,16 @@ toc_sticky: true
 <br>
 
 ## 해결 방법
-![22222](https://user-images.githubusercontent.com/46369038/117568887-d9124600-b0fd-11eb-989e-39664d8ae62c.png)  
+![image](https://user-images.githubusercontent.com/46369038/117631634-66fe3780-b1b7-11eb-99fd-f7cb3d17b21a.png)
 
 
 아무튼 문제는 언어 Path값 설정이 안되어 있어서였는데,  
 
-해결책은 상단에 File > Setting > Languages & Frameworks > Dart에서
+해결책은 상단에 File > Setting > Languages & Frameworks > Flutter에서
 
-Enable Dart support for the project 체크해주고
-<br>
-<br>
+Flutter SDK path에 다운 받은 Flutter 폴더를 선택해주면 된다
 
-![33333](https://user-images.githubusercontent.com/46369038/117568893-dadc0980-b0fd-11eb-8440-2f052db66582.png)  
-
-
-Dart SDK path에 다운 받은 Flutter 폴더를 선택해주면 된다
-
-그러면 dependencies?였나 그거 다운받거나 업데이트 받으라고 하는데 클릭만 해주면 끝난다
+그러면 dependencies 다운받거나 업데이트 받으라고 하는데 클릭만 해주면 끝난다
 
 아무래도 내가 다운받을때 설정을 잘못 했던 것 같다
 <br>
