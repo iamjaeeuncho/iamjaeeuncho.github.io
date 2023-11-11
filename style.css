@@ -1,34 +1,49 @@
+/* Layout */
+header, main, footer {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+/* Header */
 .header_inner {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    border: 1px solid black;
 }
 
 .logo {
     width: 20%;
-    height: 50px;
     margin: auto;
-    border: 1px solid black;
 }
 
 .navigation {
-    width: 80%;
-    height: 50px;
+    width: 55%;
     margin: auto;
-    border: 1px solid black;
+}
+
+.langbutton {
+    width: 10%;
+    margin: auto;
 }
 
 .menu {
-    width: 40%;
-    float: right;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .menubutton {
-    width: 100px;
-    float: left;
+    width: 80px;
     list-style: none;
+}
+
+/* Main */
+
+/* Footer */
+footer {
+    text-align: center;
 }
