@@ -1,3 +1,8 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Layout */
 header, main, footer {
     width: 80%;
