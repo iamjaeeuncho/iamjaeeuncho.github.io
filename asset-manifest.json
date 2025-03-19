@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/iamjaeeuncho/iamjaeeuncho.github.io/static/css/main.cc0a4f47.css",
-    "main.js": "/iamjaeeuncho/iamjaeeuncho.github.io/static/js/main.abda15bd.js",
-    "static/js/453.27a79ae9.chunk.js": "/iamjaeeuncho/iamjaeeuncho.github.io/static/js/453.27a79ae9.chunk.js",
-    "index.html": "/iamjaeeuncho/iamjaeeuncho.github.io/index.html",
-    "main.cc0a4f47.css.map": "/iamjaeeuncho/iamjaeeuncho.github.io/static/css/main.cc0a4f47.css.map",
-    "main.abda15bd.js.map": "/iamjaeeuncho/iamjaeeuncho.github.io/static/js/main.abda15bd.js.map",
-    "453.27a79ae9.chunk.js.map": "/iamjaeeuncho/iamjaeeuncho.github.io/static/js/453.27a79ae9.chunk.js.map"
+    "main.css": "/iamjaeeuncho.github.io/static/css/main.cc0a4f47.css",
+    "main.js": "/iamjaeeuncho.github.io/static/js/main.2f134634.js",
+    "static/js/453.27a79ae9.chunk.js": "/iamjaeeuncho.github.io/static/js/453.27a79ae9.chunk.js",
+    "index.html": "/iamjaeeuncho.github.io/index.html",
+    "main.cc0a4f47.css.map": "/iamjaeeuncho.github.io/static/css/main.cc0a4f47.css.map",
+    "main.2f134634.js.map": "/iamjaeeuncho.github.io/static/js/main.2f134634.js.map",
+    "453.27a79ae9.chunk.js.map": "/iamjaeeuncho.github.io/static/js/453.27a79ae9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc0a4f47.css",
-    "static/js/main.abda15bd.js"
+    "static/js/main.2f134634.js"
   ]
 }
