@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/iamjaeeuncho/iamjaeeuncho.github.io/static/css/main.bfd6aa30.css",
-    "main.js": "/iamjaeeuncho/iamjaeeuncho.github.io/static/js/main.997cd4de.js",
-    "static/js/453.27a79ae9.chunk.js": "/iamjaeeuncho/iamjaeeuncho.github.io/static/js/453.27a79ae9.chunk.js",
-    "index.html": "/iamjaeeuncho/iamjaeeuncho.github.io/index.html",
-    "main.bfd6aa30.css.map": "/iamjaeeuncho/iamjaeeuncho.github.io/static/css/main.bfd6aa30.css.map",
-    "main.997cd4de.js.map": "/iamjaeeuncho/iamjaeeuncho.github.io/static/js/main.997cd4de.js.map",
-    "453.27a79ae9.chunk.js.map": "/iamjaeeuncho/iamjaeeuncho.github.io/static/js/453.27a79ae9.chunk.js.map"
+    "main.css": "/static/css/main.bfd6aa30.css",
+    "main.js": "/static/js/main.7599b81f.js",
+    "static/js/453.27a79ae9.chunk.js": "/static/js/453.27a79ae9.chunk.js",
+    "index.html": "/index.html",
+    "main.bfd6aa30.css.map": "/static/css/main.bfd6aa30.css.map",
+    "main.7599b81f.js.map": "/static/js/main.7599b81f.js.map",
+    "453.27a79ae9.chunk.js.map": "/static/js/453.27a79ae9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfd6aa30.css",
-    "static/js/main.997cd4de.js"
+    "static/js/main.7599b81f.js"
   ]
 }
