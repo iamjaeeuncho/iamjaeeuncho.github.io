@@ -5,7 +5,6 @@ import Footer from './layout/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Essay from './pages/Essay';
-
 import './App.css';
 
 function App() {

@@ -1,6 +1,5 @@
 {
   "name": "myblog",
-  "homepage": "https://github.com/iamjaeeuncho/iamjaeeuncho.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,8 +11,10 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0",
     "react-scripts": "5.0.1",
+    "vertical-timeline-component-react": "^4.4.3",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://github.com/iamjaeeuncho/iamjaeeuncho.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
