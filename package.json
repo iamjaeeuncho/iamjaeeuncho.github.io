@@ -14,7 +14,7 @@
     "vertical-timeline-component-react": "^4.4.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/iamjaeeuncho/iamjaeeuncho.github.io",
+  "homepage": "https://iamjaeeuncho.github.io/iamjaeeuncho.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
