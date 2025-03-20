@@ -2,9 +2,12 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
-      <h2>Welcome to My Blog</h2>
-      <p>This is the home page content.</p>
+    <div className="page-container">
+      {/* <p className="menu-name">Home</p> */}
+      <center>
+          <img src="/emoji.png" alt="emoji" />
+          <p>Software Developer</p>
+      </center>
     </div>
   );
 };

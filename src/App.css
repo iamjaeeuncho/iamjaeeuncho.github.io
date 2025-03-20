@@ -3,7 +3,7 @@
 } */
 
 .App {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -52,4 +52,20 @@ header .menu li a {
 
 header .menu li a.active {
   font-weight: bold;
+}
+
+/* Title */
+.menu-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.section-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.section-description {
+  font-size: 1rem;
+  margin-bottom: 50px;
 }

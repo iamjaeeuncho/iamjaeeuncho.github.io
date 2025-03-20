@@ -2,8 +2,8 @@ import React from "react";
 
 const Essay = () => {
   return (
-    <div>
-      <h2>Essay</h2>
+    <div className="page-container">
+      {/* <p className="menu-name">Essay</p> */}
       <p>This is the essay page content.</p>
     </div>
   );

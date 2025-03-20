@@ -1,5 +1,5 @@
 .timeline-container {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .timeline {
@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .timeline-marker {
@@ -30,10 +30,9 @@
 
 .timeline-content {
   position: relative;
-  min-width: 300px;
+  min-width: 500px;
   padding: 10px 20px;
   margin-left: 30px;
-  border-radius: 8px;
 }
 
 .timeline-header {
@@ -53,7 +52,7 @@
 }
 
 .timeline-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #111827;
 }
 
