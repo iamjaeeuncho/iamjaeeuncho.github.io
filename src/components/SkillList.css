@@ -1,0 +1,40 @@
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.language {
+  color: #A61EF0;
+  border: 1px solid #A61EF0;
+}
+
+.framework {
+  color: #00A3E0;
+  border: 1px solid #00A3E0;
+}
+
+.database {
+  color: #FBC02D;
+  border: 1px solid #FBC02D;
+}
+
+.etc {
+  color: #4B535C;
+  border: 1px solid #D0D9E1;
+}
