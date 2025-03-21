@@ -1,8 +1,9 @@
 import React from "react";
+import './Essay.css';
 
 const Essay = () => {
   return (
-    <div className="page-container">
+    <div className="essaypage-container">
       <p>This is the essay page content.</p>
     </div>
   );

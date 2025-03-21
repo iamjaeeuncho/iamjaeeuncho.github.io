@@ -1,0 +1,40 @@
+.article-container {
+  padding: 20px 0 0 0;
+  margin-bottom: 10px;
+}
+
+.article-category {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #EE7927;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.article-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.article-subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.article-date {
+  font-size: 1rem;
+  color: #999;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.article-description * {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+  margin-bottom: 4px;
+}
