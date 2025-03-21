@@ -1,0 +1,18 @@
+.aboutpage-container {
+  width: 70%;
+  height: calc(100vh - 150px);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Title */
+.section-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.section-description {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}

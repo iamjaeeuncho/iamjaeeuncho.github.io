@@ -1,0 +1,66 @@
+.homepage-container {
+  width: 80%;
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.profile-img {
+  width: 50%;
+  border-radius: 50%;
+  padding: 130px;
+}
+
+.home-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.home-description {
+  width: 80%;
+}
+
+.btns {
+  padding: 20px 0;
+}
+
+/* Button */
+.resume-btn {
+  width: 150px;
+  background-color: #D66317;
+  color: white;
+  padding: 8px 20px 8px 30px;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-btn {
+  width: 150px;
+  background-color: #BA5C26;
+  color: white;
+  padding: 8px 30px 8px 20px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}

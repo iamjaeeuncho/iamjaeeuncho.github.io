@@ -1,10 +1,10 @@
 import React from "react";
 import VerticalTimeline from "../components/VerticalTimeline";
+import './About.css';
 
 const About = () => {
   return (
-    <div className="page-container">
-      {/* <p className="menu-name">About</p> */}
+    <div className="aboutpage-container">
         <p className="section-name">Introduce</p>
           <div className="section-description">
             <p>I always keep this line in my mind: 'Life is short and only happens once.' This mindset drives me to explore a wide range of opportunities and experiences.</p>

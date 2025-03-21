@@ -9,19 +9,19 @@ const Header = () => {
       <nav>
         <ul className="menu">
           <li>
-            <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
+            <Link to="/" className={location.pathname === "/" ? "active" : ""}>HOME</Link>
           </li>
           <li>
-            <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>About</Link>
+            <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>ABOUT</Link>
           </li>
           <li>
-            <Link to="/project" className={location.pathname === "/project" ? "active" : ""}>Project</Link>
+            <Link to="/project" className={location.pathname === "/project" ? "active" : ""}>PROJECT</Link>
           </li>
           <li>
-            <Link to="/essay" className={location.pathname === "/essay" ? "active" : ""}>Essay</Link>
+            <Link to="/essay" className={location.pathname === "/essay" ? "active" : ""}>ESSAY</Link>
           </li>
         </ul>
-        <a className="language-btn" href="https://iamjaeeuncho.tistory.com">KOR</a>
+        <a className="language-btn" href="https://iamjaeeuncho.tistory.com" target="_blank" rel="noopener noreferrer">KOR ↗</a>
       </nav>
     </header>
   );
