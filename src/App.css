@@ -55,7 +55,7 @@ html {
 .menu {
   display: flex;
   list-style-type: none;
-  gap: 40px;
+  gap: 50px;
   padding: 10px;
   margin: 0;
   font-size: 1rem;
@@ -63,6 +63,7 @@ html {
 
 .menu li {
   display: inline;
+  width: 80px;
 }
 
 .menu li a {

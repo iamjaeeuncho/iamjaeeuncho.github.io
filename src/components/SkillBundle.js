@@ -1,18 +1,18 @@
 import React from "react";
-import "./Skill.css"
+import "./SkillBundle.css"
 
-const SkillItem = ({ name, type }) => {
+const Skill = ({ name, type }) => {
   return <li className={`skill-name ${type}`}>{name}</li>;
 };
 
-const SkillList = ({ skills }) => {
+const SkillBundle = ({ skills }) => {
   return (
     <ul className="skill-list">
       {skills.map((skill, index) => (
-        <SkillItem key={index} name={skill.name} type={skill.type} />
+        <Skill key={index} name={skill.name} type={skill.type} />
       ))}
     </ul>
   );
 };
 
-export default SkillList;
+export default SkillBundle;

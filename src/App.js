@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Essay from './pages/Essay';
 import Project from './pages/Project';
+import Essay from './pages/Essay';
+import Article from './pages/Article';
 import './App.css';
 
 function App() {
@@ -17,8 +17,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/essay" element={<Essay />} />
             <Route path="/project" element={<Project />} />
+            <Route path="/essay" element={<Essay />} />
+            <Route path="/article/:id" element={<Article />} />
           </Routes>
         </div>
         <Footer />

@@ -1,6 +1,6 @@
 import React from "react";
-import Article from "../components/Article";
-import Skill from "../components/Skill";
+import Article from "../components/ListCompo";
+import SkillBundle from "../components/SkillBundle";
 import "./Project.css";
 
 const Project = ({ category, title, subtitle, date, description, skills }) => {
@@ -21,7 +21,7 @@ const Project = ({ category, title, subtitle, date, description, skills }) => {
           ],
         }}
       />
-      <Skill
+      <SkillBundle
         skills={[
           { name: "Java", type: "language" },
           { name: "JavaScript", type: "language" },
@@ -53,7 +53,7 @@ const Project = ({ category, title, subtitle, date, description, skills }) => {
           ],
         }}
       />
-      <Skill
+      <SkillBundle
         skills={[
           { name: "Java", type: "language" },
           { name: "JavaScript", type: "language" },
@@ -83,7 +83,7 @@ const Project = ({ category, title, subtitle, date, description, skills }) => {
           ],
         }}
       />
-      <Skill
+      <SkillBundle
         skills={[
           { name: "Java", type: "language" },
           { name: "JavaScript", type: "language" },
@@ -113,7 +113,7 @@ const Project = ({ category, title, subtitle, date, description, skills }) => {
           ],
         }}
       />
-      <Skill
+      <SkillBundle
         skills={[
           { name: "Java", type: "language" },
           { name: "Swing", type: "library" },
@@ -136,7 +136,7 @@ const Project = ({ category, title, subtitle, date, description, skills }) => {
           ],
         }}
       />
-      <Skill
+      <SkillBundle
         skills={[
           { name: "JavaScript", type: "language" },
           { name: "Html", type: "language" },

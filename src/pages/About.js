@@ -1,6 +1,6 @@
 import React from "react";
 import VerticalTimeline from "../components/VerticalTimeline";
-import './About.css';
+import "./About.css";
 
 const About = () => {
   return (

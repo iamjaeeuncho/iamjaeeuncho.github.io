@@ -1,9 +1,9 @@
-.article-container {
-  padding: 20px 0 0 0;
+.list-container {
+  padding: 40px 0 0 0;
   margin-bottom: 10px;
 }
 
-.article-category {
+.list-category {
   font-size: 0.8rem;
   font-weight: bold;
   color: #EE7927;
@@ -11,28 +11,28 @@
   margin-bottom: 2px;
 }
 
-.article-title {
+.list-title {
   font-size: 1.4rem;
   font-weight: bold;
   margin: 0;
   margin-bottom: 2px;
 }
 
-.article-subtitle {
+.list-subtitle {
   font-size: 1.2rem;
   color: #333;
   margin: 0;
   margin-bottom: 2px;
 }
 
-.article-date {
+.list-date {
   font-size: 1rem;
   color: #999;
   margin: 0;
   margin-bottom: 2px;
 }
 
-.article-description * {
+.list-description * {
   font-size: 1rem;
   color: #444;
   margin: 0;
