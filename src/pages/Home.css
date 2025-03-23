@@ -18,7 +18,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
+  text-align: center;
 }
 
 .profile-img {
@@ -30,37 +30,131 @@
 .home-title {
   font-size: 30px;
   font-weight: bold;
+  text-align: left;
 }
 
 .home-description {
-  width: 80%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .btns {
   padding: 20px 0;
+  display: flex;
 }
 
 /* Button */
-.resume-btn {
+.resume-btn,
+.contact-btn {
   width: 150px;
+  padding: 8px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resume-btn {
   background-color: #D66317;
   color: white;
-  padding: 8px 20px 8px 30px;
-  border: none;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  cursor: pointer;
-  font-weight: bold;
 }
 
 .contact-btn {
-  width: 150px;
   background-color: #BA5C26;
   color: white;
-  padding: 8px 30px 8px 20px;
-  border: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  cursor: pointer;
-  font-weight: bold;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1024px) {
+  .homepage-container {
+    width: 90%;
+  }
+
+  .profile-img {
+    width: 60%;
+    padding: 100px;
+  }
+
+  .home-title {
+    font-size: 24px;
+  }
+
+  .home-description {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .resume-btn,
+  .contact-btn {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .left-side,
+  .right-side {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile-img {
+    width: 50%;
+    padding: 50px;
+  }
+
+  .home-title {
+    font-size: 20px;
+  }
+
+  .home-description {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .resume-btn,
+  .contact-btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 50%;
+    padding: 40px;
+  }
+
+  .home-title {
+    font-size: 18px;
+  }
+
+  .home-description {
+    font-size: 0.85rem;
+  }
+
+  .resume-btn,
+  .contact-btn {
+    width: 100%;
+  }
 }

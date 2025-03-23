@@ -3,7 +3,7 @@ import Article from "../components/ListCompo";
 import SkillBundle from "../components/SkillBundle";
 import "./Project.css";
 
-const Project = ({ category, title, subtitle, date, description, skills }) => {
+const Project = () => {
   return (
     <div className="projectpage-container">
       <Article

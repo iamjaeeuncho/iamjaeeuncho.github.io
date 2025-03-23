@@ -17,7 +17,6 @@
   white-space: nowrap;
 }
 
-/* Category */
 .language {
   color: #A61EF0;
   border: 1px solid #A61EF0;
@@ -36,4 +35,23 @@
 .etc {
   color: #4B535C;
   border: 1px solid #D0D9E1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .skill-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-name {
+    font-size: 0.7rem;
+  }
 }

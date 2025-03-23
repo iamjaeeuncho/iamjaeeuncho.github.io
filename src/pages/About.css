@@ -7,11 +7,58 @@
 
 /* Title */
 .section-name {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
 .section-description {
   font-size: 1rem;
   margin-bottom: 50px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .aboutpage-container {
+    width: 80%;
+  }
+
+  .section-name {
+    font-size: 1.1rem;
+  }
+
+  .section-description {
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutpage-container {
+    width: 90%;
+  }
+
+  .section-name {
+    font-size: 1rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutpage-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .section-name {
+    font-size: 0.9rem;
+  }
+
+  .section-description {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
 }

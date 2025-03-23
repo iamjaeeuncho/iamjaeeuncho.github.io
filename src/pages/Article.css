@@ -1,6 +1,26 @@
 .articlepage-container {
   width: 65%;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .articlepage-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .articlepage-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .articlepage-container {
+    width: 95%;
+  }
 }

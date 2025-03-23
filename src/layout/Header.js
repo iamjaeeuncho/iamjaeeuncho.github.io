@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const location = useLocation();   // current location
+  const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(prevState => !prevState);
+  };
 
   return (
     <header className="header">
       <nav>
-        <ul className="menu">
+        <div className="hamburger-icon" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+        <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
           <li>
             <Link to="/" className={location.pathname === "/" ? "active" : ""}>HOME</Link>
           </li>

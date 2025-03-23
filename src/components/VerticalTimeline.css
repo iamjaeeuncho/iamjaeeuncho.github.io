@@ -42,7 +42,7 @@
 
 .timeline-date {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #059669;
   background-color: #d1fae5;
   padding: 4px 8px;
@@ -52,11 +52,66 @@
 }
 
 .timeline-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #111827;
 }
 
 .timeline-description {
   color: #6b7280;
   font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .timeline-content {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: 0 15px;
+  }
+
+  .timeline-content {
+    min-width: 300px;
+    margin-left: 20px;
+  }
+
+  .timeline-marker {
+    width: 8px;
+    height: 8px;
+  }
+
+  .timeline-title {
+    font-size: 0.9rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-container {
+    padding: 0 10px;
+  }
+
+  .timeline-content {
+    min-width: 250px;
+    margin-left: 15px;
+  }
+
+  .timeline-marker {
+    width: 6px;
+    height: 6px;
+  }
+
+  .timeline-title {
+    font-size: 0.8rem;
+  }
+
+  .timeline-description {
+    font-size: 0.8rem;
+  }
 }

@@ -1,6 +1,26 @@
 .projectpage-container {
   width: 65%;
+  display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
+  flex-direction: column;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projectpage-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectpage-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectpage-container {
+    width: 95%;
+  }
 }

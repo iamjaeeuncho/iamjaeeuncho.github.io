@@ -3,20 +3,23 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .essay-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .essay-item {
+  width: 100%;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  padding: 0 50px;
   border-bottom: 1px solid #E6E6E6;
+  text-decoration: none;
+  color: inherit;
 }
 
 .essay-image {
@@ -42,4 +45,45 @@
 .essay-date {
   font-size: 1rem;
   color: #999;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .essaypage-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .essaypage-container {
+    width: 90%;
+  }
+
+  .essay-item {
+    padding: 0 20px;
+  }
+
+  .essay-image {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+  }
+
+  .essay-content {
+    width: 100%;
+  }
+
+  .essay-title {
+    font-size: 1.2rem;
+  }
+
+  .essay-date {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .essaypage-container {
+    width: 95%;
+  }
 }
