@@ -1,23 +1,34 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import ReactMarkdown from "react-markdown";
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-const Article = () => {
-  const { id } = useParams(); // URL 파라미터에서 게시물 id를 가져옵니다.
-  const [postContent, setPostContent] = useState("");
+function Article() {
+  const { id } = useParams();
+  const [content, setContent] = useState('');
 
   useEffect(() => {
-    // 게시물의 Markdown 파일을 정적으로 import합니다.
-    const post = require(`./articles/${id}.md`);
-    setPostContent(post);
+    // HTML 파일을 fetch로 가져옴
+    const fetchArticleContent = async () => {
+      try {
+        const response = await fetch(`/articles/${id}.html`);
+        if (response.ok) {
+          const htmlContent = await response.text();
+          setContent(htmlContent);
+        } else {
+          setContent('<p>글을 찾을 수 없습니다.</p>');
+        }
+      } catch (error) {
+        setContent('<p>오류가 발생했습니다.</p>');
+      }
+    };
+
+    fetchArticleContent();
   }, [id]);
 
   return (
-    <div>
-      <h1>게시물 상세</h1>
-      <ReactMarkdown>{postContent}</ReactMarkdown>
+    <div className="articlepage-container">
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
-};
+}
 
 export default Article;

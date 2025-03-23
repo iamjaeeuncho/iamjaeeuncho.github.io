@@ -3,4 +3,43 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 20px;
+}
+
+.essay-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.essay-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 50px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.essay-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.essay-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.essay-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.essay-date {
+  font-size: 1rem;
+  color: #999;
 }
