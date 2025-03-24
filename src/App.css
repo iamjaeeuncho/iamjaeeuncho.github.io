@@ -35,6 +35,7 @@ html {
   width: 100%;
   height: 50px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 0.7rem;
@@ -122,6 +123,17 @@ html {
 .menu li {
   width: auto;
   display: block;
+}
+
+/* Footer */
+.logos {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.logo {
+  width: 12px;
 }
 
 /* Etc */
