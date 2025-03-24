@@ -9,9 +9,35 @@ const Project = () => {
       <Article
         content={{
           category: "Web",
+          title: "Iamjaeeuncho",
+          subtitle: "Personal Portfolio Blog",
+          date: "2025. 03. 19 - 2024. 02. 25 (1 week, 1 person)",
+          description: [
+            "- Developed a static website using React.js.",
+            "- Implemented responsive design and improved UI/UX.",
+            "- Deployed the project using GitHub Pages.",
+          ],
+          url: "https://github.com/iamjaeeuncho/iamjaeeuncho.github.io",
+        }}
+      />
+      <SkillBundle
+        skills={[
+          { name: "JavaScript", type: "language" },
+          { name: "Html", type: "language" },
+          { name: "Css", type: "language" },
+          { name: "React.js", type: "framework" },
+          { name: "GitHub Pages", type: "etc" },
+          { name: "Git", type: "etc" },
+        ]}
+      />
+      <div className="custom-divider" />
+
+      <Article
+        content={{
+          category: "Web",
           title: "4CutStudio",
           subtitle: "Online Photobooth",
-          date: "2024. 08. 19. - 2024. 09. 13 (4 weeks)",
+          date: "2024. 08. 19. - 2024. 09. 13 (4 weeks, 3 people)",
           description: [
             "- Database and Architecture Design.",
             "- Backend: Spring Boot Setup and Deployment on AWS EC2.",
@@ -19,6 +45,7 @@ const Project = () => {
             "- CRUD Implementation for Photo Upload and Management.",
             "- Image Storage and Management using AWS S3.",
           ],
+          url: "https://github.com/iamjaeeuncho/ClickPic",
         }}
       />
       <SkillBundle
@@ -45,12 +72,13 @@ const Project = () => {
           category: "Web",
           title: "Oh My Street Food!",
           subtitle: "Street Food Restaurant Information Sharing Service",
-          date: "2024. 06. 17. - 2024. 07. 12 (4 weeks)",
+          date: "2024. 06. 17. - 2024. 07. 12 (4 weeks, 5 people)",
           description: [
             "- Search Functionality: Developed store name search and popular search term tracking features.",
             "- Store List: Implemented distance display, sorting by latest/popular/nearest, and infinite scroll.",
             "- Payment: Integrated payment API and developed cart and order status pages.",
           ],
+          url: "https://github.com/iamjaeeuncho/OhMyStreetFood",
         }}
       />
       <SkillBundle
@@ -77,10 +105,11 @@ const Project = () => {
           category: "Web",
           title: "Drop the bid",
           subtitle: "Used Goods Auction Service",
-          date: "2024. 07. 22. - 2024. 08. 02 (2 weeks)",
+          date: "2024. 07. 22. - 2024. 08. 02 (2 weeks, 4 people)",
           description: [
             "- 1:1 Chat Service Implementation.",
           ],
+          url: "https://github.com/iamjaeeuncho/DropTheBid",
         }}
       />
       <SkillBundle
@@ -103,14 +132,15 @@ const Project = () => {
 
       <Article
         content={{
-          category: "Desktop application",
+          category: "Desktop App",
           title: "A Lottery Ticket in My Heart",
           subtitle: "Weighted Lottery Number Generator",
-          date: "2024. 04. 30 - 2024. 05. 13 (2 weeks)",
+          date: "2024. 04. 30 - 2024. 05. 13 (2 weeks, 2 people)",
           description: [
             "- Automatic, Semi-Automatic, and Manual Lottery Number Generation.",
             "- Weighted Algorithm Applied for Automatic and Semi-Automatic Generation.",
           ],
+          url: "https://github.com/iamjaeeuncho/LotteryProject",
         }}
       />
       <SkillBundle
@@ -128,12 +158,13 @@ const Project = () => {
           category: "Web",
           title: "Developers in Korea, Devko",
           subtitle: "Korean Developer Community",
-          date: "2024. 01. 10 - 2024. 02. 07 (4 weeks)",
+          date: "2024. 01. 10 - 2024. 02. 07 (4 weeks, 3 people)",
           description: [
             "- Google Social Sign-up & Login.",
             "- Basic Board CRUD with Tags, Views, and Likes Functionality.",
             "- Blog Posting RSS Integration.",
           ],
+          url: "https://github.com/iamjaeeuncho/DeveloperCommunityProject",
         }}
       />
       <SkillBundle

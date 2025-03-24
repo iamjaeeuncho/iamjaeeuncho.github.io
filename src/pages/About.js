@@ -15,7 +15,7 @@ const About = () => {
         <p className="section-name">T.M.I.</p>
           <div className="section-description">
             <p>🗺️ I have traveled to 58 cities in 27 countries across Europe and Asia, and I am planning to travel to North and South America soon!</p>
-            <p>📸 I used to grab my <a href="https://jenonearth.myportfolio.com/">camera</a> and head outside to take photos, but these days, I've taken a break after understanding the risks of privacy rights.</p>
+            <p>📸 I used to grab my camera and head outside to take <a href="https://jenonearth.myportfolio.com/">photos</a>, but these days, I've taken a break because of the risks of privacy rights...</p>
             <p>🎤 In my teens, I majored in music and attended an art high school, where I was the vocalist in one of the bands.</p>
             <p>🍻 I'm serious about food... Nom nom...</p>
           </div>

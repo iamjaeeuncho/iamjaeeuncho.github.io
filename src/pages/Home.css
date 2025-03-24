@@ -67,7 +67,7 @@
   border-bottom-right-radius: 15px;
 }
 
-/* 반응형 스타일 */
+/* Responsive */
 @media (max-width: 1024px) {
   .homepage-container {
     width: 90%;

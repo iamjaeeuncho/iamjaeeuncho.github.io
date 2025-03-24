@@ -1,6 +1,8 @@
+/* 기존 스타일 */
 .list-container {
   padding: 40px 0 0 0;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .list-category {
@@ -37,6 +39,22 @@
   color: #444;
   margin: 0;
   margin-bottom: 4px;
+}
+
+.list-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.list-url {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  margin: 0;
+  margin-bottom: 2px;
 }
 
 /* Responsive */
