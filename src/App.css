@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
-  color: #141414;
   overflow-y: scroll;
-  line-height: 1.5;
 }
 
 .App {
@@ -11,6 +11,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
 }
 
 /* Layout */
