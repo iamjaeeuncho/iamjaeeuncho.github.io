@@ -11,7 +11,7 @@ const Project = () => {
           category: "Web",
           title: "Iamjaeeuncho",
           subtitle: "Personal Portfolio Blog",
-          date: "2025. 03. 19 - 2024. 02. 25 (1 week, 1 person)",
+          date: "2025. 03. 19 - 2025. 03. 25 (1 week, 1 person)",
           description: [
             "- Developed a static website using React.js.",
             "- Implemented responsive design and improved UI/UX.",
