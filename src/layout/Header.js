@@ -47,7 +47,7 @@ const Header = () => {
             <Link to="/essay" className={location.pathname === "/essay" ? "active" : ""}>ESSAY</Link>
           </li>
         </ul>
-        <a className="language-btn" href="https://iamjaeeuncho.tistory.com" target="_blank" rel="noopener noreferrer">KOR ↗</a>
+        <a className="language-btn" href="https://iamjaeeuncho.tistory.com" target="_blank" rel="noopener noreferrer">KOR</a>
       </nav>
     </header>
   );

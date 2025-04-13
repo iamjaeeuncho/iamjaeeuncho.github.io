@@ -14,7 +14,7 @@ const Home = () => {
             <p>If you're looking for a developer to add to your team, I'd love to hear from you!</p>
           </div>
         <div className="btns">
-            <a href="/Jaeeun Cho's Resume (2025. 3.).pdf" download>
+            <a href="/202504 Jaeeun Cho's Resume.pdf" download>
               <button className="resume-btn">RESUME</button>
             </a>
             <a href="mailto:redjoun@gmail.com">
