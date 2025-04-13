@@ -2,6 +2,7 @@
 
 html {
   overflow-y: scroll;
+  background-color: white !important;
 }
 
 .App {
