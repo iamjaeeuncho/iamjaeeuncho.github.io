@@ -121,9 +121,9 @@
 
 @media (max-width: 480px) {
   .portfolio-img {
-    max-width: 90%;
+    max-width: 80%;
   }
-  
+
   .list-container {
     padding: 20px 0 0 0;
   }
