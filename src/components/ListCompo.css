@@ -5,6 +5,15 @@
   cursor: pointer;
 }
 
+.portfolio-img {
+  display: block;
+  margin: 100px auto;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid lightgray;
+}
+
 .list-category {
   font-size: 0.8rem;
   font-weight: bold;
@@ -50,7 +59,7 @@
 }
 
 .list-url {
-  font-size: 20px;
+  font-size: 12px;
   text-decoration: none;
   color: #000;
   margin: 0;

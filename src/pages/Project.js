@@ -8,6 +8,7 @@ const Project = () => {
     <div className="projectpage-container">
       <Article
         content={{
+          img: "/portfolio/iamjaeeuncho.png",
           category: "Web",
           title: "Iamjaeeuncho",
           subtitle: "Personal Portfolio Blog",
@@ -34,6 +35,7 @@ const Project = () => {
 
       <Article
         content={{
+          img: "/portfolio/4CutStudio.png",
           category: "Web",
           title: "4CutStudio",
           subtitle: "Online Photobooth",
@@ -69,6 +71,7 @@ const Project = () => {
 
       <Article
         content={{
+          img: "/portfolio/OhMyStreetFood.png",
           category: "Web",
           title: "Oh My Street Food!",
           subtitle: "Street Food Restaurant Information Sharing Service",
@@ -102,8 +105,9 @@ const Project = () => {
 
       <Article
         content={{
+          img: "/portfolio/DropTheBid.png",
           category: "Web",
-          title: "Drop the bid",
+          title: "Drop The Bid!",
           subtitle: "Used Goods Auction Service",
           date: "2024. 07. 22. - 2024. 08. 02 (2 weeks, 4 people)",
           description: [
@@ -132,6 +136,7 @@ const Project = () => {
 
       <Article
         content={{
+          img: "/portfolio/Lottery.png",
           category: "Desktop App",
           title: "A Lottery Ticket in My Heart",
           subtitle: "Weighted Lottery Number Generator",
@@ -155,6 +160,7 @@ const Project = () => {
 
       <Article
         content={{
+          img: "/portfolio/Devko.jpg",
           category: "Web",
           title: "Developers in Korea, Devko",
           subtitle: "Korean Developer Community",
