@@ -39,7 +39,7 @@ const events = [
     description: "Fassto (Seoul, Korea)",
   },
   {
-    title: "Marketing freelancer",
+    title: "Freelancer",
     date: "Nov. 2020 - Oct. 2021",
     description: "Gyeonggi-do Village Community Support Center and so on. (Seoul, Korea)",
   },
@@ -50,7 +50,7 @@ const events = [
   },
   {
     title: "Self-employed",
-    date: "Apr. 2018 - Dec. 2019",
+    date: "Apr. 2018 - Oct. 2019",
     description: "Cross-border seller on Naver and E-bay. (Seoul, Korea)",
   },
   {
