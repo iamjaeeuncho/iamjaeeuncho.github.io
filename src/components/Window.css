@@ -1,0 +1,143 @@
+.window {
+  position: absolute;
+  width: 560px;
+  min-height: 340px;
+  border-radius: 18px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.window-maximized {
+  position: fixed;
+  top: 32px !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 94px !important;
+
+  width: auto;
+  height: auto;
+
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.window-header {
+  position: relative;
+  height: 44px;
+  padding: 0 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: grab;
+  user-select: none;
+}
+
+.window-header:active {
+  cursor: grabbing;
+}
+
+.window-controls {
+  position: absolute;
+  left: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.window-control {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.window-control.close {
+  background: #ff5f57;
+}
+
+.window-control.minimize {
+  background: #febc2e;
+}
+
+.window-control.maximize {
+  background: #28c840;
+}
+
+.window-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.window-body {
+  padding: 24px;
+  height: calc(100% - 44px);
+  overflow: auto;
+}
+
+.window-content h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  color: #111;
+}
+
+.window-content p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.folder-list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.folder-list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+.finder-list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.finder-list li {
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #333;
+  cursor: default;
+}
+
+.finder-list li:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.window-resizer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  cursor: se-resize;
+}

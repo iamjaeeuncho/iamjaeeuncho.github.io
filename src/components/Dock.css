@@ -1,0 +1,130 @@
+.dock {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1200;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+
+  padding: 10px 14px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dock-item-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.dock-item {
+  position: relative;
+
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: transform 0.18s ease;
+}
+
+.dock-item:hover {
+  transform: translateY(-6px) scale(1.08);
+}
+
+.dock-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.dock-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 6px 10px;
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  font-size: 12px;
+  color: #222;
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.dock-item:hover .dock-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+.dock-context {
+  position: absolute;
+  z-index: 2000;
+
+  min-width: 180px;
+  padding: 8px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dock-context-above {
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dock-context-item {
+  width: 100%;
+  padding: 8px 10px;
+
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+
+  text-align: left;
+  font-size: 13px;
+  color: #222;
+
+  cursor: pointer;
+}
+
+.dock-context-item:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.dock-context-item.disabled {
+  color: #999;
+  cursor: default;
+}

@@ -1,0 +1,48 @@
+.desktop-icon {
+  position: absolute;
+  width: 92px;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  cursor: default;
+  text-align: center;
+  user-select: none;
+}
+
+.desktop-icon:hover .desktop-icon-image {
+  transform: translateY(-2px);
+}
+
+.desktop-icon-image {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.15s ease;
+  pointer-events: none;
+}
+
+.desktop-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+
+.desktop-icon-title {
+  font-size: 13px;
+  line-height: 1.3;
+  color: #222;
+  word-break: keep-all;
+  pointer-events: none;
+}
