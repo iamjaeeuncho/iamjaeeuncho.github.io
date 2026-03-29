@@ -47,6 +47,14 @@
   transform: translateY(-6px) scale(1.08);
 }
 
+.dock-item.has-minimized {
+  transform: scale(1.05);
+}
+
+.dock-item.has-minimized:hover {
+  transform: translateY(-6px) scale(1.08 * 1.05);
+}
+
 .dock-item-image {
   width: 100%;
   height: 100%;

@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TopBar from "./components/TopBar";
 import DesktopIcon from "./components/DesktopIcon";
 import StickyNote from "./components/StickyNote";
 import Window from "./components/Window";
 import Dock from "./components/Dock";
 import { desktopApps, type WindowKey } from "./data/apps";
+
+import FinderWindow from "./components/windows/FinderWindow";
+import ContractsWindow from "./components/windows/ContractsWindow";
+import MessagesWindow from "./components/windows/MessagesWindow";
+import PhotosWindow from "./components/windows/PhotosWindow";
+import MusicWindow from "./components/windows/MusicWindow";
+import TrashWindow from "./components/windows/TrashWindow";
+import AboutMeWindow from "./components/windows/AboutMeWindow";
+import ProjectsWindow from "./components/windows/ProjectsWindow";
+import BlogWindow from "./components/windows/BlogWindow";
+import ResumeWindow from "./components/windows/ResumeWindow";
 
 type WindowState = {
   isOpen: boolean;
@@ -13,6 +24,11 @@ type WindowState = {
 };
 
 type WindowStates = Record<WindowKey, WindowState>;
+
+type WindowPosition = {
+  top: number;
+  left: number;
+};
 
 const initialWindowStates: WindowStates = {
   Finder: { isOpen: false, isMinimized: false, isMaximized: false },
@@ -29,11 +45,41 @@ const initialWindowStates: WindowStates = {
   "Resume.pdf": { isOpen: false, isMinimized: false, isMaximized: false },
 };
 
+const BASE_WINDOW_POSITION: WindowPosition = {
+  top: 140,
+  left: 200,
+};
+
+const WINDOW_OFFSET = 300;
+
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= breakpoint);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= breakpoint);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [breakpoint]);
+
+  return isMobile;
+}
+
 function App() {
   const [windows, setWindows] = useState<WindowStates>(initialWindowStates);
   const [showStickies, setShowStickies] = useState(true);
   const [zMap, setZMap] = useState<Record<string, number>>({});
   const [_topZ, setTopZ] = useState(1);
+
+  const [windowPositions, setWindowPositions] = useState<
+    Partial<Record<WindowKey, WindowPosition>>
+  >({});
+  const [nextWindowPosition, setNextWindowPosition] =
+    useState<WindowPosition>(BASE_WINDOW_POSITION);
+
+  const isMobile = useIsMobile();
 
   const bringToFront = (title: string) => {
     setTopZ((prev) => {
@@ -49,14 +95,31 @@ function App() {
   const handleOpenWindow = (title: string) => {
     if (!(title in windows)) return;
 
+    const windowKey = title as WindowKey;
+
     setWindows((prev) => ({
       ...prev,
-      [title as WindowKey]: {
-        ...prev[title as WindowKey],
+      [windowKey]: {
+        ...prev[windowKey],
         isOpen: true,
         isMinimized: false,
       },
     }));
+
+    if (!windowPositions[windowKey]) {
+      setWindowPositions((prev) => ({
+        ...prev,
+        [windowKey]: {
+          top: nextWindowPosition.top,
+          left: nextWindowPosition.left,
+        },
+      }));
+
+      setNextWindowPosition((prev) => ({
+        top: prev.top + WINDOW_OFFSET,
+        left: prev.left + WINDOW_OFFSET,
+      }));
+    }
 
     bringToFront(title);
   };
@@ -80,6 +143,16 @@ function App() {
         isMinimized: true,
       },
     }));
+
+    setTimeout(() => {
+      setWindows((prev) => ({
+        ...prev,
+        [title]: {
+          ...prev[title],
+          isMinimized: false,
+        },
+      }));
+    }, 300);
   };
 
   const handleToggleMaximize = (title: WindowKey) => {
@@ -98,16 +171,27 @@ function App() {
     setShowStickies((prev) => !prev);
   };
 
+  const getWindowPosition = (title: WindowKey) => {
+    return windowPositions[title] ?? BASE_WINDOW_POSITION;
+  };
+
+  const handleGoHome = () => {
+    setWindows(initialWindowStates);
+  };
+
   return (
     <div className="desktop">
-      <TopBar onOpenWindow={handleOpenWindow} />
+      <TopBar
+        onOpenWindow={handleOpenWindow}
+        onGoHome={handleGoHome}
+      />
 
       <main className="desktop-main">
-        {showStickies && (
+        {!isMobile && showStickies && (
           <StickyNote
             top={100}
             left={75}
-            title="Stats"
+            title="To Do List"
             items={[
               { label: "Projects", value: "3" },
               { label: "Essays", value: "3" },
@@ -116,245 +200,215 @@ function App() {
           />
         )}
 
-        {desktopApps
-          .filter((app) => app.showOnDesktop)
-          .map((app) => (
-            <DesktopIcon
-              key={app.title}
-              title={app.title}
-              icon={app.icon}
-              top={app.top}
-              left={app.left}
-              right={app.right}
-              onOpen={() => handleOpenWindow(app.title)}
-            />
-          ))}
+        {!isMobile ? (
+          desktopApps
+            .filter((app) => app.showOnDesktop)
+            .map((app) => (
+              <DesktopIcon
+                key={app.title}
+                title={app.title}
+                icon={app.icon}
+                topPercent={app.topPercent}
+                leftPercent={app.leftPercent}
+                onOpen={() => handleOpenWindow(app.title)}
+                isMobile={false}
+              />
+            ))
+        ) : (
+          <div className="mobile-icon-grid">
+            {desktopApps
+              .filter((app) => app.showOnDesktop)
+              .map((app) => (
+                <DesktopIcon
+                  key={app.title}
+                  title={app.title}
+                  icon={app.icon}
+                  onOpen={() => handleOpenWindow(app.title)}
+                  isMobile
+                />
+              ))}
+          </div>
+        )}
 
-        {windows["Finder"].isOpen && !windows["Finder"].isMinimized && (
+        {windows["Finder"].isOpen && (
           <Window
             title="Finder"
-            initialTop={70}
-            initialLeft={180}
+            initialTop={getWindowPosition("Finder").top}
+            initialLeft={getWindowPosition("Finder").left}
             isMaximized={windows["Finder"].isMaximized}
             zIndex={zMap["Finder"] ?? 1}
             onFocus={() => bringToFront("Finder")}
             onClose={() => handleCloseWindow("Finder")}
             onMinimize={() => handleMinimizeWindow("Finder")}
             onToggleMaximize={() => handleToggleMaximize("Finder")}
+            isMobile={isMobile}
+            isMinimized={windows["Finder"].isMinimized}
           >
-            <div className="window-content">
-              <h2>Finder</h2>
-              <ul className="finder-list">
-                <li onDoubleClick={() => handleOpenWindow("About Me")}>📁 About Me</li>
-                <li onDoubleClick={() => handleOpenWindow("Projects")}>📁 Projects</li>
-                <li onDoubleClick={() => handleOpenWindow("Blog")}>📁 Blog</li>
-                <li onDoubleClick={() => handleOpenWindow("Resume.pdf")}>📄 Resume.pdf</li>
-                <li onDoubleClick={() => handleOpenWindow("Trash")}>🗑 Trash</li>
-              </ul>
-            </div>
+            <FinderWindow onOpenWindow={handleOpenWindow} />
           </Window>
         )}
 
-        {windows["Contracts"].isOpen && !windows["Contracts"].isMinimized && (
+        {windows["Contracts"].isOpen && (
           <Window
             title="Contracts"
-            initialTop={90}
-            initialLeft={230}
+            initialTop={getWindowPosition("Contracts").top}
+            initialLeft={getWindowPosition("Contracts").left}
             isMaximized={windows["Contracts"].isMaximized}
             zIndex={zMap["Contracts"] ?? 1}
             onFocus={() => bringToFront("Contracts")}
             onClose={() => handleCloseWindow("Contracts")}
             onMinimize={() => handleMinimizeWindow("Contracts")}
             onToggleMaximize={() => handleToggleMaximize("Contracts")}
+            isMobile={isMobile}
+            isMinimized={windows["Contracts"].isMinimized}
           >
-            <div className="window-content">
-              <h2>Contracts</h2>
-              <p>계약서나 관련 문서를 여기에 넣으면 됩니다.</p>
-            </div>
+            <ContractsWindow />
           </Window>
         )}
 
-        {windows["Messages"].isOpen && !windows["Messages"].isMinimized && (
+        {windows["Messages"].isOpen && (
           <Window
             title="Messages"
-            initialTop={120}
-            initialLeft={260}
+            initialTop={getWindowPosition("Messages").top}
+            initialLeft={getWindowPosition("Messages").left}
             isMaximized={windows["Messages"].isMaximized}
             zIndex={zMap["Messages"] ?? 1}
             onFocus={() => bringToFront("Messages")}
             onClose={() => handleCloseWindow("Messages")}
             onMinimize={() => handleMinimizeWindow("Messages")}
             onToggleMaximize={() => handleToggleMaximize("Messages")}
+            isMobile={isMobile}
+            isMinimized={windows["Messages"].isMinimized}
           >
-            <div className="window-content">
-              <h2>Messages</h2>
-              <p>Q&amp;A 창으로 사용할 수 있어요.</p>
-            </div>
+            <MessagesWindow />
           </Window>
         )}
 
-        {windows["Photos"].isOpen && !windows["Photos"].isMinimized && (
+        {windows["Photos"].isOpen && (
           <Window
             title="Photos"
-            initialTop={150}
-            initialLeft={300}
+            initialTop={getWindowPosition("Photos").top}
+            initialLeft={getWindowPosition("Photos").left}
             isMaximized={windows["Photos"].isMaximized}
             zIndex={zMap["Photos"] ?? 1}
             onFocus={() => bringToFront("Photos")}
             onClose={() => handleCloseWindow("Photos")}
             onMinimize={() => handleMinimizeWindow("Photos")}
             onToggleMaximize={() => handleToggleMaximize("Photos")}
+            isMobile={isMobile}
+            isMinimized={windows["Photos"].isMinimized}
           >
-            <div className="window-content">
-              <h2>Photos</h2>
-              <p>갤러리 창입니다. 나중에 이미지 그리드로 바꿀 수 있어요.</p>
-            </div>
+            <PhotosWindow />
           </Window>
         )}
 
-        {windows["Notes"].isOpen && !windows["Notes"].isMinimized && (
-          <Window
-            title="Notes"
-            initialTop={180}
-            initialLeft={340}
-            isMaximized={windows["Notes"].isMaximized}
-            zIndex={zMap["Notes"] ?? 1}
-            onFocus={() => bringToFront("Notes")}
-            onClose={() => handleCloseWindow("Notes")}
-            onMinimize={() => handleMinimizeWindow("Notes")}
-            onToggleMaximize={() => handleToggleMaximize("Notes")}
-          >
-            <div className="window-content">
-              <h2>Notes</h2>
-              <p>노트만 모아 보여주는 창입니다.</p>
-            </div>
-          </Window>
-        )}
-
-        {windows["Documents"].isOpen && !windows["Documents"].isMinimized && (
-          <Window
-            title="Documents"
-            initialTop={100}
-            initialLeft={380}
-            isMaximized={windows["Documents"].isMaximized}
-            zIndex={zMap["Documents"] ?? 1}
-            onFocus={() => bringToFront("Documents")}
-            onClose={() => handleCloseWindow("Documents")}
-            onMinimize={() => handleMinimizeWindow("Documents")}
-            onToggleMaximize={() => handleToggleMaximize("Documents")}
-          >
-            <div className="window-content">
-              <h2>Documents</h2>
-              <ul className="folder-list">
-                <li>Resume.pdf</li>
-              </ul>
-            </div>
-          </Window>
-        )}
-
-        {windows["Music"].isOpen && !windows["Music"].isMinimized && (
+        {windows["Music"].isOpen && (
           <Window
             title="Music"
-            initialTop={130}
-            initialLeft={420}
+            initialTop={getWindowPosition("Music").top}
+            initialLeft={getWindowPosition("Music").left}
             isMaximized={windows["Music"].isMaximized}
             zIndex={zMap["Music"] ?? 1}
             onFocus={() => bringToFront("Music")}
             onClose={() => handleCloseWindow("Music")}
             onMinimize={() => handleMinimizeWindow("Music")}
             onToggleMaximize={() => handleToggleMaximize("Music")}
+            isMobile={isMobile}
+            isMinimized={windows["Music"].isMinimized}
           >
-            <div className="window-content">
-              <h2>Music</h2>
-              <p>좋아하는 플레이리스트나 음악 링크를 넣을 수 있어요.</p>
-            </div>
+            <MusicWindow />
           </Window>
         )}
 
-        {windows["About Me"].isOpen && !windows["About Me"].isMinimized && (
+        {windows["Trash"].isOpen && (
+          <Window
+            title="Trash"
+            initialTop={getWindowPosition("Trash").top}
+            initialLeft={getWindowPosition("Trash").left}
+            isMaximized={windows["Trash"].isMaximized}
+            zIndex={zMap["Trash"] ?? 1}
+            onFocus={() => bringToFront("Trash")}
+            onClose={() => handleCloseWindow("Trash")}
+            onMinimize={() => handleMinimizeWindow("Trash")}
+            onToggleMaximize={() => handleToggleMaximize("Trash")}
+            isMobile={isMobile}
+            isMinimized={windows["Trash"].isMinimized}
+          >
+            <TrashWindow />
+          </Window>
+        )}
+
+        {windows["About Me"].isOpen && (
           <Window
             title="About Me"
-            initialTop={90}
-            initialLeft={220}
+            initialTop={getWindowPosition("About Me").top}
+            initialLeft={getWindowPosition("About Me").left}
             isMaximized={windows["About Me"].isMaximized}
             zIndex={zMap["About Me"] ?? 1}
             onFocus={() => bringToFront("About Me")}
             onClose={() => handleCloseWindow("About Me")}
             onMinimize={() => handleMinimizeWindow("About Me")}
             onToggleMaximize={() => handleToggleMaximize("About Me")}
+            isMobile={isMobile}
+            isMinimized={windows["About Me"].isMinimized}
           >
-            <div className="window-content">
-              <h2>About Me</h2>
-              <p>여기에 자기소개 내용을 넣으면 됩니다.</p>
-            </div>
+            <AboutMeWindow />
           </Window>
         )}
 
-        {windows["Projects"].isOpen && !windows["Projects"].isMinimized && (
+        {windows["Projects"].isOpen && (
           <Window
             title="Projects"
-            initialTop={120}
-            initialLeft={260}
+            initialTop={getWindowPosition("Projects").top}
+            initialLeft={getWindowPosition("Projects").left}
             isMaximized={windows["Projects"].isMaximized}
             zIndex={zMap["Projects"] ?? 1}
             onFocus={() => bringToFront("Projects")}
             onClose={() => handleCloseWindow("Projects")}
             onMinimize={() => handleMinimizeWindow("Projects")}
             onToggleMaximize={() => handleToggleMaximize("Projects")}
+            isMobile={isMobile}
+            isMinimized={windows["Projects"].isMinimized}
           >
-            <div className="window-content">
-              <h2>Projects</h2>
-              <ul className="folder-list">
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-              </ul>
-            </div>
+            <ProjectsWindow />
           </Window>
         )}
 
-        {windows["Blog"].isOpen && !windows["Blog"].isMinimized && (
+        {windows["Blog"].isOpen && (
           <Window
             title="Blog"
-            initialTop={150}
-            initialLeft={300}
+            initialTop={getWindowPosition("Blog").top}
+            initialLeft={getWindowPosition("Blog").left}
             isMaximized={windows["Blog"].isMaximized}
             zIndex={zMap["Blog"] ?? 1}
             onFocus={() => bringToFront("Blog")}
             onClose={() => handleCloseWindow("Blog")}
             onMinimize={() => handleMinimizeWindow("Blog")}
             onToggleMaximize={() => handleToggleMaximize("Blog")}
+            isMobile={isMobile}
+            isMinimized={windows["Blog"].isMinimized}
           >
-            <div className="window-content">
-              <h2>Blog</h2>
-              <ul className="folder-list">
-                <li>Essay 1</li>
-                <li>Essay 2</li>
-                <li>Essay 3</li>
-              </ul>
-            </div>
+            <BlogWindow />
           </Window>
         )}
 
-        {windows["Resume.pdf"].isOpen &&
-          !windows["Resume.pdf"].isMinimized && (
-            <Window
-              title="Resume.pdf"
-              initialTop={100}
-              initialLeft={340}
-              isMaximized={windows["Resume.pdf"].isMaximized}
-              zIndex={zMap["Resume.pdf"] ?? 1}
-              onFocus={() => bringToFront("Resume.pdf")}
-              onClose={() => handleCloseWindow("Resume.pdf")}
-              onMinimize={() => handleMinimizeWindow("Resume.pdf")}
-              onToggleMaximize={() => handleToggleMaximize("Resume.pdf")}
-            >
-              <div className="window-content">
-                <h2>Resume</h2>
-                <p>여기에 이력서 요약이나 PDF 링크를 넣으면 됩니다.</p>
-              </div>
-            </Window>
-          )}
+        {windows["Resume.pdf"].isOpen && (
+          <Window
+            title="Resume.pdf"
+            initialTop={getWindowPosition("Resume.pdf").top}
+            initialLeft={getWindowPosition("Resume.pdf").left}
+            isMaximized={windows["Resume.pdf"].isMaximized}
+            zIndex={zMap["Resume.pdf"] ?? 1}
+            onFocus={() => bringToFront("Resume.pdf")}
+            onClose={() => handleCloseWindow("Resume.pdf")}
+            onMinimize={() => handleMinimizeWindow("Resume.pdf")}
+            onToggleMaximize={() => handleToggleMaximize("Resume.pdf")}
+            isMobile={isMobile}
+            isMinimized={windows["Resume.pdf"].isMinimized}
+          >
+            <ResumeWindow />
+          </Window>
+        )}
       </main>
 
       <Dock

@@ -46,3 +46,23 @@
   word-break: keep-all;
   pointer-events: none;
 }
+
+.desktop-icon-mobile {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .desktop-icon {
+    width: 100%;
+  }
+
+  .desktop-icon-image {
+    width: 56px;
+    height: 56px;
+  }
+
+  .desktop-icon-title {
+    font-size: 12px;
+  }
+}

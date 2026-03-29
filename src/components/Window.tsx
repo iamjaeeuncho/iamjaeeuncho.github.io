@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Window.css";
 
 type WindowProps = {
@@ -12,6 +12,8 @@ type WindowProps = {
   onFocus: () => void;
   initialTop?: number;
   initialLeft?: number;
+  isMobile?: boolean;
+  isMinimized?: boolean;
 };
 
 export default function Window({
@@ -23,8 +25,10 @@ export default function Window({
   isMaximized,
   zIndex,
   onFocus,
-  initialTop = 160,
-  initialLeft = 160,
+  initialTop = 100,
+  initialLeft = 220,
+  isMobile = false,
+  isMinimized = false,
 }: WindowProps) {
   const [position, setPosition] = useState({
     top: initialTop,
@@ -33,7 +37,7 @@ export default function Window({
 
   const [size, setSize] = useState({
     width: 640,
-    height: 420,
+    height: 460,
   });
 
   const dragData = useRef({
@@ -50,8 +54,15 @@ export default function Window({
     startHeight: 0,
   });
 
+  useEffect(() => {
+    setPosition({
+      top: initialTop,
+      left: initialLeft,
+    });
+  }, [initialTop, initialLeft]);
+
   const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (isMaximized) return;
+    if (isMaximized || isMobile) return;
 
     dragData.current.isDragging = true;
     dragData.current.offsetX = e.clientX - position.left;
@@ -77,7 +88,7 @@ export default function Window({
   };
 
   const handleResizeStart = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (isMaximized) return;
+    if (isMaximized || isMobile) return;
 
     e.stopPropagation();
 
@@ -111,10 +122,16 @@ export default function Window({
 
   return (
     <section
-      className={`window ${isMaximized ? "window-maximized" : ""}`}
+      className={`window ${
+        isMinimized ? "window-minimized" : ""
+      } ${
+        isMobile ? "window-mobile" : isMaximized ? "window-maximized" : ""
+      }`}
       style={{
         zIndex,
-        ...(isMaximized
+        ...(isMobile
+          ? {}
+          : isMaximized
           ? {}
           : {
               top: `${position.top}px`,
@@ -133,18 +150,22 @@ export default function Window({
             onClick={onClose}
             aria-label="Close window"
           />
-          <button
-            type="button"
-            className="window-control minimize"
-            onClick={onMinimize}
-            aria-label="Minimize window"
-          />
-          <button
-            type="button"
-            className="window-control maximize"
-            onClick={onToggleMaximize}
-            aria-label="Maximize window"
-          />
+          {!isMobile && (
+            <>
+              <button
+                type="button"
+                className="window-control minimize"
+                onClick={onMinimize}
+                aria-label="Minimize window"
+              />
+              <button
+                type="button"
+                className="window-control maximize"
+                onClick={onToggleMaximize}
+                aria-label="Maximize window"
+              />
+            </>
+          )}
         </div>
 
         <div className="window-title">{title}</div>
@@ -152,7 +173,7 @@ export default function Window({
 
       <div className="window-body">{children}</div>
 
-      {!isMaximized && (
+      {!isMobile && !isMaximized && (
         <div className="window-resizer" onMouseDown={handleResizeStart} />
       )}
     </section>

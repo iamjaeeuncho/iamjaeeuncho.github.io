@@ -11,11 +11,14 @@
 
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .window-maximized {
   position: fixed;
-  top: 32px !important;
+  top: 50px !important;
   left: 0 !important;
   right: 0 !important;
   bottom: 94px !important;
@@ -31,6 +34,11 @@
   box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.06);
 }
 
+.window-minimized {
+  transform: scale(0.1) translateY(400px);
+  transition: transform 0.3s ease;
+}
+
 .window-header {
   position: relative;
   height: 44px;
@@ -43,10 +51,16 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   cursor: grab;
   user-select: none;
+  flex-shrink: 0;
 }
 
 .window-header:active {
   cursor: grabbing;
+}
+
+.window-mobile .window-header,
+.window-maximized .window-header {
+  cursor: default;
 }
 
 .window-controls {
@@ -89,6 +103,7 @@
   padding: 24px;
   height: calc(100% - 44px);
   overflow: auto;
+  min-height: 0;
 }
 
 .window-content h2 {
@@ -140,4 +155,10 @@
   width: 18px;
   height: 18px;
   cursor: se-resize;
+}
+
+@media (max-width: 768px) {
+  .window-body {
+    padding: 18px;
+  }
 }

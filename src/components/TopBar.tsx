@@ -10,6 +10,7 @@ type SearchItem = {
 
 type TopBarProps = {
   onOpenWindow: (title: string) => void;
+  onGoHome: () => void;
 };
 
 const searchItems: SearchItem[] = [
@@ -27,7 +28,7 @@ const searchItems: SearchItem[] = [
   { id: 12, title: "Resume.pdf", type: "File", description: "Open resume" },
 ];
 
-export default function TopBar({ onOpenWindow }: TopBarProps) {
+export default function TopBar({ onOpenWindow, onGoHome }: TopBarProps) {
   const [currentTime, setCurrentTime] = useState("");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchText, setSearchText] = useState("");
@@ -100,7 +101,12 @@ export default function TopBar({ onOpenWindow }: TopBarProps) {
     <>
       <header className="topbar">
         <div className="topbar-left">
-          <span className="topbar-title">iamjaeeuncho</span>
+          <span
+            className="topbar-title"
+            onClick={onGoHome}
+          >
+            iamjaeeuncho
+          </span>
         </div>
 
         <div className="topbar-right">

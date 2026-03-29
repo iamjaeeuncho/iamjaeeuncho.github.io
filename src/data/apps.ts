@@ -27,9 +27,8 @@ export type DockItemTitle = WindowKey | "Stickies";
 export type DesktopApp = {
   title: WindowKey;
   icon: string;
-  top?: number;
-  left?: number;
-  right?: number;
+  topPercent?: number;
+  leftPercent?: number;
   showOnDesktop?: boolean;
 };
 
@@ -52,36 +51,36 @@ export const desktopApps: DesktopApp[] = [
   {
     title: "About Me",
     icon: "/icons/Folder.png",
-    top: 100,
-    right: 75,
+    topPercent: 22.5,
+    leftPercent: 51.67,
     showOnDesktop: true,
   },
   {
     title: "Projects",
     icon: "/icons/Folder.png",
-    top: 220,
-    right: 75,
+    topPercent: 46.25,
+    leftPercent: 65,
     showOnDesktop: true,
   },
   {
     title: "Blog",
     icon: "/icons/Folder.png",
-    top: 330,
-    right: 75,
+    topPercent: 72.5,
+    leftPercent: 63,
     showOnDesktop: true,
   },
   {
     title: "Resume.pdf",
     icon: "/icons/Documents.png",
-    top: 440,
-    left: 240,
+    topPercent: 40,
+    leftPercent: 36.67,
     showOnDesktop: true,
   },
   {
     title: "Trash",
     icon: "/icons/Trash.png",
-    top: 520,
-    right: 240,
+    topPercent: 71.25,
+    leftPercent: 43.33,
     showOnDesktop: true,
   },
 ];
@@ -91,7 +90,5 @@ export const dockApps: Array<{ title: DockItemTitle; icon: string }> = [
   { title: "Contracts", icon: "/icons/Contracts.png" },
   { title: "Messages", icon: "/icons/Messages.png" },
   { title: "Photos", icon: "/icons/Photos.png" },
-  { title: "Notes", icon: "/icons/Notes.png" },
-  { title: "Stickies", icon: "/icons/Stickies.png" },
   { title: "Music", icon: "/icons/Music.png" },
 ];

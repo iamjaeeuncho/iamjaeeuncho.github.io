@@ -92,7 +92,7 @@ export default function Dock({
           <div key={item.title} className="dock-item-wrapper">
             <button
               type="button"
-              className="dock-item"
+              className={`dock-item ${minimizedWindows.length > 0 ? 'has-minimized' : ''}`}
               onClick={(e) => handleDockClick(e, item.title)}
               onContextMenu={(e) => handleRightClick(e, item.title)}
             >

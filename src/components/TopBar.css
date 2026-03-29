@@ -28,9 +28,12 @@
 }
 
 .topbar-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: #111;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.topbar-title:hover {
+  opacity: 0.7;
 }
 
 .topbar-time {

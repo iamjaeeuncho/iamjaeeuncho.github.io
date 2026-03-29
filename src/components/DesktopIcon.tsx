@@ -1,29 +1,29 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./DesktopIcon.css";
 
 type DesktopIconProps = {
   title: string;
   icon: string;
-  top?: number;
-  left?: number;
-  right?: number;
+  topPercent?: number;
+  leftPercent?: number;
   onOpen: () => void;
+  isMobile?: boolean;
 };
 
 export default function DesktopIcon({
   title,
   icon,
-  top = 0,
-  left,
-  right,
+  topPercent = 0,
+  leftPercent = 0,
   onOpen,
+  isMobile = false,
 }: DesktopIconProps) {
-  const initialLeft = left ?? window.innerWidth - (right ?? 0) - 92;
-
-  const [position, setPosition] = useState({
-    top,
-    left: initialLeft,
+  const getInitialPosition = () => ({
+    top: (window.innerHeight - 140) * (topPercent / 100),
+    left: (window.innerWidth - 92) * (leftPercent / 100),
   });
+
+  const [position, setPosition] = useState(getInitialPosition());
 
   const dragData = useRef({
     isDragging: false,
@@ -31,7 +31,21 @@ export default function DesktopIcon({
     offsetY: 0,
   });
 
+  useEffect(() => {
+    if (isMobile) return;
+
+    const updatePosition = () => {
+      setPosition(getInitialPosition());
+    };
+
+    updatePosition();
+    window.addEventListener("resize", updatePosition);
+    return () => window.removeEventListener("resize", updatePosition);
+  }, [topPercent, leftPercent, isMobile]);
+
   const handleMouseDown = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (isMobile) return;
+
     dragData.current.isDragging = true;
     dragData.current.offsetX = e.clientX - position.left;
     dragData.current.offsetY = e.clientY - position.top;
@@ -54,6 +68,21 @@ export default function DesktopIcon({
     document.removeEventListener("mousemove", handleMouseMove);
     document.removeEventListener("mouseup", handleMouseUp);
   };
+
+  if (isMobile) {
+    return (
+      <button
+        type="button"
+        className="desktop-icon desktop-icon-mobile"
+        onClick={onOpen}
+      >
+        <div className="desktop-icon-image">
+          <img src={icon} alt={title} className="desktop-icon-img" />
+        </div>
+        <span className="desktop-icon-title">{title}</span>
+      </button>
+    );
+  }
 
   return (
     <button
