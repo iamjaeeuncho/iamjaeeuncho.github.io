@@ -23,8 +23,8 @@ export default function Window({
   isMaximized,
   zIndex,
   onFocus,
-  initialTop = 100,
-  initialLeft = 220,
+  initialTop = 160,
+  initialLeft = 160,
 }: WindowProps) {
   const [position, setPosition] = useState({
     top: initialTop,
@@ -32,8 +32,8 @@ export default function Window({
   });
 
   const [size, setSize] = useState({
-    width: 560,
-    height: 360,
+    width: 640,
+    height: 420,
   });
 
   const dragData = useRef({

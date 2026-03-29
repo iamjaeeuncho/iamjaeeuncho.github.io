@@ -105,8 +105,8 @@ function App() {
       <main className="desktop-main">
         {showStickies && (
           <StickyNote
-            top={78}
-            left={30}
+            top={100}
+            left={75}
             title="Stats"
             items={[
               { label: "Projects", value: "3" },
@@ -267,25 +267,6 @@ function App() {
             <div className="window-content">
               <h2>Music</h2>
               <p>좋아하는 플레이리스트나 음악 링크를 넣을 수 있어요.</p>
-            </div>
-          </Window>
-        )}
-
-        {windows["Trash"].isOpen && !windows["Trash"].isMinimized && (
-          <Window
-            title="Trash"
-            initialTop={160}
-            initialLeft={460}
-            isMaximized={windows["Trash"].isMaximized}
-            zIndex={zMap["Trash"] ?? 1}
-            onFocus={() => bringToFront("Trash")}
-            onClose={() => handleCloseWindow("Trash")}
-            onMinimize={() => handleMinimizeWindow("Trash")}
-            onToggleMaximize={() => handleToggleMaximize("Trash")}
-          >
-            <div className="window-content">
-              <h2>Trash</h2>
-              <p>휴지통은 비어 있습니다.</p>
             </div>
           </Window>
         )}
