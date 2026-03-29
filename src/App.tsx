@@ -33,7 +33,7 @@ function App() {
   const [windows, setWindows] = useState<WindowStates>(initialWindowStates);
   const [showStickies, setShowStickies] = useState(true);
   const [zMap, setZMap] = useState<Record<string, number>>({});
-  const [topZ, setTopZ] = useState(1);
+  const [_topZ, setTopZ] = useState(1);
 
   const bringToFront = (title: string) => {
     setTopZ((prev) => {
