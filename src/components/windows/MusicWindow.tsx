@@ -1,8 +1,36 @@
+import { useState } from "react";
+
 export default function MusicWindow() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <div className="window-content">
-      <h2>Music</h2>
-      <p>좋아하는 플레이리스트나 음악 링크를 넣을 수 있어요.</p>
+    <div className="window-content" style={{ position: "relative" }}>
+      {isLoading && (
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "#111",
+            fontSize: "14px",
+            zIndex: 1,
+          }}
+        >
+          loading...
+        </div>
+      )}
+
+      <iframe
+        src="https://open.spotify.com/embed/track/1rEa59P5yEal5cp1h7kl2e?utm_source=generator"
+        width="100%"
+        height="352"
+        frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+        onLoad={() => setIsLoading(false)}
+      ></iframe>
     </div>
   );
 }

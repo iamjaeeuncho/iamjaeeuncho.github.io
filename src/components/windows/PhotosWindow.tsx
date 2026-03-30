@@ -1,8 +1,35 @@
+import { useState } from "react";
+
 export default function PhotosWindow() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <div className="window-content">
-      <h2>Photos</h2>
-      <p>갤러리 창입니다. 나중에 이미지 그리드로 바꿀 수 있어요.</p>
+    <div className="window-content" style={{ position: "relative" }}>
+      {isLoading && (
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "#111",
+            fontSize: "14px",
+            zIndex: 1,
+            borderRadius: "8px",
+          }}
+        >
+          Loading...
+        </div>
+      )}
+
+      <iframe
+        src="https://jenonearth.myportfolio.com/"
+        width="100%"
+        height="600"
+        style={{ border: "none", borderRadius: "8px" }}
+        onLoad={() => setIsLoading(false)}
+      />
     </div>
   );
 }

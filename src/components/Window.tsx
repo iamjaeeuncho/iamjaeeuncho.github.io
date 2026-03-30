@@ -12,6 +12,8 @@ type WindowProps = {
   onFocus: () => void;
   initialTop?: number;
   initialLeft?: number;
+  initialWidth?: number;
+  initialHeight?: number;
   isMobile?: boolean;
   isMinimized?: boolean;
 };
@@ -27,6 +29,8 @@ export default function Window({
   onFocus,
   initialTop = 100,
   initialLeft = 220,
+  initialWidth = 640,
+  initialHeight = 480,
   isMobile = false,
   isMinimized = false,
 }: WindowProps) {
@@ -36,8 +40,8 @@ export default function Window({
   });
 
   const [size, setSize] = useState({
-    width: 640,
-    height: 460,
+    width: initialWidth,
+    height: initialHeight,
   });
 
   const dragData = useRef({
@@ -60,6 +64,13 @@ export default function Window({
       left: initialLeft,
     });
   }, [initialTop, initialLeft]);
+
+  useEffect(() => {
+    setSize({
+      width: initialWidth,
+      height: initialHeight,
+    });
+  }, [initialWidth, initialHeight]);
 
   const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
     if (isMaximized || isMobile) return;

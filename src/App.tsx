@@ -4,7 +4,7 @@ import DesktopIcon from "./components/DesktopIcon";
 import StickyNote from "./components/StickyNote";
 import Window from "./components/Window";
 import Dock from "./components/Dock";
-import { desktopApps, type WindowKey } from "./data/apps";
+import { desktopApps, dockApps, type WindowKey } from "./data/apps";
 
 import FinderWindow from "./components/windows/FinderWindow";
 import ContractsWindow from "./components/windows/ContractsWindow";
@@ -46,8 +46,13 @@ const initialWindowStates: WindowStates = {
 };
 
 const BASE_WINDOW_POSITION: WindowPosition = {
-  top: 80,
-  left: 140,
+  top: 20,
+  left: 60,
+};
+
+const DEFAULT_WINDOW_SIZE = {
+  width: 640,
+  height: 480,
 };
 
 function useIsMobile(breakpoint = 1200) {
@@ -112,6 +117,22 @@ function App() {
     });
   };
 
+  const getWindowSize = (title: WindowKey) => {
+    const desktopApp = desktopApps.find((app) => app.title === title);
+    const dockApp = dockApps.find((app) => app.title === title);
+
+    return {
+      width:
+        desktopApp?.windowWidth ??
+        dockApp?.windowWidth ??
+        DEFAULT_WINDOW_SIZE.width,
+      height:
+        desktopApp?.windowHeight ??
+        dockApp?.windowHeight ??
+        DEFAULT_WINDOW_SIZE.height,
+    };
+  };
+
   const handleOpenWindow = (title: string) => {
     if (!(title in windows)) return;
 
@@ -135,11 +156,17 @@ function App() {
     if (!windowPositions[windowKey]) {
       const margin = 32;
       const topMargin = 100;
-      const windowWidth = 640;
-      const windowHeight = 460;
+      const { width: windowWidth, height: windowHeight } =
+        getWindowSize(windowKey);
 
-      const maxTop = Math.max(topMargin, window.innerHeight - windowHeight - margin);
-      const maxLeft = Math.max(margin, window.innerWidth - windowWidth - margin);
+      const maxTop = Math.max(
+        topMargin,
+        window.innerHeight - windowHeight - margin
+      );
+      const maxLeft = Math.max(
+        margin,
+        window.innerWidth - windowWidth - margin
+      );
 
       const existingPositions = Object.values(windowPositions);
 
@@ -168,6 +195,7 @@ function App() {
         },
       }));
     }
+
     bringToFront(title);
   };
 
@@ -211,6 +239,18 @@ function App() {
 
   const getWindowPosition = (title: WindowKey) => {
     return windowPositions[title] ?? BASE_WINDOW_POSITION;
+  };
+
+  const getWindowProps = (title: WindowKey) => {
+    const position = getWindowPosition(title);
+    const size = getWindowSize(title);
+
+    return {
+      initialTop: position.top,
+      initialLeft: position.left,
+      initialWidth: size.width,
+      initialHeight: size.height,
+    };
   };
 
   const handleGoHome = () => {
@@ -271,8 +311,7 @@ function App() {
         {windows["Finder"].isOpen && (
           <Window
             title="Finder"
-            initialTop={getWindowPosition("Finder").top}
-            initialLeft={getWindowPosition("Finder").left}
+            {...getWindowProps("Finder")}
             isMaximized={windows["Finder"].isMaximized}
             zIndex={zMap["Finder"] ?? 1}
             onFocus={() => bringToFront("Finder")}
@@ -289,8 +328,7 @@ function App() {
         {windows["Contracts"].isOpen && (
           <Window
             title="Contracts"
-            initialTop={getWindowPosition("Contracts").top}
-            initialLeft={getWindowPosition("Contracts").left}
+            {...getWindowProps("Contracts")}
             isMaximized={windows["Contracts"].isMaximized}
             zIndex={zMap["Contracts"] ?? 1}
             onFocus={() => bringToFront("Contracts")}
@@ -307,8 +345,7 @@ function App() {
         {windows["Messages"].isOpen && (
           <Window
             title="Messages"
-            initialTop={getWindowPosition("Messages").top}
-            initialLeft={getWindowPosition("Messages").left}
+            {...getWindowProps("Messages")}
             isMaximized={windows["Messages"].isMaximized}
             zIndex={zMap["Messages"] ?? 1}
             onFocus={() => bringToFront("Messages")}
@@ -325,8 +362,7 @@ function App() {
         {windows["Photos"].isOpen && (
           <Window
             title="Photos"
-            initialTop={getWindowPosition("Photos").top}
-            initialLeft={getWindowPosition("Photos").left}
+            {...getWindowProps("Photos")}
             isMaximized={windows["Photos"].isMaximized}
             zIndex={zMap["Photos"] ?? 1}
             onFocus={() => bringToFront("Photos")}
@@ -343,8 +379,7 @@ function App() {
         {windows["Music"].isOpen && (
           <Window
             title="Music"
-            initialTop={getWindowPosition("Music").top}
-            initialLeft={getWindowPosition("Music").left}
+            {...getWindowProps("Music")}
             isMaximized={windows["Music"].isMaximized}
             zIndex={zMap["Music"] ?? 1}
             onFocus={() => bringToFront("Music")}
@@ -361,8 +396,7 @@ function App() {
         {windows["Trash"].isOpen && (
           <Window
             title="Trash"
-            initialTop={getWindowPosition("Trash").top}
-            initialLeft={getWindowPosition("Trash").left}
+            {...getWindowProps("Trash")}
             isMaximized={windows["Trash"].isMaximized}
             zIndex={zMap["Trash"] ?? 1}
             onFocus={() => bringToFront("Trash")}
@@ -379,8 +413,7 @@ function App() {
         {windows["About Me"].isOpen && (
           <Window
             title="About Me"
-            initialTop={getWindowPosition("About Me").top}
-            initialLeft={getWindowPosition("About Me").left}
+            {...getWindowProps("About Me")}
             isMaximized={windows["About Me"].isMaximized}
             zIndex={zMap["About Me"] ?? 1}
             onFocus={() => bringToFront("About Me")}
@@ -397,8 +430,7 @@ function App() {
         {windows["Projects"].isOpen && (
           <Window
             title="Projects"
-            initialTop={getWindowPosition("Projects").top}
-            initialLeft={getWindowPosition("Projects").left}
+            {...getWindowProps("Projects")}
             isMaximized={windows["Projects"].isMaximized}
             zIndex={zMap["Projects"] ?? 1}
             onFocus={() => bringToFront("Projects")}
@@ -415,8 +447,7 @@ function App() {
         {windows["Blog"].isOpen && (
           <Window
             title="Blog"
-            initialTop={getWindowPosition("Blog").top}
-            initialLeft={getWindowPosition("Blog").left}
+            {...getWindowProps("Blog")}
             isMaximized={windows["Blog"].isMaximized}
             zIndex={zMap["Blog"] ?? 1}
             onFocus={() => bringToFront("Blog")}
@@ -433,8 +464,7 @@ function App() {
         {windows["Resume.pdf"].isOpen && (
           <Window
             title="Resume.pdf"
-            initialTop={getWindowPosition("Resume.pdf").top}
-            initialLeft={getWindowPosition("Resume.pdf").left}
+            {...getWindowProps("Resume.pdf")}
             isMaximized={windows["Resume.pdf"].isMaximized}
             zIndex={zMap["Resume.pdf"] ?? 1}
             onFocus={() => bringToFront("Resume.pdf")}

@@ -30,6 +30,7 @@
 .topbar-title {
   cursor: pointer;
   transition: opacity 0.15s ease;
+  font-weight: 700;
 }
 
 .topbar-title:hover {
