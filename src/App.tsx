@@ -50,8 +50,10 @@ const BASE_WINDOW_POSITION: WindowPosition = {
   left: 220,
 };
 
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= breakpoint);
+function useIsMobile(breakpoint = 1200) {
+  const [isMobile, setIsMobile] = useState(() =>
+    window.innerWidth <= breakpoint
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -65,8 +67,10 @@ function useIsMobile(breakpoint = 768) {
   return isMobile;
 }
 
-function useIsTouch(breakpoint = 1024) {
-  const [isTouch, setIsTouch] = useState(() => window.innerWidth <= breakpoint);
+function useIsTouch(breakpoint = 1200) {
+  const [isTouch, setIsTouch] = useState(() =>
+    window.innerWidth <= breakpoint
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -97,10 +101,10 @@ const getViewportWindowSize = () => {
     };
   }
 
-  if (vw <= 1024) {
+  if (vw <= 1200) {
     return {
-      width: Math.min(720, vw - 48),
-      height: Math.min(700, vh - 80),
+      width: Math.min(840, vw - 48),
+      height: Math.min(760, vh - 80),
       margin: 24,
       topMargin: 70,
     };
