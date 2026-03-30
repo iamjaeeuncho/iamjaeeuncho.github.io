@@ -8,6 +8,7 @@ type DesktopIconProps = {
   leftPercent?: number;
   onOpen: () => void;
   isMobile?: boolean;
+  isTouch?: boolean;
 };
 
 export default function DesktopIcon({
@@ -17,6 +18,7 @@ export default function DesktopIcon({
   leftPercent = 0,
   onOpen,
   isMobile = false,
+  isTouch = false,
 }: DesktopIconProps) {
   const getInitialPosition = () => ({
     top: (window.innerHeight - 140) * (topPercent / 100),
@@ -32,7 +34,7 @@ export default function DesktopIcon({
   });
 
   useEffect(() => {
-    if (isMobile) return;
+    if (isTouch) return;
 
     const updatePosition = () => {
       setPosition(getInitialPosition());
@@ -69,7 +71,7 @@ export default function DesktopIcon({
     document.removeEventListener("mouseup", handleMouseUp);
   };
 
-  if (isMobile) {
+  if (isTouch) {
     return (
       <button
         type="button"

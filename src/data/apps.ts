@@ -41,10 +41,10 @@ export const windowToApp: Record<WindowKey, AppId> = {
   Contracts: "contracts",
   Messages: "messages",
   Photos: "photos",
-  Notes: "notes",
-  Documents: "documents",
+  Notes: "finder",
+  Documents: "finder",
   Music: "music",
-  Trash: "trash",
+  Trash: "finder",
 };
 
 export const desktopApps: DesktopApp[] = [

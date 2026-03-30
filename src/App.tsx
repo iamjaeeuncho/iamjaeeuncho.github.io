@@ -46,11 +46,9 @@ const initialWindowStates: WindowStates = {
 };
 
 const BASE_WINDOW_POSITION: WindowPosition = {
-  top: 140,
-  left: 200,
+  top: 120,
+  left: 220,
 };
-
-const WINDOW_OFFSET = 300;
 
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= breakpoint);
@@ -67,6 +65,55 @@ function useIsMobile(breakpoint = 768) {
   return isMobile;
 }
 
+function useIsTouch(breakpoint = 1024) {
+  const [isTouch, setIsTouch] = useState(() => window.innerWidth <= breakpoint);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsTouch(window.innerWidth <= breakpoint);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [breakpoint]);
+
+  return isTouch;
+}
+
+const clamp = (value: number, min: number, max: number) => {
+  return Math.min(Math.max(value, min), max);
+};
+
+const getViewportWindowSize = () => {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+
+  if (vw <= 768) {
+    return {
+      width: vw - 24,
+      height: vh - 100,
+      margin: 12,
+      topMargin: 60,
+    };
+  }
+
+  if (vw <= 1024) {
+    return {
+      width: Math.min(720, vw - 48),
+      height: Math.min(700, vh - 80),
+      margin: 24,
+      topMargin: 70,
+    };
+  }
+
+  return {
+    width: Math.min(900, vw - 80),
+    height: Math.min(760, vh - 80),
+    margin: 32,
+    topMargin: 100,
+  };
+};
+
 function App() {
   const [windows, setWindows] = useState<WindowStates>(initialWindowStates);
   const [showStickies, setShowStickies] = useState(true);
@@ -76,10 +123,9 @@ function App() {
   const [windowPositions, setWindowPositions] = useState<
     Partial<Record<WindowKey, WindowPosition>>
   >({});
-  const [nextWindowPosition, setNextWindowPosition] =
-    useState<WindowPosition>(BASE_WINDOW_POSITION);
 
   const isMobile = useIsMobile();
+  const isTouch = useIsTouch();
 
   const bringToFront = (title: string) => {
     setTopZ((prev) => {
@@ -91,7 +137,7 @@ function App() {
       return nextZ;
     });
   };
-
+  
   const handleOpenWindow = (title: string) => {
     if (!(title in windows)) return;
 
@@ -103,21 +149,56 @@ function App() {
         ...prev[windowKey],
         isOpen: true,
         isMinimized: false,
+        isMaximized: isMobile,
       },
     }));
 
     if (!windowPositions[windowKey]) {
+      const { width, height, margin, topMargin } = getViewportWindowSize();
+
+      const openWindowCount = Object.keys(windowPositions).length;
+
+      const cascadeIndex = (openWindowCount + 1) % 6;
+
+      const CASCADE_X = isMobile ? 0 : 44;
+      const CASCADE_Y = isMobile ? 0 : 30;
+      const ROW_DROP = isMobile ? 0 : 18;
+
+      const zigzagOffsetX =
+        cascadeIndex === 0
+          ? 0
+          : cascadeIndex % 2 === 1
+            ? -Math.ceil(cascadeIndex / 2) * CASCADE_X
+            : (cascadeIndex / 2) * CASCADE_X;
+
+      const zigzagOffsetY =
+        cascadeIndex === 0
+          ? 0
+          : cascadeIndex === 1
+            ? CASCADE_Y
+            : cascadeIndex === 2
+              ? CASCADE_Y * 2
+              : cascadeIndex === 3
+                ? CASCADE_Y * 2 + ROW_DROP
+                : cascadeIndex === 4
+                  ? CASCADE_Y * 3 + ROW_DROP
+                  : CASCADE_Y * 4 + ROW_DROP;
+
+      const rawTop = BASE_WINDOW_POSITION.top + zigzagOffsetY;
+      const rawLeft = BASE_WINDOW_POSITION.left + zigzagOffsetX;
+
+      const maxTop = Math.max(topMargin, window.innerHeight - height - margin);
+      const maxLeft = Math.max(margin, window.innerWidth - width - margin);
+
+      const safeTop = rawTop;
+      const safeLeft = rawLeft;
+
       setWindowPositions((prev) => ({
         ...prev,
         [windowKey]: {
-          top: nextWindowPosition.top,
-          left: nextWindowPosition.left,
+          top: safeTop,
+          left: safeLeft,
         },
-      }));
-
-      setNextWindowPosition((prev) => ({
-        top: prev.top + WINDOW_OFFSET,
-        left: prev.left + WINDOW_OFFSET,
       }));
     }
 
@@ -141,18 +222,9 @@ function App() {
       [title]: {
         ...prev[title],
         isMinimized: true,
+        isOpen: false,
       },
     }));
-
-    setTimeout(() => {
-      setWindows((prev) => ({
-        ...prev,
-        [title]: {
-          ...prev[title],
-          isMinimized: false,
-        },
-      }));
-    }, 300);
   };
 
   const handleToggleMaximize = (title: WindowKey) => {
@@ -177,14 +249,12 @@ function App() {
 
   const handleGoHome = () => {
     setWindows(initialWindowStates);
+    setWindowPositions({});
   };
 
   return (
     <div className="desktop">
-      <TopBar
-        onOpenWindow={handleOpenWindow}
-        onGoHome={handleGoHome}
-      />
+      <TopBar onOpenWindow={handleOpenWindow} onGoHome={handleGoHome} />
 
       <main className="desktop-main">
         {!isMobile && showStickies && (
@@ -212,6 +282,7 @@ function App() {
                 leftPercent={app.leftPercent}
                 onOpen={() => handleOpenWindow(app.title)}
                 isMobile={false}
+                isTouch={isTouch}
               />
             ))
         ) : (
@@ -225,6 +296,7 @@ function App() {
                   icon={app.icon}
                   onOpen={() => handleOpenWindow(app.title)}
                   isMobile
+                  isTouch={isTouch}
                 />
               ))}
           </div>

@@ -49,10 +49,12 @@
 
 .dock-item.has-minimized {
   transform: scale(1.05);
+  will-change: transform;
 }
 
+.dock-item:hover,
 .dock-item.has-minimized:hover {
-  transform: translateY(-6px) scale(1.08 * 1.05);
+  transform: translateY(-6px) scale(1.08);
 }
 
 .dock-item-image {

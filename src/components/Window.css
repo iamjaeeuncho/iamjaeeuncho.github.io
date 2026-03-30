@@ -16,7 +16,8 @@
   flex-direction: column;
 }
 
-.window-maximized {
+.window-maximized,
+.window-mobile {
   position: fixed;
   top: 50px !important;
   left: 0 !important;
