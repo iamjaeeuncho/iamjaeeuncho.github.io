@@ -4,7 +4,12 @@ import DesktopIcon from "./components/DesktopIcon";
 import StickyNote from "./components/StickyNote";
 import Window from "./components/Window";
 import Dock from "./components/Dock";
-import { desktopApps, dockApps, type WindowKey } from "./data/apps";
+import {
+  desktopApps,
+  dockApps,
+  stickyNotes,
+  type WindowKey,
+} from "./data/apps";
 
 import FinderWindow from "./components/windows/FinderWindow";
 import ContractsWindow from "./components/windows/ContractsWindow";
@@ -263,18 +268,17 @@ function App() {
       <TopBar onOpenWindow={handleOpenWindow} onGoHome={handleGoHome} />
 
       <main className="desktop-main">
-        {!isMobile && showStickies && (
-          <StickyNote
-            top={100}
-            left={75}
-            title="To Do List"
-            items={[
-              { label: "Projects", value: "3" },
-              { label: "Essays", value: "3" },
-              { label: "Resume", value: "1" },
-            ]}
-          />
-        )}
+        {!isMobile &&
+          showStickies &&
+          stickyNotes.map((note) => (
+            <StickyNote
+              key={note.title}
+              top={note.top}
+              left={note.left}
+              title={note.title}
+              lines={note.lines}
+            />
+          ))}
 
         {!isMobile ? (
           desktopApps

@@ -1,23 +1,23 @@
 import { useRef, useState } from "react";
 import "./StickyNote.css";
 
-type StickyNoteItem = {
-  label: string;
-  value: string;
+type StickyNoteLine = {
+  text: string;
+  decoration?: boolean;
 };
 
 type StickyNoteProps = {
   top: number;
   left: number;
   title: string;
-  items: StickyNoteItem[];
+  lines: StickyNoteLine[];
 };
 
 export default function StickyNote({
   top,
   left,
   title,
-  items,
+  lines,
 }: StickyNoteProps) {
   const [position, setPosition] = useState({ top, left });
 
@@ -57,20 +57,17 @@ export default function StickyNote({
       style={{ top: `${position.top}px`, left: `${position.left}px` }}
     >
       <div className="sticky-note-top" onMouseDown={handleMouseDown}>
-        <img
-          src="/icons/Stickies.png"
-          alt="Stickies"
-          className="sticky-note-icon"
-        />
-        <div className="sticky-note-header">{title}</div>
+        <div className="sticky-note-header">𖤐 {title} 𖤐</div>
       </div>
 
       <div className="sticky-note-body">
-        {items.map((item) => (
-          <div key={item.label} className="sticky-note-row">
-            <span>{item.label}</span>
-            <strong>{item.value}</strong>
-          </div>
+        {lines.map((line, index) => (
+          <p
+            key={index}
+            className={`sticky-note-line ${line.decoration ? "decoration" : ""}`}
+          >
+            {line.text}
+          </p>
         ))}
       </div>
     </section>

@@ -18,7 +18,7 @@ export default function MusicWindow() {
             zIndex: 1,
           }}
         >
-          loading...
+          Loading...
         </div>
       )}
 

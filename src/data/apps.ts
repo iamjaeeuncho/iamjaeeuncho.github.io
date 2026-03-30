@@ -83,8 +83,8 @@ export const desktopApps: DesktopApp[] = [
     topPercent: 40,
     leftPercent: 36.67,
     showOnDesktop: true,
-    windowWidth: 820,
-    windowHeight: 700,
+    windowWidth: 700,
+    windowHeight: 600,
   },
   {
     title: "Trash",
@@ -132,5 +132,32 @@ export const dockApps: Array<{
     icon: "/icons/Music.png",
     windowWidth: 430,
     windowHeight: 450,
+  },
+];
+
+export type StickyNoteLine = {
+  text: string;
+  decoration?: boolean;
+};
+
+export type StickyNoteData = {
+  title: string;
+  top: number;
+  left: number;
+  lines: StickyNoteLine[];
+};
+
+export const stickyNotes: StickyNoteData[] = [
+  {
+    title: "To Do List",
+    top: 100,
+    left: 75,
+    lines: [
+      { text: "Become a full-stack developer" },
+      { text: "Build and launch a service" },
+      { text: "Create a sleek portfolio website", decoration: true },
+      { text: "World domination - in progress..." },
+      { text: "Work hard, Play harder!" },
+    ],
   },
 ];

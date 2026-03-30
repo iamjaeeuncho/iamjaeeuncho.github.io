@@ -1,7 +1,7 @@
 .sticky-note {
   position: absolute;
-  width: 210px;
-  min-height: 190px;
+  width: 300px;
+  min-height: 260px;
   padding: 16px;
 
   background: #fff2a8;
@@ -16,6 +16,7 @@
   margin-bottom: 16px;
   cursor: grab;
   user-select: none;
+  justify-content: center;
 }
 
 .sticky-note-top:active {
@@ -23,32 +24,38 @@
 }
 
 .sticky-note-icon {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
 .sticky-note-header {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   color: #3b3420;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .sticky-note-body {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
-.sticky-note-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+.sticky-note-line {
   font-size: 14px;
   color: #3b3420;
+  word-break: keep-all;
+  margin: 0;
+  line-height: 1.8;
 }
 
-.sticky-note-row strong {
-  font-size: 15px;
+.sticky-note-line::before {
+  content: "∙ ";
+  opacity: 0.6;
+}
+
+.sticky-note-line.decoration {
+  text-decoration: line-through;
 }

@@ -16,7 +16,6 @@ export default function PhotosWindow() {
             color: "#111",
             fontSize: "14px",
             zIndex: 1,
-            borderRadius: "8px",
           }}
         >
           Loading...
