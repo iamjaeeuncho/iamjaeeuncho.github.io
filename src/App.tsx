@@ -30,6 +30,9 @@ type WindowPosition = {
   left: number;
 };
 
+const DEFAULT_WINDOW_WIDTH = 640;
+const DEFAULT_WINDOW_HEIGHT = 460;
+
 const initialWindowStates: WindowStates = {
   Finder: { isOpen: false, isMinimized: false, isMaximized: false },
   Contracts: { isOpen: false, isMinimized: false, isMaximized: false },
@@ -46,8 +49,8 @@ const initialWindowStates: WindowStates = {
 };
 
 const BASE_WINDOW_POSITION: WindowPosition = {
-  top: 120,
-  left: 220,
+  top: 80,
+  left: 140,
 };
 
 function useIsMobile(breakpoint = 1200) {
@@ -88,7 +91,12 @@ const clamp = (value: number, min: number, max: number) => {
   return Math.min(Math.max(value, min), max);
 };
 
-const getViewportWindowSize = () => {
+const randomInt = (min: number, max: number) => {
+  if (max <= min) return min;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+const getWindowPlacementBounds = () => {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
 
@@ -101,21 +109,37 @@ const getViewportWindowSize = () => {
     };
   }
 
-  if (vw <= 1200) {
-    return {
-      width: Math.min(840, vw - 48),
-      height: Math.min(760, vh - 80),
-      margin: 24,
-      topMargin: 70,
-    };
-  }
-
   return {
-    width: Math.min(900, vw - 80),
-    height: Math.min(760, vh - 80),
+    width: DEFAULT_WINDOW_WIDTH,
+    height: DEFAULT_WINDOW_HEIGHT,
     margin: 32,
     topMargin: 100,
   };
+};
+
+const getOverlapArea = (
+  a: { top: number; left: number; width: number; height: number },
+  b: { top: number; left: number; width: number; height: number }
+) => {
+  const overlapWidth =
+    Math.min(a.left + a.width, b.left + b.width) - Math.max(a.left, b.left);
+  const overlapHeight =
+    Math.min(a.top + a.height, b.top + b.height) - Math.max(a.top, b.top);
+
+  if (overlapWidth <= 0 || overlapHeight <= 0) return 0;
+  return overlapWidth * overlapHeight;
+};
+
+const getCenterDistance = (
+  a: { top: number; left: number; width: number; height: number },
+  b: { top: number; left: number; width: number; height: number }
+) => {
+  const ax = a.left + a.width / 2;
+  const ay = a.top + a.height / 2;
+  const bx = b.left + b.width / 2;
+  const by = b.top + b.height / 2;
+
+  return Math.hypot(ax - bx, ay - by);
 };
 
 function App() {
@@ -142,6 +166,125 @@ function App() {
     });
   };
 
+  const getBestRandomWindowPosition = (
+    nextWindowKey: WindowKey
+  ): WindowPosition => {
+    const { width, height, margin, topMargin } = getWindowPlacementBounds();
+
+    const maxTop = Math.max(topMargin, window.innerHeight - height - margin);
+    const maxLeft = Math.max(margin, window.innerWidth - width - margin);
+
+    if (isMobile) {
+      return {
+        top: topMargin,
+        left: margin,
+      };
+    }
+
+    const openWindowKeys = (Object.keys(windows) as WindowKey[]).filter(
+      (key) =>
+        key !== nextWindowKey &&
+        windows[key].isOpen &&
+        !windows[key].isMinimized
+    );
+
+    const openRects = openWindowKeys.map((key) => {
+      const pos = windowPositions[key] ?? BASE_WINDOW_POSITION;
+      return {
+        top: pos.top,
+        left: pos.left,
+        width,
+        height,
+      };
+    });
+
+    if (openRects.length === 0) {
+      return {
+        top: randomInt(topMargin, maxTop),
+        left: randomInt(margin, maxLeft),
+      };
+    }
+
+    const availableTopRange = Math.max(0, maxTop - topMargin);
+    const availableLeftRange = Math.max(0, maxLeft - margin);
+
+    const rowAnchors = [
+      topMargin,
+      topMargin + Math.round(availableTopRange / 2),
+      maxTop,
+    ];
+
+    const colAnchors = [
+      margin,
+      margin + Math.round(availableLeftRange / 2),
+      maxLeft,
+    ];
+
+    const candidates: WindowPosition[] = [];
+
+    for (const row of rowAnchors) {
+      for (const col of colAnchors) {
+        candidates.push({
+          top: clamp(row + randomInt(-40, 40), topMargin, maxTop),
+          left: clamp(col + randomInt(-70, 70), margin, maxLeft),
+        });
+      }
+    }
+
+    for (let i = 0; i < 40; i++) {
+      candidates.push({
+        top: randomInt(topMargin, maxTop),
+        left: randomInt(margin, maxLeft),
+      });
+    }
+
+    let bestCandidate = candidates[0] ?? {
+      top: randomInt(topMargin, maxTop),
+      left: randomInt(margin, maxLeft),
+    };
+
+    let bestScore = -Infinity;
+
+    for (const candidate of candidates) {
+      const candidateRect = {
+        top: candidate.top,
+        left: candidate.left,
+        width,
+        height,
+      };
+
+      let overlapAreaSum = 0;
+      let minDistance = Infinity;
+      let topDifferenceSum = 0;
+
+      for (const rect of openRects) {
+        overlapAreaSum += getOverlapArea(candidateRect, rect);
+        minDistance = Math.min(
+          minDistance,
+          getCenterDistance(candidateRect, rect)
+        );
+        topDifferenceSum += Math.abs(candidate.top - rect.top);
+      }
+
+      const overlapRatio = overlapAreaSum / (width * height);
+      const avgTopDifference =
+        openRects.length > 0 ? topDifferenceSum / openRects.length : 0;
+      const distanceBonus = Number.isFinite(minDistance) ? minDistance : 0;
+
+      const score =
+        avgTopDifference * 12 +
+        distanceBonus * 0.35 -
+        overlapRatio * 10000;
+
+      if (score > bestScore) {
+        bestScore = score;
+        bestCandidate = candidate;
+      }
+    }
+
+    return bestCandidate;
+  };
+
   const handleOpenWindow = (title: string) => {
     if (!(title in windows)) return;
 
@@ -157,54 +300,47 @@ function App() {
       },
     }));
 
+    const randomInt = (min: number, max: number) => {
+      if (max <= min) return min;
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+
     if (!windowPositions[windowKey]) {
-      const { width, height, margin, topMargin } = getViewportWindowSize();
+      const margin = 32;
+      const topMargin = 100;
+      const windowWidth = 640;
+      const windowHeight = 460;
 
-      const openWindowCount = Object.keys(windowPositions).length;
-      const cascadeIndex = (openWindowCount + 1) % 6;
+      const maxTop = Math.max(topMargin, window.innerHeight - windowHeight - margin);
+      const maxLeft = Math.max(margin, window.innerWidth - windowWidth - margin);
 
-      const CASCADE_X = isMobile ? 0 : 44;
-      const CASCADE_Y = isMobile ? 0 : 30;
-      const ROW_DROP = isMobile ? 0 : 18;
+      const existingPositions = Object.values(windowPositions);
 
-      const zigzagOffsetX =
-        cascadeIndex === 0
-          ? 0
-          : cascadeIndex % 2 === 1
-            ? -Math.ceil(cascadeIndex / 2) * CASCADE_X
-            : (cascadeIndex / 2) * CASCADE_X;
+      const lastPosition =
+        existingPositions.length > 0
+          ? existingPositions[existingPositions.length - 1]
+          : BASE_WINDOW_POSITION;
 
-      const zigzagOffsetY =
-        cascadeIndex === 0
-          ? 0
-          : cascadeIndex === 1
-            ? CASCADE_Y
-            : cascadeIndex === 2
-              ? CASCADE_Y * 2
-              : cascadeIndex === 3
-                ? CASCADE_Y * 2 + ROW_DROP
-                : cascadeIndex === 4
-                  ? CASCADE_Y * 3 + ROW_DROP
-                  : CASCADE_Y * 4 + ROW_DROP;
+      const nextTop = clamp(
+        lastPosition.top + randomInt(20, 40),
+        topMargin,
+        maxTop
+      );
 
-      const rawTop = BASE_WINDOW_POSITION.top + zigzagOffsetY;
-      const rawLeft = BASE_WINDOW_POSITION.left + zigzagOffsetX;
-
-      const maxTop = Math.max(topMargin, window.innerHeight - height - margin);
-      const maxLeft = Math.max(margin, window.innerWidth - width - margin);
-
-      const safeTop = clamp(rawTop, topMargin, maxTop);
-      const safeLeft = clamp(rawLeft, margin, maxLeft);
+      const nextLeft = clamp(
+        lastPosition.left + (Math.random() < 0.5 ? -1 : 1) * randomInt(20, 40),
+        margin,
+        maxLeft
+      );
 
       setWindowPositions((prev) => ({
         ...prev,
         [windowKey]: {
-          top: safeTop,
-          left: safeLeft,
+          top: nextTop,
+          left: nextLeft,
         },
       }));
     }
-
     bringToFront(title);
   };
 
