@@ -137,7 +137,7 @@ function App() {
       return nextZ;
     });
   };
-  
+
   const handleOpenWindow = (title: string) => {
     if (!(title in windows)) return;
 
@@ -157,7 +157,6 @@ function App() {
       const { width, height, margin, topMargin } = getViewportWindowSize();
 
       const openWindowCount = Object.keys(windowPositions).length;
-
       const cascadeIndex = (openWindowCount + 1) % 6;
 
       const CASCADE_X = isMobile ? 0 : 44;
@@ -190,8 +189,8 @@ function App() {
       const maxTop = Math.max(topMargin, window.innerHeight - height - margin);
       const maxLeft = Math.max(margin, window.innerWidth - width - margin);
 
-      const safeTop = rawTop;
-      const safeLeft = rawLeft;
+      const safeTop = clamp(rawTop, topMargin, maxTop);
+      const safeLeft = clamp(rawLeft, margin, maxLeft);
 
       setWindowPositions((prev) => ({
         ...prev,
