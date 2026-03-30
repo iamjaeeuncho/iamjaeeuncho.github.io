@@ -112,14 +112,14 @@ export const dockApps: Array<{
   {
     title: "Contracts",
     icon: "/icons/Contracts.png",
-    windowWidth: 700,
-    windowHeight: 520,
+    windowWidth: 600,
+    windowHeight: 500,
   },
   {
     title: "Messages",
     icon: "/icons/Messages.png",
-    windowWidth: 420,
-    windowHeight: 600,
+    windowWidth: 540,
+    windowHeight: 620,
   },
   {
     title: "Photos",

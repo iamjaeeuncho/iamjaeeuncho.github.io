@@ -1,0 +1,158 @@
+.contracts-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-fit-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-card.horizontal {
+  position: relative;
+  width: min(100%, 500px);
+  aspect-ratio: 1.55 / 1;
+  background: #f8f8f6;
+  border-radius: 22px;
+  box-shadow:
+    12px 12px 0 rgba(0, 0, 0, 0.05),
+    0 18px 36px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  padding: 20px 20px 18px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pop-stars {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  right: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+.pop-stars span {
+  font-size: clamp(14px, 1.8vw, 22px);
+  line-height: 1;
+  color: #111;
+}
+
+.pop-header-line {
+  position: absolute;
+  top: 48px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background: #111;
+  z-index: 2;
+}
+
+.pop-circle {
+  position: absolute;
+  right: -10px;
+  top: 78px;
+  width: 82px;
+  height: 82px;
+  border: 4px solid rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.pop-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding-top: 56px;
+  display: flex;
+  gap: 14px;
+  box-sizing: border-box;
+}
+
+.pop-left {
+  flex: 1 1 55%;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.pop-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.pop-title {
+  margin: 0 0 4px;
+  font-size: clamp(18px, 2.2vw, 26px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.pop-desc {
+  margin: 0;
+  font-size: clamp(11px, 1.6vw, 15px);
+  line-height: 0.8;
+  font-weight: 500;
+  color: rgba(17, 17, 17, 0.55);
+}
+
+.pop-right {
+  flex: 1 1 45%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0;
+  padding-bottom: 15px;
+}
+
+.pop-role {
+  margin: 0;
+  line-height: 1;
+  font-size: clamp(10px, 1.3vw, 14px);
+  font-weight: 700;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.pop-name {
+  margin: 0;
+  line-height: 1;
+  font-size: clamp(18px, 2.4vw, 28px);
+  font-weight: 900;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.pop-links {
+  line-height: 1;
+  margin-top: 12px;
+}
+
+.pop-links a {
+  font-size: clamp(10px, 1.4vw, 14px);
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.pop-links a:hover {
+  opacity: 1;
+}
