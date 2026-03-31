@@ -1,0 +1,313 @@
+.about-window {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  overflow-y: auto;
+  color: #1f2937;
+}
+
+.about-window::-webkit-scrollbar {
+  width: 10px;
+}
+
+.about-window::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about-window::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.35);
+  border-radius: 999px;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 0 12px 24px;
+}
+
+.about-avatar {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.08);
+}
+
+.about-name {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #111827;
+}
+
+.about-role {
+  margin: 8px 0 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.about-meta {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.about-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.about-meta a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-meta a:hover {
+  color: #111827;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-card {
+  margin-bottom: 18px;
+  padding: 28px 30px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.03),
+    0 10px 28px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.about-card h2 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #111827;
+}
+
+.about-card p {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 18px;
+  border-left: 2px solid #d1d5db;
+}
+
+/* .timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #9ca3af;
+} */
+
+.timeline-item h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #111827;
+}
+
+.timeline-item h3 span {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.timeline-meta {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #9ca3af;
+}
+
+.timeline-item p:last-child {
+  margin-bottom: 0;
+}
+
+.education-item + .education-item {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eceff3;
+}
+
+.education-item h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #111827;
+}
+
+.education-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.skill-group + .skill-group {
+  margin-top: 20px;
+}
+
+.skill-group h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(243, 244, 246, 0.9);
+  border: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.chip:hover {
+  background: rgba(229, 231, 235, 0.9);
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .about-window {
+    padding: 18px;
+  }
+
+  .about-hero {
+    padding: 8px 8px 20px;
+  }
+
+  .about-name {
+    font-size: 28px;
+  }
+
+  .about-role {
+    font-size: 15px;
+  }
+
+  .about-meta {
+    gap: 8px 12px;
+    font-size: 12px;
+  }
+
+  .about-card {
+    padding: 22px 20px;
+    border-radius: 20px;
+  }
+
+  .about-card h2 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .timeline-item h3,
+  .education-item h3 {
+    font-size: 15px;
+  }
+
+  .timeline-meta,
+  .education-item p {
+    font-size: 13px;
+  }
+
+  .chip {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-window {
+    padding: 16px 14px 24px;
+  }
+
+  .about-meta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-avatar {
+    width: 68px;
+    height: 68px;
+  }
+
+  .about-name {
+    font-size: 24px;
+  }
+
+  .about-role {
+    font-size: 14px;
+  }
+
+  .about-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .about-card {
+    padding: 18px 16px;
+    border-radius: 18px;
+  }
+
+  .timeline-item {
+    padding-left: 14px;
+  }
+}
