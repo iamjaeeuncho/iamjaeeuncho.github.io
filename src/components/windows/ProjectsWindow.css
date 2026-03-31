@@ -34,7 +34,7 @@
 }
 
 .projects-description {
-  max-width: 640px;
+  max-width: 620px;
   margin: 10px auto 0;
   font-size: 15px;
   line-height: 1.7;
@@ -44,12 +44,11 @@
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
 .project-row {
   display: flex;
-  align-items: flex-start;
   gap: 18px;
   padding: 20px;
   border-radius: 22px;

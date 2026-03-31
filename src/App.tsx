@@ -21,6 +21,7 @@ import AboutMeWindow from "./components/windows/AboutMeWindow";
 import ProjectsWindow from "./components/windows/ProjectsWindow";
 import BlogWindow from "./components/windows/BlogWindow";
 import ResumeWindow from "./components/windows/ResumeWindow";
+import TerminalWindow from "./components/windows/TerminalWindow";
 
 type WindowState = {
   isOpen: boolean;
@@ -47,6 +48,8 @@ const initialWindowStates: WindowStates = {
   "About Me": { isOpen: false, isMinimized: false, isMaximized: false },
   Projects: { isOpen: false, isMinimized: false, isMaximized: false },
   Blog: { isOpen: false, isMinimized: false, isMaximized: false },
+  Archive: { isOpen: false, isMinimized: false, isMaximized: false },
+  Terminal: { isOpen: false, isMinimized: false, isMaximized: false },
   "Resume.pdf": { isOpen: false, isMinimized: false, isMaximized: false },
 };
 
@@ -479,6 +482,23 @@ function App() {
             isMinimized={windows["Resume.pdf"].isMinimized}
           >
             <ResumeWindow />
+          </Window>
+        )}
+
+        {windows["Terminal"].isOpen && (
+          <Window
+            title="Terminal"
+            {...getWindowProps("Terminal")}
+            isMaximized={windows["Terminal"].isMaximized}
+            zIndex={zMap["Terminal"] ?? 1}
+            onFocus={() => bringToFront("Terminal")}
+            onClose={() => handleCloseWindow("Terminal")}
+            onMinimize={() => handleMinimizeWindow("Terminal")}
+            onToggleMaximize={() => handleToggleMaximize("Terminal")}
+            isMobile={isMobile}
+            isMinimized={windows["Terminal"].isMinimized}
+          >
+            <TerminalWindow />
           </Window>
         )}
       </main>

@@ -15,25 +15,17 @@ export default function BlogWindow() {
             className="essay-back-button"
             onClick={() => setSelectedEssay(null)}
           >
-            ← Back to Essays
+            ← Back
           </button>
 
-          <p className="essay-detail-date">{selectedEssay.date}</p>
           <h1 className="essay-detail-title">{selectedEssay.title}</h1>
-
-          <div className="essay-detail-image-wrap">
-            <img
-              className="essay-detail-image"
-              src={selectedEssay.image}
-              alt={selectedEssay.title}
-            />
-          </div>
-
-          <div className="essay-detail-content">
-            {selectedEssay.content.split("\n\n").map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
-          </div>
+          <p className="essay-detail-date">{selectedEssay.date}</p>
+          <img
+            className="essay-detail-image"
+            src={selectedEssay.image}
+            alt={selectedEssay.title}
+          />
+          <div className="essay-detail-content">{selectedEssay.content}</div>
         </div>
       </div>
     );
@@ -44,7 +36,8 @@ export default function BlogWindow() {
       <section className="blog-hero">
         <h1 className="blog-title">Essays</h1>
         <p className="blog-description">
-          Thoughts on growth, curiosity, work, and the experiences that shaped me.
+          Thoughts on growth, curiosity, work, and the experiences that shaped
+          me.
         </p>
       </section>
 
@@ -56,13 +49,17 @@ export default function BlogWindow() {
             onClick={() => setSelectedEssay(essay)}
           >
             <div className="essay-image-wrap">
-              <img className="essay-image" src={essay.image} alt={essay.title} />
+              <img
+                className="essay-image"
+                src={essay.image}
+                alt={essay.title}
+              />
             </div>
 
             <div className="essay-content">
               <p className="essay-date">{essay.date}</p>
               <h2 className="essay-card-title">{essay.title}</h2>
-              <p className="essay-preview">{essay.content}</p>
+              <p className="essay-preview">{essay.preview}</p>
             </div>
           </article>
         ))}

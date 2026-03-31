@@ -83,29 +83,55 @@ export default function Dock({
     <nav className="dock">
       {dockApps.map((item) => {
         const isMenuOpen = menu?.title === item.title;
+        const isExternalLink = Boolean(item.href);
         const appId =
-          item.title === "Stickies" ? null : windowToApp[item.title];
+          item.title === "Stickies" || isExternalLink
+            ? null
+            : windowToApp[item.title];
         const minimizedWindows =
           appId && grouped[appId] ? grouped[appId] : [];
 
         return (
           <div key={item.title} className="dock-item-wrapper">
-            <button
-              type="button"
-              className={`dock-item ${minimizedWindows.length > 0 ? 'has-minimized' : ''}`}
-              onClick={(e) => handleDockClick(e, item.title)}
-              onContextMenu={(e) => handleRightClick(e, item.title)}
-            >
-              {!isMenuOpen && (
-                <span className="dock-tooltip">{item.title}</span>
-              )}
+            {isExternalLink ? (
+              <a
+                className="dock-item"
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setMenu(null);
+                }}
+              >
+                {!isMenuOpen && (
+                  <span className="dock-tooltip">{item.title}</span>
+                )}
 
-              <img
-                src={item.icon}
-                alt={item.title}
-                className="dock-item-image"
-              />
-            </button>
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="dock-item-image"
+                />
+              </a>
+            ) : (
+              <button
+                type="button"
+                className={`dock-item ${minimizedWindows.length > 0 ? "has-minimized" : ""}`}
+                onClick={(e) => handleDockClick(e, item.title)}
+                onContextMenu={(e) => handleRightClick(e, item.title)}
+              >
+                {!isMenuOpen && (
+                  <span className="dock-tooltip">{item.title}</span>
+                )}
+
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="dock-item-image"
+                />
+              </button>
+            )}
 
             {isMenuOpen && (
               <div

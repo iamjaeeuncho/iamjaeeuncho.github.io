@@ -124,7 +124,7 @@ export default function ProjectsWindow() {
   return (
     <div className="projects-window">
       <section className="projects-hero">
-        <h1 className="projects-title">Check out my latest work</h1>
+        <h1 className="projects-title">Check out my work</h1>
         <p className="projects-description">
           I've worked with a focus on Java and JavaScript,
           <br />

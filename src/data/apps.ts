@@ -20,7 +20,10 @@ export type WindowKey =
   | "About Me"
   | "Projects"
   | "Blog"
-  | "Resume.pdf";
+  | "Resume.pdf"
+  | "Archive"
+  | "Terminal"
+  | "Blog";
 
 export type DockItemTitle = WindowKey | "Stickies";
 
@@ -36,7 +39,7 @@ export type DesktopApp = {
 
 export const windowToApp: Record<WindowKey, AppId> = {
   Finder: "finder",
-  "About Me": "finder",
+  "About Me": "notes",
   Projects: "finder",
   Blog: "finder",
   "Resume.pdf": "finder",
@@ -47,12 +50,14 @@ export const windowToApp: Record<WindowKey, AppId> = {
   Documents: "finder",
   Music: "music",
   Trash: "finder",
+  Archive: "finder",
+  Terminal: "finder",
 };
 
 export const desktopApps: DesktopApp[] = [
   {
     title: "About Me",
-    icon: "/icons/Folder.png",
+    icon: "/icons/Notes.png",
     topPercent: 22.5,
     leftPercent: 51.67,
     showOnDesktop: true,
@@ -70,7 +75,7 @@ export const desktopApps: DesktopApp[] = [
   },
   {
     title: "Blog",
-    icon: "/icons/Folder.png",
+    icon: "/icons/TextEdit.png",
     topPercent: 72.5,
     leftPercent: 63,
     showOnDesktop: true,
@@ -100,6 +105,7 @@ export const desktopApps: DesktopApp[] = [
 export const dockApps: Array<{
   title: DockItemTitle;
   icon: string;
+  href?: string;
   windowWidth?: number;
   windowHeight?: number;
 }> = [
@@ -132,6 +138,19 @@ export const dockApps: Array<{
     icon: "/icons/Music.png",
     windowWidth: 430,
     windowHeight: 450,
+  },
+  {
+    title: "Archive",
+    icon: "/icons/Books.png",
+    href: "https://iamjaeeuncho.tistory.com",
+    windowWidth: 430,
+    windowHeight: 450,
+  },
+  {
+    title: "Terminal",
+    icon: "/icons/Terminal.png",
+    windowWidth: 540,
+    windowHeight: 540,
   },
 ];
 
