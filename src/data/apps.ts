@@ -65,8 +65,8 @@ export const desktopApps: DesktopApp[] = [
     topPercent: 46.25,
     leftPercent: 65,
     showOnDesktop: true,
-    windowWidth: 980,
-    windowHeight: 650,
+    windowWidth: 800,
+    windowHeight: 580,
   },
   {
     title: "Blog",
