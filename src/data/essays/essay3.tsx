@@ -112,11 +112,6 @@ export const essay3 = {
           That’s just who I am.
           I would rather try and fail than do nothing and regret it later.
         </p>
-        <p>
-          One thing I am certain of, though, is that I will probably continue programming in some way.
-          Whether it becomes my full-time career, a side job, or simply a hobby, my goal right now is to become the kind of person who is still coding even in my seventies.
-          (Honestly, that already sounds pretty cool.)
-        </p>
         <br />
 
         <h3>Why Wandering Isn’t a Waste</h3>
