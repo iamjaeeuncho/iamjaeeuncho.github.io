@@ -4,7 +4,7 @@ export const essay4 = {
     title: "What Travel Has Taught Me",
     image: "/essays/essay4.jpg",
     preview:
-      "",
+      "A personal reflection on how travel reshaped my views on life, people, and myself.",
 
     content: (
       <> 
