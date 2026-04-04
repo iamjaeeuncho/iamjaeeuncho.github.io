@@ -79,23 +79,17 @@ export default function AboutMeWindow() {
 
         <div className="about-meta">
           <span>☀︎ Seoul, Korea</span>
-          <span>☏ redjoun@gmail.com</span>
+          <span>☎︎ redjoun@gmail.com</span>
           <span>
-            ☺︎{" "}
+            ⛰︎{" "}
             <a href="https://www.linkedin.com/in/jaeeuncho" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
           </span>
           <span>
-            ♧{" "}
+            ⛏︎{" "}
             <a href="https://github.com/iamjaeeuncho" target="_blank" rel="noreferrer">
               GitHub
-            </a>
-          </span>
-          <span>
-            ✏︎{" "}
-            <a href="https://iamjaeeuncho.tistory.com" target="_blank" rel="noreferrer">
-              Blog
             </a>
           </span>
         </div>

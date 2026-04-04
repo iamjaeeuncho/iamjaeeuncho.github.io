@@ -24,9 +24,7 @@
   aspect-ratio: 1.55 / 1;
   background: #f8f8f6;
   border-radius: 22px;
-  box-shadow:
-    12px 12px 0 rgba(0, 0, 0, 0.05),
-    0 18px 36px rgba(0, 0, 0, 0.09);
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.05);
   overflow: hidden;
   padding: 20px 20px 18px;
   box-sizing: border-box;

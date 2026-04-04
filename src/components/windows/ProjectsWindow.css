@@ -179,44 +179,71 @@
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
+  margin-top: 12px;
 }
 
-.project-tags span {
+.project-tags .tag {
   display: inline-flex;
   align-items: center;
-  min-height: 32px;
-  padding: 7px 12px;
+  min-height: 34px;
+  padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(243, 244, 246, 0.9);
-  border: 1px solid #e5e7eb;
-  color: #4b5563;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
   line-height: 1;
+  border: 1px solid;
+  background: transparent;
+}
+.tag.language {
+  color: #a78bfa;
+  border-color: rgba(167, 139, 250, 0.45);
+}
+
+.tag.frontend {
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.tag.backend {
+  color: #2dd4bf;
+  border-color: rgba(45, 212, 191, 0.45);
+}
+
+.tag.database {
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.45);
+}
+
+.tag.infra {
+  color: #4f6ddf;
+  border-color: rgba(79, 109, 223, 0.45);
+}
+
+.tag.etc {
+  color: #64748b;
+  border-color: rgba(100, 116, 139, 0.45);
 }
 
 .project-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 12px;
+  gap: 10px;
   margin-top: 14px;
 }
 
 .project-link {
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 8px 12px;
+  font-size: 13px;
   font-weight: 600;
   color: #111827;
-  text-decoration: none;
-}
-
-.project-link:hover {
   text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.project-link.video {
-  color: #111827;
+  line-height: 1;
 }
 
 @media (max-width: 900px) {
@@ -260,6 +287,10 @@
   .project-type {
     align-self: flex-start;
   }
+
+  .project-links {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 560px) {
@@ -295,12 +326,18 @@
     font-size: 12px;
   }
 
-  .project-tags span {
-    font-size: 11px;
-    padding: 6px 10px;
+  .project-tags {
+    gap: 8px;
+  }
+
+  .project-tags .tag {
+    min-height: 30px;
+    font-size: 9px;
+    padding: 6px 12px;
   }
 
   .project-link {
+    min-height: 30px;
     font-size: 12px;
     padding: 6px 10px;
   }
