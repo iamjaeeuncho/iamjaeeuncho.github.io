@@ -54,7 +54,7 @@ const initialWindowStates: WindowStates = {
 };
 
 const BASE_WINDOW_POSITION: WindowPosition = {
-  top: 20,
+  top: 70,
   left: 60,
 };
 

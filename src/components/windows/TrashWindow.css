@@ -1,0 +1,148 @@
+.trash-window {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.trash-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.trash-item {
+  position: absolute;
+  width: clamp(40px, 18vw, 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease;
+}
+
+.trash-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.trash-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.trash-name {
+  max-width: 100%;
+  font-size: clamp(10px, 1.8vw, 12px);
+  color: #374151;
+  text-align: center;
+  line-height: 1.2;
+  opacity: 0.85;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trash-item:hover {
+  transform: scale(1.12) rotate(0deg) !important;
+  z-index: 10;
+}
+
+.trash-item:hover .trash-thumb {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.tilt-0 {
+  top: 0%;
+  left: 0%;
+}
+
+.tilt-1 {
+  top: -5%;
+  left: 35%;
+}
+
+.tilt-2 {
+  top: 50%;
+  left: 10%;
+}
+
+.tilt-3 {
+  top: 45%;
+  left: 45%;
+}
+
+@media (max-width: 768px) {
+  .trash-window {
+    padding: 18px;
+  }
+
+  .trash-item {
+    width: clamp(76px, 22vw, 110px);
+    gap: 6px;
+  }
+
+  .tilt-0 {
+    top: 8%;
+    left: 2%;
+  }
+
+  .tilt-1 {
+    top: 0%;
+    left: 52%;
+  }
+
+  .tilt-2 {
+    top: 58%;
+    left: 8%;
+  }
+
+  .tilt-3 {
+    top: 50%;
+    left: 62%;
+  }
+}
+
+@media (max-width: 480px) {
+  .trash-window {
+    padding: 14px;
+  }
+
+  .trash-item {
+    width: clamp(68px, 24vw, 88px);
+    gap: 4px;
+  }
+
+  .trash-name {
+    font-size: 10px;
+    line-height: 1.15;
+  }
+
+  .tilt-0 {
+    top: 10%;
+    left: 0%;
+  }
+
+  .tilt-1 {
+    top: 4%;
+    left: 48%;
+  }
+
+  .tilt-2 {
+    top: 58%;
+    left: 4%;
+  }
+
+  .tilt-3 {
+    top: 50%;
+    left: 56%;
+  }
+}

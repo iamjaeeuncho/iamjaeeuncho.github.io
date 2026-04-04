@@ -18,6 +18,17 @@ type WindowProps = {
   isMinimized?: boolean;
 };
 
+const TOPBAR_HEIGHT = 50;
+const WINDOW_MARGIN = 12;
+const MIN_TOP = TOPBAR_HEIGHT + WINDOW_MARGIN;
+const MIN_LEFT = 8;
+const MIN_WIDTH = 400;
+const MIN_HEIGHT = 260;
+
+const clamp = (value: number, min: number, max: number) => {
+  return Math.min(Math.max(value, min), max);
+};
+
 export default function Window({
   title,
   children,
@@ -35,8 +46,8 @@ export default function Window({
   isMinimized = false,
 }: WindowProps) {
   const [position, setPosition] = useState({
-    top: initialTop,
-    left: initialLeft,
+    top: Math.max(initialTop, MIN_TOP),
+    left: Math.max(initialLeft, MIN_LEFT),
   });
 
   const [size, setSize] = useState({
@@ -60,8 +71,8 @@ export default function Window({
 
   useEffect(() => {
     setPosition({
-      top: initialTop,
-      left: initialLeft,
+      top: Math.max(initialTop, MIN_TOP),
+      left: Math.max(initialLeft, MIN_LEFT),
     });
   }, [initialTop, initialLeft]);
 
@@ -86,9 +97,15 @@ export default function Window({
   const handleMouseMove = (e: MouseEvent) => {
     if (!dragData.current.isDragging) return;
 
+    const rawLeft = e.clientX - dragData.current.offsetX;
+    const rawTop = e.clientY - dragData.current.offsetY;
+
+    const maxLeft = window.innerWidth - size.width - WINDOW_MARGIN;
+    const maxTop = window.innerHeight - size.height - WINDOW_MARGIN;
+
     setPosition({
-      left: e.clientX - dragData.current.offsetX,
-      top: e.clientY - dragData.current.offsetY,
+      left: clamp(rawLeft, MIN_LEFT, Math.max(MIN_LEFT, maxLeft)),
+      top: clamp(rawTop, MIN_TOP, Math.max(MIN_TOP, maxTop)),
     });
   };
 
@@ -119,9 +136,20 @@ export default function Window({
     const dx = e.clientX - resizeData.current.startX;
     const dy = e.clientY - resizeData.current.startY;
 
+    const maxWidth = window.innerWidth - position.left - WINDOW_MARGIN;
+    const maxHeight = window.innerHeight - position.top - WINDOW_MARGIN;
+
     setSize({
-      width: Math.max(400, resizeData.current.startWidth + dx),
-      height: Math.max(260, resizeData.current.startHeight + dy),
+      width: clamp(
+        resizeData.current.startWidth + dx,
+        MIN_WIDTH,
+        Math.max(MIN_WIDTH, maxWidth)
+      ),
+      height: clamp(
+        resizeData.current.startHeight + dy,
+        MIN_HEIGHT,
+        Math.max(MIN_HEIGHT, maxHeight)
+      ),
     });
   };
 
