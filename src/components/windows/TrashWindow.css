@@ -67,17 +67,17 @@
 
 .tilt-1 {
   top: -5%;
-  left: 35%;
+  left: 55%;
 }
 
 .tilt-2 {
   top: 50%;
-  left: 10%;
+  left: -5%;
 }
 
 .tilt-3 {
   top: 45%;
-  left: 45%;
+  left: 50%;
 }
 
 @media (max-width: 768px) {

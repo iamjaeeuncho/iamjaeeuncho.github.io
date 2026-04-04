@@ -1,0 +1,86 @@
+.finder-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.finder-toolbar {
+  padding: 12px;
+}
+
+.finder-search-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.finder-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.finder-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.finder-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.finder-content::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.35);
+  border-radius: 999px;
+}
+
+.finder-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.finder-item:hover {
+  background: #e9eefc;
+}
+
+.finder-item-icon {
+  font-size: 24px;
+  width: 32px;
+  text-align: center;
+}
+
+.finder-item-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.finder-item-title {
+  font-weight: 600;
+}
+
+.finder-item-description {
+  font-size: 13px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.finder-item-type {
+  font-size: 12px;
+  color: #888;
+}
+
+.finder-empty {
+  padding: 24px;
+  text-align: center;
+  color: #777;
+}
