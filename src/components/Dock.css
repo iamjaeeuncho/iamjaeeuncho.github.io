@@ -7,7 +7,11 @@
 
   display: flex;
   align-items: flex-end;
+  flex-wrap: nowrap;
   gap: 10px;
+
+  width: max-content;
+  max-width: calc(100vw - 24px);
 
   padding: 10px 14px;
   border-radius: 22px;
@@ -18,12 +22,25 @@
 
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  overflow-x: auto;
+  overflow-y: visible;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE, old Edge */
+}
+
+.dock::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .dock-item-wrapper {
   position: relative;
   display: flex;
   align-items: flex-end;
+  flex: 0 0 auto;
 }
 
 .dock-item {
@@ -41,6 +58,7 @@
 
   cursor: pointer;
   transition: transform 0.18s ease;
+  flex: 0 0 auto;
 }
 
 .dock-item:hover {
@@ -137,4 +155,54 @@
 .dock-context-item.disabled {
   color: #999;
   cursor: default;
+}
+
+@media (max-width: 768px) {
+  .dock {
+    bottom: 14px;
+    gap: 8px;
+    padding: 8px 12px;
+    max-width: calc(100vw - 20px);
+    border-radius: 20px;
+  }
+
+  .dock-item {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dock {
+    bottom: 10px;
+    gap: 6px;
+    padding: 8px 10px;
+    max-width: calc(100vw - 16px);
+    border-radius: 18px;
+  }
+
+  .dock-item {
+    width: 46px;
+    height: 46px;
+  }
+
+  .dock-tooltip {
+    display: none;
+  }
+
+  .dock-context {
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 360px) {
+  .dock {
+    padding: 7px 8px;
+    gap: 5px;
+  }
+
+  .dock-item {
+    width: 42px;
+    height: 42px;
+  }
 }

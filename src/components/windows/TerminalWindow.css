@@ -11,7 +11,7 @@
 .body {
   width: min(92%, 980px);
   padding: 40px 28px;
-  background: #fff;
+  background: transparent;
   box-sizing: border-box;
 }
 

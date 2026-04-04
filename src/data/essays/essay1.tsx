@@ -80,6 +80,7 @@ export const essay1 = {
         As I sat there in pain, I tried desperately to move my toes—but nothing happened.
         Even the slightest movement, like coughing or speaking, caused intense pain, as if my muscles were tearing apart.
       </p>
+      <img className="essay-detail-image" src="/essays/essay1-1.jpg" alt="Hpa-An" />
       <p>
         I took some painkillers from a local pharmacy and endured a seven-hour night bus ride back to Yangon.
         I prayed desperately that I would wake up feeling better, but the pain remained the same the next day.
