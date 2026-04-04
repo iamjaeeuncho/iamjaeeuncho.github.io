@@ -100,6 +100,15 @@ export const desktopApps: DesktopApp[] = [
     windowWidth: 500,
     windowHeight: 600,
   },
+  {
+    title: "Terminal",
+    icon: "/icons/Terminal.png",
+    topPercent: 20,
+    leftPercent: 90,
+    showOnDesktop: true,
+    windowWidth: 540,
+    windowHeight: 540,
+  },
 ];
 
 export const dockApps: Array<{
@@ -145,12 +154,6 @@ export const dockApps: Array<{
     href: "https://iamjaeeuncho.tistory.com",
     windowWidth: 430,
     windowHeight: 450,
-  },
-  {
-    title: "Terminal",
-    icon: "/icons/Terminal.png",
-    windowWidth: 540,
-    windowHeight: 540,
   },
 ];
 
